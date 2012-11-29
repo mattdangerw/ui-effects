@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Texture-pick-with-alpha"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="property"/>
+    <title type="link" role="topic">pick-with-alpha</title>
+  </info>
+  <title>Clutter.Texture:pick-with-alpha</title>
+<synopsis><code mime="text/x-python">
+"pick-with-alpha"             gboolean                : Read / Write
+</code></synopsis>
+
+</page>

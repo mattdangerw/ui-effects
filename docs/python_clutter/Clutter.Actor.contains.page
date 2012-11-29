@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.contains"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_actor_contains</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>descendant</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>contains</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(gboolean)
+def contains(descendant)
+</code></synopsis>
+<p>Determines if @descendant is contained inside @self (either as an
+immediate child, or as a deeper descendant). If @self and
+@descendant point to the same actor then it will also return True.</p>
+
+<table>
+<tr>
+<td><p>descendant :</p></td>
+<td><p>A <link xref="Clutter.Actor">Clutter.Actor</link>, possibly contained in @self</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>whether @descendent is contained within @self</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

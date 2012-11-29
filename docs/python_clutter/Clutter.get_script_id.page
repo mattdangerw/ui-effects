@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.get_script_id"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_get_script_id</api:name>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>gobject</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_script_id</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.Object)
+@returns(utf8)
+def get_script_id(gobject)
+</code></synopsis>
+<p>Retrieves the Clutter script id, if any.</p><p>a UI definition file. The returned string is owned by the object and
+should never be modified or freed.</p>
+
+<table>
+<tr>
+<td><p>gobject :</p></td>
+<td><p>a <link xref="GObject">GObject</link></p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the script id, or None if @object was not defined inside</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.LayoutManager.child_set_property"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutManager" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_layout_manager_child_set_property</api:name>
+      <api:arg>
+        <api:type>ClutterLayoutManager *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Container</api:type>
+        <api:name>container</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>child_set_property</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Container, Clutter.Actor, utf8, GObject.Value)
+@returns(none)
+def child_set_property(container, actor, property_name, value)
+</code></synopsis>
+<p>Sets a property on the <link xref="Clutter.LayoutMeta">Clutter.LayoutMeta</link> created by @manager and
+attached to a child of @container</p>
+
+<table>
+<tr>
+<td><p>container :</p></td>
+<td><p>a <link xref="Clutter.Container">Clutter.Container</link> using @manager</p></td>
+</tr>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link> child of @container</p></td>
+</tr>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>the name of the property to set</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>a <link xref="GValue">GValue</link> with the value of the property to set</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

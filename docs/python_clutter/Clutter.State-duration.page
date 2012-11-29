@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.State-duration"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.State" group="property"/>
+    <title type="link" role="topic">duration</title>
+  </info>
+  <title>Clutter.State:duration</title>
+<synopsis><code mime="text/x-python">
+"duration"             guint                : Read / Write
+</code></synopsis>
+<p>Default duration used if an duration has not been specified for a specific
+source/target state pair. The values is in milliseconds.</p>
+</page>

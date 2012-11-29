@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Clutter.Animation-completed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animation" group="signal"/>
+    <title type="link" role="topic">completed</title>
+  </info>
+  <title>Clutter.Animation::completed</title>
+<synopsis><code mime="text/x-python">
+def callback(animation, user_param1, ...)
+</code></synopsis>
+<p>The ::completed signal is emitted once the animation has
+been completed.</p><p>The @animation instance is guaranteed to be valid for the entire
+duration of the signal emission chain.</p>
+
+<table>
+<tr>
+<td><p>animation :</p></td>
+<td><p>instance of Clutter.Animation that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

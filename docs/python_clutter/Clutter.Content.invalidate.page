@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Content.invalidate"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Content" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_content_invalidate</api:name>
+      <api:arg>
+        <api:type>ClutterContent *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>invalidate</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def invalidate()
+</code></synopsis>
+<p>Invalidates a <link xref="Clutter.Content">Clutter.Content</link>.</p><p>This function should be called by <link xref="Clutter.Content">Clutter.Content</link> implementations when
+they change the way a the content should be painted regardless of the
+actor state.</p>
+
+<table>
+</table>
+<p>Since 1.10</p>
+</page>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.GestureAction.get_release_coords"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.GestureAction" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_gesture_action_get_release_coords</api:name>
+      <api:arg>
+        <api:type>ClutterGestureAction *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>device</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>release_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>release_y</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_release_coords</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, gfloat, gfloat)
+@returns(none)
+def get_release_coords(device, release_x, release_y)
+</code></synopsis>
+<p>Retrieves the coordinates, in stage space, of the point where the pointer
+device was last released.</p>
+
+<table>
+<tr>
+<td><p>device :</p></td>
+<td><p>currently unused, set to 0</p></td>
+</tr>
+<tr>
+<td><p>release_x :</p></td>
+<td><p>return location for the X coordinate of the last release</p></td>
+</tr>
+<tr>
+<td><p>release_y :</p></td>
+<td><p>return location for the Y coordinate of the last release</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

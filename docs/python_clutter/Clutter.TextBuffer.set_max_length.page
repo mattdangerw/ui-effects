@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.TextBuffer.set_max_length"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TextBuffer" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_buffer_set_max_length</api:name>
+      <api:arg>
+        <api:type>ClutterTextBuffer *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>max_length</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_max_length</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint)
+@returns(none)
+def set_max_length(max_length)
+</code></synopsis>
+<p>Sets the maximum allowed length of the contents of the buffer. If
+the current contents are longer than the given length, then they
+will be truncated to fit.</p>
+
+<table>
+<tr>
+<td><p>max_length :</p></td>
+<td><p>the maximum length of the entry buffer, or 0 for no maximum. (other than the maximum length of entries.) The value passed in will be clamped to the range [ 0, %CLUTTER_TEXT_BUFFER_MAX_SIZE ].</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

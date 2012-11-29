@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-layout-manager"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">layout-manager</title>
+  </info>
+  <title>Clutter.Actor:layout-manager</title>
+<synopsis><code mime="text/x-python">
+"layout-manager"             Clutter.LayoutManager                : Read / Write
+</code></synopsis>
+<p>A delegate object for controlling the layout of the children of
+an actor.</p>
+</page>

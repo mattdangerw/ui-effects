@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.FlowLayout-max-column-width"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.FlowLayout" group="property"/>
+    <title type="link" role="topic">max-column-width</title>
+  </info>
+  <title>Clutter.FlowLayout:max-column-width</title>
+<synopsis><code mime="text/x-python">
+"max-column-width"             gfloat                : Read / Write
+</code></synopsis>
+<p>Maximum width for each column in the layout, in pixels. If
+set to -1 the width will be the maximum child width</p>
+</page>

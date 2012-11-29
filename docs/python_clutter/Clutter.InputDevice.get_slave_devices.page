@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.InputDevice.get_slave_devices"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.InputDevice" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>&lt;list&gt;</api:type>
+      </api:returns>
+      <api:name>clutter_input_device_get_slave_devices</api:name>
+      <api:arg>
+        <api:type>ClutterInputDevice *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_slave_devices</title>
+<synopsis><code mime="text/x-python">
+@returns(&lt;list&gt;)
+def get_slave_devices()
+</code></synopsis>
+<p>Retrieves the slave devices attached to @device.</p><p>list of <link xref="Clutter.InputDevice">Clutter.InputDevice</link>, or None. The contents of the list are
+owned by the device. Use g_list_free() when done</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

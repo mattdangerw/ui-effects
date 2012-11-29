@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.create_pango_context"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Pango.Context</api:type>
+      </api:returns>
+      <api:name>clutter_actor_create_pango_context</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>create_pango_context</title>
+<synopsis><code mime="text/x-python">
+@returns(Pango.Context)
+def create_pango_context()
+</code></synopsis>
+<p>Creates a <link xref="PangoContext">PangoContext</link> for the given actor. The <link xref="PangoContext">PangoContext</link>
+is already configured using the appropriate font map, resolution
+and font options.</p><p>See also clutter_actor_get_pango_context().</p><p>Use g_object_unref() on the returned value to deallocate its
+resources</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the newly created <link xref="PangoContext">PangoContext</link>.</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

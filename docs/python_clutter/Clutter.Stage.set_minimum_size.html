@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>set_minimum_size</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">set_minimum_size</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(guint, guint)
+@returns(none)
+def set_minimum_size(width, height)</pre></div></div></div></div></div>
+<p class="p">Sets the minimum size for a stage window, if the default backend
+uses <span class=" link"><a href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a></span> inside a window</p>
+<p class="p">This is a convenience function, and it is equivalent to setting the
+<span class=" link"><a href="Clutter.Actor-min-width.html" title="Clutter.Actor:min-width">Clutter.Actor:min-width</a></span> and <span class=" link"><a href="Clutter.Actor-min-height.html" title="Clutter.Actor:min-height">Clutter.Actor:min-height</a></span> on @stage</p>
+<p class="p">If the current size of @stage is smaller than the minimum size, the
+@stage will be resized to the new @width and @height</p>
+<p class="p">This function has no effect if @stage is fullscreen</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">width :</p></td>
+<td><p class="p">width, in pixels</p></td>
+</tr>
+<tr>
+<td><p class="p">height :</p></td>
+<td><p class="p">height, in pixels</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.2</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

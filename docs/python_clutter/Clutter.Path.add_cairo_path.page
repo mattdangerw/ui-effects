@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Path.add_cairo_path"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Path" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_path_add_cairo_path</api:name>
+      <api:arg>
+        <api:type>ClutterPath *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>cairo.Path</api:type>
+        <api:name>cpath</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>add_cairo_path</title>
+<synopsis><code mime="text/x-python">
+@accepts(cairo.Path)
+@returns(none)
+def add_cairo_path(cpath)
+</code></synopsis>
+<p>Add the nodes of the Cairo path to the end of @path.</p>
+
+<table>
+<tr>
+<td><p>cpath :</p></td>
+<td><p>a Cairo path</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

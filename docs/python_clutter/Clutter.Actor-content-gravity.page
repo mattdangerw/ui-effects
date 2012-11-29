@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-content-gravity"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">content-gravity</title>
+  </info>
+  <title>Clutter.Actor:content-gravity</title>
+<synopsis><code mime="text/x-python">
+"content-gravity"             Clutter.ContentGravity                : Read / Write
+</code></synopsis>
+<p>The alignment that should be honoured by the <link xref="Clutter.Content">Clutter.Content</link>
+set with the <link xref="Clutter.Actor-content">Clutter.Actor:content</link> property.</p><p>Changing the value of this property will change the bounding box of
+the content; you can use the <link xref="Clutter.Actor-content-box">Clutter.Actor:content-box</link> property to
+get the position and size of the content within the actor's
+allocation.</p><p>This property is meaningful only for <link xref="Clutter.Content">Clutter.Content</link> implementations
+that have a preferred size, and if the preferred size is smaller than
+the actor's allocation.</p><p>The <link xref="Clutter.Actor-content-gravity">Clutter.Actor:content-gravity</link> property is animatable.</p>
+</page>

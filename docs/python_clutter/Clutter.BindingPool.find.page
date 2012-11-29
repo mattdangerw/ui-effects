@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BindingPool.find"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BindingPool" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.BindingPool</api:type>
+      </api:returns>
+      <api:name>clutter_binding_pool_find</api:name>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>find</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(Clutter.BindingPool)
+def find(name)
+</code></synopsis>
+<p>Finds the <link xref="Clutter.BindingPool">Clutter.BindingPool</link> with @name.</p>
+
+<table>
+<tr>
+<td><p>name :</p></td>
+<td><p>the name of the binding pool to find</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a pointer to the <link xref="Clutter.BindingPool">Clutter.BindingPool</link>, or None</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

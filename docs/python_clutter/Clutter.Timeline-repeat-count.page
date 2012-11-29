@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Timeline-repeat-count"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="property"/>
+    <title type="link" role="topic">repeat-count</title>
+  </info>
+  <title>Clutter.Timeline:repeat-count</title>
+<synopsis><code mime="text/x-python">
+"repeat-count"             gint                : Read / Write
+</code></synopsis>
+<p>Defines how many times the timeline should repeat.</p><p>If the repeat count is 0, the timeline does not repeat.</p><p>If the repeat count is set to -1, the timeline will repeat until it is
+stopped.</p>
+</page>

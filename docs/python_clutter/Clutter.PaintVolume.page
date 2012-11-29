@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="Clutter.PaintVolume"
+      type="guide"
+      style="record"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>ClutterPaintVolume</title>
+  <p><structname>ClutterPaintVolume</structname> is an opaque structure
+whose members cannot be directly accessed.
+
+A <structname>ClutterPaintVolume</structname> represents an
+a bounding volume whose internal representation isn't defined but
+can be set and queried in terms of an axis aligned bounding box.
+
+A <structname>ClutterPaintVolume</structname> for a #ClutterActor
+is defined to be relative from the current actor modelview matrix.
+
+Other internal representation and methods for describing the
+bounding volume may be added in the future.</p>
+</page>

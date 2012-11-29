@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-captured_event"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="vfunc"/>
+    <title type="link" role="topic">captured_event</title>
+  </info>
+  <title>Clutter.Actor.captured_event</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Event)
+@returns(gboolean)
+def do_captured_event(self, event):
+</code></synopsis>
+
+
+<table>
+<tr>
+<td><p>event :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td></td>
+</tr>
+</table>
+</page>

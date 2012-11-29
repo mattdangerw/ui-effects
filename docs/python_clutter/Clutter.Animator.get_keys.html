@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>get_keys</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Animator.html" title="Clutter.Animator">Clutter.Animator</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">get_keys</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(GObject.Object, utf8, gdouble)
+@returns(&lt;list&gt;)
+def get_keys(object, property_name, progress)</pre></div></div></div></div></div>
+<p class="p">Returns a list of pointers to opaque structures with accessor functions
+that describe the keys added to an animator.</p>
+<p class="p">list of <span class=" link"><a href="Clutter.AnimatorKey.html" title="ClutterAnimatorKey">Clutter.AnimatorKey</a></span>&lt;!-- --&gt;s; the contents of the list are owned
+by the <span class=" link"><a href="Clutter.Animator.html" title="Clutter.Animator">Clutter.Animator</a></span>, but you should free the returned list when done,
+using g_list_free()</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">object :</p></td>
+<td><p class="p">a <span class=" link"><a href="GObject.html" title="GObject">GObject</a></span> to search for, or None for all objects</p></td>
+</tr>
+<tr>
+<td><p class="p">property_name :</p></td>
+<td><p class="p">a specific property name to query for, or None for all properties</p></td>
+</tr>
+<tr>
+<td><p class="p">progress :</p></td>
+<td><p class="p">a specific progress to search for, or a negative value for all progresses</p></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">a</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.2</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Animator.html" title="Clutter.Animator">Clutter.Animator</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.push_internal"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_push_internal</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>push_internal</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def push_internal()
+</code></synopsis>
+<p>Should be used by actors implementing the <link xref="Clutter.Container">Clutter.Container</link> and with
+internal children added through clutter_actor_set_parent(), for instance:</p><p>|[
+static void
+my_actor_init (MyActor *self)
+{
+self-&gt;priv = SELF_ACTOR_GET_PRIVATE (self);</p><p>clutter_actor_push_internal (CLUTTER_ACTOR (self));</p><p>/&amp;ast; calling clutter_actor_set_parent() now will result in
+&amp;ast; the internal flag being set on a child of MyActor
+&amp;ast;/</p><p>/&amp;ast; internal child - a background texture &amp;ast;/
+self-&gt;priv-&gt;background_tex = clutter_texture_new ();
+clutter_actor_set_parent (self-&gt;priv-&gt;background_tex,
+CLUTTER_ACTOR (self));</p><p>/&amp;ast; internal child - a label &amp;ast;/
+self-&gt;priv-&gt;label = clutter_text_new ();
+clutter_actor_set_parent (self-&gt;priv-&gt;label,
+CLUTTER_ACTOR (self));</p><p>clutter_actor_pop_internal (CLUTTER_ACTOR (self));</p><p>/&amp;ast; calling clutter_actor_set_parent() now will not result in
+&amp;ast; the internal flag being set on a child of MyActor
+&amp;ast;/
+}
+]|</p><p>This function will be used by Clutter to toggle an "internal child"
+flag whenever clutter_actor_set_parent() is called; internal children
+are handled differently by Clutter, specifically when destroying their
+parent.</p><p>Call clutter_actor_pop_internal() when you finished adding internal
+children.</p><p>Nested calls to clutter_actor_push_internal() are allowed, but each
+one must by followed by a clutter_actor_pop_internal() call.</p><p>
+the <link xref="Clutter.Actor">Clutter.Actor</link> API, and <link xref="Clutter.Actor">Clutter.Actor</link> implements the
+<link xref="Clutter.Container">Clutter.Container</link> interface, so this function is only useful
+for legacy containers overriding the default implementation.</p>
+
+<table>
+</table>
+<p>Since 1.2</p>
+</page>

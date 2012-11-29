@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_markup"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_markup</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>markup</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_markup</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(none)
+def set_markup(markup)
+</code></synopsis>
+<p>Sets @markup as the contents of a <link xref="Clutter.Text">Clutter.Text</link>.</p><p>This is a convenience function for setting a string containing
+Pango markup, and it is logically equivalent to:</p><p>|[
+/&amp;ast; the order is important &amp;ast;/
+clutter_text_set_text (CLUTTER_TEXT (actor), markup);
+clutter_text_set_use_markup (CLUTTER_TEXT (actor), TRUE);
+]|</p>
+
+<table>
+<tr>
+<td><p>markup :</p></td>
+<td><p>a string containing Pango markup. Passing None is the same as passing "" (the empty string)</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

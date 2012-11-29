@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.clear_glyph_cache"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_clear_glyph_cache</api:name>
+    </api:function>
+  </info>
+  <title>clear_glyph_cache</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def clear_glyph_cache()
+</code></synopsis>
+<p>Clears the internal cache of glyphs used by the Pango
+renderer. This will free up some memory and GL texture
+resources. The cache will be automatically refilled as more text is
+drawn.</p><p>
+cogl_pango_font_map_clear_glyph_cache() instead.</p>
+
+<table>
+</table>
+<p>Since 0.8</p>
+</page>

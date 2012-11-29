@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_first_child"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Actor</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_first_child</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_first_child</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Actor)
+def get_first_child()
+</code></synopsis>
+<p>Retrieves the first child of @self.</p><p>The returned pointer is only valid until the scene graph changes; it
+is not safe to modify the list of children of @self while iterating
+it.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a pointer to a <link xref="Clutter.Actor">Clutter.Actor</link>, or None</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

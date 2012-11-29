@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Clutter.Interval-compute_value"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Interval" group="vfunc"/>
+    <title type="link" role="topic">compute_value</title>
+  </info>
+  <title>Clutter.Interval.compute_value</title>
+<synopsis><code mime="text/x-python">
+@accepts(gdouble, GObject.Value)
+@returns(gboolean)
+def do_compute_value(self, factor, value):
+</code></synopsis>
+<p>Computes the value between the @interval boundaries given the
+progress @factor and copies it into @value.</p>
+
+<table>
+<tr>
+<td><p>factor :</p></td>
+<td><p>the progress factor, between 0 and 1</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>return location for an initialized <link xref="GValue">GValue</link></p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the operation was successful</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

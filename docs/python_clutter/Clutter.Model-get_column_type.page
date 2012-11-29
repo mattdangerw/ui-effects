@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Clutter.Model-get_column_type"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="vfunc"/>
+    <title type="link" role="topic">get_column_type</title>
+  </info>
+  <title>Clutter.Model.get_column_type</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint)
+@returns(GType)
+def do_get_column_type(self, column):
+</code></synopsis>
+<p>Retrieves the type of the @column.</p>
+
+<table>
+<tr>
+<td><p>column :</p></td>
+<td><p>the column number</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the type of the column.</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

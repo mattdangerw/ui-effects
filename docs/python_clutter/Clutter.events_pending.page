@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.events_pending"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_events_pending</api:name>
+    </api:function>
+  </info>
+  <title>events_pending</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def events_pending()
+</code></synopsis>
+<p>Checks if events are pending in the event queue.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>TRUE if there are pending events, FALSE otherwise.</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

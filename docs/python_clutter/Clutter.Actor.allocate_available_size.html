@@ -1,0 +1,92 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>allocate_available_size</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">allocate_available_size</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(gfloat, gfloat, gfloat, gfloat, Clutter.AllocationFlags)
+@returns(none)
+def allocate_available_size(x, y, available_width, available_height, flags)</pre></div></div></div></div></div>
+<p class="p">Allocates @self taking into account the <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span>&lt;!-- --&gt;'s
+preferred size, but limiting it to the maximum available width
+and height provided.</p>
+<p class="p">This function will do the right thing when dealing with the
+actor's request mode.</p>
+<p class="p">The implementation of this function is equivalent to:</p>
+<p class="p">|[
+if (request_mode == CLUTTER_REQUEST_HEIGHT_FOR_WIDTH)
+{
+clutter_actor_get_preferred_width (self, available_height,
+&amp;amp;min_width,
+&amp;amp;natural_width);
+width = CLAMP (natural_width, min_width, available_width);</p>
+<p class="p">clutter_actor_get_preferred_height (self, width,
+&amp;amp;min_height,
+&amp;amp;natural_height);
+height = CLAMP (natural_height, min_height, available_height);
+}
+else
+{
+clutter_actor_get_preferred_height (self, available_width,
+&amp;amp;min_height,
+&amp;amp;natural_height);
+height = CLAMP (natural_height, min_height, available_height);</p>
+<p class="p">clutter_actor_get_preferred_width (self, height,
+&amp;amp;min_width,
+&amp;amp;natural_width);
+width = CLAMP (natural_width, min_width, available_width);
+}</p>
+<p class="p">box.x1 = x; box.y1 = y;
+box.x2 = box.x1 + available_width;
+box.y2 = box.y1 + available_height;
+clutter_actor_allocate (self, &amp;amp;box, flags);
+]|</p>
+<p class="p">This function can be used by fluid layout managers to allocate
+an actor's preferred size without making it bigger than the area
+available for the container.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">x :</p></td>
+<td><p class="p">the actor's X coordinate</p></td>
+</tr>
+<tr>
+<td><p class="p">y :</p></td>
+<td><p class="p">the actor's Y coordinate</p></td>
+</tr>
+<tr>
+<td><p class="p">available_width :</p></td>
+<td><p class="p">the maximum available width, or -1 to use the actor's natural width</p></td>
+</tr>
+<tr>
+<td><p class="p">available_height :</p></td>
+<td><p class="p">the maximum available height, or -1 to use the actor's natural height</p></td>
+</tr>
+<tr>
+<td><p class="p">flags :</p></td>
+<td><p class="p">flags controlling the allocation</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.0</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

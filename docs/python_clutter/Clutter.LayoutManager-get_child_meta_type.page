@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Clutter.LayoutManager-get_child_meta_type"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutManager" group="vfunc"/>
+    <title type="link" role="topic">get_child_meta_type</title>
+  </info>
+  <title>Clutter.LayoutManager.get_child_meta_type</title>
+<synopsis><code mime="text/x-python">
+@returns(GType)
+def do_get_child_meta_type(self, ):
+</code></synopsis>
+
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td></td>
+</tr>
+</table>
+</page>

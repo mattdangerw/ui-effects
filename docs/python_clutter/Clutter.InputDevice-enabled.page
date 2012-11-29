@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.InputDevice-enabled"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.InputDevice" group="property"/>
+    <title type="link" role="topic">enabled</title>
+  </info>
+  <title>Clutter.InputDevice:enabled</title>
+<synopsis><code mime="text/x-python">
+"enabled"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the device is enabled.</p><p>A device with the <link xref="Clutter.InputDevice-device-mode">Clutter.InputDevice:device-mode</link> property set
+to %CLUTTER_INPUT_MODE_MASTER cannot be disabled.</p><p>A device must be enabled in order to receive events from it.</p>
+</page>

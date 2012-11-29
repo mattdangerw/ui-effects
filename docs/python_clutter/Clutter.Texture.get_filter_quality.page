@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Texture.get_filter_quality"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.TextureQuality</api:type>
+      </api:returns>
+      <api:name>clutter_texture_get_filter_quality</api:name>
+      <api:arg>
+        <api:type>ClutterTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_filter_quality</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.TextureQuality)
+def get_filter_quality()
+</code></synopsis>
+<p>Gets the filter quality used when scaling a texture.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The filter quality value.</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.add_action_with_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_add_action_with_name</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Action</api:type>
+        <api:name>action</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>add_action_with_name</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, Clutter.Action)
+@returns(none)
+def add_action_with_name(name, action)
+</code></synopsis>
+<p>A convenience function for setting the name of a <link xref="Clutter.Action">Clutter.Action</link>
+while adding it to the list of actions applied to @self</p><p>This function is the logical equivalent of:</p><p>|[
+clutter_actor_meta_set_name (CLUTTER_ACTOR_META (action), name);
+clutter_actor_add_action (self, action);
+]|</p>
+
+<table>
+<tr>
+<td><p>name :</p></td>
+<td><p>the name to set on the action</p></td>
+</tr>
+<tr>
+<td><p>action :</p></td>
+<td><p>a <link xref="Clutter.Action">Clutter.Action</link></p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

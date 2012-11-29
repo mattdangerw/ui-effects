@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.FlowLayout.set_orientation"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.FlowLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_flow_layout_set_orientation</api:name>
+      <api:arg>
+        <api:type>ClutterFlowLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.FlowOrientation</api:type>
+        <api:name>orientation</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_orientation</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.FlowOrientation)
+@returns(none)
+def set_orientation(orientation)
+</code></synopsis>
+<p>Sets the orientation of the flow layout</p><p>The orientation controls the direction used to allocate
+the children: either horizontally or vertically. The
+orientation also controls the direction of the overflowing</p>
+
+<table>
+<tr>
+<td><p>orientation :</p></td>
+<td><p>the orientation of the layout</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>get_depth</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.PaintVolume.html" title="ClutterPaintVolume">ClutterPaintVolume</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">get_depth</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@returns(gfloat)
+def get_depth()</pre></div></div></div></div></div>
+<p class="p">Retrieves the depth of the volume's, axis aligned, bounding box.</p>
+<p class="p">In other words; this takes into account what actor's coordinate
+space @pv belongs too and conceptually fits an axis aligned box
+around the volume. It returns the size of that bounding box as
+measured along the z-axis.</p>
+<p class="p">&lt;note&gt;&lt;para&gt;If, for example, clutter_actor_get_transformed_paint_volume()
+is used to transform a 2D child actor that is 100px wide, 100px
+high and 0px deep into container coordinates then the depth might
+not simply be 0px if the child actor has a 3D rotation applied to
+it.&lt;/para&gt;
+&lt;para&gt;Remember; after clutter_actor_get_transformed_paint_volume() is
+used then the transformed volume will be defined relative to the
+container actor and in container coordinates a 2D child actor
+can have a 3D bounding volume.&lt;/para&gt;&lt;/note&gt;</p>
+<p class="p">&lt;note&gt;There are no accuracy guarantees for the reported depth,
+except that it must always be &gt;= to the true depth. This is
+because actors may report simple, loose fitting paint-volumes
+for efficiency.&lt;/note&gt;</p>
+<div class="table"><div class="inner"><div class="region"><table class="table"><tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">the depth, in units of @pv's local coordinate system.</p></td>
+</tr></table></div></div></div>
+<p class="p">Since 1.6</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.PaintVolume.html" title="ClutterPaintVolume">ClutterPaintVolume</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

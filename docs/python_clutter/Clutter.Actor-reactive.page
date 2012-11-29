@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-reactive"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">reactive</title>
+  </info>
+  <title>Clutter.Actor:reactive</title>
+<synopsis><code mime="text/x-python">
+"reactive"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the actor is reactive to events or not</p><p>Only reactive actors will emit event-related signals</p>
+</page>

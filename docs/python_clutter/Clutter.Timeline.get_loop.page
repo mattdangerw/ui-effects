@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.get_loop"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_get_loop</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_loop</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def get_loop()
+</code></synopsis>
+<p>Gets whether @timeline is looping</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the timeline is looping</p></td>
+</tr>
+</table>
+</page>

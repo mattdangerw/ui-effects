@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.AlignConstraint.set_factor"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.AlignConstraint" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_align_constraint_set_factor</api:name>
+      <api:arg>
+        <api:type>ClutterAlignConstraint *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>factor</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_factor</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat)
+@returns(none)
+def set_factor(factor)
+</code></synopsis>
+<p>Sets the alignment factor of the constraint</p><p>The factor depends on the <link xref="Clutter.AlignConstraint-align-axis">Clutter.AlignConstraint:align-axis</link> property
+and it is a value between 0.0 (meaning left, when
+<link xref="Clutter.AlignConstraint-align-axis">Clutter.AlignConstraint:align-axis</link> is set to %CLUTTER_ALIGN_X_AXIS; or
+meaning top, when <link xref="Clutter.AlignConstraint-align-axis">Clutter.AlignConstraint:align-axis</link> is set to
+%CLUTTER_ALIGN_Y_AXIS) and 1.0 (meaning right, when
+<link xref="Clutter.AlignConstraint-align-axis">Clutter.AlignConstraint:align-axis</link> is set to %CLUTTER_ALIGN_X_AXIS; or
+meaning bottom, when <link xref="Clutter.AlignConstraint-align-axis">Clutter.AlignConstraint:align-axis</link> is set to
+%CLUTTER_ALIGN_Y_AXIS). A value of 0.5 aligns in the middle in either
+cases</p>
+
+<table>
+<tr>
+<td><p>factor :</p></td>
+<td><p>the alignment factor, between 0.0 and 1.0</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

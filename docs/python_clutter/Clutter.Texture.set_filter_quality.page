@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Texture.set_filter_quality"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_texture_set_filter_quality</api:name>
+      <api:arg>
+        <api:type>ClutterTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.TextureQuality</api:type>
+        <api:name>filter_quality</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_filter_quality</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.TextureQuality)
+@returns(none)
+def set_filter_quality(filter_quality)
+</code></synopsis>
+<p>Sets the filter quality when scaling a texture. The quality is an
+enumeration currently the following values are supported:
+%CLUTTER_TEXTURE_QUALITY_LOW which is fast but only uses nearest neighbour
+interpolation. %CLUTTER_TEXTURE_QUALITY_MEDIUM which is computationally a
+bit more expensive (bilinear interpolation), and
+%CLUTTER_TEXTURE_QUALITY_HIGH which uses extra texture memory resources to
+improve scaled down rendering as well (by using mipmaps). The default value
+is %CLUTTER_TEXTURE_QUALITY_MEDIUM.</p>
+
+<table>
+<tr>
+<td><p>filter_quality :</p></td>
+<td><p>new filter quality value</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

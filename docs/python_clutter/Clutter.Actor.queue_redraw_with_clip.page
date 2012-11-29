@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.queue_redraw_with_clip"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_queue_redraw_with_clip</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>cairo.RectangleInt</api:type>
+        <api:name>clip</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>queue_redraw_with_clip</title>
+<synopsis><code mime="text/x-python">
+@accepts(cairo.RectangleInt)
+@returns(none)
+def queue_redraw_with_clip(clip)
+</code></synopsis>
+<p>Queues a redraw on @self limited to a specific, actor-relative
+rectangular area.</p><p>If @clip is None this function is equivalent to
+clutter_actor_queue_redraw().</p>
+
+<table>
+<tr>
+<td><p>clip :</p></td>
+<td><p>a rectangular clip region, or None</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

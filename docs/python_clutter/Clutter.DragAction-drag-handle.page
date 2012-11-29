@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Clutter.DragAction-drag-handle"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DragAction" group="property"/>
+    <title type="link" role="topic">drag-handle</title>
+  </info>
+  <title>Clutter.DragAction:drag-handle</title>
+<synopsis><code mime="text/x-python">
+"drag-handle"             Clutter.Actor                : Read / Write
+</code></synopsis>
+<p>The <link xref="Clutter.Actor">Clutter.Actor</link> that is effectively being dragged</p><p>A <link xref="Clutter.DragAction">Clutter.DragAction</link> will, be default, use the <link xref="Clutter.Actor">Clutter.Actor</link> that
+has been attached to the action; it is possible to create a
+separate <link xref="Clutter.Actor">Clutter.Actor</link> and use it instead.</p><p>Setting this property has no effect on the <link xref="Clutter.Actor">Clutter.Actor</link> argument
+passed to the <link xref="Clutter.DragAction">Clutter.DragAction</link> signals</p>
+</page>

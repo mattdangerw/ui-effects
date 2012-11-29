@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.get_option_group"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.OptionGroup</api:type>
+      </api:returns>
+      <api:name>clutter_get_option_group</api:name>
+    </api:function>
+  </info>
+  <title>get_option_group</title>
+<synopsis><code mime="text/x-python">
+@returns(GLib.OptionGroup)
+def get_option_group()
+</code></synopsis>
+<p>Returns a <link xref="GOptionGroup">GOptionGroup</link> for the command line arguments recognized
+by Clutter. You should add this group to your <link xref="GOptionContext">GOptionContext</link> with
+g_option_context_add_group(), if you are using g_option_context_parse()
+to parse your commandline arguments.</p><p>Calling g_option_context_parse() with Clutter's <link xref="GOptionGroup">GOptionGroup</link> will result
+in Clutter's initialization. That is, the following code:</p><p>|[
+g_option_context_set_main_group (context, clutter_get_option_group ());
+res = g_option_context_parse (context, &amp;amp;argc, &amp;amp;argc, NULL);
+]|</p><p>is functionally equivalent to:</p><p>|[
+clutter_init (&amp;amp;argc, &amp;amp;argv);
+]|</p><p>After g_option_context_parse() on a <link xref="GOptionContext">GOptionContext</link> containing the
+Clutter <link xref="GOptionGroup">GOptionGroup</link> has returned True, Clutter is guaranteed to be
+initialized.</p><p>recognized by Clutter</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="GOptionGroup">GOptionGroup</link> for the commandline arguments</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

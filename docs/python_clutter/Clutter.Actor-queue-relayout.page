@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-queue-relayout"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="signal"/>
+    <title type="link" role="topic">queue-relayout</title>
+  </info>
+  <title>Clutter.Actor::queue-relayout</title>
+<synopsis><code mime="text/x-python">
+def callback(actor, user_param1, ...)
+</code></synopsis>
+<p>The ::queue_layout signal is emitted when clutter_actor_queue_relayout()
+is called on an actor.</p><p>The default implementation for <link xref="Clutter.Actor">Clutter.Actor</link> chains up to the
+parent actor and queues a relayout on the parent, thus "bubbling"
+the relayout queue up through the actor graph.</p><p>The main purpose of this signal is to allow relayout to be propagated
+properly in the procense of <link xref="Clutter.Clone">Clutter.Clone</link> actors. Applications will
+not normally need to connect to this signal.</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>instance of Clutter.Actor that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Clutter.TextureError"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.TextureError</title>
+  <p>Error enumeration for <link xref="Clutter.Texture">Clutter.Texture</link></p>
+<table>
+<tr>
+<td><p>TextureError.OUT_OF_MEMORY :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>TextureError.NO_YUV :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>TextureError.BAD_FORMAT :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

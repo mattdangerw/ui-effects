@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Media.set_playing"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Media" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_media_set_playing</api:name>
+      <api:arg>
+        <api:type>ClutterMedia *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>playing</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_playing</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_playing(playing)
+</code></synopsis>
+<p>Starts or stops playing of @media. 
+The implementation might be asynchronous, so the way to know whether
+the actual playing state of the @media is to use the <link xref="GObject::notify">GObject::notify</link>
+signal on the <link xref="Clutter.Media-playing">Clutter.Media:playing</link> property and then retrieve the
+current state with clutter_media_get_playing(). ClutterGstVideoTexture
+in clutter-gst is an example of such an asynchronous implementation.</p>
+
+<table>
+<tr>
+<td><p>playing :</p></td>
+<td><p>True to start playing</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

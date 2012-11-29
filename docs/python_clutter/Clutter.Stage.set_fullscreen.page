@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.set_fullscreen"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_stage_set_fullscreen</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>fullscreen</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_fullscreen</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_fullscreen(fullscreen)
+</code></synopsis>
+<p>Asks to place the stage window in the fullscreen or unfullscreen
+states.</p><p>afterward, because other entities (e.g. the user or window manager)
+could unfullscreen it again, and not all window managers honor
+requests to fullscreen windows.</p><p>If you want to receive notification of the fullscreen state you
+should either use the <link xref="Clutter.Stage-fullscreen">Clutter.Stage::fullscreen</link> and
+<link xref="Clutter.Stage-unfullscreen">Clutter.Stage::unfullscreen</link> signals, or use the notify signal
+for the <link xref="Clutter.Stage-fullscreen-set">Clutter.Stage:fullscreen-set</link> property</p>
+
+<table>
+<tr>
+<td><p>fullscreen :</p></td>
+<td><p>True to to set the stage fullscreen</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

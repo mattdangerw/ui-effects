@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.get_key_focus"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Actor</api:type>
+      </api:returns>
+      <api:name>clutter_stage_get_key_focus</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_key_focus</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Actor)
+def get_key_focus()
+</code></synopsis>
+<p>Retrieves the actor that is currently under key focus.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the actor with key focus, or the stage</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Media.set_subtitle_font_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Media" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_media_set_subtitle_font_name</api:name>
+      <api:arg>
+        <api:type>ClutterMedia *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>font_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_subtitle_font_name</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(none)
+def set_subtitle_font_name(font_name)
+</code></synopsis>
+<p>Sets the font used by the subtitle renderer. The @font_name string must be
+either None, which means that the default font name of the underlying
+implementation will be used; or must follow the grammar recognized by
+pango_font_description_from_string() like:</p><p>|[
+clutter_media_set_subtitle_font_name (media, "Sans 24pt");
+]|</p>
+
+<table>
+<tr>
+<td><p>font_name :</p></td>
+<td><p>a font name, or None to set the default font name</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

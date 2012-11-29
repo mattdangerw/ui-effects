@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<page id="Clutter.InputDeviceType"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.InputDeviceType</title>
+  <p>The types of input devices available.</p><p>The <link xref="Clutter.InputDeviceType">Clutter.InputDeviceType</link> enumeration can be extended at later
+date; not every platform supports every input device type.</p>
+<table>
+<tr>
+<td><p>InputDeviceType.POINTER_DEVICE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputDeviceType.KEYBOARD_DEVICE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputDeviceType.EXTENSION_DEVICE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputDeviceType.JOYSTICK_DEVICE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputDeviceType.TABLET_DEVICE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputDeviceType.TOUCHPAD_DEVICE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputDeviceType.TOUCHSCREEN_DEVICE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputDeviceType.PEN_DEVICE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputDeviceType.ERASER_DEVICE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputDeviceType.CURSOR_DEVICE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputDeviceType.N_DEVICE_TYPES :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

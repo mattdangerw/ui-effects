@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_margin"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_margin</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Margin</api:type>
+        <api:name>margin</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_margin</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Margin)
+@returns(none)
+def get_margin(margin)
+</code></synopsis>
+<p>Retrieves all the components of the margin of a <link xref="Clutter.Actor">Clutter.Actor</link>.</p>
+
+<table>
+<tr>
+<td><p>margin :</p></td>
+<td><p>return location for a <link xref="Clutter.Margin">Clutter.Margin</link></p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

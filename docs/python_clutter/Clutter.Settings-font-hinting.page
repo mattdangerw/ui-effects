@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Settings-font-hinting"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Settings" group="property"/>
+    <title type="link" role="topic">font-hinting</title>
+  </info>
+  <title>Clutter.Settings:font-hinting</title>
+<synopsis><code mime="text/x-python">
+"font-hinting"             gint                : Read / Write
+</code></synopsis>
+<p>Whether or not to use hinting when rendering text; a value of 1
+unconditionally enables it; a value of 0 unconditionally disables
+it; and a value of -1 will use the system's default.</p>
+</page>

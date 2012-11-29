@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="Clutter.Settings-font-hint-style"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Settings" group="property"/>
+    <title type="link" role="topic">font-hint-style</title>
+  </info>
+  <title>Clutter.Settings:font-hint-style</title>
+<synopsis><code mime="text/x-python">
+"font-hint-style"             utf8                : Read / Write
+</code></synopsis>
+<p>The style of the hinting used when rendering text. Valid values
+are:
+&lt;itemizedlist&gt;
+&lt;listitem&gt;&lt;simpara&gt;hintnone&lt;/simpara&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;simpara&gt;hintslight&lt;/simpara&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;simpara&gt;hintmedium&lt;/simpara&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;simpara&gt;hintfull&lt;/simpara&gt;&lt;/listitem&gt;
+&lt;/itemizedlist&gt;</p>
+</page>

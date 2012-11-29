@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Clutter.Container-child-notify"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="signal"/>
+    <title type="link" role="topic">child-notify</title>
+  </info>
+  <title>Clutter.Container::child-notify</title>
+<synopsis><code mime="text/x-python">
+def callback(container, actor, pspec, user_param1, ...)
+</code></synopsis>
+<p>The ::child-notify signal is emitted each time a property is
+being set through the clutter_container_child_set() and
+clutter_container_child_set_property() calls.</p>
+
+<table>
+<tr>
+<td><p>container :</p></td>
+<td><p>instance of Clutter.Container that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>actor :</p></td>
+<td><p>the child that has had a property set</p></td>
+</tr>
+<tr>
+<td><p>pspec :</p></td>
+<td><p>the <link xref="GParamSpec">GParamSpec</link> of the property set</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

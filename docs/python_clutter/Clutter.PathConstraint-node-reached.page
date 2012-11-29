@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Clutter.PathConstraint-node-reached"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PathConstraint" group="signal"/>
+    <title type="link" role="topic">node-reached</title>
+  </info>
+  <title>Clutter.PathConstraint::node-reached</title>
+<synopsis><code mime="text/x-python">
+def callback(path_constraint, actor, index, user_param1, ...)
+</code></synopsis>
+<p>The ::node-reached signal is emitted each time a
+<link xref="Clutter.PathConstraint-offset">Clutter.PathConstraint:offset</link> value results in the actor
+passing a <link xref="Clutter.PathNode">Clutter.PathNode</link></p>
+
+<table>
+<tr>
+<td><p>path_constraint :</p></td>
+<td><p>instance of Clutter.PathConstraint that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>actor :</p></td>
+<td><p>the <link xref="Clutter.Actor">Clutter.Actor</link> using the @constraint</p></td>
+</tr>
+<tr>
+<td><p>index :</p></td>
+<td><p>the index of the node that has been reached</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Clutter.ShaderError"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.ShaderError</title>
+  <p><link xref="Clutter.Shader">Clutter.Shader</link> error enumeration</p>
+<table>
+<tr>
+<td><p>ShaderError.NO_ASM :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>ShaderError.NO_GLSL :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>ShaderError.COMPILE :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

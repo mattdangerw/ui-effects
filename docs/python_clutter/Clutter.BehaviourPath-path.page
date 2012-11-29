@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.BehaviourPath-path"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourPath" group="property"/>
+    <title type="link" role="topic">path</title>
+  </info>
+  <title>Clutter.BehaviourPath:path</title>
+<synopsis><code mime="text/x-python">
+"path"             Clutter.Path                : Read / Write
+</code></synopsis>
+
+</page>

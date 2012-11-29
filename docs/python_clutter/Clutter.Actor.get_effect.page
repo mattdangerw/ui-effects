@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_effect"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Effect</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_effect</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_effect</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(Clutter.Effect)
+def get_effect(name)
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.Effect">Clutter.Effect</link> with the given name in the list
+of effects applied to @self</p><p>name, or None. The returned <link xref="Clutter.Effect">Clutter.Effect</link> is owned by the
+actor and it should not be unreferenced directly</p>
+
+<table>
+<tr>
+<td><p>name :</p></td>
+<td><p>the name of the effect to retrieve</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="Clutter.Effect">Clutter.Effect</link> for the given</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

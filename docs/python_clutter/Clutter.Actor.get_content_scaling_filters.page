@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_content_scaling_filters"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_content_scaling_filters</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ScalingFilter</api:type>
+        <api:name>min_filter</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ScalingFilter</api:type>
+        <api:name>mag_filter</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_content_scaling_filters</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.ScalingFilter, Clutter.ScalingFilter)
+@returns(none)
+def get_content_scaling_filters(min_filter, mag_filter)
+</code></synopsis>
+<p>Retrieves the values set using clutter_actor_set_content_scaling_filters().</p>
+
+<table>
+<tr>
+<td><p>min_filter :</p></td>
+<td><p>return location for the minification filter, or None</p></td>
+</tr>
+<tr>
+<td><p>mag_filter :</p></td>
+<td><p>return location for the magnification filter, or None</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

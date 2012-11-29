@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>override_action</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.BindingPool.html" title="Clutter.BindingPool">Clutter.BindingPool</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">override_action</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(guint, Clutter.ModifierType, GObject.Callback, gpointer, GLib.DestroyNotify)
+@returns(none)
+def override_action(key_val, modifiers, callback, data, notify)</pre></div></div></div></div></div>
+<p class="p">Allows overriding the action for @key_val and @modifiers inside a
+<span class=" link"><a href="Clutter.BindingPool.html" title="Clutter.BindingPool">Clutter.BindingPool</a></span>. See clutter_binding_pool_install_action().</p>
+<p class="p">When an action has been activated using clutter_binding_pool_activate()
+the passed @callback will be invoked (with @data).</p>
+<p class="p">Actions can be blocked with clutter_binding_pool_block_action()
+and then unblocked using clutter_binding_pool_unblock_action().</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">key_val :</p></td>
+<td><p class="p">key symbol</p></td>
+</tr>
+<tr>
+<td><p class="p">modifiers :</p></td>
+<td><p class="p">bitmask of modifiers</p></td>
+</tr>
+<tr>
+<td><p class="p">callback :</p></td>
+<td><p class="p">function to be called when the action is activated</p></td>
+</tr>
+<tr>
+<td><p class="p">data :</p></td>
+<td><p class="p">data to be passed to @callback</p></td>
+</tr>
+<tr>
+<td><p class="p">notify :</p></td>
+<td><p class="p">function to be called when the action is removed from the pool</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.0</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.BindingPool.html" title="Clutter.BindingPool">Clutter.BindingPool</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

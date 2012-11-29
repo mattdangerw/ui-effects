@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.DeformEffect-y-tiles"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DeformEffect" group="property"/>
+    <title type="link" role="topic">y-tiles</title>
+  </info>
+  <title>Clutter.DeformEffect:y-tiles</title>
+<synopsis><code mime="text/x-python">
+"y-tiles"             guint                : Read / Write
+</code></synopsis>
+<p>The number of vertical tiles. The bigger the number, the
+smaller the tiles</p>
+</page>

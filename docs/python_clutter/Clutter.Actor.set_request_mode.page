@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_request_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_request_mode</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.RequestMode</api:type>
+        <api:name>mode</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_request_mode</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.RequestMode)
+@returns(none)
+def set_request_mode(mode)
+</code></synopsis>
+<p>Sets the geometry request mode of @self.</p><p>The @mode determines the order for invoking
+clutter_actor_get_preferred_width() and
+clutter_actor_get_preferred_height()</p>
+
+<table>
+<tr>
+<td><p>mode :</p></td>
+<td><p>the request mode</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

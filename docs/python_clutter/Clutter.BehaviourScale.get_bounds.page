@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BehaviourScale.get_bounds"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourScale" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_scale_get_bounds</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviourScale *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>x_scale_start</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>y_scale_start</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>x_scale_end</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>y_scale_end</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_bounds</title>
+<synopsis><code mime="text/x-python">
+@accepts(gdouble, gdouble, gdouble, gdouble)
+@returns(none)
+def get_bounds(x_scale_start, y_scale_start, x_scale_end, y_scale_end)
+</code></synopsis>
+<p>Retrieves the bounds used by scale behaviour.</p>
+
+<table>
+<tr>
+<td><p>x_scale_start :</p></td>
+<td><p>return location for the initial scale factor on the X axis, or None</p></td>
+</tr>
+<tr>
+<td><p>y_scale_start :</p></td>
+<td><p>return location for the initial scale factor on the Y axis, or None</p></td>
+</tr>
+<tr>
+<td><p>x_scale_end :</p></td>
+<td><p>return location for the final scale factor on the X axis, or None</p></td>
+</tr>
+<tr>
+<td><p>y_scale_end :</p></td>
+<td><p>return location for the final scale factor on the Y axis, or None</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

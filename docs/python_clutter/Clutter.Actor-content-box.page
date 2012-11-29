@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-content-box"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">content-box</title>
+  </info>
+  <title>Clutter.Actor:content-box</title>
+<synopsis><code mime="text/x-python">
+"content-box"             Clutter.ActorBox                : Read
+</code></synopsis>
+<p>The bounding box for the <link xref="Clutter.Content">Clutter.Content</link> used by the actor.</p><p>The value of this property is controlled by the <link xref="Clutter.Actor-allocation">Clutter.Actor:allocation</link>
+and <link xref="Clutter.Actor-content-gravity">Clutter.Actor:content-gravity</link> properties of <link xref="Clutter.Actor">Clutter.Actor</link>.</p><p>The bounding box for the content is guaranteed to never exceed the
+allocation's of the actor.</p>
+</page>

@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>get_transition</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">get_transition</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(utf8)
+@returns(Clutter.Transition)
+def get_transition(name)</pre></div></div></div></div></div>
+<p class="p">Retrieves the <span class=" link"><a href="Clutter.Transition.html" title="Clutter.Transition">Clutter.Transition</a></span> of a <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> by using the
+transition @name.</p>
+<p class="p">Transitions created for animatable properties use the name of the
+property itself, for instance the code below:</p>
+<p class="p">|[
+clutter_actor_set_easing_duration (actor, 1000);
+clutter_actor_set_rotation (actor, CLUTTER_Y_AXIS, 360.0, x, y, z);</p>
+<p class="p">transition = clutter_actor_get_transition (actor, "rotation-angle-y");
+g_signal_connect (transition, "completed",
+G_CALLBACK (on_transition_complete),
+actor);
+]|</p>
+<p class="p">will call the &lt;function&gt;on_transition_complete&lt;/function&gt; callback when
+the transition is complete.</p>
+<p class="p">was found to match the passed name; the returned instance is owned
+by Clutter and it should not be freed</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">name :</p></td>
+<td><p class="p">the name of the transition</p></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">a <span class=" link"><a href="Clutter.Transition.html" title="Clutter.Transition">Clutter.Transition</a></span>, or None is none</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.10</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

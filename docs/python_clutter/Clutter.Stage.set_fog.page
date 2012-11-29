@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.set_fog"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_stage_set_fog</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Fog</api:type>
+        <api:name>fog</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_fog</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Fog)
+@returns(none)
+def set_fog(fog)
+</code></synopsis>
+<p>Sets the fog (also known as "depth cueing") settings for the @stage.</p><p>A <link xref="Clutter.Stage">Clutter.Stage</link> will only use a linear fog progression, which
+depends solely on the distance from the viewer. The cogl_set_fog()
+function in COGL exposes more of the underlying implementation,
+and allows changing the for progression function. It can be directly
+used by disabling the <link xref="Clutter.Stage-use-fog">Clutter.Stage:use-fog</link> property and connecting
+a signal handler to the <link xref="Clutter.Actor-paint">Clutter.Actor::paint</link> signal on the @stage,
+like:</p><p>|[
+clutter_stage_set_use_fog (stage, FALSE);
+g_signal_connect (stage, "paint", G_CALLBACK (on_stage_paint), NULL);
+]|</p><p>The paint signal handler will call cogl_set_fog() with the
+desired settings:</p><p>|[
+static void
+on_stage_paint (ClutterActor *actor)
+{
+ClutterColor stage_color = { 0, };
+CoglColor fog_color = { 0, };</p><p>/&amp;ast; set the fog color to the stage background color &amp;ast;/
+clutter_stage_get_color (CLUTTER_STAGE (actor), &amp;amp;stage_color);
+cogl_color_init_from_4ub (&amp;amp;fog_color,
+stage_color.red,
+stage_color.green,
+stage_color.blue,
+stage_color.alpha);</p><p>/&amp;ast; enable fog &amp;ast;/
+cogl_set_fog (&amp;amp;fog_color,
+COGL_FOG_MODE_EXPONENTIAL, /&amp;ast; mode &amp;ast;/
+0.5,                       /&amp;ast; density &amp;ast;/
+5.0, 30.0);                /&amp;ast; z_near and z_far &amp;ast;/
+}
+]|</p><p>&lt;note&gt;The fogging functions only work correctly when the visible actors use
+unmultiplied alpha colors. By default Cogl will premultiply textures and
+cogl_set_source_color() will premultiply colors, so unless you explicitly
+load your textures requesting an unmultiplied internal format and use
+cogl_material_set_color() you can only use fogging with fully opaque actors.
+Support for premultiplied colors will improve in the future when we can
+depend on fragment shaders.&lt;/note&gt;</p>
+
+<table>
+<tr>
+<td><p>fog :</p></td>
+<td><p>a <link xref="Clutter.Fog">Clutter.Fog</link> structure</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

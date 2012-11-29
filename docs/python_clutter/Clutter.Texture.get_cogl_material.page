@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Texture.get_cogl_material"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Handle</api:type>
+      </api:returns>
+      <api:name>clutter_texture_get_cogl_material</api:name>
+      <api:arg>
+        <api:type>ClutterTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_cogl_material</title>
+<synopsis><code mime="text/x-python">
+@returns(Cogl.Handle)
+def get_cogl_material()
+</code></synopsis>
+<p>Returns a handle to the underlying COGL material used for drawing
+the actor.</p><p>material is owned by the <link xref="Clutter.Texture">Clutter.Texture</link> and it should not be
+unreferenced</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a handle for a <link xref="CoglMaterial">CoglMaterial</link>. The</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

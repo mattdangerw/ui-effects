@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Model.resort"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_model_resort</api:name>
+      <api:arg>
+        <api:type>ClutterModel *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>resort</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def resort()
+</code></synopsis>
+<p>Force a resort on the @model. This function should only be
+used by subclasses of <link xref="Clutter.Model">Clutter.Model</link>.</p>
+
+<table>
+</table>
+<p>Since 0.6</p>
+</page>

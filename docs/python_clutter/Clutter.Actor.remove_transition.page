@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.remove_transition"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_remove_transition</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>remove_transition</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(none)
+def remove_transition(name)
+</code></synopsis>
+<p>Removes the transition stored inside a <link xref="Clutter.Actor">Clutter.Actor</link> using @name
+identifier.</p><p>If the transition is currently in progress, it will be stopped.</p><p>This function releases the reference acquired when the transition
+was added to the <link xref="Clutter.Actor">Clutter.Actor</link>.</p>
+
+<table>
+<tr>
+<td><p>name :</p></td>
+<td><p>the name of the transition to remove</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

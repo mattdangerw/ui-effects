@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PaintVolume.get_depth"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PaintVolume" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gfloat</api:type>
+      </api:returns>
+      <api:name>clutter_paint_volume_get_depth</api:name>
+    </api:function>
+  </info>
+  <title>get_depth</title>
+<synopsis><code mime="text/x-python">
+@returns(gfloat)
+def get_depth()
+</code></synopsis>
+<p>Retrieves the depth of the volume's, axis aligned, bounding box.</p><p>In other words; this takes into account what actor's coordinate
+space @pv belongs too and conceptually fits an axis aligned box
+around the volume. It returns the size of that bounding box as
+measured along the z-axis.</p><p>&lt;note&gt;&lt;para&gt;If, for example, clutter_actor_get_transformed_paint_volume()
+is used to transform a 2D child actor that is 100px wide, 100px
+high and 0px deep into container coordinates then the depth might
+not simply be 0px if the child actor has a 3D rotation applied to
+it.&lt;/para&gt;
+&lt;para&gt;Remember; after clutter_actor_get_transformed_paint_volume() is
+used then the transformed volume will be defined relative to the
+container actor and in container coordinates a 2D child actor
+can have a 3D bounding volume.&lt;/para&gt;&lt;/note&gt;</p><p>&lt;note&gt;There are no accuracy guarantees for the reported depth,
+except that it must always be &gt;= to the true depth. This is
+because actors may report simple, loose fitting paint-volumes
+for efficiency.&lt;/note&gt;</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the depth, in units of @pv's local coordinate system.</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

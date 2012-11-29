@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Clutter.LayoutManager-create_child_meta"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutManager" group="vfunc"/>
+    <title type="link" role="topic">create_child_meta</title>
+  </info>
+  <title>Clutter.LayoutManager.create_child_meta</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Container, Clutter.Actor)
+@returns(Clutter.LayoutMeta)
+def do_create_child_meta(self, container, actor):
+</code></synopsis>
+
+
+<table>
+<tr>
+<td><p>container :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>actor :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td></td>
+</tr>
+</table>
+</page>

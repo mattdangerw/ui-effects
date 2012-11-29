@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-text-changed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="signal"/>
+    <title type="link" role="topic">text-changed</title>
+  </info>
+  <title>Clutter.Text::text-changed</title>
+<synopsis><code mime="text/x-python">
+def callback(text, user_param1, ...)
+</code></synopsis>
+<p>The ::text-changed signal is emitted after @actor's text changes</p>
+
+<table>
+<tr>
+<td><p>text :</p></td>
+<td><p>instance of Clutter.Text that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

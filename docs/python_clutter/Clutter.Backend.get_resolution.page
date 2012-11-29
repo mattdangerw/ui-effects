@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Backend.get_resolution"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Backend" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gdouble</api:type>
+      </api:returns>
+      <api:name>clutter_backend_get_resolution</api:name>
+      <api:arg>
+        <api:type>ClutterBackend *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_resolution</title>
+<synopsis><code mime="text/x-python">
+@returns(gdouble)
+def get_resolution()
+</code></synopsis>
+<p>Gets the resolution for font handling on the screen.</p><p>The resolution is a scale factor between points specified in a
+<link xref="PangoFontDescription">PangoFontDescription</link> and cairo units. The default value is 96.0,
+meaning that a 10 point font will be 13 units
+high (10 * 96. / 72. = 13.3).</p><p>Clutter will set the resolution using the current backend when
+initializing; the resolution is also stored in the
+<link xref="Clutter.Settings-font-dpi">Clutter.Settings:font-dpi</link> property.</p><p>has been set.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the current resolution, or -1 if no resolution</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

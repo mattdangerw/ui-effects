@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Clutter.Stage::delete-event</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Clutter.Stage::delete-event</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">def callback(stage, event, user_param1, ...)</pre></div></div></div></div></div>
+<p class="p">The ::delete-event signal is emitted when the user closes a
+<span class=" link"><a href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a></span> window using the window controls.</p>
+<p class="p">Clutter by default will call clutter_main_quit() if @stage is
+the default stage, and clutter_actor_destroy() for any other
+stage.</p>
+<p class="p">It is possible to override the default behaviour by connecting
+a new handler and returning True there.</p>
+<p class="p">&lt;note&gt;This signal is emitted only on Clutter backends that
+embed <span class=" link"><a href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a></span> in native windows. It is not emitted for
+backends that use a static frame buffer.&lt;/note&gt;</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">stage :</p></td>
+<td><p class="p">instance of Clutter.Stage that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p class="p">event :</p></td>
+<td><p class="p">a <span class=" link"><a href="Clutter.Event.html" title="Clutter.Event">Clutter.Event</a></span> of type %CLUTTER_DELETE</p></td>
+</tr>
+<tr>
+<td><p class="p">user_param1 :</p></td>
+<td><p class="p">first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p class="p">... :</p></td>
+<td><p class="p">additional user parameters (if any)</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.2</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

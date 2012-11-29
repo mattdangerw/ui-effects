@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.grab_pointer_for_device"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_grab_pointer_for_device</api:name>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>id_</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>grab_pointer_for_device</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, gint)
+@returns(none)
+def grab_pointer_for_device(actor, id_)
+</code></synopsis>
+<p>Grabs all the pointer events coming from the device @id for @actor.</p><p>If @id is -1 then this function is equivalent to clutter_grab_pointer().</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+<tr>
+<td><p>id_ :</p></td>
+<td><p>a device id, or -1</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

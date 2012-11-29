@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Clutter.UnitType"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.UnitType</title>
+  <p>The type of unit in which a value is expressed</p><p>This enumeration might be expanded at later date</p>
+<table>
+<tr>
+<td><p>UnitType.PIXEL :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>UnitType.EM :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>UnitType.MM :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>UnitType.POINT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>UnitType.CM :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

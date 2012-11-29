@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Clutter.InputDevice"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="class"/>
+  </info>
+  <title>Clutter.InputDevice</title>
+<p>Generic representation of an input device. The actual contents of this
+structure depend on the backend used.</p>
+
+  <synopsis><code>
+from gi.repository import Clutter
+
+input_device = Clutter.InputDevice(<link xref='Clutter.InputDevice-backend'>backend</link>=value, <link xref='Clutter.InputDevice-device-manager'>device_manager</link>=value, <link xref='Clutter.InputDevice-device-mode'>device_mode</link>=value, <link xref='Clutter.InputDevice-device-type'>device_type</link>=value, <link xref='Clutter.InputDevice-enabled'>enabled</link>=value, <link xref='Clutter.InputDevice-has-cursor'>has_cursor</link>=value, <link xref='Clutter.InputDevice-id'>id</link>=value, <link xref='Clutter.InputDevice-name'>name</link>=value)  </code></synopsis>
+
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Clutter.InputDevice</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="yes"
+         api:type="function" api:mime="text/x-python"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="yes"
+         api:type="function" api:mime="text/x-python"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

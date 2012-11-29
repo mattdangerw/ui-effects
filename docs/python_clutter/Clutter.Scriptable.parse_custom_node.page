@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Scriptable.parse_custom_node"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Scriptable" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_scriptable_parse_custom_node</api:name>
+      <api:arg>
+        <api:type>ClutterScriptable *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Script</api:type>
+        <api:name>script</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Json.Node</api:type>
+        <api:name>node</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>parse_custom_node</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Script, GObject.Value, utf8, Json.Node)
+@returns(gboolean)
+def parse_custom_node(script, value, name, node)
+</code></synopsis>
+<p>Parses the passed JSON node. The implementation must set the type
+of the passed <link xref="GValue">GValue</link> pointer using g_value_init().</p>
+
+<table>
+<tr>
+<td><p>script :</p></td>
+<td><p>the <link xref="Clutter.Script">Clutter.Script</link> creating the scriptable instance</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>the generic value to be set</p></td>
+</tr>
+<tr>
+<td><p>name :</p></td>
+<td><p>the name of the node</p></td>
+</tr>
+<tr>
+<td><p>node :</p></td>
+<td><p>the JSON node to be parsed</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the node was successfully parsed, False otherwise.</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

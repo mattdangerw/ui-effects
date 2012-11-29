@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ShaderEffect.set_uniform"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ShaderEffect" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_shader_effect_set_uniform</api:name>
+      <api:arg>
+        <api:type>ClutterShaderEffect *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>gtype</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>n_values</api:name>
+      </api:arg>
+      <api:varargs/>
+    </api:function>
+  </info>
+  <title>set_uniform</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, GType, gsize, &lt;varargs&gt;)
+@returns(none)
+def set_uniform(name, gtype, n_values, None)
+</code></synopsis>
+<p>Sets a list of values as the payload for the uniform @name inside
+the shader effect</p><p>The @gtype must be one of: %G_TYPE_INT, for 1 or more integer values;
+%G_TYPE_FLOAT, for 1 or more floating point values;
+%CLUTTER_TYPE_SHADER_INT, for a pointer to an array of integer values;
+%CLUTTER_TYPE_SHADER_FLOAT, for a pointer to an array of floating point
+values; and %CLUTTER_TYPE_SHADER_MATRIX, for a pointer to an array of
+floating point values mapping a matrix</p><p>The number of values interepreted is defined by the @n_value
+argument, and by the @gtype argument. For instance, a uniform named
+"sampler0" and containing a single integer value is set using:</p><p>|[
+clutter_shader_effect_set_uniform (effect, "sampler0",
+G_TYPE_INT, 1,
+0);
+]|</p><p>While a uniform named "components" and containing a 3-elements vector
+of floating point values (a "vec3") can be set using:</p><p>|[
+gfloat component_r, component_g, component_b;</p><p>clutter_shader_effect_set_uniform (effect, "components",
+G_TYPE_FLOAT, 3,
+component_r,
+component_g,
+component_b);
+]|</p><p>or can be set using:</p><p>|[
+gfloat component_vec[3];</p><p>clutter_shader_effect_set_uniform (effect, "components",
+CLUTTER_TYPE_SHADER_FLOAT, 3,
+component_vec);
+]|</p><p>Finally, a uniform named "map" and containing a matrix can be set using:</p><p>|[
+clutter_shader_effect_set_uniform (effect, "map",
+CLUTTER_TYPE_SHADER_MATRIX, 1,
+cogl_matrix_get_array (&amp;matrix));
+]|</p>
+
+<table>
+<tr>
+<td><p>name :</p></td>
+<td><p>the name of the uniform to set</p></td>
+</tr>
+<tr>
+<td><p>gtype :</p></td>
+<td><p>the type of the uniform to set</p></td>
+</tr>
+<tr>
+<td><p>n_values :</p></td>
+<td><p>the number of values</p></td>
+</tr>
+<tr>
+<td><p>None :</p></td>
+<td></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

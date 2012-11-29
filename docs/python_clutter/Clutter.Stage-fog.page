@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Stage-fog"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="property"/>
+    <title type="link" role="topic">fog</title>
+  </info>
+  <title>Clutter.Stage:fog</title>
+<synopsis><code mime="text/x-python">
+"fog"             Clutter.Fog                : Read / Write
+</code></synopsis>
+<p>The settings for the GL "fog", used only if <link xref="Clutter.Stage-use-fog">Clutter.Stage:use-fog</link>
+is set to True</p>
+</page>

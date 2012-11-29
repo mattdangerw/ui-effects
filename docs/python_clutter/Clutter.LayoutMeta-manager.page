@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.LayoutMeta-manager"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutMeta" group="property"/>
+    <title type="link" role="topic">manager</title>
+  </info>
+  <title>Clutter.LayoutMeta:manager</title>
+<synopsis><code mime="text/x-python">
+"manager"             Clutter.LayoutManager                : Read / Write / Construct Only
+</code></synopsis>
+<p>The <link xref="Clutter.LayoutManager">Clutter.LayoutManager</link> that created this <link xref="Clutter.LayoutMeta">Clutter.LayoutMeta</link>.</p>
+</page>

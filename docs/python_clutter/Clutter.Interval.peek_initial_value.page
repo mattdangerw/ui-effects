@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Interval.peek_initial_value"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Interval" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.Value</api:type>
+      </api:returns>
+      <api:name>clutter_interval_peek_initial_value</api:name>
+      <api:arg>
+        <api:type>ClutterInterval *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>peek_initial_value</title>
+<synopsis><code mime="text/x-python">
+@returns(GObject.Value)
+def peek_initial_value()
+</code></synopsis>
+<p>Gets the pointer to the initial value of @interval</p><p>The value is owned by the <link xref="Clutter.Interval">Clutter.Interval</link> and it should not be
+modified or freed</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the initial value of the interval.</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

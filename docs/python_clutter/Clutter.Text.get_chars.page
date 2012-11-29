@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.get_chars"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_text_get_chars</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gssize</api:type>
+        <api:name>start_pos</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gssize</api:type>
+        <api:name>end_pos</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_chars</title>
+<synopsis><code mime="text/x-python">
+@accepts(gssize, gssize)
+@returns(utf8)
+def get_chars(start_pos, end_pos)
+</code></synopsis>
+<p>Retrieves the contents of the <link xref="Clutter.Text">Clutter.Text</link> actor between
+@start_pos and @end_pos, but not including @end_pos.</p><p>The positions are specified in characters, not in bytes.</p><p>the text actor between the specified positions. Use g_free()
+to free the resources when done</p>
+
+<table>
+<tr>
+<td><p>start_pos :</p></td>
+<td><p>start of text, in characters</p></td>
+</tr>
+<tr>
+<td><p>end_pos :</p></td>
+<td><p>end of text, in characters</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a newly allocated string with the contents of</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

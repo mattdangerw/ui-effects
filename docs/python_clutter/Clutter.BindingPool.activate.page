@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BindingPool.activate"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BindingPool" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_binding_pool_activate</api:name>
+      <api:arg>
+        <api:type>ClutterBindingPool *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>key_val</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ModifierType</api:type>
+        <api:name>modifiers</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>gobject</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>activate</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, Clutter.ModifierType, GObject.Object)
+@returns(gboolean)
+def activate(key_val, modifiers, gobject)
+</code></synopsis>
+<p>Activates the callback associated to the action that is
+bound to the @key_val and @modifiers pair.</p><p>The callback has the following signature:</p><p>|[
+void (* callback) (GObject             *gobject,
+const gchar         *action_name,
+guint                key_val,
+ClutterModifierType  modifiers,
+gpointer             user_data);
+]|</p><p>Where the <link xref="GObject">GObject</link> instance is @gobject and the user data
+is the one passed when installing the action with
+clutter_binding_pool_install_action().</p><p>If the action bound to the @key_val, @modifiers pair has been
+blocked using clutter_binding_pool_block_action(), the callback
+will not be invoked, and this function will return False.</p>
+
+<table>
+<tr>
+<td><p>key_val :</p></td>
+<td><p>the key symbol</p></td>
+</tr>
+<tr>
+<td><p>modifiers :</p></td>
+<td><p>bitmask for the modifiers</p></td>
+</tr>
+<tr>
+<td><p>gobject :</p></td>
+<td><p>a <link xref="GObject">GObject</link></p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if an action was found and was activated</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

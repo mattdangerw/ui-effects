@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.State.set_key"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.State" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.State</api:type>
+      </api:returns>
+      <api:name>clutter_state_set_key</api:name>
+      <api:arg>
+        <api:type>ClutterState *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>source_state_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>target_state_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>object</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>mode</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>pre_delay</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>post_delay</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_key</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, utf8, GObject.Object, utf8, guint, GObject.Value, gdouble, gdouble)
+@returns(Clutter.State)
+def set_key(source_state_name, target_state_name, object, property_name, mode, value, pre_delay, post_delay)
+</code></synopsis>
+<p>Sets one specific end key for a state name, @object, @property_name
+combination.</p><p>chaining of multiple calls</p>
+
+<table>
+<tr>
+<td><p>source_state_name :</p></td>
+<td><p>the source transition to specify transition for, or None to specify the default fallback when a more specific source state doesn't exist.</p></td>
+</tr>
+<tr>
+<td><p>target_state_name :</p></td>
+<td><p>the name of the transition to set a key value for.</p></td>
+</tr>
+<tr>
+<td><p>object :</p></td>
+<td><p>the <link xref="GObject">GObject</link> to set a key for</p></td>
+</tr>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>the property to set a key for</p></td>
+</tr>
+<tr>
+<td><p>mode :</p></td>
+<td><p>the id of the alpha function to use</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>the value for property_name of object in state_name</p></td>
+</tr>
+<tr>
+<td><p>pre_delay :</p></td>
+<td><p>relative time of the transition to be idle in the beginning of the transition</p></td>
+</tr>
+<tr>
+<td><p>post_delay :</p></td>
+<td><p>relative time of the transition to be idle in the end of the transition</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the <link xref="Clutter.State">Clutter.State</link> instance, allowing</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

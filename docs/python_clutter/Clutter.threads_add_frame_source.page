@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.threads_add_frame_source"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint</api:type>
+      </api:returns>
+      <api:name>clutter_threads_add_frame_source</api:name>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>fps</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.SourceFunc</api:type>
+        <api:name>func</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>threads_add_frame_source</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, GLib.SourceFunc, gpointer)
+@returns(guint)
+def threads_add_frame_source(fps, func, data)
+</code></synopsis>
+<p>Simple wrapper around clutter_threads_add_frame_source_full().</p>
+
+<table>
+<tr>
+<td><p>fps :</p></td>
+<td><p>the number of times per second to call the function</p></td>
+</tr>
+<tr>
+<td><p>func :</p></td>
+<td><p>function to call</p></td>
+</tr>
+<tr>
+<td><p>data :</p></td>
+<td><p>data to pass to the function</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the ID (greater than 0) of the event source.</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

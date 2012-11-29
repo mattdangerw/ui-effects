@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Model.filter_row"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_model_filter_row</api:name>
+      <api:arg>
+        <api:type>ClutterModel *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>row</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>filter_row</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint)
+@returns(gboolean)
+def filter_row(row)
+</code></synopsis>
+<p>Checks whether @row should be filtered or not using the
+filtering function set on @model.</p><p>This function should be used only by subclasses of <link xref="Clutter.Model">Clutter.Model</link>.</p><p>False otherwise</p>
+
+<table>
+<tr>
+<td><p>row :</p></td>
+<td><p>the row to filter</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the row should be displayed,</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

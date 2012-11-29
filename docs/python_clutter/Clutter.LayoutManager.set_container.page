@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.LayoutManager.set_container"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutManager" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_layout_manager_set_container</api:name>
+      <api:arg>
+        <api:type>ClutterLayoutManager *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Container</api:type>
+        <api:name>container</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_container</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Container)
+@returns(none)
+def set_container(container)
+</code></synopsis>
+<p>If the <link xref="Clutter.LayoutManager">Clutter.LayoutManager</link> sub-class allows it, allow
+adding a weak reference of the @container using @manager
+from within the layout manager</p><p>The layout manager should not increase the reference
+count of the @container</p>
+
+<table>
+<tr>
+<td><p>container :</p></td>
+<td><p>a <link xref="Clutter.Container">Clutter.Container</link> using @manager</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

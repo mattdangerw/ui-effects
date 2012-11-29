@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-clip-to-allocation"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">clip-to-allocation</title>
+  </info>
+  <title>Clutter.Actor:clip-to-allocation</title>
+<synopsis><code mime="text/x-python">
+"clip-to-allocation"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the clip region should track the allocated area
+of the actor.</p><p>This property is ignored if a clip area has been explicitly
+set using clutter_actor_set_clip().</p>
+</page>

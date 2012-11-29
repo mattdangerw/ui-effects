@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-line-wrap"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="property"/>
+    <title type="link" role="topic">line-wrap</title>
+  </info>
+  <title>Clutter.Text:line-wrap</title>
+<synopsis><code mime="text/x-python">
+"line-wrap"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether to wrap the lines of <link xref="Clutter.Text-text">Clutter.Text:text</link> if the contents
+exceed the available allocation. The wrapping strategy is
+controlled by the <link xref="Clutter.Text-line-wrap-mode">Clutter.Text:line-wrap-mode</link> property.</p>
+</page>

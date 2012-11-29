@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.set_font_flags"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_set_font_flags</api:name>
+      <api:arg>
+        <api:type>Clutter.FontFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_font_flags</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.FontFlags)
+@returns(none)
+def set_font_flags(flags)
+</code></synopsis>
+<p>Sets the font quality options for subsequent text rendering
+operations.</p><p>Using mipmapped textures will improve the quality for scaled down
+text but will use more texture memory.</p><p>Enabling hinting improves text quality for static text but may
+introduce some artifacts if the text is animated.</p><p>
+<link xref="cairo_font_option_t">cairo_font_option_t</link> API.</p>
+
+<table>
+<tr>
+<td><p>flags :</p></td>
+<td><p>The new flags</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="Clutter.DragAxis"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.DragAxis</title>
+  <p>The axis of the constraint that should be applied on the
+dragging action</p>
+<table>
+<tr>
+<td><p>DragAxis.AXIS_NONE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>DragAxis.X_AXIS :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>DragAxis.Y_AXIS :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

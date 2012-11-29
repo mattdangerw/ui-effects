@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Units.to_string"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Units" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_units_to_string</api:name>
+    </api:function>
+  </info>
+  <title>to_string</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def to_string()
+</code></synopsis>
+<p>Converts @units into a string</p><p>See clutter_units_from_string() for the units syntax and for
+examples of output</p><p>&lt;note&gt;Fractional values are truncated to the second decimal
+position for em, mm and cm, and to the first decimal position for
+typographic points. Pixels are integers.&lt;/note&gt;</p><p><link xref="Clutter.Units">Clutter.Units</link> value. Use g_free() to free the string</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a newly allocated string containing the encoded</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

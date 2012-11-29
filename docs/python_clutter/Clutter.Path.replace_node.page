@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Path.replace_node"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Path" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_path_replace_node</api:name>
+      <api:arg>
+        <api:type>ClutterPath *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>index_</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.PathNode</api:type>
+        <api:name>node</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>replace_node</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, Clutter.PathNode)
+@returns(none)
+def replace_node(index_, node)
+</code></synopsis>
+<p>Replaces the node at offset @index_ with @node.</p>
+
+<table>
+<tr>
+<td><p>index_ :</p></td>
+<td><p>index to the existing node</p></td>
+</tr>
+<tr>
+<td><p>node :</p></td>
+<td><p>the replacement node</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

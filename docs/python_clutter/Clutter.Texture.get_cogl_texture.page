@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Texture.get_cogl_texture"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Handle</api:type>
+      </api:returns>
+      <api:name>clutter_texture_get_cogl_texture</api:name>
+      <api:arg>
+        <api:type>ClutterTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_cogl_texture</title>
+<synopsis><code mime="text/x-python">
+@returns(Cogl.Handle)
+def get_cogl_texture()
+</code></synopsis>
+<p>Retrieves the handle to the underlying COGL texture used for drawing
+the actor. No extra reference is taken so if you need to keep the
+handle then you should call cogl_handle_ref() on it.</p><p>The texture handle returned is the first layer of the material
+handle used by the <link xref="Clutter.Texture">Clutter.Texture</link>. If you need to access the other
+layers you should use clutter_texture_get_cogl_material() instead
+and use the <link xref="CoglMaterial">CoglMaterial</link> API.</p><p>handle is owned by the <link xref="Clutter.Texture">Clutter.Texture</link> and it should not be unreferenced</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="CoglHandle">CoglHandle</link> for the texture. The returned</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

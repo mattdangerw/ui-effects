@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Timeline-auto-reverse"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="property"/>
+    <title type="link" role="topic">auto-reverse</title>
+  </info>
+  <title>Clutter.Timeline:auto-reverse</title>
+<synopsis><code mime="text/x-python">
+"auto-reverse"             gboolean                : Read / Write
+</code></synopsis>
+<p>If the direction of the timeline should be automatically reversed
+when reaching the end.</p>
+</page>

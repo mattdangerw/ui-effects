@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page id="Clutter.ActorBox"
+      type="guide"
+      style="record"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>ClutterActorBox</title>
+  <p>Bounding box of an actor. The coordinates of the top left and right bottom
+corners of an actor. The coordinates of the two points are expressed in
+pixels with sub-pixel precision</p>
+</page>

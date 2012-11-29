@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Texture-filename"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="property"/>
+    <title type="link" role="topic">filename</title>
+  </info>
+  <title>Clutter.Texture:filename</title>
+<synopsis><code mime="text/x-python">
+"filename"             utf8                : Read / Write
+</code></synopsis>
+<p>The path of the file containing the image data to be displayed by
+the texture.</p><p>This property is unset when using the clutter_texture_set_from_*_data()
+family of functions.</p>
+</page>

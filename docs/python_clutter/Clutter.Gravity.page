@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="Clutter.Gravity"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.Gravity</title>
+  <p>Gravity of the scaling operations. When a gravity different than
+%CLUTTER_GRAVITY_NONE is used, an actor is scaled keeping the position
+of the specified portion at the same coordinates.</p>
+<table>
+<tr>
+<td><p>Gravity.NONE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Gravity.NORTH :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Gravity.NORTH_EAST :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Gravity.EAST :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Gravity.SOUTH_EAST :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Gravity.SOUTH :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Gravity.SOUTH_WEST :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Gravity.WEST :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Gravity.NORTH_WEST :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Gravity.CENTER :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

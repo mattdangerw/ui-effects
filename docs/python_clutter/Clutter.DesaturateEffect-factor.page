@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.DesaturateEffect-factor"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DesaturateEffect" group="property"/>
+    <title type="link" role="topic">factor</title>
+  </info>
+  <title>Clutter.DesaturateEffect:factor</title>
+<synopsis><code mime="text/x-python">
+"factor"             gdouble                : Read / Write
+</code></synopsis>
+<p>The desaturation factor, between 0.0 (no desaturation) and 1.0 (full
+desaturation).</p>
+</page>

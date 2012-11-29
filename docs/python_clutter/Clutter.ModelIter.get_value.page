@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ModelIter.get_value"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ModelIter" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_model_iter_get_value</api:name>
+      <api:arg>
+        <api:type>ClutterModelIter *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>column</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_value</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, GObject.Value)
+@returns(none)
+def get_value(column, value)
+</code></synopsis>
+<p>Sets an initializes @value to that at @column. When done with @value, 
+g_value_unset() needs to be called to free any allocated memory.</p>
+
+<table>
+<tr>
+<td><p>column :</p></td>
+<td><p>column number to retrieve the value from</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>an empty <link xref="GValue">GValue</link> to set</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

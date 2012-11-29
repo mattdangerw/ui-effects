@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Clutter.Animatable-set_final_state"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animatable" group="vfunc"/>
+    <title type="link" role="topic">set_final_state</title>
+  </info>
+  <title>Clutter.Animatable.set_final_state</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, GObject.Value)
+@returns(none)
+def do_set_final_state(self, property_name, value):
+</code></synopsis>
+<p>Sets the current state of @property_name to @value</p>
+
+<table>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>the name of the animatable property to set</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>the value of the animatable property to set</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Clutter.Container-get_child_meta"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="vfunc"/>
+    <title type="link" role="topic">get_child_meta</title>
+  </info>
+  <title>Clutter.Container.get_child_meta</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(Clutter.ChildMeta)
+def do_get_child_meta(self, actor):
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.ChildMeta">Clutter.ChildMeta</link> which contains the data about the
+@container specific state for @actor.</p><p>of @container or None if the specifiec actor does not exist or the
+container is not configured to provide <link xref="Clutter.ChildMeta">Clutter.ChildMeta</link>&lt;!-- --&gt;s</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link> that is a child of @container.</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the <link xref="Clutter.ChildMeta">Clutter.ChildMeta</link> for the @actor child</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

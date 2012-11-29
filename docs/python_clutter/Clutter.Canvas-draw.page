@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="Clutter.Canvas-draw"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Canvas" group="signal"/>
+    <title type="link" role="topic">draw</title>
+  </info>
+  <title>Clutter.Canvas::draw</title>
+<synopsis><code mime="text/x-python">
+def callback(canvas, cr, width, height, user_param1, ...)
+</code></synopsis>
+<p>The <link xref="Clutter.Canvas-draw">Clutter.Canvas::draw</link> signal is emitted each time a canvas is
+invalidated.</p><p>It is safe to connect multiple handlers to this signal: each
+handler invocation will be automatically protected by cairo_save()
+and cairo_restore() pairs.</p><p>False otherwise</p>
+
+<table>
+<tr>
+<td><p>canvas :</p></td>
+<td><p>instance of Clutter.Canvas that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>cr :</p></td>
+<td><p>the Cairo context used to draw</p></td>
+</tr>
+<tr>
+<td><p>width :</p></td>
+<td><p>the width of the @canvas</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>the height of the @canvas</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BehaviourRotate.set_direction"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourRotate" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_rotate_set_direction</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviourRotate *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.RotateDirection</api:type>
+        <api:name>direction</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_direction</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.RotateDirection)
+@returns(none)
+def set_direction(direction)
+</code></synopsis>
+<p>Sets the rotation direction used by the rotate behaviour.</p>
+
+<table>
+<tr>
+<td><p>direction :</p></td>
+<td><p>the rotation direction</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

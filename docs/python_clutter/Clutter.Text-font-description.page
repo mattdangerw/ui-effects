@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-font-description"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="property"/>
+    <title type="link" role="topic">font-description</title>
+  </info>
+  <title>Clutter.Text:font-description</title>
+<synopsis><code mime="text/x-python">
+"font-description"             Pango.FontDescription                : Read / Write
+</code></synopsis>
+<p>The <link xref="PangoFontDescription">PangoFontDescription</link> that should be used by the <link xref="Clutter.Text">Clutter.Text</link></p><p>If you have a string describing the font then you should look at
+<link xref="Clutter.Text-font-name">Clutter.Text:font-name</link> instead</p>
+</page>

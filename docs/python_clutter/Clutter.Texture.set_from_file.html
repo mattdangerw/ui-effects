@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>set_from_file</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Texture.html" title="Clutter.Texture">Clutter.Texture</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">set_from_file</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(utf8)
+@returns(gboolean)
+def set_from_file(filename)</pre></div></div></div></div></div>
+<p class="p">Sets the <span class=" link"><a href="Clutter.Texture.html" title="Clutter.Texture">Clutter.Texture</a></span> image data from an image file. In case of
+failure, False is returned and @error is set.</p>
+<p class="p">If <span class=" link"><a href="Clutter.Texture-load-async.html" title="Clutter.Texture:load-async">Clutter.Texture:load-async</a></span> is set to True, this function
+will return as soon as possible, and the actual image loading
+from disk will be performed asynchronously. <span class=" link"><a href="Clutter.Texture-size-change.html" title="Clutter.Texture::size-change">Clutter.Texture::size-change</a></span>
+will be emitten when the size of the texture is available and
+<span class=" link"><a href="Clutter.Texture-load-finished.html" title="Clutter.Texture::load-finished">Clutter.Texture::load-finished</a></span> will be emitted when the image has been
+loaded or if an error occurred.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">filename :</p></td>
+<td><p class="p">The filename of the image in GLib file name encoding</p></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">True if the image was successfully loaded and set</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 0.8</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Texture.html" title="Clutter.Texture">Clutter.Texture</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

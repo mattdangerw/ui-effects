@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Canvas-height"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Canvas" group="property"/>
+    <title type="link" role="topic">height</title>
+  </info>
+  <title>Clutter.Canvas:height</title>
+<synopsis><code mime="text/x-python">
+"height"             gint                : Read / Write
+</code></synopsis>
+<p>The height of the canvas.</p>
+</page>

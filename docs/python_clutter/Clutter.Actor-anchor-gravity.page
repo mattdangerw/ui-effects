@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-anchor-gravity"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">anchor-gravity</title>
+  </info>
+  <title>Clutter.Actor:anchor-gravity</title>
+<synopsis><code mime="text/x-python">
+"anchor-gravity"             Clutter.Gravity                : Read / Write
+</code></synopsis>
+<p>The anchor point expressed as a <link xref="Clutter.Gravity">Clutter.Gravity</link></p>
+</page>

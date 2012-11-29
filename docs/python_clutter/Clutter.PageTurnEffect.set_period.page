@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PageTurnEffect.set_period"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PageTurnEffect" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_page_turn_effect_set_period</api:name>
+      <api:arg>
+        <api:type>ClutterPageTurnEffect *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>period</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_period</title>
+<synopsis><code mime="text/x-python">
+@accepts(gdouble)
+@returns(none)
+def set_period(period)
+</code></synopsis>
+<p>Sets the period of the page curling, between 0.0 (no curling)
+and 1.0 (fully curled)</p>
+
+<table>
+<tr>
+<td><p>period :</p></td>
+<td><p>the period of the page curl, between 0.0 and 1.0</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.get_actor_by_gid"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Actor</api:type>
+      </api:returns>
+      <api:name>clutter_get_actor_by_gid</api:name>
+      <api:arg>
+        <api:type>guint32</api:type>
+        <api:name>id_</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_actor_by_gid</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint32)
+@returns(Clutter.Actor)
+def get_actor_by_gid(id_)
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.Actor">Clutter.Actor</link> with @id_.</p><p>The returned actor does not have its reference count increased.</p>
+
+<table>
+<tr>
+<td><p>id_ :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link> unique id.</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the actor with the passed id or None.</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

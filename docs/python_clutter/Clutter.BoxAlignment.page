@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Clutter.BoxAlignment"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.BoxAlignment</title>
+  <p>The alignment policies available on each axis of the <link xref="Clutter.BoxLayout">Clutter.BoxLayout</link></p>
+<table>
+<tr>
+<td><p>BoxAlignment.START :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>BoxAlignment.END :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>BoxAlignment.CENTER :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.get_duration_hint"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gint64</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_get_duration_hint</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_duration_hint</title>
+<synopsis><code mime="text/x-python">
+@returns(gint64)
+def get_duration_hint()
+</code></synopsis>
+<p>Retrieves the full duration of the @timeline, taking into account the
+current value of the <link xref="Clutter.Timeline-repeat-count">Clutter.Timeline:repeat-count</link> property.</p><p>If the <link xref="Clutter.Timeline-repeat-count">Clutter.Timeline:repeat-count</link> property is set to -1, this function
+will return %G_MAXINT64.</p><p>The returned value is to be considered a hint, and it's only valid
+as long as the @timeline hasn't been changed.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the full duration of the <link xref="Clutter.Timeline">Clutter.Timeline</link></p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Clutter.TextBuffer-inserted-text"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TextBuffer" group="signal"/>
+    <title type="link" role="topic">inserted-text</title>
+  </info>
+  <title>Clutter.TextBuffer::inserted-text</title>
+<synopsis><code mime="text/x-python">
+def callback(text_buffer, position, chars, n_chars, user_param1, ...)
+</code></synopsis>
+<p>This signal is emitted after text is inserted into the buffer.</p>
+
+<table>
+<tr>
+<td><p>text_buffer :</p></td>
+<td><p>instance of Clutter.TextBuffer that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>position :</p></td>
+<td><p>the position the text was inserted at.</p></td>
+</tr>
+<tr>
+<td><p>chars :</p></td>
+<td><p>The text that was inserted.</p></td>
+</tr>
+<tr>
+<td><p>n_chars :</p></td>
+<td><p>The number of characters that were inserted.</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

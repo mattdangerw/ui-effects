@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BehaviourEllipse.get_angle_tilt"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourEllipse" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gdouble</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_ellipse_get_angle_tilt</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviourEllipse *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.RotateAxis</api:type>
+        <api:name>axis</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_angle_tilt</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.RotateAxis)
+@returns(gdouble)
+def get_angle_tilt(axis)
+</code></synopsis>
+<p>Gets the tilt of the ellipse around the center in the given axis.</p>
+
+<table>
+<tr>
+<td><p>axis :</p></td>
+<td><p>a <link xref="Clutter.RotateAxis">Clutter.RotateAxis</link></p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>angle in degrees.</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

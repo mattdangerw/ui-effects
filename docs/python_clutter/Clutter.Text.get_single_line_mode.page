@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.get_single_line_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_text_get_single_line_mode</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_single_line_mode</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def get_single_line_mode()
+</code></synopsis>
+<p>Retrieves whether the <link xref="Clutter.Text">Clutter.Text</link> actor is in single line mode.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the <link xref="Clutter.Text">Clutter.Text</link> actor is in single line mode</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.TableLayout.set_row_spacing"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TableLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_table_layout_set_row_spacing</api:name>
+      <api:arg>
+        <api:type>ClutterTableLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>spacing</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_row_spacing</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint)
+@returns(none)
+def set_row_spacing(spacing)
+</code></synopsis>
+<p>Sets the spacing between rows of @layout</p>
+
+<table>
+<tr>
+<td><p>spacing :</p></td>
+<td><p>the spacing between rows of the layout, in pixels</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

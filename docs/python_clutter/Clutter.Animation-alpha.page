@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Animation-alpha"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animation" group="property"/>
+    <title type="link" role="topic">alpha</title>
+  </info>
+  <title>Clutter.Animation:alpha</title>
+<synopsis><code mime="text/x-python">
+"alpha"             Clutter.Alpha                : Read / Write
+</code></synopsis>
+<p>The <link xref="Clutter.Alpha">Clutter.Alpha</link> used by the animation.</p><p>
+the <link xref="Clutter.Timeline-progress-mode">Clutter.Timeline:progress-mode</link> property instead.</p>
+</page>

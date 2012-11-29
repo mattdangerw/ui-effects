@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Container.child_get_property"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_container_child_get_property</api:name>
+      <api:arg>
+        <api:type>ClutterContainer *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>child</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>child_get_property</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, utf8, GObject.Value)
+@returns(none)
+def child_get_property(child, property, value)
+</code></synopsis>
+<p>Gets a container specific property of a child of @container, In general,
+a copy is made of the property contents and the caller is responsible for
+freeing the memory by calling g_value_unset().</p><p>Note that clutter_container_child_set_property() is really intended for
+language bindings, clutter_container_child_set() is much more convenient
+for C programming.</p>
+
+<table>
+<tr>
+<td><p>child :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link> that is a child of @container.</p></td>
+</tr>
+<tr>
+<td><p>property :</p></td>
+<td><p>the name of the property to set.</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>the value.</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

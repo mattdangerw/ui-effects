@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Clutter.TextBuffer-delete_text"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TextBuffer" group="vfunc"/>
+    <title type="link" role="topic">delete_text</title>
+  </info>
+  <title>Clutter.TextBuffer.delete_text</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, guint)
+@returns(guint)
+def do_delete_text(self, position, n_chars):
+</code></synopsis>
+<p>Deletes a sequence of characters from the buffer. @n_chars characters are
+deleted starting at @position. If @n_chars is negative, then all characters
+until the end of the text are deleted.</p><p>If @position or @n_chars are out of bounds, then they are coerced to sane
+values.</p><p>Note that the positions are specified in characters, not bytes.</p>
+
+<table>
+<tr>
+<td><p>position :</p></td>
+<td><p>position at which to delete text</p></td>
+</tr>
+<tr>
+<td><p>n_chars :</p></td>
+<td><p>number of characters to delete</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The number of characters deleted.</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

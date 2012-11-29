@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Behaviour.remove_all"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Behaviour" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_remove_all</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviour *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>remove_all</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def remove_all()
+</code></synopsis>
+<p>Removes every actor from the list that @behave holds.</p>
+
+<table>
+</table>
+<p>Since 0.4</p>
+</page>

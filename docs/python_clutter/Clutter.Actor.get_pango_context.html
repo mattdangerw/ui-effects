@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>get_pango_context</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">get_pango_context</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@returns(Pango.Context)
+def get_pango_context()</pre></div></div></div></div></div>
+<p class="p">Retrieves the <span class=" link"><a href="PangoContext.html" title="PangoContext">PangoContext</a></span> for @self. The actor's <span class=" link"><a href="PangoContext.html" title="PangoContext">PangoContext</a></span>
+is already configured using the appropriate font map, resolution
+and font options.</p>
+<p class="p">Unlike clutter_actor_create_pango_context(), this context is owend
+by the <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> and it will be updated each time the options
+stored by the <span class=" link"><a href="Clutter.Backend.html" title="Clutter.Backend">Clutter.Backend</a></span> change.</p>
+<p class="p">You can use the returned <span class=" link"><a href="PangoContext.html" title="PangoContext">PangoContext</a></span> to create a <span class=" link"><a href="PangoLayout.html" title="PangoLayout">PangoLayout</a></span>
+and render text using cogl_pango_render_layout() to reuse the
+glyphs cache also used by Clutter.</p>
+<p class="p">The returned <span class=" link"><a href="PangoContext.html" title="PangoContext">PangoContext</a></span> is owned by the actor and should not be
+unreferenced by the application code</p>
+<div class="table"><div class="inner"><div class="region"><table class="table"><tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">the <span class=" link"><a href="PangoContext.html" title="PangoContext">PangoContext</a></span> for a <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span>.</p></td>
+</tr></table></div></div></div>
+<p class="p">Since 1.0</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

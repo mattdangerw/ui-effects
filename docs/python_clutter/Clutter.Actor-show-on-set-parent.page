@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-show-on-set-parent"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">show-on-set-parent</title>
+  </info>
+  <title>Clutter.Actor:show-on-set-parent</title>
+<synopsis><code mime="text/x-python">
+"show-on-set-parent"             gboolean                : Read / Write
+</code></synopsis>
+<p>If True, the actor is automatically shown when parented.</p><p>Calling clutter_actor_hide() on an actor which has not been
+parented will set this property to False as a side effect.</p>
+</page>

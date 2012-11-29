@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Vertex.copy"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Vertex" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Vertex</api:type>
+      </api:returns>
+      <api:name>clutter_vertex_copy</api:name>
+    </api:function>
+  </info>
+  <title>copy</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Vertex)
+def copy()
+</code></synopsis>
+<p>Copies @vertex</p><p>clutter_vertex_free() to free the allocated resources</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a newly allocated copy of <link xref="Clutter.Vertex">Clutter.Vertex</link>. Use</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

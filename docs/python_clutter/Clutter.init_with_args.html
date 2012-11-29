@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>init_with_args</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">init_with_args</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(gint, [utf8], utf8, GLib.OptionEntry, utf8)
+@returns(Clutter.InitError)
+def init_with_args(argc, argv, parameter_string, entries, translation_domain)</pre></div></div></div></div></div>
+<p class="p">This function does the same work as clutter_init(). Additionally,
+it allows you to add your own command line options, and it
+automatically generates nicely formatted &lt;option&gt;--help&lt;/option&gt;
+output. Note that your program will be terminated after writing
+out the help output. Also note that, in case of error, the
+error message will be placed inside @error instead of being
+printed on the display.</p>
+<p class="p">Just like clutter_init(), if this function returns an error code then
+any subsequent call to any other Clutter API will result in undefined
+behaviour - including segmentation faults.</p>
+<p class="p">initialised, or other values or <span class=" link"><a href="Clutter.InitError.html" title="Clutter.InitError">Clutter.InitError</a></span> in case of
+error.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">argc :</p></td>
+<td><p class="p">a pointer to the number of command line arguments</p></td>
+</tr>
+<tr>
+<td><p class="p">argv :</p></td>
+<td><p class="p">a pointer to the array of command line arguments</p></td>
+</tr>
+<tr>
+<td><p class="p">parameter_string :</p></td>
+<td><p class="p">a string which is displayed in the first line of &lt;option&gt;--help&lt;/option&gt; output, after &lt;literal&gt;&lt;replaceable&gt;programname&lt;/replaceable&gt; [OPTION...]&lt;/literal&gt;</p></td>
+</tr>
+<tr>
+<td><p class="p">entries :</p></td>
+<td><p class="p">a None terminated array of <span class=" link"><a href="GOptionEntry.html" title="GOptionEntry">GOptionEntry</a></span>&lt;!-- --&gt;s describing the options of your program</p></td>
+</tr>
+<tr>
+<td><p class="p">translation_domain :</p></td>
+<td><p class="p">a translation domain to use for translating the &lt;option&gt;--help&lt;/option&gt; output for the options in @entries with gettext(), or None</p></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">%CLUTTER_INIT_SUCCESS if Clutter has been successfully</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 0.2</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Clutter Documentation">Clutter Documentation</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

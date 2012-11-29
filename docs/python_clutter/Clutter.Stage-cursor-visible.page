@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Stage-cursor-visible"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="property"/>
+    <title type="link" role="topic">cursor-visible</title>
+  </info>
+  <title>Clutter.Stage:cursor-visible</title>
+<synopsis><code mime="text/x-python">
+"cursor-visible"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the mouse pointer should be visible</p>
+</page>

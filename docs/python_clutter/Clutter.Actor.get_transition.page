@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_transition"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Transition</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_transition</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_transition</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(Clutter.Transition)
+def get_transition(name)
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.Transition">Clutter.Transition</link> of a <link xref="Clutter.Actor">Clutter.Actor</link> by using the
+transition @name.</p><p>Transitions created for animatable properties use the name of the
+property itself, for instance the code below:</p><p>|[
+clutter_actor_set_easing_duration (actor, 1000);
+clutter_actor_set_rotation (actor, CLUTTER_Y_AXIS, 360.0, x, y, z);</p><p>transition = clutter_actor_get_transition (actor, "rotation-angle-y");
+g_signal_connect (transition, "completed",
+G_CALLBACK (on_transition_complete),
+actor);
+]|</p><p>will call the &lt;function&gt;on_transition_complete&lt;/function&gt; callback when
+the transition is complete.</p><p>was found to match the passed name; the returned instance is owned
+by Clutter and it should not be freed</p>
+
+<table>
+<tr>
+<td><p>name :</p></td>
+<td><p>the name of the transition</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="Clutter.Transition">Clutter.Transition</link>, or None is none</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

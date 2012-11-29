@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-allocate"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="vfunc"/>
+    <title type="link" role="topic">allocate</title>
+  </info>
+  <title>Clutter.Actor.allocate</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.ActorBox, Clutter.AllocationFlags)
+@returns(none)
+def do_allocate(self, box, flags):
+</code></synopsis>
+<p>Called by the parent of an actor to assign the actor its size.
+Should never be called by applications (except when implementing
+a container or layout manager).</p><p>Actors can know from their allocation box whether they have moved
+with respect to their parent actor. The @flags parameter describes
+additional information about the allocation, for instance whether
+the parent has moved with respect to the stage, for example because
+a grandparent's origin has moved.</p>
+
+<table>
+<tr>
+<td><p>box :</p></td>
+<td><p>new allocation of the actor, in parent-relative coordinates</p></td>
+</tr>
+<tr>
+<td><p>flags :</p></td>
+<td><p>flags that control the allocation</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

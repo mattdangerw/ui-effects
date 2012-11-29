@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.DragAction-drag-axis"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DragAction" group="property"/>
+    <title type="link" role="topic">drag-axis</title>
+  </info>
+  <title>Clutter.DragAction:drag-axis</title>
+<synopsis><code mime="text/x-python">
+"drag-axis"             Clutter.DragAxis                : Read / Write
+</code></synopsis>
+<p>Constraints the dragging action to the specified axis</p>
+</page>

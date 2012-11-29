@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.insert_unichar"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_insert_unichar</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gunichar</api:type>
+        <api:name>wc</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>insert_unichar</title>
+<synopsis><code mime="text/x-python">
+@accepts(gunichar)
+@returns(none)
+def insert_unichar(wc)
+</code></synopsis>
+<p>Inserts @wc at the current cursor position of a
+<link xref="Clutter.Text">Clutter.Text</link> actor.</p>
+
+<table>
+<tr>
+<td><p>wc :</p></td>
+<td><p>a Unicode character</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

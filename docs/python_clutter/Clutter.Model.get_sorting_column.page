@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Model.get_sorting_column"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gint</api:type>
+      </api:returns>
+      <api:name>clutter_model_get_sorting_column</api:name>
+      <api:arg>
+        <api:type>ClutterModel *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_sorting_column</title>
+<synopsis><code mime="text/x-python">
+@returns(gint)
+def get_sorting_column()
+</code></synopsis>
+<p>Retrieves the number of column used for sorting the @model.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a column number, or -1 if the model is not sorted</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

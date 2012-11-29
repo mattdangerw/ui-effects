@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>add_string</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Path.html" title="Clutter.Path">Clutter.Path</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">add_string</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(utf8)
+@returns(gboolean)
+def add_string(str)</pre></div></div></div></div></div>
+<p class="p">Adds new nodes to the end of the path as described in @str. The
+format is a subset of the SVG path format. Each node is represented
+by a letter and is followed by zero, one or three pairs of
+coordinates. The coordinates can be separated by spaces or a
+comma. The types are:</p>
+<p class="p">&lt;variablelist&gt;
+&lt;varlistentry&gt;&lt;term&gt;M&lt;/term&gt;
+&lt;listitem&gt;&lt;para&gt;
+Adds a %CLUTTER_PATH_MOVE_TO node. Takes one pair of coordinates.
+&lt;/para&gt;&lt;/listitem&gt;&lt;/varlistentry&gt;
+&lt;varlistentry&gt;&lt;term&gt;L&lt;/term&gt;
+&lt;listitem&gt;&lt;para&gt;
+Adds a %CLUTTER_PATH_LINE_TO node. Takes one pair of coordinates.
+&lt;/para&gt;&lt;/listitem&gt;&lt;/varlistentry&gt;
+&lt;varlistentry&gt;&lt;term&gt;C&lt;/term&gt;
+&lt;listitem&gt;&lt;para&gt;
+Adds a %CLUTTER_PATH_CURVE_TO node. Takes three pairs of coordinates.
+&lt;/para&gt;&lt;/listitem&gt;&lt;/varlistentry&gt;
+&lt;varlistentry&gt;&lt;term&gt;z&lt;/term&gt;
+&lt;listitem&gt;&lt;para&gt;
+Adds a %CLUTTER_PATH_CLOSE node. No coordinates are needed.
+&lt;/para&gt;&lt;/listitem&gt;&lt;/varlistentry&gt;
+&lt;/variablelist&gt;</p>
+<p class="p">The M, L and C commands can also be specified in lower case which
+means the coordinates are relative to the previous node.</p>
+<p class="p">For example, to move an actor in a 100 by 100 pixel square centered
+on the point 300,300 you could use the following path:</p>
+<p class="p">&lt;informalexample&gt;
+&lt;programlisting&gt;
+M 250,350 l 0 -100 L 350,250 l 0 100 z
+&lt;/programlisting&gt;
+&lt;/informalexample&gt;</p>
+<p class="p">If the path description isn't valid False will be returned and no
+nodes will be added.</p>
+<p class="p">otherwise.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">str :</p></td>
+<td><p class="p">a string describing the new nodes</p></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">True is the path description was valid or False</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.0</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Path.html" title="Clutter.Path">Clutter.Path</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

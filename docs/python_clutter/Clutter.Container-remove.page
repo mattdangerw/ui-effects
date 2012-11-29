@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Clutter.Container-remove"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="vfunc"/>
+    <title type="link" role="topic">remove</title>
+  </info>
+  <title>Clutter.Container.remove</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def do_remove(self, actor):
+</code></synopsis>
+<p>Removes @actor from @container. The actor should be unparented, so
+if you want to keep it around you must hold a reference to it
+yourself, using g_object_ref(). When the actor has been removed,
+the "actor-removed" signal is emitted by @container.</p><p>This function will call <link xref="Clutter.ContainerIface">Clutter.ContainerIface</link>.remove(), which is a
+deprecated virtual function. The default implementation will call
+clutter_actor_remove_child().</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

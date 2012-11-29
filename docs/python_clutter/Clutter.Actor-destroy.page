@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-destroy"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="signal"/>
+    <title type="link" role="topic">destroy</title>
+  </info>
+  <title>Clutter.Actor::destroy</title>
+<synopsis><code mime="text/x-python">
+def callback(actor, user_param1, ...)
+</code></synopsis>
+<p>The ::destroy signal notifies that all references held on the
+actor which emitted it should be released.</p><p>The ::destroy signal should be used by all holders of a reference
+on @actor.</p><p>This signal might result in the finalization of the <link xref="Clutter.Actor">Clutter.Actor</link>
+if all references are released.</p><p>Composite actors and actors implementing the <link xref="Clutter.Container">Clutter.Container</link>
+interface should override the default implementation of the
+class handler of this signal and call clutter_actor_destroy() on
+their children. When overriding the default class handler, it is
+required to chain up to the parent's implementation.</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>instance of Clutter.Actor that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

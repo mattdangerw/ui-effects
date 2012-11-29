@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PaintNode.ref"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PaintNode" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.PaintNode</api:type>
+      </api:returns>
+      <api:name>clutter_paint_node_ref</api:name>
+      <api:arg>
+        <api:type>ClutterPaintNode *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>ref</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.PaintNode)
+def ref()
+</code></synopsis>
+<p>Acquires a reference on @node.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the <link xref="Clutter.PaintNode">Clutter.PaintNode</link></p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

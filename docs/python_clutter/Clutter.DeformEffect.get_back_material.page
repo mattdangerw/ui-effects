@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.DeformEffect.get_back_material"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DeformEffect" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Handle</api:type>
+      </api:returns>
+      <api:name>clutter_deform_effect_get_back_material</api:name>
+      <api:arg>
+        <api:type>ClutterDeformEffect *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_back_material</title>
+<synopsis><code mime="text/x-python">
+@returns(Cogl.Handle)
+def get_back_material()
+</code></synopsis>
+<p>Retrieves the handle to the back face material used by @effect</p><p>The returned material is owned by the <link xref="Clutter.DeformEffect">Clutter.DeformEffect</link> and it
+should not be freed directly</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a handle for the material, or None.</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.InputDevice-has-cursor"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.InputDevice" group="property"/>
+    <title type="link" role="topic">has-cursor</title>
+  </info>
+  <title>Clutter.InputDevice:has-cursor</title>
+<synopsis><code mime="text/x-python">
+"has-cursor"             gboolean                : Read / Write / Construct Only
+</code></synopsis>
+<p>Whether the device has an on screen cursor following its movement.</p>
+</page>

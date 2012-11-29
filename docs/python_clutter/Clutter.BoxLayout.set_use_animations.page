@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BoxLayout.set_use_animations"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BoxLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_box_layout_set_use_animations</api:name>
+      <api:arg>
+        <api:type>ClutterBoxLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>animate</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_use_animations</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_use_animations(animate)
+</code></synopsis>
+<p>Sets whether @layout should animate changes in the layout properties</p><p>The duration of the animations is controlled by
+clutter_box_layout_set_easing_duration(); the easing mode to be used
+by the animations is controlled by clutter_box_layout_set_easing_mode()</p>
+
+<table>
+<tr>
+<td><p>animate :</p></td>
+<td><p>True if the @layout should use animations</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

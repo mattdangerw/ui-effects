@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Path.get_description"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Path" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_path_get_description</api:name>
+      <api:arg>
+        <api:type>ClutterPath *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_description</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def get_description()
+</code></synopsis>
+<p>Returns a newly allocated string describing the path in the same
+format as used by clutter_path_add_string().</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a string description of the path. Free with g_free().</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

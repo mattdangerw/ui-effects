@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.value_set_shader_matrix"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_value_set_shader_matrix</api:name>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>size</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>matrix</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>value_set_shader_matrix</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.Value, gint, gfloat)
+@returns(none)
+def value_set_shader_matrix(value, size, matrix)
+</code></synopsis>
+<p>Sets @matrix as the contents of @value. The passed <link xref="GValue">GValue</link>
+must have been initialized using %CLUTTER_TYPE_SHADER_MATRIX.</p>
+
+<table>
+<tr>
+<td><p>value :</p></td>
+<td><p>a <link xref="GValue">GValue</link></p></td>
+</tr>
+<tr>
+<td><p>size :</p></td>
+<td><p>number of floating point values in @floats</p></td>
+</tr>
+<tr>
+<td><p>matrix :</p></td>
+<td><p>a matrix of floating point values</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

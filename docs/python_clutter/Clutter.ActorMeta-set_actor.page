@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Clutter.ActorMeta-set_actor"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ActorMeta" group="vfunc"/>
+    <title type="link" role="topic">set_actor</title>
+  </info>
+  <title>Clutter.ActorMeta.set_actor</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def do_set_actor(self, actor):
+</code></synopsis>
+<p>Virtual function, called when @meta is attached or detached
+from a <link xref="Clutter.Actor">Clutter.Actor</link>.</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>the actor attached to @meta, or None</p></td>
+</tr>
+</table>
+</page>

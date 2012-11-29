@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.TableLayout-column-spacing"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TableLayout" group="property"/>
+    <title type="link" role="topic">column-spacing</title>
+  </info>
+  <title>Clutter.TableLayout:column-spacing</title>
+<synopsis><code mime="text/x-python">
+"column-spacing"             guint                : Read / Write
+</code></synopsis>
+<p>The spacing between columns of the <link xref="Clutter.TableLayout">Clutter.TableLayout</link>, in pixels</p>
+</page>

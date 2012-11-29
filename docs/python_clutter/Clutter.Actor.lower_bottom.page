@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.lower_bottom"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_lower_bottom</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>lower_bottom</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def lower_bottom()
+</code></synopsis>
+<p>Lowers @self to the bottom.</p><p>This function calls clutter_actor_lower() internally.</p><p>a None sibling, instead.</p>
+
+<table>
+</table>
+</page>

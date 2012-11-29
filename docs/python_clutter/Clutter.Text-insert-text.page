@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-insert-text"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="signal"/>
+    <title type="link" role="topic">insert-text</title>
+  </info>
+  <title>Clutter.Text::insert-text</title>
+<synopsis><code mime="text/x-python">
+def callback(text, new_text, new_text_length, position, user_param1, ...)
+</code></synopsis>
+<p>This signal is emitted when text is inserted into the actor by
+the user. It is emitted before @self text changes.</p>
+
+<table>
+<tr>
+<td><p>text :</p></td>
+<td><p>instance of Clutter.Text that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>new_text :</p></td>
+<td><p>the new text to insert</p></td>
+</tr>
+<tr>
+<td><p>new_text_length :</p></td>
+<td><p>the length of the new text, in bytes, or -1 if new_text is nul-terminated</p></td>
+</tr>
+<tr>
+<td><p>position :</p></td>
+<td><p>the position, in characters, at which to insert the new text. this is an in-out parameter.  After the signal emission is finished, it should point after the newly inserted text.</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

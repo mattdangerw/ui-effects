@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.FlowLayout.set_homogeneous"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.FlowLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_flow_layout_set_homogeneous</api:name>
+      <api:arg>
+        <api:type>ClutterFlowLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>homogeneous</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_homogeneous</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_homogeneous(homogeneous)
+</code></synopsis>
+<p>Sets whether the @layout should allocate the same space for
+each child</p>
+
+<table>
+<tr>
+<td><p>homogeneous :</p></td>
+<td><p>whether the layout should be homogeneous or not</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

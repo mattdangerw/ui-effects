@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Script.add_search_paths"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Script" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_script_add_search_paths</api:name>
+      <api:arg>
+        <api:type>ClutterScript *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>[utf8]</api:type>
+        <api:name>paths</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>n_paths</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>add_search_paths</title>
+<synopsis><code mime="text/x-python">
+@accepts([utf8], gsize)
+@returns(none)
+def add_search_paths(paths, n_paths)
+</code></synopsis>
+<p>Adds @paths to the list of search paths held by @script.</p><p>The search paths are used by clutter_script_lookup_filename(), which
+can be used to define search paths for the textures source file name
+or other custom, file-based properties.</p>
+
+<table>
+<tr>
+<td><p>paths :</p></td>
+<td><p>an array of strings containing different search paths</p></td>
+</tr>
+<tr>
+<td><p>n_paths :</p></td>
+<td><p>the length of the passed array</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

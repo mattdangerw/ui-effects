@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_allocation_box"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_allocation_box</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ActorBox</api:type>
+        <api:name>box</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_allocation_box</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.ActorBox)
+@returns(none)
+def get_allocation_box(box)
+</code></synopsis>
+<p>Gets the layout box an actor has been assigned. The allocation can
+only be assumed valid inside a paint() method; anywhere else, it
+may be out-of-date.</p><p>An allocation does not incorporate the actor's scale or anchor point;
+those transformations do not affect layout, only rendering.</p><p>&lt;note&gt;Do not call any of the clutter_actor_get_allocation_*() family
+of functions inside the implementation of the get_preferred_width()
+or get_preferred_height() virtual functions.&lt;/note&gt;</p>
+
+<table>
+<tr>
+<td><p>box :</p></td>
+<td><p>the function fills this in with the actor's allocation</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

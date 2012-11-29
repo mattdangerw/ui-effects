@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-map"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="vfunc"/>
+    <title type="link" role="topic">map</title>
+  </info>
+  <title>Clutter.Actor.map</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def do_map(self, ):
+</code></synopsis>
+<p>Sets the %CLUTTER_ACTOR_MAPPED flag on the actor and possibly maps
+and realizes its children if they are visible. Does nothing if the
+actor is not visible.</p><p>Calling this function is strongly disencouraged: the default
+implementation of <link xref="Clutter.ActorClass">Clutter.ActorClass</link>.map() will map all the children
+of an actor when mapping its parent.</p><p>When overriding map, it is mandatory to chain up to the parent
+implementation.</p>
+
+<table>
+</table>
+<p>Since 1.0</p>
+</page>

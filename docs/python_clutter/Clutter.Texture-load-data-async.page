@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Texture-load-data-async"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="property"/>
+    <title type="link" role="topic">load-data-async</title>
+  </info>
+  <title>Clutter.Texture:load-data-async</title>
+<synopsis><code mime="text/x-python">
+"load-data-async"             gboolean                : Write
+</code></synopsis>
+<p>Like <link xref="Clutter.Texture-load-async">Clutter.Texture:load-async</link> but loads the width and height
+synchronously causing some blocking.</p>
+</page>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Clutter.Model-insert_row"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="vfunc"/>
+    <title type="link" role="topic">insert_row</title>
+  </info>
+  <title>Clutter.Model.insert_row</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint)
+@returns(Clutter.ModelIter)
+def do_insert_row(self, index_):
+</code></synopsis>
+
+
+<table>
+<tr>
+<td><p>index_ :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td></td>
+</tr>
+</table>
+</page>

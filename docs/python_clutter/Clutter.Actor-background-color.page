@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-background-color"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">background-color</title>
+  </info>
+  <title>Clutter.Actor:background-color</title>
+<synopsis><code mime="text/x-python">
+"background-color"             Clutter.Color                : Read / Write
+</code></synopsis>
+<p>Paints a solid fill of the actor's allocation using the specified
+color.</p><p>The <link xref="Clutter.Actor-background-color">Clutter.Actor:background-color</link> property is animatable.</p>
+</page>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ActorBox.get_size"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ActorBox" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_box_get_size</api:name>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_size</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(none)
+def get_size(width, height)
+</code></synopsis>
+<p>Retrieves the size of @box</p>
+
+<table>
+<tr>
+<td><p>width :</p></td>
+<td><p>return location for the width, or None</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>return location for the height, or None</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

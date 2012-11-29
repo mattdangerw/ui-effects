@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.main_level"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gint</api:type>
+      </api:returns>
+      <api:name>clutter_main_level</api:name>
+    </api:function>
+  </info>
+  <title>main_level</title>
+<synopsis><code mime="text/x-python">
+@returns(gint)
+def main_level()
+</code></synopsis>
+<p>Retrieves the depth of the Clutter mainloop.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The level of the mainloop.</p></td>
+</tr>
+</table>
+</page>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.BoxLayout-vertical"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BoxLayout" group="property"/>
+    <title type="link" role="topic">vertical</title>
+  </info>
+  <title>Clutter.BoxLayout:vertical</title>
+<synopsis><code mime="text/x-python">
+"vertical"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the <link xref="Clutter.BoxLayout">Clutter.BoxLayout</link> should arrange its children
+alongside the Y axis, instead of alongside the X axis</p>
+</page>

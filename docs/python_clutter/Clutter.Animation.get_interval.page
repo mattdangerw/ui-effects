@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animation.get_interval"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animation" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Interval</api:type>
+      </api:returns>
+      <api:name>clutter_animation_get_interval</api:name>
+      <api:arg>
+        <api:type>ClutterAnimation *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_interval</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(Clutter.Interval)
+def get_interval(property_name)
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.Interval">Clutter.Interval</link> associated to @property_name
+inside @animation.</p><p>property with the same name was found. The returned interval is
+owned by the <link xref="Clutter.Animation">Clutter.Animation</link> and should not be unreferenced</p>
+
+<table>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>name of the property</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="Clutter.Interval">Clutter.Interval</link> or None if no</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

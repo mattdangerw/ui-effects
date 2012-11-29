@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Texture.set_from_yuv_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_texture_set_from_yuv_data</api:name>
+      <api:arg>
+        <api:type>ClutterTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>[guint8]</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.TextureFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_from_yuv_data</title>
+<synopsis><code mime="text/x-python">
+@accepts([guint8], gint, gint, Clutter.TextureFlags)
+@returns(gboolean)
+def set_from_yuv_data(data, width, height, flags)
+</code></synopsis>
+<p>Sets a <link xref="Clutter.Texture">Clutter.Texture</link> from YUV image data. If an error occurred,
+False is returned and @error is set.</p><p>The YUV support depends on the driver; the format supported by the
+few drivers exposing this capability are not really useful.</p><p>The proper way to convert image data in any YUV colorspace to any
+RGB colorspace is to use a fragment shader associated with the
+<link xref="Clutter.Texture">Clutter.Texture</link> material.</p><p></p><p>the Cogl API to install a fragment shader for decoding YUV
+formats on the GPU</p>
+
+<table>
+<tr>
+<td><p>data :</p></td>
+<td><p>Image data in YUV type colorspace.</p></td>
+</tr>
+<tr>
+<td><p>width :</p></td>
+<td><p>Width in pixels of image data.</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>Height in pixels of image data</p></td>
+</tr>
+<tr>
+<td><p>flags :</p></td>
+<td><p><link xref="Clutter.TextureFlags">Clutter.TextureFlags</link></p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the texture was successfully updated</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

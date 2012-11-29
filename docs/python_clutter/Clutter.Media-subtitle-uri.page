@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Media-subtitle-uri"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Media" group="property"/>
+    <title type="link" role="topic">subtitle-uri</title>
+  </info>
+  <title>Clutter.Media:subtitle-uri</title>
+<synopsis><code mime="text/x-python">
+"subtitle-uri"             utf8                : Read / Write
+</code></synopsis>
+<p>The location of a subtitle file, expressed as a valid URI.</p>
+</page>

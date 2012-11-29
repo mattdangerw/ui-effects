@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_content_gravity"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_content_gravity</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ContentGravity</api:type>
+        <api:name>gravity</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_content_gravity</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.ContentGravity)
+@returns(none)
+def set_content_gravity(gravity)
+</code></synopsis>
+<p>Sets the gravity of the <link xref="Clutter.Content">Clutter.Content</link> used by @self.</p><p>See the description of the <link xref="Clutter.Actor-content-gravity">Clutter.Actor:content-gravity</link> property for
+more information.</p><p>The <link xref="Clutter.Actor-content-gravity">Clutter.Actor:content-gravity</link> property is animatable.</p>
+
+<table>
+<tr>
+<td><p>gravity :</p></td>
+<td><p>the <link xref="Clutter.ContentGravity">Clutter.ContentGravity</link></p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.CairoTexture.set_auto_resize"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.CairoTexture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_cairo_texture_set_auto_resize</api:name>
+      <api:arg>
+        <api:type>ClutterCairoTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_auto_resize</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_auto_resize(value)
+</code></synopsis>
+<p>Sets whether the <link xref="Clutter.CairoTexture">Clutter.CairoTexture</link> should ensure that the
+backing Cairo surface used matches the allocation assigned to
+the actor. If the allocation changes, the contents of the
+<link xref="Clutter.CairoTexture">Clutter.CairoTexture</link> will also be invalidated automatically.</p>
+
+<table>
+<tr>
+<td><p>value :</p></td>
+<td><p>True if the <link xref="Clutter.CairoTexture">Clutter.CairoTexture</link> should bind the surface size to the allocation</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

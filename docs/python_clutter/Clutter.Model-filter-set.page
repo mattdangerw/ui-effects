@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Model-filter-set"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="property"/>
+    <title type="link" role="topic">filter-set</title>
+  </info>
+  <title>Clutter.Model:filter-set</title>
+<synopsis><code mime="text/x-python">
+"filter-set"             gboolean                : Read
+</code></synopsis>
+<p>Whether the <link xref="Clutter.Model">Clutter.Model</link> has a filter set</p><p>This property is set to True if a filter function has been
+set using clutter_model_set_filter()</p>
+</page>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="Clutter.Model-filter_changed"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="vfunc"/>
+    <title type="link" role="topic">filter_changed</title>
+  </info>
+  <title>Clutter.Model.filter_changed</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def do_filter_changed(self, ):
+</code></synopsis>
+
+
+<table>
+</table>
+</page>

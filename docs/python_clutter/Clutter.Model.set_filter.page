@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Model.set_filter"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_model_set_filter</api:name>
+      <api:arg>
+        <api:type>ClutterModel *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ModelFilterFunc</api:type>
+        <api:name>func</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>user_data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.DestroyNotify</api:type>
+        <api:name>notify</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_filter</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.ModelFilterFunc, gpointer, GLib.DestroyNotify)
+@returns(none)
+def set_filter(func, user_data, notify)
+</code></synopsis>
+<p>Filters the @model using the given filtering function.</p>
+
+<table>
+<tr>
+<td><p>func :</p></td>
+<td><p>a <link xref="Clutter.ModelFilterFunc">Clutter.ModelFilterFunc</link>, or <link xref="NULL">NULL</link></p></td>
+</tr>
+<tr>
+<td><p>user_data :</p></td>
+<td><p>user data to pass to @func, or <link xref="NULL">NULL</link></p></td>
+</tr>
+<tr>
+<td><p>notify :</p></td>
+<td><p>destroy notifier of @user_data, or <link xref="NULL">NULL</link></p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.InputDevice.set_key"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.InputDevice" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_input_device_set_key</api:name>
+      <api:arg>
+        <api:type>ClutterInputDevice *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>index_</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>keyval</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ModifierType</api:type>
+        <api:name>modifiers</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_key</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, guint, Clutter.ModifierType)
+@returns(none)
+def set_key(index_, keyval, modifiers)
+</code></synopsis>
+<p>Sets the keyval and modifiers at the given @index_ for @device.</p><p>Clutter will use the keyval and modifiers set when filling out
+an event coming from the same input device.</p>
+
+<table>
+<tr>
+<td><p>index_ :</p></td>
+<td><p>the index of the key</p></td>
+</tr>
+<tr>
+<td><p>keyval :</p></td>
+<td><p>the keyval</p></td>
+</tr>
+<tr>
+<td><p>modifiers :</p></td>
+<td><p>a bitmask of modifiers</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

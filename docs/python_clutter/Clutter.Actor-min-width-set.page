@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-min-width-set"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">min-width-set</title>
+  </info>
+  <title>Clutter.Actor:min-width-set</title>
+<synopsis><code mime="text/x-python">
+"min-width-set"             gboolean                : Read / Write
+</code></synopsis>
+<p>This flag controls whether the <link xref="Clutter.Actor-min-width">Clutter.Actor:min-width</link> property
+is used</p>
+</page>

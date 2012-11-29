@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Texture.set_cogl_material"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_texture_set_cogl_material</api:name>
+      <api:arg>
+        <api:type>ClutterTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Handle</api:type>
+        <api:name>cogl_material</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_cogl_material</title>
+<synopsis><code mime="text/x-python">
+@accepts(Cogl.Handle)
+@returns(none)
+def set_cogl_material(cogl_material)
+</code></synopsis>
+<p>Replaces the underlying Cogl material drawn by this actor with
+@cogl_material. A reference to the material is taken so if the
+handle is no longer needed it should be deref'd with
+cogl_handle_unref. Texture data is attached to the material so
+calling this function also replaces the Cogl
+texture. <link xref="Clutter.Texture">Clutter.Texture</link> requires that the material have a texture
+layer so you should set one on the material before calling this
+function.</p>
+
+<table>
+<tr>
+<td><p>cogl_material :</p></td>
+<td><p>A CoglHandle for a material</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

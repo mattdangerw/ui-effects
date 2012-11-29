@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="Clutter.BrightnessContrastEffect-brightness"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BrightnessContrastEffect" group="property"/>
+    <title type="link" role="topic">brightness</title>
+  </info>
+  <title>Clutter.BrightnessContrastEffect:brightness</title>
+<synopsis><code mime="text/x-python">
+"brightness"             Clutter.Color                : Read / Write
+</code></synopsis>
+<p>The brightness change to apply to the effect.</p><p>This property uses a <link xref="Clutter.Color">Clutter.Color</link> to represent the changes to each
+color channel. The range is [ 0, 255 ], with 127 as the value used
+to indicate no change; values smaller than 127 indicate a decrease
+in brightness, and values larger than 127 indicate an increase in
+brightness.</p>
+</page>

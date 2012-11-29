@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ModelIter.get_row"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ModelIter" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint</api:type>
+      </api:returns>
+      <api:name>clutter_model_iter_get_row</api:name>
+      <api:arg>
+        <api:type>ClutterModelIter *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_row</title>
+<synopsis><code mime="text/x-python">
+@returns(guint)
+def get_row()
+</code></synopsis>
+<p>Retrieves the position of the row that the @iter points to.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the position of the @iter in the model</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

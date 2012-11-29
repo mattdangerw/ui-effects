@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_accessible"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Atk.Object</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_accessible</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_accessible</title>
+<synopsis><code mime="text/x-python">
+@returns(Atk.Object)
+def get_accessible()
+</code></synopsis>
+<p>Returns the accessible object that describes the actor to an
+assistive technology.</p><p>If no class-specific <link xref="AtkObject">AtkObject</link> implementation is available for the
+actor instance in question, it will inherit an <link xref="AtkObject">AtkObject</link>
+implementation from the first ancestor class for which such an
+implementation is defined.</p><p>The documentation of the &lt;ulink
+url="http://developer.gnome.org/doc/API/2.0/atk/index.html"&gt;ATK&lt;/ulink&gt;
+library contains more information about accessible objects and
+their uses.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the <link xref="AtkObject">AtkObject</link> associated with @actor</p></td>
+</tr>
+</table>
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Media.get_buffer_fill"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Media" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gdouble</api:type>
+      </api:returns>
+      <api:name>clutter_media_get_buffer_fill</api:name>
+      <api:arg>
+        <api:type>ClutterMedia *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_buffer_fill</title>
+<synopsis><code mime="text/x-python">
+@returns(gdouble)
+def get_buffer_fill()
+</code></synopsis>
+<p>Retrieves the amount of the stream that is buffered.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the fill level, between 0.0 and 1.0</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

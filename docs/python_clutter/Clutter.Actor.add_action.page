@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.add_action"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_add_action</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Action</api:type>
+        <api:name>action</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>add_action</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Action)
+@returns(none)
+def add_action(action)
+</code></synopsis>
+<p>Adds @action to the list of actions applied to @self</p><p>A <link xref="Clutter.Action">Clutter.Action</link> can only belong to one actor at a time</p><p>The <link xref="Clutter.Actor">Clutter.Actor</link> will hold a reference on @action until either
+clutter_actor_remove_action() or clutter_actor_clear_actions()
+is called</p>
+
+<table>
+<tr>
+<td><p>action :</p></td>
+<td><p>a <link xref="Clutter.Action">Clutter.Action</link></p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

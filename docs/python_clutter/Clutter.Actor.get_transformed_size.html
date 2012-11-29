@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>get_transformed_size</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">get_transformed_size</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(gfloat, gfloat)
+@returns(none)
+def get_transformed_size(width, height)</pre></div></div></div></div></div>
+<p class="p">Gets the absolute size of an actor in pixels, taking into account the
+scaling factors.</p>
+<p class="p">If the actor has a valid allocation, the allocated size will be used.
+If the actor has not a valid allocation then the preferred size will
+be transformed and returned.</p>
+<p class="p">If you want the transformed allocation, see
+clutter_actor_get_abs_allocation_vertices() instead.</p>
+<p class="p">&lt;note&gt;When the actor (or one of its ancestors) is rotated around the
+X or Y axis, it no longer appears as on the stage as a rectangle, but
+as a generic quadrangle; in that case this function returns the size
+of the smallest rectangle that encapsulates the entire quad. Please
+note that in this case no assumptions can be made about the relative
+position of this envelope to the absolute position of the actor, as
+returned by clutter_actor_get_transformed_position(); if you need this
+information, you need to use clutter_actor_get_abs_allocation_vertices()
+to get the coords of the actual quadrangle.&lt;/note&gt;</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">width :</p></td>
+<td><p class="p">return location for the width, or None</p></td>
+</tr>
+<tr>
+<td><p class="p">height :</p></td>
+<td><p class="p">return location for the height, or None</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 0.8</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

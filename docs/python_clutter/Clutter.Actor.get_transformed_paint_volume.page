@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_transformed_paint_volume"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.PaintVolume</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_transformed_paint_volume</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>relative_to_ancestor</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_transformed_paint_volume</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(Clutter.PaintVolume)
+def get_transformed_paint_volume(relative_to_ancestor)
+</code></synopsis>
+<p>Retrieves the 3D paint volume of an actor like
+clutter_actor_get_paint_volume() does (Please refer to the
+documentation of clutter_actor_get_paint_volume() for more
+details.) and it additionally transforms the paint volume into the
+coordinate space of @relative_to_ancestor. (Or the stage if None
+is passed for @relative_to_ancestor)</p><p>This can be used by containers that base their paint volume on
+the volume of their children. Such containers can query the
+transformed paint volume of all of its children and union them
+together using clutter_paint_volume_union().</p><p>or None if no volume could be determined. The returned pointer is
+not guaranteed to be valid across multiple frames; if you wish to
+keep it, you will have to copy it using clutter_paint_volume_copy().</p>
+
+<table>
+<tr>
+<td><p>relative_to_ancestor :</p></td>
+<td><p>A <link xref="Clutter.Actor">Clutter.Actor</link> that is an ancestor of @self (or None for the stage)</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a pointer to a <link xref="Clutter.PaintVolume">Clutter.PaintVolume</link>,</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

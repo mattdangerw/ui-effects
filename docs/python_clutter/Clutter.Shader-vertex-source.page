@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Shader-vertex-source"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Shader" group="property"/>
+    <title type="link" role="topic">vertex-source</title>
+  </info>
+  <title>Clutter.Shader:vertex-source</title>
+<synopsis><code mime="text/x-python">
+"vertex-source"             utf8                : Read / Write
+</code></synopsis>
+<p>GLSL source code for the vertex shader part of the shader
+program, if any</p>
+</page>

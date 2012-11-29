@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.get_buffer"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.TextBuffer</api:type>
+      </api:returns>
+      <api:name>clutter_text_get_buffer</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_buffer</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.TextBuffer)
+def get_buffer()
+</code></synopsis>
+<p>Get the <link xref="Clutter.TextBuffer">Clutter.TextBuffer</link> object which holds the text for
+this widget.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>A <link xref="GtkEntryBuffer">GtkEntryBuffer</link> object.</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

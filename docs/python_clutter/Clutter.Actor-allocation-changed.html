@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Clutter.Actor::allocation-changed</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Clutter.Actor::allocation-changed</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">def callback(actor, box, flags, user_param1, ...)</pre></div></div></div></div></div>
+<p class="p">The ::allocation-changed signal is emitted when the
+<span class=" link"><a href="Clutter.Actor-allocation.html" title="Clutter.Actor:allocation">Clutter.Actor:allocation</a></span> property changes. Usually, application
+code should just use the notifications for the :allocation property
+but if you want to track the allocation flags as well, for instance
+to know whether the absolute origin of @actor changed, then you might
+want use this signal instead.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">actor :</p></td>
+<td><p class="p">instance of Clutter.Actor that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p class="p">box :</p></td>
+<td><p class="p">a <span class=" link"><a href="Clutter.ActorBox.html" title="ClutterActorBox">Clutter.ActorBox</a></span> with the new allocation</p></td>
+</tr>
+<tr>
+<td><p class="p">flags :</p></td>
+<td><p class="p"><span class=" link"><a href="Clutter.AllocationFlags.html" title="Clutter.AllocationFlags">Clutter.AllocationFlags</a></span> for the allocation</p></td>
+</tr>
+<tr>
+<td><p class="p">user_param1 :</p></td>
+<td><p class="p">first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p class="p">... :</p></td>
+<td><p class="p">additional user parameters (if any)</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.0</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

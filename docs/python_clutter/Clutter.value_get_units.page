@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.value_get_units"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Units</api:type>
+      </api:returns>
+      <api:name>clutter_value_get_units</api:name>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>value_get_units</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.Value)
+@returns(Clutter.Units)
+def value_get_units(value)
+</code></synopsis>
+<p>Gets the <link xref="Clutter.Units">Clutter.Units</link> contained in @value.</p>
+
+<table>
+<tr>
+<td><p>value :</p></td>
+<td><p>a <link xref="GValue">GValue</link> initialized to %CLUTTER_TYPE_UNITS</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the units inside the passed <link xref="GValue">GValue</link></p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.BehaviourRotate-axis"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourRotate" group="property"/>
+    <title type="link" role="topic">axis</title>
+  </info>
+  <title>Clutter.BehaviourRotate:axis</title>
+<synopsis><code mime="text/x-python">
+"axis"             Clutter.RotateAxis                : Read / Write
+</code></synopsis>
+<p>The axis of rotation.</p>
+</page>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.set_duration"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_set_duration</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>msecs</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_duration</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint)
+@returns(none)
+def set_duration(msecs)
+</code></synopsis>
+<p>Sets the duration of the timeline, in milliseconds. The speed
+of the timeline depends on the ClutterTimeline:fps setting.</p>
+
+<table>
+<tr>
+<td><p>msecs :</p></td>
+<td><p>duration of the timeline in milliseconds</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

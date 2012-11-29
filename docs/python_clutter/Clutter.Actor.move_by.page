@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.move_by"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_move_by</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>dx</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>dy</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>move_by</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(none)
+def move_by(dx, dy)
+</code></synopsis>
+<p>Moves an actor by the specified distance relative to its current
+position in pixels.</p><p>This function modifies the fixed position of an actor and thus removes
+it from any layout management. Another way to move an actor is with an
+anchor point, see clutter_actor_set_anchor_point().</p>
+
+<table>
+<tr>
+<td><p>dx :</p></td>
+<td><p>Distance to move Actor on X axis.</p></td>
+</tr>
+<tr>
+<td><p>dy :</p></td>
+<td><p>Distance to move Actor on Y axis.</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

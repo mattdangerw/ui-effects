@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.InputDevice.get_has_cursor"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.InputDevice" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_input_device_get_has_cursor</api:name>
+      <api:arg>
+        <api:type>ClutterInputDevice *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_has_cursor</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def get_has_cursor()
+</code></synopsis>
+<p>Retrieves whether @device has a pointer that follows the
+device motion.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the device has a cursor</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

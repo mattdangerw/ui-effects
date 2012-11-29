@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.realize"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_realize</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>realize</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def realize()
+</code></synopsis>
+<p>Realization informs the actor that it is attached to a stage. It
+can use this to allocate resources if it wanted to delay allocation
+until it would be rendered. However it is perfectly acceptable for
+an actor to create resources before being realized because Clutter
+only ever has a single rendering context so that actor is free to
+be moved from one stage to another.</p><p>This function does nothing if the actor is already realized.</p><p>Because a realized actor must have realized parent actors, calling
+clutter_actor_realize() will also realize all parents of the actor.</p><p>This function does not realize child actors, except in the special
+case that realizing the stage, when the stage is visible, will
+suddenly map (and thus realize) the children of the stage.</p>
+
+<table>
+</table>
+</page>

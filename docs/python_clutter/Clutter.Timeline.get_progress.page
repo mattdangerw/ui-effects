@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.get_progress"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gdouble</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_get_progress</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_progress</title>
+<synopsis><code mime="text/x-python">
+@returns(gdouble)
+def get_progress()
+</code></synopsis>
+<p>The position of the timeline in a normalized [-1, 2] interval.</p><p>The return value of this function is determined by the progress
+mode set using clutter_timeline_set_progress_mode(), or by the
+progress function set using clutter_timeline_set_progress_func().</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the normalized current position in the timeline.</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

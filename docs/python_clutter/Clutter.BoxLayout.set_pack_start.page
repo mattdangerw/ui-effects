@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BoxLayout.set_pack_start"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BoxLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_box_layout_set_pack_start</api:name>
+      <api:arg>
+        <api:type>ClutterBoxLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>pack_start</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_pack_start</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_pack_start(pack_start)
+</code></synopsis>
+<p>Sets whether children of @layout should be layed out by appending
+them or by prepending them</p>
+
+<table>
+<tr>
+<td><p>pack_start :</p></td>
+<td><p>True if the @layout should pack children at the beginning of the layout</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

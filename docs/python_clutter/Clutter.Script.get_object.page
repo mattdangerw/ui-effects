@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Script.get_object"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Script" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.Object</api:type>
+      </api:returns>
+      <api:name>clutter_script_get_object</api:name>
+      <api:arg>
+        <api:type>ClutterScript *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_object</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(GObject.Object)
+def get_object(name)
+</code></synopsis>
+<p>Retrieves the object bound to @name. This function does not increment
+the reference count of the returned object.</p><p>with the given name was available</p>
+
+<table>
+<tr>
+<td><p>name :</p></td>
+<td><p>the name of the object to retrieve</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the named object, or None if no object</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

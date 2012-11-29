@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<page id="Clutter.Texture"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="class"/>
+  </info>
+  <title>Clutter.Texture</title>
+<p>The <link xref="Clutter.Texture">Clutter.Texture</link> structure contains only private data
+and should be accessed using the provided API</p>
+
+  <synopsis><code>
+from gi.repository import Clutter
+
+texture = Clutter.Texture(<link xref='Clutter.Texture-cogl-material'>cogl_material</link>=value, <link xref='Clutter.Texture-cogl-texture'>cogl_texture</link>=value, <link xref='Clutter.Texture-disable-slicing'>disable_slicing</link>=value, <link xref='Clutter.Texture-filename'>filename</link>=value, <link xref='Clutter.Texture-filter-quality'>filter_quality</link>=value, <link xref='Clutter.Texture-keep-aspect-ratio'>keep_aspect_ratio</link>=value, <link xref='Clutter.Texture-load-async'>load_async</link>=value, <link xref='Clutter.Texture-load-data-async'>load_data_async</link>=value, <link xref='Clutter.Texture-pick-with-alpha'>pick_with_alpha</link>=value, <link xref='Clutter.Texture-repeat-x'>repeat_x</link>=value, <link xref='Clutter.Texture-repeat-y'>repeat_y</link>=value, <link xref='Clutter.Texture-sync-size'>sync_size</link>=value, )  </code></synopsis>
+
+<p>Since 0.1</p>
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>GObject.InitiallyUnowned</code>
+      <item>
+        <code>Clutter.Actor</code>
+      <item>
+        <code>Clutter.Texture</code>
+      </item>
+      </item>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="yes"
+         api:type="function" api:mime="text/x-python"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="yes"
+         api:type="function" api:mime="text/x-python"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.CairoTexture.clear"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.CairoTexture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_cairo_texture_clear</api:name>
+      <api:arg>
+        <api:type>ClutterCairoTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>clear</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def clear()
+</code></synopsis>
+<p>Clears @self's internal drawing surface, so that the next upload
+will replace the previous contents of the <link xref="Clutter.CairoTexture">Clutter.CairoTexture</link>
+rather than adding to it.</p><p>Calling this function from within a <link xref="Clutter.CairoTexture-draw">Clutter.CairoTexture::draw</link>
+signal handler will clear the invalidated area.</p>
+
+<table>
+</table>
+<p>Since 1.0</p>
+</page>

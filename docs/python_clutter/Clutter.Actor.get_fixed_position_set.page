@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_fixed_position_set"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_fixed_position_set</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_fixed_position_set</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def get_fixed_position_set()
+</code></synopsis>
+<p>Checks whether an actor has a fixed position set (and will thus be
+unaffected by any layout manager).</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the fixed position is set on the actor</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

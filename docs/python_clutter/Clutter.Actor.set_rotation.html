@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>set_rotation</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">set_rotation</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(Clutter.RotateAxis, gdouble, gfloat, gfloat, gfloat)
+@returns(none)
+def set_rotation(axis, angle, x, y, z)</pre></div></div></div></div></div>
+<p class="p">Sets the rotation angle of @self around the given axis.</p>
+<p class="p">The rotation center coordinates used depend on the value of @axis:
+&lt;itemizedlist&gt;
+&lt;listitem&gt;&lt;para&gt;%CLUTTER_X_AXIS requires @y and @z&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;%CLUTTER_Y_AXIS requires @x and @z&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;%CLUTTER_Z_AXIS requires @x and @y&lt;/para&gt;&lt;/listitem&gt;
+&lt;/itemizedlist&gt;</p>
+<p class="p">The rotation coordinates are relative to the anchor point of the
+actor, set using clutter_actor_set_anchor_point(). If no anchor
+point is set, the upper left corner is assumed as the origin.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">axis :</p></td>
+<td><p class="p">the axis of rotation</p></td>
+</tr>
+<tr>
+<td><p class="p">angle :</p></td>
+<td><p class="p">the angle of rotation</p></td>
+</tr>
+<tr>
+<td><p class="p">x :</p></td>
+<td><p class="p">X coordinate of the rotation center</p></td>
+</tr>
+<tr>
+<td><p class="p">y :</p></td>
+<td><p class="p">Y coordinate of the rotation center</p></td>
+</tr>
+<tr>
+<td><p class="p">z :</p></td>
+<td><p class="p">Z coordinate of the rotation center</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 0.8</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

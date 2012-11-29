@@ -1,0 +1,98 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>set</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.State.html" title="Clutter.State">Clutter.State</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">set</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(utf8, utf8, gpointer, utf8, gulong, &lt;varargs&gt;)
+@returns(none)
+def set(source_state_name, target_state_name, first_object, first_property_name, first_mode, None)</pre></div></div></div></div></div>
+<p class="p">Adds multiple keys to a named state of a <span class=" link"><a href="Clutter.State.html" title="Clutter.State">Clutter.State</a></span> instance, specifying
+the easing mode and value a given property of an object should have at a
+given progress of the animation.</p>
+<p class="p">The mode specified is the easing mode used when going to from the previous
+key to the specified key.</p>
+<p class="p">For instance, the code below:</p>
+<p class="p">|[
+clutter_state_set (state, NULL, "hover",
+button, "opacity", CLUTTER_LINEAR, 255,
+button, "scale-x", CLUTTER_EASE_OUT_CUBIC, 1.2,
+button, "scale-y", CLUTTER_EASE_OUT_CUBIC, 1.2,
+NULL);
+]|</p>
+<p class="p">will create a transition from any state (a @source_state_name or NULL is
+treated as a wildcard) and a state named "hover"; the
+&lt;emphasis&gt;button&lt;/emphasis&gt; object will have the <span class=" link"><a href="Clutter.Actor-opacity.html" title="Clutter.Actor:opacity">Clutter.Actor:opacity</a></span>
+property animated to a value of 255 using %CLUTTER_LINEAR as the animation
+mode, and the <span class=" link"><a href="Clutter.Actor-scale-x.html" title="Clutter.Actor:scale-x">Clutter.Actor:scale-x</a></span> and <span class=" link"><a href="Clutter.Actor-scale-y.html" title="Clutter.Actor:scale-y">Clutter.Actor:scale-y</a></span> properties
+animated to a value of 1.2 using %CLUTTER_EASE_OUT_CUBIC as the animation
+mode. To change the state (and start the transition) you can use the
+clutter_state_set_state() function:</p>
+<p class="p">|[
+clutter_state_set_state (state, "hover");
+]|</p>
+<p class="p">If a given object, state_name, property tuple already exist in the
+<span class=" link"><a href="Clutter.State.html" title="Clutter.State">Clutter.State</a></span> instance, then the mode and value will be replaced with
+the new specified values.</p>
+<p class="p">If a property name is prefixed with "delayed::" two additional
+arguments per key are expected: a value relative to the full state time
+to pause before transitioning and a similar value to pause after
+transitioning, e.g.:</p>
+<p class="p">|[
+clutter_state_set (state, "hover", "toggled",
+button, "delayed::scale-x", CLUTTER_LINEAR, 1.0, 0.2, 0.2,
+button, "delayed::scale-y", CLUTTER_LINEAR, 1.0, 0.2, 0.2,
+NULL);
+]|</p>
+<p class="p">will pause for 20% of the duration of the transition before animating,
+and 20% of the duration after animating.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">source_state_name :</p></td>
+<td><p class="p">the name of the source state keys are being added for</p></td>
+</tr>
+<tr>
+<td><p class="p">target_state_name :</p></td>
+<td><p class="p">the name of the target state keys are being added for</p></td>
+</tr>
+<tr>
+<td><p class="p">first_object :</p></td>
+<td><p class="p">a <span class=" link"><a href="GObject.html" title="GObject">GObject</a></span></p></td>
+</tr>
+<tr>
+<td><p class="p">first_property_name :</p></td>
+<td><p class="p">a property of @first_object to specify a key for</p></td>
+</tr>
+<tr>
+<td><p class="p">first_mode :</p></td>
+<td><p class="p">the id of the alpha function to use</p></td>
+</tr>
+<tr>
+<td><p class="p">None :</p></td>
+<td></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.4</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.State.html" title="Clutter.State">Clutter.State</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

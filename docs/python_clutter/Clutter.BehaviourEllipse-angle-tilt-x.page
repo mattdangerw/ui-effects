@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.BehaviourEllipse-angle-tilt-x"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourEllipse" group="property"/>
+    <title type="link" role="topic">angle-tilt-x</title>
+  </info>
+  <title>Clutter.BehaviourEllipse:angle-tilt-x</title>
+<synopsis><code mime="text/x-python">
+"angle-tilt-x"             gdouble                : Read / Write
+</code></synopsis>
+<p>The tilt angle for the rotation around center in X axis</p>
+</page>

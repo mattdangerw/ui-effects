@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.DeformEffect-back-material"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DeformEffect" group="property"/>
+    <title type="link" role="topic">back-material</title>
+  </info>
+  <title>Clutter.DeformEffect:back-material</title>
+<synopsis><code mime="text/x-python">
+"back-material"             None                : Read / Write
+</code></synopsis>
+<p>A material to be used when painting the back of the actor
+to which this effect has been applied</p><p>By default, no material will be used</p>
+</page>

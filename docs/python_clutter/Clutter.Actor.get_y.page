@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_y"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gfloat</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_y</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_y</title>
+<synopsis><code mime="text/x-python">
+@returns(gfloat)
+def get_y()
+</code></synopsis>
+<p>Retrieves the Y coordinate of a <link xref="Clutter.Actor">Clutter.Actor</link>.</p><p>This function tries to "do what you mean", by returning the
+correct value depending on the actor's state.</p><p>If the actor has a valid allocation, this function will return
+the Y coordinate of the origin of the allocation box.</p><p>If the actor has any fixed coordinate set using clutter_actor_set_y(),
+clutter_actor_set_position() or clutter_actor_set_geometry(), this
+function will return that coordinate.</p><p>If both the allocation and a fixed position are missing, this function
+will return 0.</p><p>transformation (i.e. scaling, rotation)</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the Y coordinate, in pixels, ignoring any</p></td>
+</tr>
+</table>
+</page>

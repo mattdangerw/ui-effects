@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-background-color-set"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">background-color-set</title>
+  </info>
+  <title>Clutter.Actor:background-color-set</title>
+<synopsis><code mime="text/x-python">
+"background-color-set"             gboolean                : Read
+</code></synopsis>
+<p>Whether the <link xref="Clutter.Actor-background-color">Clutter.Actor:background-color</link> property has been set.</p>
+</page>

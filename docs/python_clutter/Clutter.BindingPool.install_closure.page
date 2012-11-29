@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BindingPool.install_closure"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BindingPool" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_binding_pool_install_closure</api:name>
+      <api:arg>
+        <api:type>ClutterBindingPool *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>action_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>key_val</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ModifierType</api:type>
+        <api:name>modifiers</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Closure</api:type>
+        <api:name>closure</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>install_closure</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, guint, Clutter.ModifierType, GObject.Closure)
+@returns(none)
+def install_closure(action_name, key_val, modifiers, closure)
+</code></synopsis>
+<p>A <link xref="GClosure">GClosure</link> variant of clutter_binding_pool_install_action().</p><p>Installs a new action inside a <link xref="Clutter.BindingPool">Clutter.BindingPool</link>. The action
+is bound to @key_val and @modifiers.</p><p>The same action name can be used for multiple @key_val, @modifiers
+pairs.</p><p>When an action has been activated using clutter_binding_pool_activate()
+the passed @closure will be invoked.</p><p>Actions can be blocked with clutter_binding_pool_block_action()
+and then unblocked using clutter_binding_pool_unblock_action().</p>
+
+<table>
+<tr>
+<td><p>action_name :</p></td>
+<td><p>the name of the action</p></td>
+</tr>
+<tr>
+<td><p>key_val :</p></td>
+<td><p>key symbol</p></td>
+</tr>
+<tr>
+<td><p>modifiers :</p></td>
+<td><p>bitmask of modifiers</p></td>
+</tr>
+<tr>
+<td><p>closure :</p></td>
+<td><p>a <link xref="GClosure">GClosure</link></p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

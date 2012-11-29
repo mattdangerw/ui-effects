@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ActorBox.get_x"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ActorBox" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gfloat</api:type>
+      </api:returns>
+      <api:name>clutter_actor_box_get_x</api:name>
+    </api:function>
+  </info>
+  <title>get_x</title>
+<synopsis><code mime="text/x-python">
+@returns(gfloat)
+def get_x()
+</code></synopsis>
+<p>Retrieves the X coordinate of the origin of @box</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the X coordinate of the origin</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

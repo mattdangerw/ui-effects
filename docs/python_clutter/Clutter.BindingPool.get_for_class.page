@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BindingPool.get_for_class"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BindingPool" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.BindingPool</api:type>
+      </api:returns>
+      <api:name>clutter_binding_pool_get_for_class</api:name>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>klass</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_for_class</title>
+<synopsis><code mime="text/x-python">
+@accepts(gpointer)
+@returns(Clutter.BindingPool)
+def get_for_class(klass)
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.BindingPool">Clutter.BindingPool</link> for the given <link xref="GObject">GObject</link> class
+and, eventually, creates it. This function is a wrapper around
+clutter_binding_pool_new() and uses the class type name as the
+unique name for the binding pool.</p><p>Calling this function multiple times will return the same
+<link xref="Clutter.BindingPool">Clutter.BindingPool</link>.</p><p>A binding pool for a class can also be retrieved using
+clutter_binding_pool_find() with the class type name:</p><p>|[
+pool = clutter_binding_pool_find (G_OBJECT_TYPE_NAME (instance));
+]|</p><p>The returned <link xref="Clutter.BindingPool">Clutter.BindingPool</link> is owned by Clutter and should not
+be freed directly</p>
+
+<table>
+<tr>
+<td><p>klass :</p></td>
+<td><p>a <link xref="GObjectClass">GObjectClass</link> pointer</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the binding pool for the given class.</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

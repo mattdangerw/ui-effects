@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PaintVolume.copy"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PaintVolume" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.PaintVolume</api:type>
+      </api:returns>
+      <api:name>clutter_paint_volume_copy</api:name>
+    </api:function>
+  </info>
+  <title>copy</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.PaintVolume)
+def copy()
+</code></synopsis>
+<p>Copies @pv into a new <link xref="Clutter.PaintVolume">Clutter.PaintVolume</link></p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a newly allocated copy of a <link xref="Clutter.PaintVolume">Clutter.PaintVolume</link></p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

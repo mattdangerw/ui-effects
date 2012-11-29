@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.PageTurnEffect-period"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PageTurnEffect" group="property"/>
+    <title type="link" role="topic">period</title>
+  </info>
+  <title>Clutter.PageTurnEffect:period</title>
+<synopsis><code mime="text/x-python">
+"period"             gdouble                : Read / Write
+</code></synopsis>
+<p>The period of the page turn, between 0.0 (no curling) and
+1.0 (fully curled)</p>
+</page>

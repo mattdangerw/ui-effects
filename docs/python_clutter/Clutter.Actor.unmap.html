@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>unmap</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">unmap</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@returns(none)
+def unmap()</pre></div></div></div></div></div>
+<p class="p">Unsets the %CLUTTER_ACTOR_MAPPED flag on the actor and possibly
+unmaps its children if they were mapped.</p>
+<p class="p">Calling this function is not encouraged: the default <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span>
+implementation of <span class=" link"><a href="Clutter.ActorClass.html" title="Clutter.ActorClass">Clutter.ActorClass</a></span>.unmap() will also unmap any
+eventual children by default when their parent is unmapped.</p>
+<p class="p">When overriding <span class=" link"><a href="Clutter.ActorClass.html" title="Clutter.ActorClass">Clutter.ActorClass</a></span>.unmap(), it is mandatory to
+chain up to the parent implementation.</p>
+<p class="p">&lt;note&gt;It is important to note that the implementation of the
+<span class=" link"><a href="Clutter.ActorClass.html" title="Clutter.ActorClass">Clutter.ActorClass</a></span>.unmap() virtual function may be called after
+the <span class=" link"><a href="Clutter.ActorClass.html" title="Clutter.ActorClass">Clutter.ActorClass</a></span>.destroy() or the <span class=" link"><a href="GObjectClass.html" title="GObjectClass">GObjectClass</a></span>.dispose()
+implementation, but it is guaranteed to be called before the
+<span class=" link"><a href="GObjectClass.html" title="GObjectClass">GObjectClass</a></span>.finalize() implementation.&lt;/note&gt;</p>
+<div class="table"><div class="inner"><div class="region"><table class="table"></table></div></div></div>
+<p class="p">Since 1.0</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Score.get_timeline"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Score" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Timeline</api:type>
+      </api:returns>
+      <api:name>clutter_score_get_timeline</api:name>
+      <api:arg>
+        <api:type>ClutterScore *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gulong</api:type>
+        <api:name>id_</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_timeline</title>
+<synopsis><code mime="text/x-python">
+@accepts(gulong)
+@returns(Clutter.Timeline)
+def get_timeline(id_)
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.Timeline">Clutter.Timeline</link> for @id_ inside @score.</p><p>function does not increase the reference count on the returned
+<link xref="Clutter.Timeline">Clutter.Timeline</link></p>
+
+<table>
+<tr>
+<td><p>id_ :</p></td>
+<td><p>the id of the timeline</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the requested timeline, or None. This</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

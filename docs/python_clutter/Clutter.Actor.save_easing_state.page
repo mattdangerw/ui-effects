@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.save_easing_state"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_save_easing_state</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>save_easing_state</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def save_easing_state()
+</code></synopsis>
+<p>Saves the current easing state for animatable properties, and creates
+a new state with the default values for easing mode and duration.</p>
+
+<table>
+</table>
+<p>Since 1.10</p>
+</page>

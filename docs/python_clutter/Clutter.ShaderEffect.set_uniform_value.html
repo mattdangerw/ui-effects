@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>set_uniform_value</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.ShaderEffect.html" title="Clutter.ShaderEffect">Clutter.ShaderEffect</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">set_uniform_value</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(utf8, GObject.Value)
+@returns(none)
+def set_uniform_value(name, value)</pre></div></div></div></div></div>
+<p class="p">Sets @value as the payload for the uniform @name inside the shader
+effect</p>
+<p class="p">The <span class=" link"><a href="GType.html" title="GType">GType</a></span> of the @value must be one of: %G_TYPE_INT, for a single
+integer value; %G_TYPE_FLOAT, for a single floating point value;
+%CLUTTER_TYPE_SHADER_INT, for an array of integer values;
+%CLUTTER_TYPE_SHADER_FLOAT, for an array of floating point values;
+and %CLUTTER_TYPE_SHADER_MATRIX, for a matrix of floating point
+values. It also accepts %G_TYPE_DOUBLE for compatibility with other
+languages than C.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">name :</p></td>
+<td><p class="p">the name of the uniform to set</p></td>
+</tr>
+<tr>
+<td><p class="p">value :</p></td>
+<td><p class="p">a <span class=" link"><a href="GValue.html" title="GValue">GValue</a></span> with the value of the uniform to set</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.4</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.ShaderEffect.html" title="Clutter.ShaderEffect">Clutter.ShaderEffect</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

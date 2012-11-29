@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.threads_init"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_threads_init</api:name>
+    </api:function>
+  </info>
+  <title>threads_init</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def threads_init()
+</code></synopsis>
+<p>Initialises the Clutter threading mechanism, so that Clutter API can be
+called by multiple threads, using clutter_threads_enter() and
+clutter_threads_leave() to mark the critical sections.</p><p>You must call g_thread_init() before this function.</p><p>This function must be called before clutter_init().</p><p>It is safe to call this function multiple times.</p><p>
+is initialized when Clutter is initialized.</p>
+
+<table>
+</table>
+<p>Since 0.4</p>
+</page>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.OffscreenEffect.get_target"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.OffscreenEffect" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Material</api:type>
+      </api:returns>
+      <api:name>clutter_offscreen_effect_get_target</api:name>
+      <api:arg>
+        <api:type>ClutterOffscreenEffect *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_target</title>
+<synopsis><code mime="text/x-python">
+@returns(Cogl.Material)
+def get_target()
+</code></synopsis>
+<p>Retrieves the material used as a render target for the offscreen
+buffer created by @effect</p><p>You should only use the returned <link xref="CoglMaterial">CoglMaterial</link> when painting. The
+returned material might change between different frames.</p><p>returned material is owned by Clutter and it should not be
+modified or freed</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="CoglMaterial">CoglMaterial</link> or None. The</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

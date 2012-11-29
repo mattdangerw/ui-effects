@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.clone"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Timeline</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_clone</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>clone</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Timeline)
+def clone()
+</code></synopsis>
+<p>Create a new <link xref="Clutter.Timeline">Clutter.Timeline</link> instance which has property values
+matching that of supplied timeline. The cloned timeline will not
+be started and will not be positioned to the current position of
+the original @timeline: you will have to start it with clutter_timeline_start().</p><p>&lt;note&gt;&lt;para&gt;The only cloned properties are:&lt;/para&gt;
+&lt;itemizedlist&gt;
+&lt;listitem&gt;&lt;simpara&gt;<link xref="Clutter.Timeline-duration">Clutter.Timeline:duration</link>&lt;/simpara&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;simpara&gt;<link xref="Clutter.Timeline-loop">Clutter.Timeline:loop</link>&lt;/simpara&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;simpara&gt;<link xref="Clutter.Timeline-delay">Clutter.Timeline:delay</link>&lt;/simpara&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;simpara&gt;<link xref="Clutter.Timeline-direction">Clutter.Timeline:direction</link>&lt;/simpara&gt;&lt;/listitem&gt;
+&lt;/itemizedlist&gt;&lt;/note&gt;</p><p>from @timeline</p><p>
+instead</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a new <link xref="Clutter.Timeline">Clutter.Timeline</link>, cloned</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

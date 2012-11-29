@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Interval.set_final"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Interval" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_interval_set_final</api:name>
+      <api:arg>
+        <api:type>ClutterInterval *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:varargs/>
+    </api:function>
+  </info>
+  <title>set_final</title>
+<synopsis><code mime="text/x-python">
+@accepts(&lt;varargs&gt;)
+@returns(none)
+def set_final(None)
+</code></synopsis>
+<p>Variadic arguments version of clutter_interval_set_final_value().</p><p>This function is meant as a convenience for the C API.</p><p>Language bindings should use clutter_interval_set_final_value() instead.</p>
+
+<table>
+<tr>
+<td><p>None :</p></td>
+<td></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

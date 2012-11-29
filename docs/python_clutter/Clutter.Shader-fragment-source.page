@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Shader-fragment-source"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Shader" group="property"/>
+    <title type="link" role="topic">fragment-source</title>
+  </info>
+  <title>Clutter.Shader:fragment-source</title>
+<synopsis><code mime="text/x-python">
+"fragment-source"             utf8                : Read / Write
+</code></synopsis>
+<p>GLSL source code for the fragment shader part of the shader program.</p>
+</page>

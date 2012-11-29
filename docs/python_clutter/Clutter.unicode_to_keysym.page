@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.unicode_to_keysym"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint</api:type>
+      </api:returns>
+      <api:name>clutter_unicode_to_keysym</api:name>
+      <api:arg>
+        <api:type>guint32</api:type>
+        <api:name>wc</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>unicode_to_keysym</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint32)
+@returns(guint)
+def unicode_to_keysym(wc)
+</code></synopsis>
+<p>Convert from a ISO10646 character to a key symbol.</p><p>or, if there is no corresponding symbol, wc | 0x01000000</p>
+
+<table>
+<tr>
+<td><p>wc :</p></td>
+<td><p>a ISO10646 encoded character</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the corresponding Clutter key symbol, if one exists.</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ActorBox.contains"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ActorBox" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_actor_box_contains</api:name>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>contains</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(gboolean)
+def contains(x, y)
+</code></synopsis>
+<p>Checks whether a point with @x, @y coordinates is contained
+withing @box</p>
+
+<table>
+<tr>
+<td><p>x :</p></td>
+<td><p>X coordinate of the point</p></td>
+</tr>
+<tr>
+<td><p>y :</p></td>
+<td><p>Y coordinate of the point</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the point is contained by the <link xref="Clutter.ActorBox">Clutter.ActorBox</link></p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

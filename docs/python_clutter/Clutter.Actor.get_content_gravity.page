@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_content_gravity"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.ContentGravity</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_content_gravity</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_content_gravity</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.ContentGravity)
+def get_content_gravity()
+</code></synopsis>
+<p>Retrieves the content gravity as set using
+clutter_actor_get_content_gravity().</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the content gravity</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

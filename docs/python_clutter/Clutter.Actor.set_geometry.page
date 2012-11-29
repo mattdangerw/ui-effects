@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_geometry"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_geometry</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Geometry</api:type>
+        <api:name>geometry</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_geometry</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Geometry)
+@returns(none)
+def set_geometry(geometry)
+</code></synopsis>
+<p>Sets the actor's fixed position and forces its minimum and natural
+size, in pixels. This means the untransformed actor will have the
+given geometry. This is the same as calling clutter_actor_set_position()
+and clutter_actor_set_size().</p><p>clutter_actor_set_size() instead.</p>
+
+<table>
+<tr>
+<td><p>geometry :</p></td>
+<td><p>A <link xref="Clutter.Geometry">Clutter.Geometry</link></p></td>
+</tr>
+</table>
+</page>

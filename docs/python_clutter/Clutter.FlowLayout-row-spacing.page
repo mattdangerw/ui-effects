@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.FlowLayout-row-spacing"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.FlowLayout" group="property"/>
+    <title type="link" role="topic">row-spacing</title>
+  </info>
+  <title>Clutter.FlowLayout:row-spacing</title>
+<synopsis><code mime="text/x-python">
+"row-spacing"             gfloat                : Read / Write
+</code></synopsis>
+<p>The spacing between rows, in pixels; the value of this
+property is honoured by vertical non-overflowing layouts and
+by horizontal overflowing layouts</p>
+</page>

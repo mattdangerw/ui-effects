@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Alpha-alpha"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Alpha" group="property"/>
+    <title type="link" role="topic">alpha</title>
+  </info>
+  <title>Clutter.Alpha:alpha</title>
+<synopsis><code mime="text/x-python">
+"alpha"             gdouble                : Read
+</code></synopsis>
+<p>The alpha value as computed by the alpha function. The linear
+interval is 0.0 to 1.0, but the Alpha allows overshooting by
+one unit in each direction, so the valid interval is -1.0 to 2.0.</p>
+</page>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.ensure_current"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_stage_ensure_current</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>ensure_current</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def ensure_current()
+</code></synopsis>
+<p>This function essentially makes sure the right GL context is
+current for the passed stage. It is not intended to
+be used by applications.</p>
+
+<table>
+</table>
+<p>Since 0.8</p>
+</page>

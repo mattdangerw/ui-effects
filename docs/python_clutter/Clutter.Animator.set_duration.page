@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animator.set_duration"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animator" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_animator_set_duration</api:name>
+      <api:arg>
+        <api:type>ClutterAnimator *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>duration</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_duration</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint)
+@returns(none)
+def set_duration(duration)
+</code></synopsis>
+<p>Runs the timeline of the <link xref="Clutter.Animator">Clutter.Animator</link> with a duration in msecs
+as specified.</p>
+
+<table>
+<tr>
+<td><p>duration :</p></td>
+<td><p>milliseconds a run of the animator should last.</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

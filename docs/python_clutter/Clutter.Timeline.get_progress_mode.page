@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.get_progress_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.AnimationMode</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_get_progress_mode</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_progress_mode</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.AnimationMode)
+def get_progress_mode()
+</code></synopsis>
+<p>Retrieves the progress mode set using clutter_timeline_set_progress_mode()
+or clutter_timeline_set_progress_func().</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="Clutter.AnimationMode">Clutter.AnimationMode</link></p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

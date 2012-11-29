@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.pop_internal"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_pop_internal</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>pop_internal</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def pop_internal()
+</code></synopsis>
+<p>Disables the effects of clutter_actor_push_internal().</p><p>
+the <link xref="Clutter.Actor">Clutter.Actor</link> API. This function is only useful for legacy
+containers overriding the default implementation of the
+<link xref="Clutter.Container">Clutter.Container</link> interface.</p>
+
+<table>
+</table>
+<p>Since 1.2</p>
+</page>

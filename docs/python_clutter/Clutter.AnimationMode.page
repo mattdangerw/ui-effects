@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<page id="Clutter.AnimationMode"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.AnimationMode</title>
+  <p>The animation modes used by <link xref="Clutter.Alpha">Clutter.Alpha</link> and <link xref="Clutter.Animation">Clutter.Animation</link>. This
+enumeration can be expanded in later versions of Clutter. See the
+<link xref="Clutter.Alpha">Clutter.Alpha</link> documentation for a graph of all the animation modes.</p><p>Every global alpha function registered using clutter_alpha_register_func()
+or clutter_alpha_register_closure() will have a logical id greater than
+%CLUTTER_ANIMATION_LAST.</p>
+<table>
+<tr>
+<td><p>AnimationMode.CUSTOM_MODE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.LINEAR :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_QUAD :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_OUT_QUAD :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_OUT_QUAD :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_CUBIC :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_OUT_CUBIC :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_OUT_CUBIC :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_QUART :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_OUT_QUART :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_OUT_QUART :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_QUINT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_OUT_QUINT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_OUT_QUINT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_SINE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_OUT_SINE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_OUT_SINE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_EXPO :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_OUT_EXPO :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_OUT_EXPO :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_CIRC :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_OUT_CIRC :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_OUT_CIRC :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_ELASTIC :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_OUT_ELASTIC :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_OUT_ELASTIC :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_BACK :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_OUT_BACK :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_OUT_BACK :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_BOUNCE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_OUT_BOUNCE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.EASE_IN_OUT_BOUNCE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AnimationMode.ANIMATION_LAST :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

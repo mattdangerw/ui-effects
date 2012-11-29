@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Animation-loop"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animation" group="property"/>
+    <title type="link" role="topic">loop</title>
+  </info>
+  <title>Clutter.Animation:loop</title>
+<synopsis><code mime="text/x-python">
+"loop"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the animation should loop.</p>
+</page>

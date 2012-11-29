@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animator.property_set_ease_in"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animator" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_animator_property_set_ease_in</api:name>
+      <api:arg>
+        <api:type>ClutterAnimator *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>object</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>ease_in</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>property_set_ease_in</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.Object, utf8, gboolean)
+@returns(none)
+def property_set_ease_in(object, property_name, ease_in)
+</code></synopsis>
+<p>Sets whether a property value is to be eased into the animation.</p>
+
+<table>
+<tr>
+<td><p>object :</p></td>
+<td><p>a <link xref="GObject">GObject</link></p></td>
+</tr>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>the name of a property on object</p></td>
+</tr>
+<tr>
+<td><p>ease_in :</p></td>
+<td><p>we are going to be easing in this property</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_font_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_font_name</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>font_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_font_name</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(none)
+def set_font_name(font_name)
+</code></synopsis>
+<p>Sets the font used by a <link xref="Clutter.Text">Clutter.Text</link>. The @font_name string
+must either be None, which means that the font name from the
+default <link xref="Clutter.Backend">Clutter.Backend</link> will be used; or be something that can
+be parsed by the pango_font_description_from_string() function,
+like:</p><p>|[
+clutter_text_set_font_name (text, "Sans 10pt");
+clutter_text_set_font_name (text, "Serif 16px");
+clutter_text_set_font_name (text, "Helvetica 10");
+]|</p>
+
+<table>
+<tr>
+<td><p>font_name :</p></td>
+<td><p>a font name, or None to set the default font name</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

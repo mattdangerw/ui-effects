@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Path.add_move_to"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Path" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_path_add_move_to</api:name>
+      <api:arg>
+        <api:type>ClutterPath *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>add_move_to</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint, gint)
+@returns(none)
+def add_move_to(x, y)
+</code></synopsis>
+<p>Adds a %CLUTTER_PATH_MOVE_TO type node to the path. This is usually
+used as the first node in a path. It can also be used in the middle
+of the path to cause the actor to jump to the new coordinate.</p>
+
+<table>
+<tr>
+<td><p>x :</p></td>
+<td><p>the x coordinate</p></td>
+</tr>
+<tr>
+<td><p>y :</p></td>
+<td><p>the y coordinate</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>from_string</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Units.html" title="ClutterUnits">ClutterUnits</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">from_string</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(utf8)
+@returns(gboolean)
+def from_string(str)</pre></div></div></div></div></div>
+<p class="p">Parses a value and updates @units with it</p>
+<p class="p">A <span class=" link"><a href="Clutter.Units.html" title="ClutterUnits">Clutter.Units</a></span> expressed in string should match:</p>
+<p class="p">|[
+units: wsp* unit-value wsp* unit-name? wsp*
+unit-value: number
+unit-name: 'px' | 'pt' | 'mm' | 'em' | 'cm'
+number: digit+
+| digit* sep digit+
+sep: '.' | ','
+digit: '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
+wsp: (<span class=" link"><a href="" title=""></a></span>0x20 | <span class=" link"><a href="" title=""></a></span>0x9 | <span class=" link"><a href="" title=""></a></span>0xA | <span class=" link"><a href="" title=""></a></span>0xB | <span class=" link"><a href="" title=""></a></span>0xC | <span class=" link"><a href="" title=""></a></span>0xD)+
+]|</p>
+<p class="p">For instance, these are valid strings:</p>
+<p class="p">|[
+10 px
+5.1 em
+24 pt
+12.6 mm
+.3 cm
+]|</p>
+<p class="p">While these are not:</p>
+<p class="p">|[
+42 cats
+omg!1!ponies
+]|</p>
+<p class="p">&lt;note&gt;&lt;para&gt;If no unit is specified, pixels are assumed.&lt;/para&gt;&lt;/note&gt;</p>
+<p class="p">and False otherwise</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">str :</p></td>
+<td><p class="p">the string to convert</p></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">True if the string was successfully parsed,</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.0</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Units.html" title="ClutterUnits">ClutterUnits</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

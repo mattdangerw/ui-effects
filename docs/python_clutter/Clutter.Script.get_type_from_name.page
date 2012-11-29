@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Script.get_type_from_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Script" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>GType</api:type>
+      </api:returns>
+      <api:name>clutter_script_get_type_from_name</api:name>
+      <api:arg>
+        <api:type>ClutterScript *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>type_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_type_from_name</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(GType)
+def get_type_from_name(type_name)
+</code></synopsis>
+<p>Looks up a type by name, using the virtual function that 
+<link xref="Clutter.Script">Clutter.Script</link> has for that purpose. This function should
+rarely be used.</p><p>%G_TYPE_INVALID if not corresponding type was found.</p>
+
+<table>
+<tr>
+<td><p>type_name :</p></td>
+<td><p>name of the type to look up</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the type for the requested type name, or</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

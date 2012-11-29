@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Settings-double-click-distance"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Settings" group="property"/>
+    <title type="link" role="topic">double-click-distance</title>
+  </info>
+  <title>Clutter.Settings:double-click-distance</title>
+<synopsis><code mime="text/x-python">
+"double-click-distance"             gint                : Read / Write
+</code></synopsis>
+<p>The maximum distance, in pixels, between button-press events that
+determines whether or not to increase the click count by 1.</p>
+</page>

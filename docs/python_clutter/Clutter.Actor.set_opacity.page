@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_opacity"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_opacity</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint8</api:type>
+        <api:name>opacity</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_opacity</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint8)
+@returns(none)
+def set_opacity(opacity)
+</code></synopsis>
+<p>Sets the actor's opacity, with zero being completely transparent and
+255 (0xff) being fully opaque.</p><p>The <link xref="Clutter.Actor-opacity">Clutter.Actor:opacity</link> property is animatable.</p>
+
+<table>
+<tr>
+<td><p>opacity :</p></td>
+<td><p>New opacity value for the actor.</p></td>
+</tr>
+</table>
+</page>

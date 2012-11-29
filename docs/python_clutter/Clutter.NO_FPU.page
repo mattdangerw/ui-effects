@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page id="Clutter.NO_FPU"
+      type="topic"
+      style=""
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+  </info>
+  <title>Clutter.NO_FPU</title>
+
+</page>

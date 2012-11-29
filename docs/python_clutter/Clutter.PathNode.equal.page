@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PathNode.equal"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PathNode" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_path_node_equal</api:name>
+      <api:arg>
+        <api:type>Clutter.PathNode</api:type>
+        <api:name>node_b</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>equal</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.PathNode)
+@returns(gboolean)
+def equal(node_b)
+</code></synopsis>
+<p>Compares two nodes and checks if they are the same type with the
+same coordinates.</p>
+
+<table>
+<tr>
+<td><p>node_b :</p></td>
+<td><p>Second node</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the nodes are the same.</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

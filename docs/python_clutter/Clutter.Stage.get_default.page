@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.get_default"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Stage</api:type>
+      </api:returns>
+      <api:name>clutter_stage_get_default</api:name>
+    </api:function>
+  </info>
+  <title>get_default</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Stage)
+def get_default()
+</code></synopsis>
+<p>Retrieves a <link xref="Clutter.Stage">Clutter.Stage</link> singleton.</p><p>This function is not as useful as it sounds, and will most likely
+by deprecated in the future. Application code should only create
+a <link xref="Clutter.Stage">Clutter.Stage</link> instance using clutter_stage_new(), and manage the
+lifetime of the stage manually.</p><p>The default stage singleton has a platform-specific behaviour: on
+platforms without the %CLUTTER_FEATURE_STAGE_MULTIPLE feature flag
+set, the first <link xref="Clutter.Stage">Clutter.Stage</link> instance will also be set to be the
+default stage instance, and this function will always return a
+pointer to it.</p><p>On platforms with the %CLUTTER_FEATURE_STAGE_MULTIPLE feature flag
+set, the default stage will be created by the first call to this
+function, and every following call will return the same pointer to
+it.</p><p><link xref="Clutter.Stage">Clutter.Stage</link>. You should never destroy or unref the returned
+actor.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the main</p></td>
+</tr>
+</table>
+</page>

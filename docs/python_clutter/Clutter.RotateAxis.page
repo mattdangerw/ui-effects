@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Clutter.RotateAxis"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.RotateAxis</title>
+  <p>Axis of a rotation.</p>
+<table>
+<tr>
+<td><p>RotateAxis.X_AXIS :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>RotateAxis.Y_AXIS :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>RotateAxis.Z_AXIS :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Clutter.InputAxis"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.InputAxis</title>
+  <p>The type of axes Clutter recognizes on a <link xref="Clutter.InputDevice">Clutter.InputDevice</link></p>
+<table>
+<tr>
+<td><p>InputAxis.IGNORE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputAxis.X :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputAxis.Y :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputAxis.PRESSURE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputAxis.XTILT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputAxis.YTILT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputAxis.WHEEL :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

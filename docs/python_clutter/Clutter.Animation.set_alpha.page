@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animation.set_alpha"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animation" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_animation_set_alpha</api:name>
+      <api:arg>
+        <api:type>ClutterAnimation *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Alpha</api:type>
+        <api:name>alpha</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_alpha</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Alpha)
+@returns(none)
+def set_alpha(alpha)
+</code></synopsis>
+<p>Sets @alpha as the <link xref="Clutter.Alpha">Clutter.Alpha</link> used by @animation.</p><p>If @alpha is not None, the <link xref="Clutter.Animation">Clutter.Animation</link> will take ownership
+of the <link xref="Clutter.Alpha">Clutter.Alpha</link> instance.</p><p>
+clutter_timeline_set_progress_mode() instead.</p>
+
+<table>
+<tr>
+<td><p>alpha :</p></td>
+<td><p>a <link xref="Clutter.Alpha">Clutter.Alpha</link>, or None to unset the current <link xref="Clutter.Alpha">Clutter.Alpha</link></p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

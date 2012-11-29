@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-cursor-size"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="property"/>
+    <title type="link" role="topic">cursor-size</title>
+  </info>
+  <title>Clutter.Text:cursor-size</title>
+<synopsis><code mime="text/x-python">
+"cursor-size"             gint                : Read / Write
+</code></synopsis>
+<p>The size of the cursor, in pixels. If set to -1 the size used will
+be the default cursor size of 2 pixels.</p>
+</page>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.LayoutManager.get_animation_progress"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutManager" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gdouble</api:type>
+      </api:returns>
+      <api:name>clutter_layout_manager_get_animation_progress</api:name>
+      <api:arg>
+        <api:type>ClutterLayoutManager *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_animation_progress</title>
+<synopsis><code mime="text/x-python">
+@returns(gdouble)
+def get_animation_progress()
+</code></synopsis>
+<p>Retrieves the progress of the animation, if one has been started by
+clutter_layout_manager_begin_animation()</p><p>The returned value has the same semantics of the <link xref="Clutter.Alpha-alpha">Clutter.Alpha:alpha</link>
+value</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the progress of the animation</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-pick"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="signal"/>
+    <title type="link" role="topic">pick</title>
+  </info>
+  <title>Clutter.Actor::pick</title>
+<synopsis><code mime="text/x-python">
+def callback(actor, color, user_param1, ...)
+</code></synopsis>
+<p>The ::pick signal is emitted each time an actor is being painted
+in "pick mode". The pick mode is used to identify the actor during
+the event handling phase, or by clutter_stage_get_actor_at_pos().
+The actor should paint its shape using the passed @pick_color.</p><p>Subclasses of <link xref="Clutter.Actor">Clutter.Actor</link> should override the class signal handler
+and paint themselves in that function.</p><p>It is possible to connect a handler to the ::pick signal in order
+to set up some custom aspect of a paint in pick mode.</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>instance of Clutter.Actor that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>color :</p></td>
+<td><p>the <link xref="Clutter.Color">Clutter.Color</link> to be used when picking</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

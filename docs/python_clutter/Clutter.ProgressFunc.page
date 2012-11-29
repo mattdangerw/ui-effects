@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.ProgressFunc"
+      type="topic"
+      style=""
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+  </info>
+  <title>Clutter.ProgressFunc</title>
+<p>Prototype of the progress function used to compute the value
+between the two ends @a and @b of an interval depending on
+the value of @progress.</p><p>The <link xref="GValue">GValue</link> in @retval is already initialized with the same
+type as @a and @b.</p><p>This function will be called by <link xref="Clutter.Interval">Clutter.Interval</link> if the
+type of the values of the interval was registered using
+clutter_interval_register_progress_func().</p><p>the value and stored it inside @retval</p>
+</page>

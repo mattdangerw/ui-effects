@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.unrealize"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_unrealize</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>unrealize</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def unrealize()
+</code></synopsis>
+<p>Unrealization informs the actor that it may be being destroyed or
+moved to another stage. The actor may want to destroy any
+underlying graphics resources at this point. However it is
+perfectly acceptable for it to retain the resources until the actor
+is destroyed because Clutter only ever uses a single rendering
+context and all of the graphics resources are valid on any stage.</p><p>Because mapped actors must be realized, actors may not be
+unrealized if they are mapped. This function hides the actor to be
+sure it isn't mapped, an application-visible side effect that you
+may not be expecting.</p><p>This function should not be called by application code.</p>
+
+<table>
+</table>
+</page>

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_clip"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_clip</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>xoff</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>yoff</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_clip</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat, gfloat, gfloat)
+@returns(none)
+def set_clip(xoff, yoff, width, height)
+</code></synopsis>
+<p>Sets clip area for @self. The clip area is always computed from the
+upper left corner of the actor, even if the anchor point is set
+otherwise.</p>
+
+<table>
+<tr>
+<td><p>xoff :</p></td>
+<td><p>X offset of the clip rectangle</p></td>
+</tr>
+<tr>
+<td><p>yoff :</p></td>
+<td><p>Y offset of the clip rectangle</p></td>
+</tr>
+<tr>
+<td><p>width :</p></td>
+<td><p>Width of the clip rectangle</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>Height of the clip rectangle</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

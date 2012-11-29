@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.BehaviourOpacity-opacity-end"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourOpacity" group="property"/>
+    <title type="link" role="topic">opacity-end</title>
+  </info>
+  <title>Clutter.BehaviourOpacity:opacity-end</title>
+<synopsis><code mime="text/x-python">
+"opacity-end"             guint                : Read / Write
+</code></synopsis>
+<p>Final opacity level of the behaviour.</p>
+</page>

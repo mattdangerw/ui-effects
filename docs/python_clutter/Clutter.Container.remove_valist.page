@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Container.remove_valist"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_container_remove_valist</api:name>
+      <api:arg>
+        <api:type>ClutterContainer *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>first_actor</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>va_list</api:type>
+        <api:name>var_args</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>remove_valist</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, va_list)
+@returns(none)
+def remove_valist(first_actor, var_args)
+</code></synopsis>
+<p>Alternative va_list version of clutter_container_remove().</p><p>This function will call <link xref="Clutter.ContainerIface">Clutter.ContainerIface</link>.remove(), which is a
+deprecated virtual function. The default implementation will call
+clutter_actor_remove_child().</p>
+
+<table>
+<tr>
+<td><p>first_actor :</p></td>
+<td><p>the first <link xref="Clutter.Actor">Clutter.Actor</link> to add</p></td>
+</tr>
+<tr>
+<td><p>var_args :</p></td>
+<td><p>list of actors to remove, followed by None</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

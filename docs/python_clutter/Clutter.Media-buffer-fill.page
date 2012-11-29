@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Media-buffer-fill"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Media" group="property"/>
+    <title type="link" role="topic">buffer-fill</title>
+  </info>
+  <title>Clutter.Media:buffer-fill</title>
+<synopsis><code mime="text/x-python">
+"buffer-fill"             gdouble                : Read
+</code></synopsis>
+<p>The fill level of the buffer for the current stream,
+as a value between 0.0 and 1.0.</p>
+</page>

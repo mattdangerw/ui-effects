@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Behaviour.remove"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Behaviour" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_remove</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviour *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>remove</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def remove(actor)
+</code></synopsis>
+<p>Removes @actor from the list of <link xref="Clutter.Actor">Clutter.Actor</link>&lt;!-- --&gt;s to which
+@behave applies.  This function removes a reference on the actor.</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

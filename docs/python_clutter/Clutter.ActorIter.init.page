@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ActorIter.init"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ActorIter" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_iter_init</api:name>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>root</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>init</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def init(root)
+</code></synopsis>
+<p>Initializes a <link xref="Clutter.ActorIter">Clutter.ActorIter</link>, which can then be used to iterate
+efficiently over a section of the scene graph, and associates it
+with @root.</p><p>Modifying the scene graph section that contains @root will invalidate
+the iterator.</p><p>|[
+ClutterActorIter iter;
+ClutterActor *child;</p><p>clutter_actor_iter_init (&amp;iter, container);
+while (clutter_actor_iter_next (&amp;iter, &amp;child))
+{
+/&amp;ast; do something with child &amp;ast;/
+}
+]|</p>
+
+<table>
+<tr>
+<td><p>root :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

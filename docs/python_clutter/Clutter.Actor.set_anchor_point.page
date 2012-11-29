@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_anchor_point"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_anchor_point</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>anchor_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>anchor_y</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_anchor_point</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(none)
+def set_anchor_point(anchor_x, anchor_y)
+</code></synopsis>
+<p>Sets an anchor point for @self. The anchor point is a point in the
+coordinate space of an actor to which the actor position within its
+parent is relative; the default is (0, 0), i.e. the top-left corner
+of the actor.</p>
+
+<table>
+<tr>
+<td><p>anchor_x :</p></td>
+<td><p>X coordinate of the anchor point</p></td>
+</tr>
+<tr>
+<td><p>anchor_y :</p></td>
+<td><p>Y coordinate of the anchor point</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

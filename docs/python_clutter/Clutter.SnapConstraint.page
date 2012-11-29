@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<page id="Clutter.SnapConstraint"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="class"/>
+  </info>
+  <title>Clutter.SnapConstraint</title>
+<p>&lt;structname&gt;ClutterSnapConstraint&lt;/structname&gt; is an opaque structure
+whose members cannot be directly accesses</p>
+
+  <synopsis><code>
+from gi.repository import Clutter
+
+snap_constraint = Clutter.SnapConstraint(<link xref='Clutter.SnapConstraint-from-edge'>from_edge</link>=value, <link xref='Clutter.SnapConstraint-offset'>offset</link>=value, <link xref='Clutter.SnapConstraint-source'>source</link>=value, <link xref='Clutter.SnapConstraint-to-edge'>to_edge</link>=value)  </code></synopsis>
+
+<p>Since 1.6</p>
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>GObject.InitiallyUnowned</code>
+      <item>
+        <code>Clutter.ActorMeta</code>
+      <item>
+        <code>Clutter.Constraint</code>
+      <item>
+        <code>Clutter.SnapConstraint</code>
+      </item>
+      </item>
+      </item>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="yes"
+         api:type="function" api:mime="text/x-python"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="yes"
+         api:type="function" api:mime="text/x-python"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

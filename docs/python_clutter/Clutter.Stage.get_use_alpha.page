@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.get_use_alpha"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_stage_get_use_alpha</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_use_alpha</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def get_use_alpha()
+</code></synopsis>
+<p>Retrieves the value set using clutter_stage_set_use_alpha()</p><p>alpha channel of the stage color</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the stage should honour the opacity and the</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

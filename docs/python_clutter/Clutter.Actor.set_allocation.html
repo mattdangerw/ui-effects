@@ -1,0 +1,100 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>set_allocation</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">set_allocation</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(Clutter.ActorBox, Clutter.AllocationFlags)
+@returns(none)
+def set_allocation(box, flags)</pre></div></div></div></div></div>
+<p class="p">Stores the allocation of @self as defined by @box.</p>
+<p class="p">This function can only be called from within the implementation of
+the <span class=" link"><a href="Clutter.ActorClass.html" title="Clutter.ActorClass">Clutter.ActorClass</a></span>.allocate() virtual function.</p>
+<p class="p">The allocation should have been adjusted to take into account constraints,
+alignment, and margin properties. If you are implementing a <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span>
+subclass that provides its own layout management policy for its children
+instead of using a <span class=" link"><a href="Clutter.LayoutManager.html" title="Clutter.LayoutManager">Clutter.LayoutManager</a></span> delegate, you should not call
+this function on the children of @self; instead, you should call
+clutter_actor_allocate(), which will adjust the allocation box for
+you.</p>
+<p class="p">This function should only be used by subclasses of <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span>
+that wish to store their allocation but cannot chain up to the
+parent's implementation; the default implementation of the
+<span class=" link"><a href="Clutter.ActorClass.html" title="Clutter.ActorClass">Clutter.ActorClass</a></span>.allocate() virtual function will call this
+function.</p>
+<p class="p">It is important to note that, while chaining up was the recommended
+behaviour for <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> subclasses prior to the introduction of
+this function, it is recommended to call clutter_actor_set_allocation()
+instead.</p>
+<p class="p">If the <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> is using a <span class=" link"><a href="Clutter.LayoutManager.html" title="Clutter.LayoutManager">Clutter.LayoutManager</a></span> delegate object
+to handle the allocation of its children, this function will call
+the clutter_layout_manager_allocate() function only if the
+%CLUTTER_DELEGATE_LAYOUT flag is set on @flags, otherwise it is
+expected that the subclass will call clutter_layout_manager_allocate()
+by itself. For instance, the following code:</p>
+<p class="p">|[
+static void
+my_actor_allocate (ClutterActor *actor,
+const ClutterActorBox *allocation,
+ClutterAllocationFlags flags)
+{
+ClutterActorBox new_alloc;
+ClutterAllocationFlags new_flags;</p>
+<p class="p">adjust_allocation (allocation, &amp;amp;new_alloc);</p>
+<p class="p">new_flags = flags | CLUTTER_DELEGATE_LAYOUT;</p>
+<p class="p">/&amp;ast; this will use the layout manager set on the actor &amp;ast;/
+clutter_actor_set_allocation (actor, &amp;amp;new_alloc, new_flags);
+}
+]|</p>
+<p class="p">is equivalent to this:</p>
+<p class="p">|[
+static void
+my_actor_allocate (ClutterActor *actor,
+const ClutterActorBox *allocation,
+ClutterAllocationFlags flags)
+{
+ClutterLayoutManager *layout;
+ClutterActorBox new_alloc;</p>
+<p class="p">adjust_allocation (allocation, &amp;amp;new_alloc);</p>
+<p class="p">clutter_actor_set_allocation (actor, &amp;amp;new_alloc, flags);</p>
+<p class="p">layout = clutter_actor_get_layout_manager (actor);
+clutter_layout_manager_allocate (layout,
+CLUTTER_CONTAINER (actor),
+&amp;amp;new_alloc,
+flags);
+}
+]|</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">box :</p></td>
+<td><p class="p">a <span class=" link"><a href="Clutter.ActorBox.html" title="ClutterActorBox">Clutter.ActorBox</a></span></p></td>
+</tr>
+<tr>
+<td><p class="p">flags :</p></td>
+<td><p class="p">allocation flags</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.10</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

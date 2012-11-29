@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.AlignConstraint-align-axis"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.AlignConstraint" group="property"/>
+    <title type="link" role="topic">align-axis</title>
+  </info>
+  <title>Clutter.AlignConstraint:align-axis</title>
+<synopsis><code mime="text/x-python">
+"align-axis"             Clutter.AlignAxis                : Read / Write / Construct
+</code></synopsis>
+<p>The axis to be used to compute the alignment</p>
+</page>

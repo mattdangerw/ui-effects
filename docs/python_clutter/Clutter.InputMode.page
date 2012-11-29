@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Clutter.InputMode"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.InputMode</title>
+  <p>The mode for input devices available.</p>
+<table>
+<tr>
+<td><p>InputMode.MASTER :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputMode.SLAVE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InputMode.FLOATING :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

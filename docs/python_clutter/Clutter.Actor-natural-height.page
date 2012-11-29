@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-natural-height"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">natural-height</title>
+  </info>
+  <title>Clutter.Actor:natural-height</title>
+<synopsis><code mime="text/x-python">
+"natural-height"             gfloat                : Read / Write
+</code></synopsis>
+<p>A forced natural height request for the actor, in pixels</p><p>Writing this property sets the <link xref="Clutter.Actor-natural-height-set">Clutter.Actor:natural-height-set</link>
+property as well, as a side effect. This property overrides the
+usual height request of the actor</p>
+</page>

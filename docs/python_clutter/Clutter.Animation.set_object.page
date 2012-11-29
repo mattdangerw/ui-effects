@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animation.set_object"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animation" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_animation_set_object</api:name>
+      <api:arg>
+        <api:type>ClutterAnimation *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>object</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_object</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.Object)
+@returns(none)
+def set_object(object)
+</code></synopsis>
+<p>Attaches @animation to @object. The <link xref="Clutter.Animation">Clutter.Animation</link> will take a
+reference on @object.</p>
+
+<table>
+<tr>
+<td><p>object :</p></td>
+<td><p>a <link xref="GObject">GObject</link></p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

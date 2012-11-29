@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Rectangle-border-width"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Rectangle" group="property"/>
+    <title type="link" role="topic">border-width</title>
+  </info>
+  <title>Clutter.Rectangle:border-width</title>
+<synopsis><code mime="text/x-python">
+"border-width"             guint                : Read / Write
+</code></synopsis>
+<p>The width of the border of the rectangle, in pixels.</p>
+</page>

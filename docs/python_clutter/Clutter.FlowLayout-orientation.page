@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.FlowLayout-orientation"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.FlowLayout" group="property"/>
+    <title type="link" role="topic">orientation</title>
+  </info>
+  <title>Clutter.FlowLayout:orientation</title>
+<synopsis><code mime="text/x-python">
+"orientation"             Clutter.FlowOrientation                : Read / Write / Construct
+</code></synopsis>
+<p>The orientation of the <link xref="Clutter.FlowLayout">Clutter.FlowLayout</link>. The children
+of the layout will be layed out following the orientation.</p><p>This property also controls the overflowing directions</p>
+</page>

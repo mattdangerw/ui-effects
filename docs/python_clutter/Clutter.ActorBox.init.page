@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ActorBox.init"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ActorBox" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_box_init</api:name>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>x_1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>y_1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>x_2</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>y_2</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>init</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat, gfloat, gfloat)
+@returns(none)
+def init(x_1, y_1, x_2, y_2)
+</code></synopsis>
+<p>Initializes @box with the given coordinates.</p>
+
+<table>
+<tr>
+<td><p>x_1 :</p></td>
+<td><p>X coordinate of the top left point</p></td>
+</tr>
+<tr>
+<td><p>y_1 :</p></td>
+<td><p>Y coordinate of the top left point</p></td>
+</tr>
+<tr>
+<td><p>x_2 :</p></td>
+<td><p>X coordinate of the bottom right point</p></td>
+</tr>
+<tr>
+<td><p>y_2 :</p></td>
+<td><p>Y coordinate of the bottom right point</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

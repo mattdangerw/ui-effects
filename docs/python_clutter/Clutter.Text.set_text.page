@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_text"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_text</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>text</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_text</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(none)
+def set_text(text)
+</code></synopsis>
+<p>Sets the contents of a <link xref="Clutter.Text">Clutter.Text</link> actor.</p><p>If the <link xref="Clutter.Text-use-markup">Clutter.Text:use-markup</link> property was set to True it
+will be reset to False as a side effect. If you want to
+maintain the <link xref="Clutter.Text-use-markup">Clutter.Text:use-markup</link> you should use the
+clutter_text_set_markup() function instead</p>
+
+<table>
+<tr>
+<td><p>text :</p></td>
+<td><p>the text to set. Passing None is the same as passing "" (the empty string)</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<page id="Clutter.StaticColor"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.StaticColor</title>
+  <p>Named colors, for accessing global colors defined by Clutter</p>
+<table>
+<tr>
+<td><p>StaticColor.WHITE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.BLACK :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.RED :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.DARK_RED :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.GREEN :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.DARK_GREEN :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.BLUE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.DARK_BLUE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.CYAN :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.DARK_CYAN :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.MAGENTA :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.DARK_MAGENTA :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.YELLOW :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.DARK_YELLOW :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.GRAY :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.DARK_GRAY :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.LIGHT_GRAY :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.BUTTER :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.BUTTER_LIGHT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.BUTTER_DARK :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.ORANGE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.ORANGE_LIGHT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.ORANGE_DARK :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.CHOCOLATE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.CHOCOLATE_LIGHT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.CHOCOLATE_DARK :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.CHAMELEON :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.CHAMELEON_LIGHT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.CHAMELEON_DARK :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.SKY_BLUE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.SKY_BLUE_LIGHT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.SKY_BLUE_DARK :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.PLUM :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.PLUM_LIGHT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.PLUM_DARK :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.SCARLET_RED :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.SCARLET_RED_LIGHT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.SCARLET_RED_DARK :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.ALUMINIUM_1 :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.ALUMINIUM_2 :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.ALUMINIUM_3 :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.ALUMINIUM_4 :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.ALUMINIUM_5 :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.ALUMINIUM_6 :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>StaticColor.TRANSPARENT :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

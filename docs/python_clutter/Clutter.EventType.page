@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<page id="Clutter.EventType"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.EventType</title>
+  <p>Types of events.</p>
+<table>
+<tr>
+<td><p>EventType.NOTHING :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.KEY_PRESS :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.KEY_RELEASE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.MOTION :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.ENTER :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.LEAVE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.BUTTON_PRESS :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.BUTTON_RELEASE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.SCROLL :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.STAGE_STATE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.DESTROY_NOTIFY :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.CLIENT_MESSAGE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.DELETE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.TOUCH_BEGIN :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.TOUCH_UPDATE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.TOUCH_END :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.TOUCH_CANCEL :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>EventType.EVENT_LAST :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

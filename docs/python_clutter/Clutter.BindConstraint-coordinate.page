@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.BindConstraint-coordinate"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BindConstraint" group="property"/>
+    <title type="link" role="topic">coordinate</title>
+  </info>
+  <title>Clutter.BindConstraint:coordinate</title>
+<synopsis><code mime="text/x-python">
+"coordinate"             Clutter.BindCoordinate                : Read / Write / Construct
+</code></synopsis>
+<p>The coordinate to be bound</p>
+</page>

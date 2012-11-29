@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_child_above_sibling"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_child_above_sibling</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>child</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>sibling</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_child_above_sibling</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, Clutter.Actor)
+@returns(none)
+def set_child_above_sibling(child, sibling)
+</code></synopsis>
+<p>Sets @child to be above @sibling in the list of children of @self.</p><p>If @sibling is None, @child will be the new last child of @self.</p><p>This function is logically equivalent to removing @child and using
+clutter_actor_insert_child_above(), but it will not emit signals
+or change state on @child.</p>
+
+<table>
+<tr>
+<td><p>child :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link> child of @self</p></td>
+</tr>
+<tr>
+<td><p>sibling :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link> child of @self, or None</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_height"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_height</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_height</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat)
+@returns(none)
+def set_height(height)
+</code></synopsis>
+<p>Forces a height on an actor, causing the actor's preferred width
+and height (if any) to be ignored.</p><p>If @height is -1 the actor will use its preferred height instead of
+overriding it, i.e. you can "unset" the height with -1.</p><p>This function sets both the minimum and natural size of the actor.</p>
+
+<table>
+<tr>
+<td><p>height :</p></td>
+<td><p>Requested new height for the actor, in pixels, or -1</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_background_color"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_background_color</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Color</api:type>
+        <api:name>color</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_background_color</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Color)
+@returns(none)
+def set_background_color(color)
+</code></synopsis>
+<p>Sets the background color of a <link xref="Clutter.Actor">Clutter.Actor</link>.</p><p>The background color will be used to cover the whole allocation of the
+actor. The default background color of an actor is transparent.</p><p>To check whether an actor has a background color, you can use the
+<link xref="Clutter.Actor-background-color-set">Clutter.Actor:background-color-set</link> actor property.</p><p>The <link xref="Clutter.Actor-background-color">Clutter.Actor:background-color</link> property is animatable.</p>
+
+<table>
+<tr>
+<td><p>color :</p></td>
+<td><p>a <link xref="Clutter.Color">Clutter.Color</link>, or None to unset a previously set color</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

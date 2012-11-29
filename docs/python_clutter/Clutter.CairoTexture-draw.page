@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Clutter.CairoTexture-draw"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.CairoTexture" group="signal"/>
+    <title type="link" role="topic">draw</title>
+  </info>
+  <title>Clutter.CairoTexture::draw</title>
+<synopsis><code mime="text/x-python">
+def callback(cairo_texture, cr, user_param1, ...)
+</code></synopsis>
+<p>The ::draw signal is emitted each time a <link xref="Clutter.CairoTexture">Clutter.CairoTexture</link> has
+been invalidated.</p><p>The passed Cairo context passed will be clipped to the invalidated
+area.</p><p>It is safe to connect multiple callbacks to this signals; the state
+of the Cairo context passed to each callback is automatically saved
+and restored, so it's not necessary to call cairo_save() and
+cairo_restore().</p><p>to continue</p>
+
+<table>
+<tr>
+<td><p>cairo_texture :</p></td>
+<td><p>instance of Clutter.CairoTexture that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>cr :</p></td>
+<td><p>the Cairo context to use to draw</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

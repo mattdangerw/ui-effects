@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Clutter.DragAction-drag-begin"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DragAction" group="signal"/>
+    <title type="link" role="topic">drag-begin</title>
+  </info>
+  <title>Clutter.DragAction::drag-begin</title>
+<synopsis><code mime="text/x-python">
+def callback(drag_action, actor, event_x, event_y, modifiers, user_param1, ...)
+</code></synopsis>
+<p>The ::drag-begin signal is emitted when the <link xref="Clutter.DragAction">Clutter.DragAction</link>
+starts the dragging</p><p>The emission of this signal can be delayed by using the
+<link xref="Clutter.DragAction-x-drag-threshold">Clutter.DragAction:x-drag-threshold</link> and
+<link xref="Clutter.DragAction-y-drag-threshold">Clutter.DragAction:y-drag-threshold</link> properties</p>
+
+<table>
+<tr>
+<td><p>drag_action :</p></td>
+<td><p>instance of Clutter.DragAction that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>actor :</p></td>
+<td><p>the <link xref="Clutter.Actor">Clutter.Actor</link> attached to the action</p></td>
+</tr>
+<tr>
+<td><p>event_x :</p></td>
+<td><p>the X coordinate (in stage space) of the press event</p></td>
+</tr>
+<tr>
+<td><p>event_y :</p></td>
+<td><p>the Y coordinate (in stage space) of the press event</p></td>
+</tr>
+<tr>
+<td><p>modifiers :</p></td>
+<td><p>the modifiers of the press event</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

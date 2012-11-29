@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.set_motion_events_enabled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_stage_set_motion_events_enabled</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>enabled</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_motion_events_enabled</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_motion_events_enabled(enabled)
+</code></synopsis>
+<p>Sets whether per-actor motion events (and relative crossing
+events) should be disabled or not.</p><p>The default is True.</p><p>If @enable is False the following events will not be delivered
+to the actors children of @stage.</p><p>&lt;itemizedlist&gt;
+&lt;listitem&gt;&lt;para&gt;<link xref="Clutter.Actor-motion-event">Clutter.Actor::motion-event</link>&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;<link xref="Clutter.Actor-enter-event">Clutter.Actor::enter-event</link>&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;<link xref="Clutter.Actor-leave-event">Clutter.Actor::leave-event</link>&lt;/para&gt;&lt;/listitem&gt;
+&lt;/itemizedlist&gt;</p><p>The events will still be delivered to the <link xref="Clutter.Stage">Clutter.Stage</link>.</p><p>The main side effect of this function is that disabling the motion
+events will disable picking to detect the <link xref="Clutter.Actor">Clutter.Actor</link> underneath
+the pointer for each motion event. This is useful, for instance,
+when dragging a <link xref="Clutter.Actor">Clutter.Actor</link> across the @stage: the actor underneath
+the pointer is not going to change, so it's meaningless to perform
+a pick.</p>
+
+<table>
+<tr>
+<td><p>enabled :</p></td>
+<td><p>True to enable the motion events delivery, and False otherwise</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

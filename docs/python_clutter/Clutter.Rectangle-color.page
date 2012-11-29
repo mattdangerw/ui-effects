@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Rectangle-color"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Rectangle" group="property"/>
+    <title type="link" role="topic">color</title>
+  </info>
+  <title>Clutter.Rectangle:color</title>
+<synopsis><code mime="text/x-python">
+"color"             Clutter.Color                : Read / Write
+</code></synopsis>
+<p>The color of the rectangle.</p>
+</page>

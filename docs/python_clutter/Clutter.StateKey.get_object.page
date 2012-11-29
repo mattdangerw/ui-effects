@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.StateKey.get_object"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.StateKey" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.Object</api:type>
+      </api:returns>
+      <api:name>clutter_state_key_get_object</api:name>
+    </api:function>
+  </info>
+  <title>get_object</title>
+<synopsis><code mime="text/x-python">
+@returns(GObject.Object)
+def get_object()
+</code></synopsis>
+<p>Retrieves the object instance this <link xref="Clutter.StateKey">Clutter.StateKey</link> applies to.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the object this state key applies to.</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

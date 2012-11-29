@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page id="Clutter.BindingActionFunc"
+      type="topic"
+      style=""
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+  </info>
+  <title>Clutter.BindingActionFunc</title>
+<p>The prototype for the callback function registered with
+clutter_binding_pool_install_action() and invoked by
+clutter_binding_pool_activate().</p><p>binding has been handled, and return False otherwise</p>
+</page>

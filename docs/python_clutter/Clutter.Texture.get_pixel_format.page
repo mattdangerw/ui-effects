@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Texture.get_pixel_format"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.PixelFormat</api:type>
+      </api:returns>
+      <api:name>clutter_texture_get_pixel_format</api:name>
+      <api:arg>
+        <api:type>ClutterTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_pixel_format</title>
+<synopsis><code mime="text/x-python">
+@returns(Cogl.PixelFormat)
+def get_pixel_format()
+</code></synopsis>
+<p>Retrieves the pixel format used by @texture. This is
+equivalent to:</p><p>|[
+handle = clutter_texture_get_pixel_format (texture);</p><p>if (handle != COGL_INVALID_HANDLE)
+format = cogl_texture_get_format (handle);
+]|</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="CoglPixelFormat">CoglPixelFormat</link> value</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

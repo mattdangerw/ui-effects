@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Texture.get_pick_with_alpha"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_texture_get_pick_with_alpha</api:name>
+      <api:arg>
+        <api:type>ClutterTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_pick_with_alpha</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def get_pick_with_alpha()
+</code></synopsis>
+<p>Retrieves the value set by clutter_texture_set_load_data_async()</p><p>using the alpha channel when picking.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the <link xref="Clutter.Texture">Clutter.Texture</link> should define its shape</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

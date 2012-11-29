@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.threads_set_lock_functions"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_threads_set_lock_functions</api:name>
+      <api:arg>
+        <api:type>GObject.Callback</api:type>
+        <api:name>enter_fn</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Callback</api:type>
+        <api:name>leave_fn</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>threads_set_lock_functions</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.Callback, GObject.Callback)
+@returns(none)
+def threads_set_lock_functions(enter_fn, leave_fn)
+</code></synopsis>
+<p>Allows the application to replace the standard method that
+Clutter uses to protect its data structures. Normally, Clutter
+creates a single <link xref="GMutex">GMutex</link> that is locked by clutter_threads_enter(),
+and released by clutter_threads_leave(); using this function an
+application provides, instead, a function @enter_fn that is
+called by clutter_threads_enter() and a function @leave_fn that is
+called by clutter_threads_leave().</p><p>The functions must provide at least same locking functionality
+as the default implementation, but can also do extra application
+specific processing.</p><p>As an example, consider an application that has its own recursive
+lock that when held, holds the Clutter lock as well. When Clutter
+unlocks the Clutter lock when entering a recursive main loop, the
+application must temporarily release its lock as well.</p><p>Most threaded Clutter apps won't need to use this method.</p><p>This method must be called before clutter_init(), and cannot
+be called multiple times.</p>
+
+<table>
+<tr>
+<td><p>enter_fn :</p></td>
+<td><p>function called when aquiring the Clutter main lock</p></td>
+</tr>
+<tr>
+<td><p>leave_fn :</p></td>
+<td><p>function called when releasing the Clutter main lock</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

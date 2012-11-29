@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Clutter.Container-add"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="vfunc"/>
+    <title type="link" role="topic">add</title>
+  </info>
+  <title>Clutter.Container.add</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def do_add(self, actor):
+</code></synopsis>
+<p>Adds a <link xref="Clutter.Actor">Clutter.Actor</link> to @container. This function will emit the
+"actor-added" signal. The actor should be parented to
+@container. You cannot add a <link xref="Clutter.Actor">Clutter.Actor</link> to more than one
+<link xref="Clutter.Container">Clutter.Container</link>.</p><p>This function will call <link xref="Clutter.ContainerIface">Clutter.ContainerIface</link>.add(), which is a
+deprecated virtual function. The default implementation will
+call clutter_actor_add_child().</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>the first <link xref="Clutter.Actor">Clutter.Actor</link> to add</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

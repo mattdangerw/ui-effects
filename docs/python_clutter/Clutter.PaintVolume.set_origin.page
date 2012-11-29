@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PaintVolume.set_origin"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PaintVolume" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_paint_volume_set_origin</api:name>
+      <api:arg>
+        <api:type>Clutter.Vertex</api:type>
+        <api:name>origin</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_origin</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Vertex)
+@returns(none)
+def set_origin(origin)
+</code></synopsis>
+<p>Sets the origin of the paint volume.</p><p>The origin is defined as the X, Y and Z coordinates of the top-left
+corner of an actor's paint volume, in actor coordinates.</p><p>The default is origin is assumed at: (0, 0, 0)</p>
+
+<table>
+<tr>
+<td><p>origin :</p></td>
+<td><p>a <link xref="Clutter.Vertex">Clutter.Vertex</link></p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

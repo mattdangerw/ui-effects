@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="Clutter.TableLayout-easing-mode"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TableLayout" group="property"/>
+    <title type="link" role="topic">easing-mode</title>
+  </info>
+  <title>Clutter.TableLayout:easing-mode</title>
+<synopsis><code mime="text/x-python">
+"easing-mode"             gulong                : Read / Write
+</code></synopsis>
+<p>The easing mode for the animations, in case
+<link xref="Clutter.TableLayout-use-animations">Clutter.TableLayout:use-animations</link> is set to True</p><p>The easing mode has the same semantics of <link xref="Clutter.Animation-mode">Clutter.Animation:mode</link>: it can
+either be a value from the <link xref="Clutter.AnimationMode">Clutter.AnimationMode</link> enumeration, like
+%CLUTTER_EASE_OUT_CUBIC, or a logical id as returned by
+clutter_alpha_register_func()</p><p>The default value is %CLUTTER_EASE_OUT_CUBIC</p>
+</page>

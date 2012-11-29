@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Clutter.PathNodeType"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.PathNodeType</title>
+  <p>Types of nodes in a <link xref="Clutter.Path">Clutter.Path</link>.</p>
+<table>
+<tr>
+<td><p>PathNodeType.MOVE_TO :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>PathNodeType.LINE_TO :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>PathNodeType.CURVE_TO :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>PathNodeType.CLOSE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>PathNodeType.REL_MOVE_TO :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>PathNodeType.REL_LINE_TO :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>PathNodeType.REL_CURVE_TO :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.FlowLayout.get_row_height"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.FlowLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_flow_layout_get_row_height</api:name>
+      <api:arg>
+        <api:type>ClutterFlowLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>min_height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>max_height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_row_height</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(none)
+def get_row_height(min_height, max_height)
+</code></synopsis>
+<p>Retrieves the minimum and maximum row heights</p>
+
+<table>
+<tr>
+<td><p>min_height :</p></td>
+<td><p>return location for the minimum row height, or None</p></td>
+</tr>
+<tr>
+<td><p>max_height :</p></td>
+<td><p>return location for the maximum row height, or None</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

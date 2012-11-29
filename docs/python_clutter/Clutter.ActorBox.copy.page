@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ActorBox.copy"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ActorBox" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.ActorBox</api:type>
+      </api:returns>
+      <api:name>clutter_actor_box_copy</api:name>
+    </api:function>
+  </info>
+  <title>copy</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.ActorBox)
+def copy()
+</code></synopsis>
+<p>Copies @box</p><p>clutter_actor_box_free() to free the allocated resources</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a newly allocated copy of <link xref="Clutter.ActorBox">Clutter.ActorBox</link>. Use</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

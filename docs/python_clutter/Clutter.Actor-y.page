@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-y"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">y</title>
+  </info>
+  <title>Clutter.Actor:y</title>
+<synopsis><code mime="text/x-python">
+"y"             gfloat                : Read / Write
+</code></synopsis>
+<p>Y coordinate of the actor in pixels. If written, forces a fixed
+position for the actor.  If read, returns the fixed position if
+any, otherwise the allocation if available, otherwise 0.</p><p>The <link xref="Clutter.Actor-y">Clutter.Actor:y</link> property is animatable.</p>
+</page>

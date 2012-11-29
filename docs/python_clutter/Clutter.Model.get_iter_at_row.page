@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Model.get_iter_at_row"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.ModelIter</api:type>
+      </api:returns>
+      <api:name>clutter_model_get_iter_at_row</api:name>
+      <api:arg>
+        <api:type>ClutterModel *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>row</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_iter_at_row</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint)
+@returns(Clutter.ModelIter)
+def get_iter_at_row(row)
+</code></synopsis>
+<p>Retrieves a <link xref="Clutter.ModelIter">Clutter.ModelIter</link> representing the row at the given index.</p><p>If a filter function has been set using clutter_model_set_filter()
+then the @model implementation will return the first non filtered
+row.</p><p>out of bounds. When done using the iterator object, call g_object_unref()
+to deallocate its resources</p>
+
+<table>
+<tr>
+<td><p>row :</p></td>
+<td><p>position of the row to retrieve</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>A new <link xref="Clutter.ModelIter">Clutter.ModelIter</link>, or None if @row was</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

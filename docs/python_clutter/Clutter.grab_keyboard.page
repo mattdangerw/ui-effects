@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.grab_keyboard"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_grab_keyboard</api:name>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>grab_keyboard</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def grab_keyboard(actor)
+</code></synopsis>
+<p>Grabs keyboard events, after the grab is done keyboard
+events (<link xref="Clutter.Actor-key-press-event">Clutter.Actor::key-press-event</link> and <link xref="Clutter.Actor-key-release-event">Clutter.Actor::key-release-event</link>)
+are delivered to this actor directly. The source set in the event will be
+the actor that would have received the event if the keyboard grab was not
+in effect.</p><p>Like pointer grabs, keyboard grabs should only be used as a last
+resource.</p><p>See also clutter_stage_set_key_focus() and clutter_actor_grab_key_focus()
+to perform a "soft" key grab and assign key focus to a specific actor.</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

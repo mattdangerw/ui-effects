@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BindingPool.override_action"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BindingPool" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_binding_pool_override_action</api:name>
+      <api:arg>
+        <api:type>ClutterBindingPool *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>key_val</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ModifierType</api:type>
+        <api:name>modifiers</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Callback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.DestroyNotify</api:type>
+        <api:name>notify</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>override_action</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, Clutter.ModifierType, GObject.Callback, gpointer, GLib.DestroyNotify)
+@returns(none)
+def override_action(key_val, modifiers, callback, data, notify)
+</code></synopsis>
+<p>Allows overriding the action for @key_val and @modifiers inside a
+<link xref="Clutter.BindingPool">Clutter.BindingPool</link>. See clutter_binding_pool_install_action().</p><p>When an action has been activated using clutter_binding_pool_activate()
+the passed @callback will be invoked (with @data).</p><p>Actions can be blocked with clutter_binding_pool_block_action()
+and then unblocked using clutter_binding_pool_unblock_action().</p>
+
+<table>
+<tr>
+<td><p>key_val :</p></td>
+<td><p>key symbol</p></td>
+</tr>
+<tr>
+<td><p>modifiers :</p></td>
+<td><p>bitmask of modifiers</p></td>
+</tr>
+<tr>
+<td><p>callback :</p></td>
+<td><p>function to be called when the action is activated</p></td>
+</tr>
+<tr>
+<td><p>data :</p></td>
+<td><p>data to be passed to @callback</p></td>
+</tr>
+<tr>
+<td><p>notify :</p></td>
+<td><p>function to be called when the action is removed from the pool</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

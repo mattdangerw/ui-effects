@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Group.get_nth_child"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Group" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Actor</api:type>
+      </api:returns>
+      <api:name>clutter_group_get_nth_child</api:name>
+      <api:arg>
+        <api:type>ClutterGroup *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>index_</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_nth_child</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint)
+@returns(Clutter.Actor)
+def get_nth_child(index_)
+</code></synopsis>
+<p>Gets a groups child held at @index_ in stack.</p><p>@index_ is invalid.</p>
+
+<table>
+<tr>
+<td><p>index_ :</p></td>
+<td><p>the position of the requested actor.</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>A Clutter actor, or None if</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

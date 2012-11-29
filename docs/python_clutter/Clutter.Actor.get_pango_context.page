@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_pango_context"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Pango.Context</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_pango_context</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_pango_context</title>
+<synopsis><code mime="text/x-python">
+@returns(Pango.Context)
+def get_pango_context()
+</code></synopsis>
+<p>Retrieves the <link xref="PangoContext">PangoContext</link> for @self. The actor's <link xref="PangoContext">PangoContext</link>
+is already configured using the appropriate font map, resolution
+and font options.</p><p>Unlike clutter_actor_create_pango_context(), this context is owend
+by the <link xref="Clutter.Actor">Clutter.Actor</link> and it will be updated each time the options
+stored by the <link xref="Clutter.Backend">Clutter.Backend</link> change.</p><p>You can use the returned <link xref="PangoContext">PangoContext</link> to create a <link xref="PangoLayout">PangoLayout</link>
+and render text using cogl_pango_render_layout() to reuse the
+glyphs cache also used by Clutter.</p><p>The returned <link xref="PangoContext">PangoContext</link> is owned by the actor and should not be
+unreferenced by the application code</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the <link xref="PangoContext">PangoContext</link> for a <link xref="Clutter.Actor">Clutter.Actor</link>.</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

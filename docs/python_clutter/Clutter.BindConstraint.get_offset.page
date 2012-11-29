@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BindConstraint.get_offset"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BindConstraint" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gfloat</api:type>
+      </api:returns>
+      <api:name>clutter_bind_constraint_get_offset</api:name>
+      <api:arg>
+        <api:type>ClutterBindConstraint *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_offset</title>
+<synopsis><code mime="text/x-python">
+@returns(gfloat)
+def get_offset()
+</code></synopsis>
+<p>Retrieves the offset set using clutter_bind_constraint_set_offset()</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the offset, in pixels</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

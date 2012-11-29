@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BinLayout.add"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BinLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_bin_layout_add</api:name>
+      <api:arg>
+        <api:type>ClutterBinLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>child</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.BinAlignment</api:type>
+        <api:name>x_align</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.BinAlignment</api:type>
+        <api:name>y_align</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>add</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, Clutter.BinAlignment, Clutter.BinAlignment)
+@returns(none)
+def add(child, x_align, y_align)
+</code></synopsis>
+<p>Adds a <link xref="Clutter.Actor">Clutter.Actor</link> to the container using @self and
+sets the alignment policies for it</p><p>This function is equivalent to clutter_container_add_actor()
+and clutter_layout_manager_child_set_property() but it does not
+require a pointer to the <link xref="Clutter.Container">Clutter.Container</link> associated to the
+<link xref="Clutter.BinLayout">Clutter.BinLayout</link></p>
+
+<table>
+<tr>
+<td><p>child :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+<tr>
+<td><p>x_align :</p></td>
+<td><p>horizontal alignment policy for @child</p></td>
+</tr>
+<tr>
+<td><p>y_align :</p></td>
+<td><p>vertical alignment policy for @child</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

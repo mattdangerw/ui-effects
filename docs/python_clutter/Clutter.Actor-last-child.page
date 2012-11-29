@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-last-child"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">last-child</title>
+  </info>
+  <title>Clutter.Actor:last-child</title>
+<synopsis><code mime="text/x-python">
+"last-child"             Clutter.Actor                : Read
+</code></synopsis>
+<p>The actor's last child.</p>
+</page>

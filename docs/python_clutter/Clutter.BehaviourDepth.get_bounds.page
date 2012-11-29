@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BehaviourDepth.get_bounds"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourDepth" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_depth_get_bounds</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviourDepth *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>depth_start</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>depth_end</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_bounds</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint, gint)
+@returns(none)
+def get_bounds(depth_start, depth_end)
+</code></synopsis>
+<p>Gets the boundaries of the @behaviour</p>
+
+<table>
+<tr>
+<td><p>depth_start :</p></td>
+<td><p>return location for the initial depth value, or None</p></td>
+</tr>
+<tr>
+<td><p>depth_end :</p></td>
+<td><p>return location for the final depth value, or None</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

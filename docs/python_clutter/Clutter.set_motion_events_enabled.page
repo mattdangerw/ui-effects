@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.set_motion_events_enabled"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_set_motion_events_enabled</api:name>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>enable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_motion_events_enabled</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_motion_events_enabled(enable)
+</code></synopsis>
+<p>Sets whether per-actor motion events should be enabled or not on
+all <link xref="Clutter.Stage">Clutter.Stage</link>&lt;!-- --&gt;s managed by Clutter.</p><p>If @enable is False the following events will not work:
+&lt;itemizedlist&gt;
+&lt;listitem&gt;&lt;para&gt;ClutterActor::motion-event, unless on the
+<link xref="Clutter.Stage">Clutter.Stage</link>&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;ClutterActor::enter-event&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;ClutterActor::leave-event&lt;/para&gt;&lt;/listitem&gt;
+&lt;/itemizedlist&gt;</p>
+
+<table>
+<tr>
+<td><p>enable :</p></td>
+<td><p>True to enable per-actor motion events</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

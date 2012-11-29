@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PathConstraint.get_path"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PathConstraint" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Path</api:type>
+      </api:returns>
+      <api:name>clutter_path_constraint_get_path</api:name>
+      <api:arg>
+        <api:type>ClutterPathConstraint *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_path</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Path)
+def get_path()
+</code></synopsis>
+<p>Retrieves a pointer to the <link xref="Clutter.Path">Clutter.Path</link> used by @constraint.</p><p><link xref="Clutter.PathConstraint">Clutter.PathConstraint</link>, or None. The returned <link xref="Clutter.Path">Clutter.Path</link> is owned
+by the constraint and it should not be unreferenced</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the <link xref="Clutter.Path">Clutter.Path</link> used by the</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

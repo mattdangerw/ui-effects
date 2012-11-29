@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="Clutter.TextNode"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="class"/>
+  </info>
+  <title>Clutter.TextNode</title>
+<p>The &lt;structname&gt;ClutterTextNode&lt;/structname&gt; structure is an opaque
+type whose members cannot be directly accessed.</p>
+
+  <synopsis><code>
+from gi.repository import Clutter
+
+text_node = Clutter.TextNode()  </code></synopsis>
+
+<p>Since 1.10</p>
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>Clutter.PaintNode</code>
+      <item>
+        <code>Clutter.TextNode</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="yes"
+         api:type="function" api:mime="text/x-python"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="yes"
+         api:type="function" api:mime="text/x-python"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

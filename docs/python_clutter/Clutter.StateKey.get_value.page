@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.StateKey.get_value"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.StateKey" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_state_key_get_value</api:name>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_value</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.Value)
+@returns(gboolean)
+def get_value(value)
+</code></synopsis>
+<p>Retrieves a copy of the value for a <link xref="Clutter.StateKey">Clutter.StateKey</link>.</p><p>The <link xref="GValue">GValue</link> needs to be already initialized for the value type
+of the property or to a type that allow transformation from the value
+type of the key.</p><p>Use g_value_unset() when done.</p><p>and False otherwise</p>
+
+<table>
+<tr>
+<td><p>value :</p></td>
+<td><p>a <link xref="GValue">GValue</link> initialized with the correct type for the @state_key</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the value was successfully retrieved,</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

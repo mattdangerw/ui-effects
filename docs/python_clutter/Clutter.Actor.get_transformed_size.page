@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_transformed_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_transformed_size</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_transformed_size</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(none)
+def get_transformed_size(width, height)
+</code></synopsis>
+<p>Gets the absolute size of an actor in pixels, taking into account the
+scaling factors.</p><p>If the actor has a valid allocation, the allocated size will be used.
+If the actor has not a valid allocation then the preferred size will
+be transformed and returned.</p><p>If you want the transformed allocation, see
+clutter_actor_get_abs_allocation_vertices() instead.</p><p>&lt;note&gt;When the actor (or one of its ancestors) is rotated around the
+X or Y axis, it no longer appears as on the stage as a rectangle, but
+as a generic quadrangle; in that case this function returns the size
+of the smallest rectangle that encapsulates the entire quad. Please
+note that in this case no assumptions can be made about the relative
+position of this envelope to the absolute position of the actor, as
+returned by clutter_actor_get_transformed_position(); if you need this
+information, you need to use clutter_actor_get_abs_allocation_vertices()
+to get the coords of the actual quadrangle.&lt;/note&gt;</p>
+
+<table>
+<tr>
+<td><p>width :</p></td>
+<td><p>return location for the width, or None</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>return location for the height, or None</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

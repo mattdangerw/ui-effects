@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_rotation"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gdouble</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_rotation</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.RotateAxis</api:type>
+        <api:name>axis</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>z</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_rotation</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.RotateAxis, gfloat, gfloat, gfloat)
+@returns(gdouble)
+def get_rotation(axis, x, y, z)
+</code></synopsis>
+<p>Retrieves the angle and center of rotation on the given axis,
+set using clutter_actor_set_rotation().</p>
+
+<table>
+<tr>
+<td><p>axis :</p></td>
+<td><p>the axis of rotation</p></td>
+</tr>
+<tr>
+<td><p>x :</p></td>
+<td><p>return value for the X coordinate of the center of rotation</p></td>
+</tr>
+<tr>
+<td><p>y :</p></td>
+<td><p>return value for the Y coordinate of the center of rotation</p></td>
+</tr>
+<tr>
+<td><p>z :</p></td>
+<td><p>return value for the Z coordinate of the center of rotation</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the angle of rotation</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

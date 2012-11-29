@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page id="Clutter.ModifierType"
+      type="topic"
+      style=""
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+  </info>
+  <title>Clutter.ModifierType</title>
+<p>Masks applied to a <link xref="Clutter.Event">Clutter.Event</link> by modifiers.</p><p>Note that Clutter may add internal values to events which include
+reserved values such as %CLUTTER_MODIFIER_RESERVED_13_MASK.  Your code
+should preserve and ignore them.  You can use %CLUTTER_MODIFIER_MASK to
+remove all reserved values.</p>
+</page>

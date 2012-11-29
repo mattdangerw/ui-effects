@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.threads_enter"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_threads_enter</api:name>
+    </api:function>
+  </info>
+  <title>threads_enter</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def threads_enter()
+</code></synopsis>
+<p>Locks the Clutter thread lock.</p>
+
+<table>
+</table>
+<p>Since 0.4</p>
+</page>

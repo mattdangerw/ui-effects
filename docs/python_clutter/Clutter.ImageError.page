@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Clutter.ImageError"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.ImageError</title>
+  <p>Error enumeration for <link xref="Clutter.Image">Clutter.Image</link>.</p>
+<table>
+<tr>
+<td><p>ImageError.DATA :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

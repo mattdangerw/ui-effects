@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_child_at_index"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Actor</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_child_at_index</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>index_</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_child_at_index</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint)
+@returns(Clutter.Actor)
+def get_child_at_index(index_)
+</code></synopsis>
+<p>Retrieves the actor at the given @index_ inside the list of
+children of @self.</p>
+
+<table>
+<tr>
+<td><p>index_ :</p></td>
+<td><p>the position in the list of children</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a pointer to a <link xref="Clutter.Actor">Clutter.Actor</link>, or None</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

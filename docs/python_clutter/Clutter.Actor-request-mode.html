@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Clutter.Actor:request-mode</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Clutter.Actor:request-mode</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">"request-mode"             Clutter.RequestMode                : Read / Write</pre></div></div></div></div></div>
+<p class="p">Request mode for the <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span>. The request mode determines the
+type of geometry management used by the actor, either height for width
+(the default) or width for height.</p>
+<p class="p">For actors implementing height for width, the parent container should get
+the preferred width first, and then the preferred height for that width.</p>
+<p class="p">For actors implementing width for height, the parent container should get
+the preferred height first, and then the preferred width for that height.</p>
+<p class="p">For instance:</p>
+<p class="p">|[
+ClutterRequestMode mode;
+gfloat natural_width, min_width;
+gfloat natural_height, min_height;</p>
+<p class="p">mode = clutter_actor_get_request_mode (child);
+if (mode == CLUTTER_REQUEST_HEIGHT_FOR_WIDTH)
+{
+clutter_actor_get_preferred_width (child, -1,
+&amp;amp;min_width,
+&amp;amp;natural_width);
+clutter_actor_get_preferred_height (child, natural_width,
+&amp;amp;min_height,
+&amp;amp;natural_height);
+}
+else
+{
+clutter_actor_get_preferred_height (child, -1,
+&amp;amp;min_height,
+&amp;amp;natural_height);
+clutter_actor_get_preferred_width (child, natural_height,
+&amp;amp;min_width,
+&amp;amp;natural_width);
+}
+]|</p>
+<p class="p">will retrieve the minimum and natural width and height depending on the
+preferred request mode of the <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> "child".</p>
+<p class="p">The clutter_actor_get_preferred_size() function will implement this
+check for you.</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

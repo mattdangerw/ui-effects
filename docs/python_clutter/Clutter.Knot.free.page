@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Knot.free"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Knot" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_knot_free</api:name>
+    </api:function>
+  </info>
+  <title>free</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def free()
+</code></synopsis>
+<p>Frees the memory of an allocated knot.</p>
+
+<table>
+</table>
+<p>Since 0.2</p>
+</page>

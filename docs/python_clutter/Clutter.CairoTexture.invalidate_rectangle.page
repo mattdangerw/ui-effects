@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.CairoTexture.invalidate_rectangle"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.CairoTexture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_cairo_texture_invalidate_rectangle</api:name>
+      <api:arg>
+        <api:type>ClutterCairoTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>cairo.RectangleInt</api:type>
+        <api:name>rect</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>invalidate_rectangle</title>
+<synopsis><code mime="text/x-python">
+@accepts(cairo.RectangleInt)
+@returns(none)
+def invalidate_rectangle(rect)
+</code></synopsis>
+<p>Invalidates a rectangular region of a <link xref="Clutter.CairoTexture">Clutter.CairoTexture</link>.</p><p>The invalidation will cause the <link xref="Clutter.CairoTexture-draw">Clutter.CairoTexture::draw</link> signal
+to be emitted.</p><p>See also: clutter_cairo_texture_invalidate()</p>
+
+<table>
+<tr>
+<td><p>rect :</p></td>
+<td><p>a rectangle with the area to invalida, or None to perform an unbounded invalidation</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_animation"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Animation</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_animation</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_animation</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Animation)
+def get_animation()
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.Animation">Clutter.Animation</link> used by @actor, if clutter_actor_animate()
+has been called on @actor.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="Clutter.Animation">Clutter.Animation</link>, or None</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

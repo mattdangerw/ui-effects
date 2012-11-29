@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-use-markup"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="property"/>
+    <title type="link" role="topic">use-markup</title>
+  </info>
+  <title>Clutter.Text:use-markup</title>
+<synopsis><code mime="text/x-python">
+"use-markup"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the text includes Pango markup.</p><p>For more informations about the Pango markup format, see
+pango_layout_set_markup() in the Pango documentation.</p><p>&lt;note&gt;It is not possible to round-trip this property between
+True and False. Once a string with markup has been set on
+a <link xref="Clutter.Text">Clutter.Text</link> actor with :use-markup set to True, the markup
+is stripped from the string.&lt;/note&gt;</p>
+</page>

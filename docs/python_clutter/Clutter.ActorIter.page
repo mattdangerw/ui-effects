@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.ActorIter"
+      type="guide"
+      style="record"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>ClutterActorIter</title>
+  <p>An iterator structure that allows to efficiently iterate over a
+section of the scene graph.
+
+The contents of the <structname>ClutterActorIter</structname> structure
+are private and should only be accessed using the provided API.</p>
+</page>

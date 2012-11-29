@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<page id="Clutter.FlowOrientation"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.FlowOrientation</title>
+  <p>The direction of the arrangement of the children inside
+a <link xref="Clutter.FlowLayout">Clutter.FlowLayout</link></p>
+<table>
+<tr>
+<td><p>FlowOrientation.HORIZONTAL :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>FlowOrientation.VERTICAL :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

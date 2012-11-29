@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Alpha.set_func"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Alpha" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_alpha_set_func</api:name>
+      <api:arg>
+        <api:type>ClutterAlpha *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.AlphaFunc</api:type>
+        <api:name>func</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.DestroyNotify</api:type>
+        <api:name>destroy</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_func</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.AlphaFunc, gpointer, GLib.DestroyNotify)
+@returns(none)
+def set_func(func, data, destroy)
+</code></synopsis>
+<p>Sets the <link xref="Clutter.AlphaFunc">Clutter.AlphaFunc</link> function used to compute
+the alpha value at each frame of the <link xref="Clutter.Timeline">Clutter.Timeline</link>
+bound to @alpha.</p><p>This function will not register @func as a global alpha function.</p>
+
+<table>
+<tr>
+<td><p>func :</p></td>
+<td><p>A <link xref="Clutter.AlphaFunc">Clutter.AlphaFunc</link></p></td>
+</tr>
+<tr>
+<td><p>data :</p></td>
+<td><p>user data to be passed to the alpha function, or None</p></td>
+</tr>
+<tr>
+<td><p>destroy :</p></td>
+<td><p>notify function used when disposing the alpha function</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

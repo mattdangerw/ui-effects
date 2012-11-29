@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.LayoutManager.layout_changed"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutManager" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_layout_manager_layout_changed</api:name>
+      <api:arg>
+        <api:type>ClutterLayoutManager *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>layout_changed</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def layout_changed()
+</code></synopsis>
+<p>Emits the <link xref="Clutter.LayoutManager-layout-changed">Clutter.LayoutManager::layout-changed</link> signal on @manager</p><p>This function should only be called by implementations of the
+<link xref="Clutter.LayoutManager">Clutter.LayoutManager</link> class</p>
+
+<table>
+</table>
+<p>Since 1.2</p>
+</page>

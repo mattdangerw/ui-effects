@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Path.remove_node"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Path" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_path_remove_node</api:name>
+      <api:arg>
+        <api:type>ClutterPath *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>index_</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>remove_node</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint)
+@returns(none)
+def remove_node(index_)
+</code></synopsis>
+<p>Removes the node at the given offset from the path.</p>
+
+<table>
+<tr>
+<td><p>index_ :</p></td>
+<td><p>index of the node to remove</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

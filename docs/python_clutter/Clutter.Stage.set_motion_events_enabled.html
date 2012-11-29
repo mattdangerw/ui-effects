@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>set_motion_events_enabled</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">set_motion_events_enabled</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(gboolean)
+@returns(none)
+def set_motion_events_enabled(enabled)</pre></div></div></div></div></div>
+<p class="p">Sets whether per-actor motion events (and relative crossing
+events) should be disabled or not.</p>
+<p class="p">The default is True.</p>
+<p class="p">If @enable is False the following events will not be delivered
+to the actors children of @stage.</p>
+<p class="p">&lt;itemizedlist&gt;
+&lt;listitem&gt;&lt;para&gt;<span class=" link"><a href="Clutter.Actor-motion-event.html" title="Clutter.Actor::motion-event">Clutter.Actor::motion-event</a></span>&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;<span class=" link"><a href="Clutter.Actor-enter-event.html" title="Clutter.Actor::enter-event">Clutter.Actor::enter-event</a></span>&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;<span class=" link"><a href="Clutter.Actor-leave-event.html" title="Clutter.Actor::leave-event">Clutter.Actor::leave-event</a></span>&lt;/para&gt;&lt;/listitem&gt;
+&lt;/itemizedlist&gt;</p>
+<p class="p">The events will still be delivered to the <span class=" link"><a href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a></span>.</p>
+<p class="p">The main side effect of this function is that disabling the motion
+events will disable picking to detect the <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> underneath
+the pointer for each motion event. This is useful, for instance,
+when dragging a <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> across the @stage: the actor underneath
+the pointer is not going to change, so it's meaningless to perform
+a pick.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table"><tr>
+<td><p class="p">enabled :</p></td>
+<td><p class="p">True to enable the motion events delivery, and False otherwise</p></td>
+</tr></table></div></div></div>
+<p class="p">Since 1.8</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

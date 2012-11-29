@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Container.class_find_child_property"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.ParamSpec</api:type>
+      </api:returns>
+      <api:name>clutter_container_class_find_child_property</api:name>
+      <api:arg>
+        <api:type>GObject.ObjectClass</api:type>
+        <api:name>klass</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>class_find_child_property</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.ObjectClass, utf8)
+@returns(GObject.ParamSpec)
+def class_find_child_property(klass, property_name)
+</code></synopsis>
+<p>Looks up the <link xref="GParamSpec">GParamSpec</link> for a child property of @klass.</p><p>if no such property exist.</p>
+
+<table>
+<tr>
+<td><p>klass :</p></td>
+<td><p>a <link xref="GObjectClass">GObjectClass</link> implementing the <link xref="Clutter.Container">Clutter.Container</link> interface.</p></td>
+</tr>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>a property name.</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The <link xref="GParamSpec">GParamSpec</link> for the property or None</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

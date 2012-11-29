@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Clutter.Interval-validate"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Interval" group="vfunc"/>
+    <title type="link" role="topic">validate</title>
+  </info>
+  <title>Clutter.Interval.validate</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.ParamSpec)
+@returns(gboolean)
+def do_validate(self, pspec):
+</code></synopsis>
+<p>Validates the initial and final values of @interval against
+a <link xref="GParamSpec">GParamSpec</link>.</p>
+
+<table>
+<tr>
+<td><p>pspec :</p></td>
+<td><p>a <link xref="GParamSpec">GParamSpec</link></p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the <link xref="Clutter.Interval">Clutter.Interval</link> is valid, False otherwise</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

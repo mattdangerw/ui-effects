@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Clutter.ShaderEffect-get_static_shader_source"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ShaderEffect" group="vfunc"/>
+    <title type="link" role="topic">get_static_shader_source</title>
+  </info>
+  <title>Clutter.ShaderEffect.get_static_shader_source</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def do_get_static_shader_source(self, ):
+</code></synopsis>
+
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td></td>
+</tr>
+</table>
+</page>

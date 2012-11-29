@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.FlowLayout-homogeneous"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.FlowLayout" group="property"/>
+    <title type="link" role="topic">homogeneous</title>
+  </info>
+  <title>Clutter.FlowLayout:homogeneous</title>
+<synopsis><code mime="text/x-python">
+"homogeneous"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether each child inside the <link xref="Clutter.FlowLayout">Clutter.FlowLayout</link> should receive
+the same allocation</p>
+</page>

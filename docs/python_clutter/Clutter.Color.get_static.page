@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Color.get_static"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Color" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Color</api:type>
+      </api:returns>
+      <api:name>clutter_color_get_static</api:name>
+      <api:arg>
+        <api:type>Clutter.StaticColor</api:type>
+        <api:name>color</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_static</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.StaticColor)
+@returns(Clutter.Color)
+def get_static(color)
+</code></synopsis>
+<p>Retrieves a static color for the given @color name</p><p>Static colors are created by Clutter and are guaranteed to always be
+available and valid</p><p>is owned by Clutter and it should never be modified or freed</p>
+
+<table>
+<tr>
+<td><p>color :</p></td>
+<td><p>the named global color</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a pointer to a static color; the returned pointer</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

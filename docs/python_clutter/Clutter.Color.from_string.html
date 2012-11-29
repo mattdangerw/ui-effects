@@ -1,0 +1,86 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>from_string</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Color.html" title="ClutterColor">ClutterColor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">from_string</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(utf8)
+@returns(gboolean)
+def from_string(str)</pre></div></div></div></div></div>
+<p class="p">Parses a string definition of a color, filling the
+&lt;structfield&gt;red&lt;/structfield&gt;, &lt;structfield&gt;green&lt;/structfield&gt;, 
+&lt;structfield&gt;blue&lt;/structfield&gt; and &lt;structfield&gt;alpha&lt;/structfield&gt; 
+channels of @color.</p>
+<p class="p">The @color is not allocated.</p>
+<p class="p">The format of @str can be either one of:</p>
+<p class="p">&lt;itemizedlist&gt;
+&lt;listitem&gt;
+&lt;para&gt;a standard name (as taken from the X11 rgb.txt file)&lt;/para&gt;
+&lt;/listitem&gt;
+&lt;listitem&gt;
+&lt;para&gt;an hexadecimal value in the form: &lt;literal&gt;&amp;num;rgb&lt;/literal&gt;,
+&lt;literal&gt;&amp;num;rrggbb&lt;/literal&gt;, &lt;literal&gt;&amp;num;rgba&lt;/literal&gt; or
+&lt;literal&gt;&amp;num;rrggbbaa&lt;/literal&gt;&lt;/para&gt;
+&lt;/listitem&gt;
+&lt;listitem&gt;
+&lt;para&gt;a RGB color in the form: &lt;literal&gt;rgb(r, g, b)&lt;/literal&gt;&lt;/para&gt;
+&lt;/listitem&gt;
+&lt;listitem&gt;
+&lt;para&gt;a RGB color in the form: &lt;literal&gt;rgba(r, g, b, a)&lt;/literal&gt;&lt;/para&gt;
+&lt;/listitem&gt;
+&lt;listitem&gt;
+&lt;para&gt;a HSL color in the form: &lt;literal&gt;hsl(h, s, l)&lt;/literal&gt;&lt;/para&gt;
+&lt;/listitem&gt;
+&lt;listitem&gt;
+&lt;para&gt;a HSL color in the form: &lt;literal&gt;hsla(h, s, l, a)&lt;/literal&gt;&lt;/para&gt;
+&lt;/listitem&gt;
+&lt;/itemizedlist&gt;</p>
+<p class="p">where 'r', 'g', 'b' and 'a' are (respectively) the red, green, blue color
+intensities and the opacity. The 'h', 's' and 'l' are (respectively) the
+hue, saturation and luminance values.</p>
+<p class="p">In the rgb() and rgba() formats, the 'r', 'g', and 'b' values are either
+integers between 0 and 255, or percentage values in the range between 0%
+and 100%; the percentages require the '%' character. The 'a' value, if
+specified, can only be a floating point value between 0.0 and 1.0.</p>
+<p class="p">In the hls() and hlsa() formats, the 'h' value (hue) it's an angle between
+0 and 360.0 degrees; the 'l' and 's' values (luminance and saturation) are
+a floating point value between 0.0 and 1.0. The 'a' value, if specified,
+can only be a floating point value between 0.0 and 1.0.</p>
+<p class="p">Whitespace inside the definitions is ignored; no leading whitespace
+is allowed.</p>
+<p class="p">If the alpha component is not specified then it is assumed to be set to
+be fully opaque.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">str :</p></td>
+<td><p class="p">a string specifiying a color</p></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">True if parsing succeeded, and False otherwise</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.0</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Color.html" title="ClutterColor">ClutterColor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

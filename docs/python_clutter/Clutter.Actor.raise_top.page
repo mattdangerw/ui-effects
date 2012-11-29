@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.raise_top"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_raise_top</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>raise_top</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def raise_top()
+</code></synopsis>
+<p>Raises @self to the top.</p><p>This function calls clutter_actor_raise() internally.</p><p>a None sibling, instead.</p>
+
+<table>
+</table>
+</page>

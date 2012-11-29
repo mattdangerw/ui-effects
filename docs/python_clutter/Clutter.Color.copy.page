@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Color.copy"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Color" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Color</api:type>
+      </api:returns>
+      <api:name>clutter_color_copy</api:name>
+    </api:function>
+  </info>
+  <title>copy</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Color)
+def copy()
+</code></synopsis>
+<p>Makes a copy of the color structure.  The result must be
+freed using clutter_color_free().</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>an allocated copy of @color.</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

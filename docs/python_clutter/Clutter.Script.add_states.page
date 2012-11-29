@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Script.add_states"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Script" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_script_add_states</api:name>
+      <api:arg>
+        <api:type>ClutterScript *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.State</api:type>
+        <api:name>state</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>add_states</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, Clutter.State)
+@returns(none)
+def add_states(name, state)
+</code></synopsis>
+<p>Associates a <link xref="Clutter.State">Clutter.State</link> to the <link xref="Clutter.Script">Clutter.Script</link> instance using the given
+name.</p><p>The <link xref="Clutter.Script">Clutter.Script</link> instance will use @state to resolve target states when
+connecting signal handlers.</p><p>The <link xref="Clutter.Script">Clutter.Script</link> instance will take a reference on the <link xref="Clutter.State">Clutter.State</link>
+passed to this function.</p>
+
+<table>
+<tr>
+<td><p>name :</p></td>
+<td><p>a name for the @state, or None to set the default <link xref="Clutter.State">Clutter.State</link></p></td>
+</tr>
+<tr>
+<td><p>state :</p></td>
+<td><p>a <link xref="Clutter.State">Clutter.State</link></p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

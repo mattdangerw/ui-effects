@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Rectangle-has-border"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Rectangle" group="property"/>
+    <title type="link" role="topic">has-border</title>
+  </info>
+  <title>Clutter.Rectangle:has-border</title>
+<synopsis><code mime="text/x-python">
+"has-border"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the <link xref="Clutter.Rectangle">Clutter.Rectangle</link> should be displayed with a border.</p>
+</page>

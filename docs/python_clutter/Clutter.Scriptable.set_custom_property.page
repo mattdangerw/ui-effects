@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Scriptable.set_custom_property"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Scriptable" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_scriptable_set_custom_property</api:name>
+      <api:arg>
+        <api:type>ClutterScriptable *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Script</api:type>
+        <api:name>script</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_custom_property</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Script, utf8, GObject.Value)
+@returns(none)
+def set_custom_property(script, name, value)
+</code></synopsis>
+<p>Overrides the common properties setting. The underlying virtual
+function should be used when implementing custom properties.</p>
+
+<table>
+<tr>
+<td><p>script :</p></td>
+<td><p>the <link xref="Clutter.Script">Clutter.Script</link> creating the scriptable instance</p></td>
+</tr>
+<tr>
+<td><p>name :</p></td>
+<td><p>the name of the property</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>the value of the property</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

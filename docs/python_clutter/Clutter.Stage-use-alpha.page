@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Clutter.Stage-use-alpha"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="property"/>
+    <title type="link" role="topic">use-alpha</title>
+  </info>
+  <title>Clutter.Stage:use-alpha</title>
+<synopsis><code mime="text/x-python">
+"use-alpha"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the <link xref="Clutter.Stage">Clutter.Stage</link> should honour the alpha component of the
+<link xref="Clutter.Stage-color">Clutter.Stage:color</link> property when painting. If Clutter is run under
+a compositing manager this will result in the stage being blended
+with the underlying window(s)</p>
+</page>

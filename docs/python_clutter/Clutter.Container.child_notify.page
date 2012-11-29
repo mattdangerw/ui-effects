@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Container.child_notify"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_container_child_notify</api:name>
+      <api:arg>
+        <api:type>ClutterContainer *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>child</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.ParamSpec</api:type>
+        <api:name>pspec</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>child_notify</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, GObject.ParamSpec)
+@returns(none)
+def child_notify(child, pspec)
+</code></synopsis>
+<p>Calls the <link xref="Clutter.ContainerIface">Clutter.ContainerIface</link>.child_notify() virtual function
+of <link xref="Clutter.Container">Clutter.Container</link>. The default implementation will emit the
+<link xref="Clutter.Container-child-notify">Clutter.Container::child-notify</link> signal.</p>
+
+<table>
+<tr>
+<td><p>child :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+<tr>
+<td><p>pspec :</p></td>
+<td><p>a <link xref="GParamSpec">GParamSpec</link></p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

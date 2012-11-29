@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Texture-tile-waste"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="property"/>
+    <title type="link" role="topic">tile-waste</title>
+  </info>
+  <title>Clutter.Texture:tile-waste</title>
+<synopsis><code mime="text/x-python">
+"tile-waste"             gint                : Read
+</code></synopsis>
+
+</page>

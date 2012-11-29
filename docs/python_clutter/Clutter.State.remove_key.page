@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.State.remove_key"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.State" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_state_remove_key</api:name>
+      <api:arg>
+        <api:type>ClutterState *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>source_state_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>target_state_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>object</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>remove_key</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, utf8, GObject.Object, utf8)
+@returns(none)
+def remove_key(source_state_name, target_state_name, object, property_name)
+</code></synopsis>
+<p>Removes all keys matching the search criteria passed in arguments.</p>
+
+<table>
+<tr>
+<td><p>source_state_name :</p></td>
+<td><p>the source state name to query, or None for all source states</p></td>
+</tr>
+<tr>
+<td><p>target_state_name :</p></td>
+<td><p>the target state name to query, or None for all target states</p></td>
+</tr>
+<tr>
+<td><p>object :</p></td>
+<td><p>the specific object instance to list keys for, or None for all managed objects</p></td>
+</tr>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>the property name to search for, or None for all properties.</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

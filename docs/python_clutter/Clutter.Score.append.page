@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Score.append"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Score" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gulong</api:type>
+      </api:returns>
+      <api:name>clutter_score_append</api:name>
+      <api:arg>
+        <api:type>ClutterScore *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Timeline</api:type>
+        <api:name>parent</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Timeline</api:type>
+        <api:name>timeline</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>append</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Timeline, Clutter.Timeline)
+@returns(gulong)
+def append(parent, timeline)
+</code></synopsis>
+<p>Appends a timeline to another one existing in the score; the newly
+appended timeline will be started when @parent is complete.</p><p>If @parent is None, the new <link xref="Clutter.Timeline">Clutter.Timeline</link> will be started when
+clutter_score_start() is called.</p><p><link xref="Clutter.Score">Clutter.Score</link> will take a reference on @timeline.</p><p>0 on failure. The returned id can be used with clutter_score_remove()
+or clutter_score_get_timeline().</p>
+
+<table>
+<tr>
+<td><p>parent :</p></td>
+<td><p>a <link xref="Clutter.Timeline">Clutter.Timeline</link> in the score, or None</p></td>
+</tr>
+<tr>
+<td><p>timeline :</p></td>
+<td><p>a <link xref="Clutter.Timeline">Clutter.Timeline</link></p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the id of the <link xref="Clutter.Timeline">Clutter.Timeline</link> inside the score, or</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

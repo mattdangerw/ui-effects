@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.DeformEffect.set_back_material"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DeformEffect" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_deform_effect_set_back_material</api:name>
+      <api:arg>
+        <api:type>ClutterDeformEffect *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Handle</api:type>
+        <api:name>material</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_back_material</title>
+<synopsis><code mime="text/x-python">
+@accepts(Cogl.Handle)
+@returns(none)
+def set_back_material(material)
+</code></synopsis>
+<p>Sets the material that should be used when drawing the back face
+of the actor during a deformation</p><p>The <link xref="Clutter.DeformEffect">Clutter.DeformEffect</link> will take a reference on the material's
+handle</p>
+
+<table>
+<tr>
+<td><p>material :</p></td>
+<td><p>a handle to a Cogl material</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Clutter.BindCoordinate"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.BindCoordinate</title>
+  <p>Specifies which property should be used in a binding</p>
+<table>
+<tr>
+<td><p>BindCoordinate.X :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>BindCoordinate.Y :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>BindCoordinate.WIDTH :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>BindCoordinate.HEIGHT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>BindCoordinate.POSITION :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>BindCoordinate.SIZE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>BindCoordinate.ALL :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

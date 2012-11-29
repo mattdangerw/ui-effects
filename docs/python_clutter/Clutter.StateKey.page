@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page id="Clutter.StateKey"
+      type="guide"
+      style="record"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>ClutterStateKey</title>
+  <p><structname>ClutterStateKey</structname> is an opaque structure whose
+members cannot be accessed directly</p>
+</page>

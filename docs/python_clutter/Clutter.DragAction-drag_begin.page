@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Clutter.DragAction-drag_begin"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DragAction" group="vfunc"/>
+    <title type="link" role="topic">drag_begin</title>
+  </info>
+  <title>Clutter.DragAction.drag_begin</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, gfloat, gfloat, Clutter.ModifierType)
+@returns(none)
+def do_drag_begin(self, actor, event_x, event_y, modifiers):
+</code></synopsis>
+
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>event_x :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>event_y :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>modifiers :</p></td>
+<td></td>
+</tr>
+</table>
+</page>

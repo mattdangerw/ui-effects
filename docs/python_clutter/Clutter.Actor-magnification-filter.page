@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-magnification-filter"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">magnification-filter</title>
+  </info>
+  <title>Clutter.Actor:magnification-filter</title>
+<synopsis><code mime="text/x-python">
+"magnification-filter"             Clutter.ScalingFilter                : Read / Write
+</code></synopsis>
+
+</page>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Clutter.Model-row-changed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="signal"/>
+    <title type="link" role="topic">row-changed</title>
+  </info>
+  <title>Clutter.Model::row-changed</title>
+<synopsis><code mime="text/x-python">
+def callback(model, iter, user_param1, ...)
+</code></synopsis>
+<p>The ::row-removed signal is emitted when a row has been changed.
+The data on the row has already been updated when the ::row-changed
+signal has been emitted.</p>
+
+<table>
+<tr>
+<td><p>model :</p></td>
+<td><p>instance of Clutter.Model that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>iter :</p></td>
+<td><p>a <link xref="Clutter.ModelIter">Clutter.ModelIter</link> pointing to the changed row</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Settings-font-antialias"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Settings" group="property"/>
+    <title type="link" role="topic">font-antialias</title>
+  </info>
+  <title>Clutter.Settings:font-antialias</title>
+<synopsis><code mime="text/x-python">
+"font-antialias"             gint                : Read / Write
+</code></synopsis>
+<p>Whether or not to use antialiasing when rendering text; a value
+of 1 enables it unconditionally; a value of 0 disables it
+unconditionally; and -1 will use the system's default.</p>
+</page>

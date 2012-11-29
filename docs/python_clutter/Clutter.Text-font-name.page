@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-font-name"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="property"/>
+    <title type="link" role="topic">font-name</title>
+  </info>
+  <title>Clutter.Text:font-name</title>
+<synopsis><code mime="text/x-python">
+"font-name"             utf8                : Read / Write
+</code></synopsis>
+<p>The font to be used by the <link xref="Clutter.Text">Clutter.Text</link>, as a string
+that can be parsed by pango_font_description_from_string().</p><p>If set to None, the default system font will be used instead.</p>
+</page>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-cursor-event"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="signal"/>
+    <title type="link" role="topic">cursor-event</title>
+  </info>
+  <title>Clutter.Text::cursor-event</title>
+<synopsis><code mime="text/x-python">
+def callback(text, geometry, user_param1, ...)
+</code></synopsis>
+<p>The ::cursor-event signal is emitted whenever the cursor position
+changes inside a <link xref="Clutter.Text">Clutter.Text</link> actor. Inside @geometry it is stored
+the current position and size of the cursor, relative to the actor
+itself.</p>
+
+<table>
+<tr>
+<td><p>text :</p></td>
+<td><p>instance of Clutter.Text that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>geometry :</p></td>
+<td><p>the coordinates of the cursor</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

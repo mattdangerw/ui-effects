@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Vertex.init"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Vertex" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_vertex_init</api:name>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>z</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>init</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat, gfloat)
+@returns(none)
+def init(x, y, z)
+</code></synopsis>
+<p>Initializes @vertex with the given coordinates.</p>
+
+<table>
+<tr>
+<td><p>x :</p></td>
+<td><p>X coordinate</p></td>
+</tr>
+<tr>
+<td><p>y :</p></td>
+<td><p>Y coordinate</p></td>
+</tr>
+<tr>
+<td><p>z :</p></td>
+<td><p>Z coordinate</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

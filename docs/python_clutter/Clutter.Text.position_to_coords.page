@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.position_to_coords"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_text_position_to_coords</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>position</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>line_height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>position_to_coords</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint, gfloat, gfloat, gfloat)
+@returns(gboolean)
+def position_to_coords(position, x, y, line_height)
+</code></synopsis>
+<p>Retrieves the coordinates of the given @position.</p>
+
+<table>
+<tr>
+<td><p>position :</p></td>
+<td><p>position in characters</p></td>
+</tr>
+<tr>
+<td><p>x :</p></td>
+<td><p>return location for the X coordinate, or None</p></td>
+</tr>
+<tr>
+<td><p>y :</p></td>
+<td><p>return location for the Y coordinate, or None</p></td>
+</tr>
+<tr>
+<td><p>line_height :</p></td>
+<td><p>return location for the line height, or None</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the conversion was successful</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

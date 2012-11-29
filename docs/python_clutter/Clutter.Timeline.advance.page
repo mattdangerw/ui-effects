@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.advance"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_advance</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>msecs</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>advance</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint)
+@returns(none)
+def advance(msecs)
+</code></synopsis>
+<p>Advance timeline to the requested point. The point is given as a
+time in milliseconds since the timeline started.</p><p>&lt;note&gt;&lt;para&gt;The @timeline will not emit the <link xref="Clutter.Timeline-new-frame">Clutter.Timeline::new-frame</link>
+signal for the given time. The first ::new-frame signal after the call to
+clutter_timeline_advance() will be emit the skipped markers.
+&lt;/para&gt;&lt;/note&gt;</p>
+
+<table>
+<tr>
+<td><p>msecs :</p></td>
+<td><p>Time to advance to</p></td>
+</tr>
+</table>
+</page>

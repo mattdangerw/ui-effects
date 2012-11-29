@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Backend.set_double_click_distance"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Backend" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_backend_set_double_click_distance</api:name>
+      <api:arg>
+        <api:type>ClutterBackend *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>distance</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_double_click_distance</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint)
+@returns(none)
+def set_double_click_distance(distance)
+</code></synopsis>
+<p>Sets the maximum distance used to verify a double click event.</p>
+
+<table>
+<tr>
+<td><p>distance :</p></td>
+<td><p>a distance, in pixels</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.show"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_show</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>show</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def show()
+</code></synopsis>
+<p>Flags an actor to be displayed. An actor that isn't shown will not
+be rendered on the stage.</p><p>Actors are visible by default.</p><p>If this function is called on an actor without a parent, the
+<link xref="Clutter.Actor-show-on-set-parent">Clutter.Actor:show-on-set-parent</link> will be set to True as a side
+effect.</p>
+
+<table>
+</table>
+</page>

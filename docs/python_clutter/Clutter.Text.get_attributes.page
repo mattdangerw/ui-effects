@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.get_attributes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Pango.AttrList</api:type>
+      </api:returns>
+      <api:name>clutter_text_get_attributes</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_attributes</title>
+<synopsis><code mime="text/x-python">
+@returns(Pango.AttrList)
+def get_attributes()
+</code></synopsis>
+<p>Gets the attribute list that was set on the <link xref="Clutter.Text">Clutter.Text</link> actor
+clutter_text_set_attributes(), if any.</p><p>returned value is owned by the <link xref="Clutter.Text">Clutter.Text</link> and should not be unreferenced.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the attribute list, or None if none was set. The</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

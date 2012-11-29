@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BehaviourPath.set_path"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourPath" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_path_set_path</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviourPath *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Path</api:type>
+        <api:name>path</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_path</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Path)
+@returns(none)
+def set_path(path)
+</code></synopsis>
+<p>Change the path that the actors will follow. This will take the
+floating reference on the <link xref="Clutter.Path">Clutter.Path</link> so you do not need to unref
+it.</p>
+
+<table>
+<tr>
+<td><p>path :</p></td>
+<td><p>the new path to follow</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

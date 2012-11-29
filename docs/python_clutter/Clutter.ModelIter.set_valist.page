@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ModelIter.set_valist"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ModelIter" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_model_iter_set_valist</api:name>
+      <api:arg>
+        <api:type>ClutterModelIter *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>va_list</api:type>
+        <api:name>args</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_valist</title>
+<synopsis><code mime="text/x-python">
+@accepts(va_list)
+@returns(none)
+def set_valist(args)
+</code></synopsis>
+<p>See clutter_model_iter_set(); this version takes a va_list for language
+bindings.</p>
+
+<table>
+<tr>
+<td><p>args :</p></td>
+<td><p>va_list of column/value pairs, terminiated by -1</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_use_markup"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_use_markup</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>setting</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_use_markup</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_use_markup(setting)
+</code></synopsis>
+<p>Sets whether the contents of the <link xref="Clutter.Text">Clutter.Text</link> actor contains markup
+in &lt;link linkend="PangoMarkupFormat"&gt;Pango's text markup language&lt;/link&gt;.</p><p>Setting <link xref="Clutter.Text-use-markup">Clutter.Text:use-markup</link> on an editable <link xref="Clutter.Text">Clutter.Text</link> will
+not have any effect except hiding the markup.</p><p>See also <link xref="Clutter.Text-use-markup">Clutter.Text:use-markup</link>.</p>
+
+<table>
+<tr>
+<td><p>setting :</p></td>
+<td><p>True if the text should be parsed for markup.</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

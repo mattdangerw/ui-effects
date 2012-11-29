@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PaintVolume.union_box"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PaintVolume" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_paint_volume_union_box</api:name>
+      <api:arg>
+        <api:type>Clutter.ActorBox</api:type>
+        <api:name>box</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>union_box</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.ActorBox)
+@returns(none)
+def union_box(box)
+</code></synopsis>
+<p>Unions the 2D region represented by @box to a <link xref="Clutter.PaintVolume">Clutter.PaintVolume</link>.</p><p>This function is similar to clutter_paint_volume_union(), but it is
+specific for 2D regions.</p>
+
+<table>
+<tr>
+<td><p>box :</p></td>
+<td><p>a <link xref="Clutter.ActorBox">Clutter.ActorBox</link> to union to @pv</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

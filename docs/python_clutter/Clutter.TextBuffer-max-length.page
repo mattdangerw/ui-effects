@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.TextBuffer-max-length"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TextBuffer" group="property"/>
+    <title type="link" role="topic">max-length</title>
+  </info>
+  <title>Clutter.TextBuffer:max-length</title>
+<synopsis><code mime="text/x-python">
+"max-length"             gint                : Read / Write
+</code></synopsis>
+<p>The maximum length (in characters) of the text in the buffer.</p>
+</page>

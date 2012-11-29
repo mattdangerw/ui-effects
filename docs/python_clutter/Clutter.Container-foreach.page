@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Clutter.Container-foreach"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="vfunc"/>
+    <title type="link" role="topic">foreach</title>
+  </info>
+  <title>Clutter.Container.foreach</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Callback, gpointer)
+@returns(none)
+def do_foreach(self, callback, user_data):
+</code></synopsis>
+<p>Calls @callback for each child of @container that was added
+by the application (with clutter_container_add_actor()). Does
+not iterate over "internal" children that are part of the
+container's own implementation, if any.</p><p>This function calls the <link xref="Clutter.ContainerIface">Clutter.ContainerIface</link>.foreach()
+virtual function, which has been deprecated.</p><p>
+clutter_actor_get_last_child() to retrieve the beginning of
+the list of children, and clutter_actor_get_next_sibling()
+and clutter_actor_get_previous_sibling() to iterate over it;
+alternatively, use the <link xref="Clutter.ActorIter">Clutter.ActorIter</link> API.</p>
+
+<table>
+<tr>
+<td><p>callback :</p></td>
+<td><p>a function to be called for each child</p></td>
+</tr>
+<tr>
+<td><p>user_data :</p></td>
+<td><p>data to be passed to the function, or None</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

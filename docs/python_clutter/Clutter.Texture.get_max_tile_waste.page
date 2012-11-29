@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Texture.get_max_tile_waste"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gint</api:type>
+      </api:returns>
+      <api:name>clutter_texture_get_max_tile_waste</api:name>
+      <api:arg>
+        <api:type>ClutterTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_max_tile_waste</title>
+<synopsis><code mime="text/x-python">
+@returns(gint)
+def get_max_tile_waste()
+</code></synopsis>
+<p>Gets the maximum waste that will be used when creating a texture or
+-1 if slicing is disabled.</p><p>unlimited.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The maximum waste or -1 if the texture waste is</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

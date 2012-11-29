@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-rotation-center-z"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">rotation-center-z</title>
+  </info>
+  <title>Clutter.Actor:rotation-center-z</title>
+<synopsis><code mime="text/x-python">
+"rotation-center-z"             Clutter.Vertex                : Read / Write
+</code></synopsis>
+<p>The rotation center on the Z axis.</p>
+</page>

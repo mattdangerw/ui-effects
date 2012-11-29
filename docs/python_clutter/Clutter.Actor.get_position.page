@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_position"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_position</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_position</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(none)
+def get_position(x, y)
+</code></synopsis>
+<p>This function tries to "do what you mean" and tell you where the
+actor is, prior to any transformations. Retrieves the fixed
+position of an actor in pixels, if one has been set; otherwise, if
+the allocation is valid, returns the actor's allocated position;
+otherwise, returns 0,0.</p><p>The returned position is in pixels.</p>
+
+<table>
+<tr>
+<td><p>x :</p></td>
+<td><p>return location for the X coordinate, or None</p></td>
+</tr>
+<tr>
+<td><p>y :</p></td>
+<td><p>return location for the Y coordinate, or None</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

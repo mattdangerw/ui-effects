@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-margin-top"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">margin-top</title>
+  </info>
+  <title>Clutter.Actor:margin-top</title>
+<synopsis><code mime="text/x-python">
+"margin-top"             gfloat                : Read / Write
+</code></synopsis>
+<p>The margin (in pixels) from the top of the actor.</p><p>This property adds a margin to the actor's preferred size; the margin
+will be automatically taken into account when allocating the actor.</p>
+</page>

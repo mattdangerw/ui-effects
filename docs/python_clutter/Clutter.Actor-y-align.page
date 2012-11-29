@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-y-align"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">y-align</title>
+  </info>
+  <title>Clutter.Actor:y-align</title>
+<synopsis><code mime="text/x-python">
+"y-align"             Clutter.ActorAlign                : Read / Write
+</code></synopsis>
+<p>The alignment of an actor on the Y axis, if the actor has been given
+extra space for its allocation.</p>
+</page>

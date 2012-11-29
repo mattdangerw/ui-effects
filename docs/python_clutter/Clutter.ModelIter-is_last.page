@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Clutter.ModelIter-is_last"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ModelIter" group="vfunc"/>
+    <title type="link" role="topic">is_last</title>
+  </info>
+  <title>Clutter.ModelIter.is_last</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def do_is_last(self, ):
+</code></synopsis>
+<p>Gets whether the iterator is at the end of the model to which it
+belongs.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p><link xref="TRUE">TRUE</link> if @iter is the last iter in the filtered model.</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.threads_remove_repaint_func"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_threads_remove_repaint_func</api:name>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>handle_id</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>threads_remove_repaint_func</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint)
+@returns(none)
+def threads_remove_repaint_func(handle_id)
+</code></synopsis>
+<p>Removes the repaint function with @handle_id as its id</p>
+
+<table>
+<tr>
+<td><p>handle_id :</p></td>
+<td><p>an unsigned integer greater than zero</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

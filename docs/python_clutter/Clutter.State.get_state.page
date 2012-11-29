@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.State.get_state"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.State" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_state_get_state</api:name>
+      <api:arg>
+        <api:type>ClutterState *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_state</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def get_state()
+</code></synopsis>
+<p>Queries the currently set target state.</p><p>During a transition this function will return the target of the transition.</p><p>This function is useful when called from handlers of the
+<link xref="Clutter.State-completed">Clutter.State::completed</link> signal.</p><p>is owned by the <link xref="Clutter.State">Clutter.State</link> and should not be modified or freed</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a string containing the target state. The returned string</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

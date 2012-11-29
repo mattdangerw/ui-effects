@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Settings.get_default"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Settings" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Settings</api:type>
+      </api:returns>
+      <api:name>clutter_settings_get_default</api:name>
+    </api:function>
+  </info>
+  <title>get_default</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Settings)
+def get_default()
+</code></synopsis>
+<p>Retrieves the singleton instance of <link xref="Clutter.Settings">Clutter.Settings</link></p><p>returned object is owned by Clutter and it should not be unreferenced
+directly</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the instance of <link xref="Clutter.Settings">Clutter.Settings</link>. The</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

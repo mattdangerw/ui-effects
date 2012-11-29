@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_scale_full"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_scale_full</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>scale_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>scale_y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>center_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>center_y</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_scale_full</title>
+<synopsis><code mime="text/x-python">
+@accepts(gdouble, gdouble, gfloat, gfloat)
+@returns(none)
+def set_scale_full(scale_x, scale_y, center_x, center_y)
+</code></synopsis>
+<p>Scales an actor with the given factors around the given center
+point. The center point is specified in pixels relative to the
+anchor point (usually the top left corner of the actor).</p><p>The <link xref="Clutter.Actor-scale-x">Clutter.Actor:scale-x</link> and <link xref="Clutter.Actor-scale-y">Clutter.Actor:scale-y</link> properties
+are animatable.</p>
+
+<table>
+<tr>
+<td><p>scale_x :</p></td>
+<td><p>double factor to scale actor by horizontally.</p></td>
+</tr>
+<tr>
+<td><p>scale_y :</p></td>
+<td><p>double factor to scale actor by vertically.</p></td>
+</tr>
+<tr>
+<td><p>center_x :</p></td>
+<td><p>X coordinate of the center of the scale.</p></td>
+</tr>
+<tr>
+<td><p>center_y :</p></td>
+<td><p>Y coordinate of the center of the scale</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

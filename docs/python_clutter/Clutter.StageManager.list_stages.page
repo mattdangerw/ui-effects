@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.StageManager.list_stages"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.StageManager" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>&lt;list&gt;</api:type>
+      </api:returns>
+      <api:name>clutter_stage_manager_list_stages</api:name>
+      <api:arg>
+        <api:type>ClutterStageManager *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>list_stages</title>
+<synopsis><code mime="text/x-python">
+@returns(&lt;list&gt;)
+def list_stages()
+</code></synopsis>
+<p>Lists all currently used stages.</p><p>allocated list of <link xref="Clutter.Stage">Clutter.Stage</link> objects. Use g_slist_free() to
+deallocate it when done.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a newly</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

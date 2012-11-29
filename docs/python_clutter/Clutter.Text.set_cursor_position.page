@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_cursor_position"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_cursor_position</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>position</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_cursor_position</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint)
+@returns(none)
+def set_cursor_position(position)
+</code></synopsis>
+<p>Sets the cursor of a <link xref="Clutter.Text">Clutter.Text</link> actor at @position.</p><p>The position is expressed in characters, not in bytes.</p>
+
+<table>
+<tr>
+<td><p>position :</p></td>
+<td><p>the new cursor position, in characters</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

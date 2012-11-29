@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<page id="Clutter.ChildMeta"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="class"/>
+  </info>
+  <title>Clutter.ChildMeta</title>
+<p>Base interface for container specific state for child actors. A child
+data is meant to be used when you need to keep track of information
+about each individual child added to a container.</p><p>In order to use it you should create your own subclass of
+<link xref="Clutter.ChildMeta">Clutter.ChildMeta</link> and set the <link xref="Clutter.ContainerIface">Clutter.ContainerIface</link> child_meta_type
+interface member to your subclass type, like:</p><p>|[
+static void
+my_container_iface_init (ClutterContainerIface *iface)
+{
+/&amp;ast; set the rest of the <link xref="Clutter.Container">Clutter.Container</link> vtable &amp;ast;/</p><p>container_iface-&gt;child_meta_type  = MY_TYPE_CHILD_META;
+}
+]|</p><p>This will automatically create a <link xref="Clutter.ChildMeta">Clutter.ChildMeta</link> of type
+MY_TYPE_CHILD_META for every actor that is added to the container.</p><p>The child data for an actor can be retrieved using the
+clutter_container_get_child_meta() function.</p><p>The properties of the data and your subclass can be manipulated with
+clutter_container_child_set() and clutter_container_child_get() which
+act like g_object_set() and g_object_get().</p><p>You can provide hooks for your own storage as well as control the
+instantiation by overriding the <link xref="Clutter.ContainerIface">Clutter.ContainerIface</link> virtual functions
+&lt;function&gt;create_child_meta&lt;/function&gt;,
+&lt;function&gt;destroy_child_meta&lt;/function&gt;,
+and &lt;function&gt;get_child_meta&lt;/function&gt;.</p>
+
+  <synopsis><code>
+from gi.repository import Clutter
+
+child_meta = Clutter.ChildMeta(<link xref='Clutter.ChildMeta-actor'>actor</link>=value, <link xref='Clutter.ChildMeta-container'>container</link>=value)  </code></synopsis>
+
+<p>Since 0.8</p>
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Clutter.ChildMeta</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="yes"
+         api:type="function" api:mime="text/x-python"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="yes"
+         api:type="function" api:mime="text/x-python"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

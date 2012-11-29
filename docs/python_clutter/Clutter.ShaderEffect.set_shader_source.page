@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ShaderEffect.set_shader_source"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ShaderEffect" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_shader_effect_set_shader_source</api:name>
+      <api:arg>
+        <api:type>ClutterShaderEffect *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>source</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_shader_source</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(gboolean)
+def set_shader_source(source)
+</code></synopsis>
+<p>Sets the source of the GLSL shader used by @effect</p><p>This function should only be called by implementations of
+the <link xref="Clutter.ShaderEffect">Clutter.ShaderEffect</link> class, and not by application code.</p><p>This function can only be called once; subsequent calls will
+yield no result.</p>
+
+<table>
+<tr>
+<td><p>source :</p></td>
+<td><p>the source of a GLSL shader</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the source was set</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

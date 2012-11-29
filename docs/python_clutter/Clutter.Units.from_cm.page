@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Units.from_cm"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Units" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_units_from_cm</api:name>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>cm</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>from_cm</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat)
+@returns(none)
+def from_cm(cm)
+</code></synopsis>
+<p>Stores a value in centimeters inside @units</p>
+
+<table>
+<tr>
+<td><p>cm :</p></td>
+<td><p>centimeters</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

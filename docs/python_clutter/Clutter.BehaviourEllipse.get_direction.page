@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BehaviourEllipse.get_direction"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourEllipse" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.RotateDirection</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_ellipse_get_direction</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviourEllipse *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_direction</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.RotateDirection)
+def get_direction()
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.RotateDirection">Clutter.RotateDirection</link> used by the ellipse behaviour.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the rotation direction</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

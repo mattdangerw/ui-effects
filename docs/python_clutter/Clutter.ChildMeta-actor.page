@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.ChildMeta-actor"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ChildMeta" group="property"/>
+    <title type="link" role="topic">actor</title>
+  </info>
+  <title>Clutter.ChildMeta:actor</title>
+<synopsis><code mime="text/x-python">
+"actor"             Clutter.Actor                : Read / Write / Construct Only
+</code></synopsis>
+<p>The <link xref="Clutter.Actor">Clutter.Actor</link> being wrapped by this <link xref="Clutter.ChildMeta">Clutter.ChildMeta</link></p>
+</page>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Container.remove_actor"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_container_remove_actor</api:name>
+      <api:arg>
+        <api:type>ClutterContainer *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>remove_actor</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def remove_actor(actor)
+</code></synopsis>
+<p>Removes @actor from @container. The actor should be unparented, so
+if you want to keep it around you must hold a reference to it
+yourself, using g_object_ref(). When the actor has been removed,
+the "actor-removed" signal is emitted by @container.</p><p>This function will call <link xref="Clutter.ContainerIface">Clutter.ContainerIface</link>.remove(), which is a
+deprecated virtual function. The default implementation will call
+clutter_actor_remove_child().</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

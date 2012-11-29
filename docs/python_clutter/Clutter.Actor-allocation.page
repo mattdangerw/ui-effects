@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-allocation"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">allocation</title>
+  </info>
+  <title>Clutter.Actor:allocation</title>
+<synopsis><code mime="text/x-python">
+"allocation"             Clutter.ActorBox                : Read
+</code></synopsis>
+<p>The allocation for the actor, in pixels</p><p>This is property is read-only, but you might monitor it to know when an
+actor moves or resizes</p>
+</page>

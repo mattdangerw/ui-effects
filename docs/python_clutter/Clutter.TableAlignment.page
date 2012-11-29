@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Clutter.TableAlignment"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.TableAlignment</title>
+  <p>The alignment policies available on each axis of the <link xref="Clutter.TableLayout">Clutter.TableLayout</link></p>
+<table>
+<tr>
+<td><p>TableAlignment.START :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>TableAlignment.CENTER :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>TableAlignment.END :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

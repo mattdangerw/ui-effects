@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animation.has_property"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animation" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_animation_has_property</api:name>
+      <api:arg>
+        <api:type>ClutterAnimation *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>has_property</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(gboolean)
+def has_property(property_name)
+</code></synopsis>
+<p>Checks whether @animation is controlling @property_name.</p><p><link xref="Clutter.Animation">Clutter.Animation</link>, False otherwise</p>
+
+<table>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>name of the property</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the property is animated by the</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

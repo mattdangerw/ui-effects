@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.get_text"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_text_get_text</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_text</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def get_text()
+</code></synopsis>
+<p>Retrieves a pointer to the current contents of a <link xref="Clutter.Text">Clutter.Text</link>
+actor.</p><p>If you need a copy of the contents for manipulating, either
+use g_strdup() on the returned string, or use:</p><p>|[
+copy = clutter_text_get_chars (text, 0, -1);
+]|</p><p>Which will return a newly allocated string.</p><p>If the <link xref="Clutter.Text">Clutter.Text</link> actor is empty, this function will return
+an empty string, and not None.</p><p>string is owned by the <link xref="Clutter.Text">Clutter.Text</link> actor and should never be modified
+or freed</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the contents of the actor. The returned</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

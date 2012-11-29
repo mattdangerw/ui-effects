@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Shader.get_fragment_source"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Shader" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_shader_get_fragment_source</api:name>
+      <api:arg>
+        <api:type>ClutterShader *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_fragment_source</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def get_fragment_source()
+</code></synopsis>
+<p>Query the current GLSL fragment source set on @shader.</p><p>ClutterShader object or None. The returned string is owned by the
+shader object and should never be modified or freed</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the source of the fragment shader for this</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

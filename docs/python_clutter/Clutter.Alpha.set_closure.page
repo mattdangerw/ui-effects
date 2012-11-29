@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Alpha.set_closure"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Alpha" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_alpha_set_closure</api:name>
+      <api:arg>
+        <api:type>ClutterAlpha *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Closure</api:type>
+        <api:name>closure</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_closure</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.Closure)
+@returns(none)
+def set_closure(closure)
+</code></synopsis>
+<p>Sets the <link xref="GClosure">GClosure</link> used to compute the alpha value at each
+frame of the <link xref="Clutter.Timeline">Clutter.Timeline</link> bound to @alpha.</p>
+
+<table>
+<tr>
+<td><p>closure :</p></td>
+<td><p>A <link xref="GClosure">GClosure</link></p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

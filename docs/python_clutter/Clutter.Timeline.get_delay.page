@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.get_delay"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_get_delay</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_delay</title>
+<synopsis><code mime="text/x-python">
+@returns(guint)
+def get_delay()
+</code></synopsis>
+<p>Retrieves the delay set using clutter_timeline_set_delay().</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the delay in milliseconds.</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

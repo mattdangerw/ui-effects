@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_allocation_geometry"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_allocation_geometry</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Geometry</api:type>
+        <api:name>geom</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_allocation_geometry</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Geometry)
+@returns(none)
+def get_allocation_geometry(geom)
+</code></synopsis>
+<p>Gets the layout box an actor has been assigned.  The allocation can
+only be assumed valid inside a paint() method; anywhere else, it
+may be out-of-date.</p><p>An allocation does not incorporate the actor's scale or anchor point;
+those transformations do not affect layout, only rendering.</p><p>The returned rectangle is in pixels.</p>
+
+<table>
+<tr>
+<td><p>geom :</p></td>
+<td><p>allocation geometry in pixels</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

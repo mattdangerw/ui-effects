@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Color.lighten"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Color" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_color_lighten</api:name>
+      <api:arg>
+        <api:type>Clutter.Color</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>lighten</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Color)
+@returns(none)
+def lighten(result)
+</code></synopsis>
+<p>Lightens @color by a fixed amount, and saves the changed color
+in @result.</p>
+
+<table>
+<tr>
+<td><p>result :</p></td>
+<td><p>return location for the lighter color</p></td>
+</tr>
+</table>
+</page>

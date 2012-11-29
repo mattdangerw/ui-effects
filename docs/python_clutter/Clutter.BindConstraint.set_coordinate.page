@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BindConstraint.set_coordinate"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BindConstraint" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_bind_constraint_set_coordinate</api:name>
+      <api:arg>
+        <api:type>ClutterBindConstraint *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.BindCoordinate</api:type>
+        <api:name>coordinate</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_coordinate</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.BindCoordinate)
+@returns(none)
+def set_coordinate(coordinate)
+</code></synopsis>
+<p>Sets the coordinate to bind in the constraint</p>
+
+<table>
+<tr>
+<td><p>coordinate :</p></td>
+<td><p>the coordinate to bind</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

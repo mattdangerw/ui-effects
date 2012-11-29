@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.ModelIter-row"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ModelIter" group="property"/>
+    <title type="link" role="topic">row</title>
+  </info>
+  <title>Clutter.ModelIter:row</title>
+<synopsis><code mime="text/x-python">
+"row"             guint                : Read / Write
+</code></synopsis>
+<p>The row number to which this iter points to.</p>
+</page>

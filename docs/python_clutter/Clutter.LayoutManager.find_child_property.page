@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.LayoutManager.find_child_property"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutManager" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.ParamSpec</api:type>
+      </api:returns>
+      <api:name>clutter_layout_manager_find_child_property</api:name>
+      <api:arg>
+        <api:type>ClutterLayoutManager *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>find_child_property</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(GObject.ParamSpec)
+def find_child_property(name)
+</code></synopsis>
+<p>Retrieves the <link xref="GParamSpec">GParamSpec</link> for the layout property @name inside
+the <link xref="Clutter.LayoutMeta">Clutter.LayoutMeta</link> sub-class used by @manager</p><p>or None if no property with that name exists. The returned
+<link xref="GParamSpec">GParamSpec</link> is owned by the layout manager and should not be
+modified or freed</p>
+
+<table>
+<tr>
+<td><p>name :</p></td>
+<td><p>the name of the property</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="GParamSpec">GParamSpec</link> describing the property,</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

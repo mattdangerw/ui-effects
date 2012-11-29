@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Clutter.Actor::destroy</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Clutter.Actor::destroy</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">def callback(actor, user_param1, ...)</pre></div></div></div></div></div>
+<p class="p">The ::destroy signal notifies that all references held on the
+actor which emitted it should be released.</p>
+<p class="p">The ::destroy signal should be used by all holders of a reference
+on @actor.</p>
+<p class="p">This signal might result in the finalization of the <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span>
+if all references are released.</p>
+<p class="p">Composite actors and actors implementing the <span class=" link"><a href="Clutter.Container.html" title="Clutter.Container">Clutter.Container</a></span>
+interface should override the default implementation of the
+class handler of this signal and call clutter_actor_destroy() on
+their children. When overriding the default class handler, it is
+required to chain up to the parent's implementation.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">actor :</p></td>
+<td><p class="p">instance of Clutter.Actor that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p class="p">user_param1 :</p></td>
+<td><p class="p">first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p class="p">... :</p></td>
+<td><p class="p">additional user parameters (if any)</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 0.2</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

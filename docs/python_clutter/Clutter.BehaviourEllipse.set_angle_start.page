@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BehaviourEllipse.set_angle_start"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourEllipse" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_ellipse_set_angle_start</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviourEllipse *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>angle_start</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_angle_start</title>
+<synopsis><code mime="text/x-python">
+@accepts(gdouble)
+@returns(none)
+def set_angle_start(angle_start)
+</code></synopsis>
+<p>Sets the angle at which movement starts; angles &gt;= 360 degress get clamped
+to the canonical interval &lt;0, 360).</p>
+
+<table>
+<tr>
+<td><p>angle_start :</p></td>
+<td><p>angle at which movement starts in degrees, between 0 and 360.</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

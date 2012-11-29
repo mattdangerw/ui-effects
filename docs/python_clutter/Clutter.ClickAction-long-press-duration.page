@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.ClickAction-long-press-duration"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ClickAction" group="property"/>
+    <title type="link" role="topic">long-press-duration</title>
+  </info>
+  <title>Clutter.ClickAction:long-press-duration</title>
+<synopsis><code mime="text/x-python">
+"long-press-duration"             gint                : Read / Write
+</code></synopsis>
+<p>The minimum duration of a press for it to be recognized as a long
+press gesture, in milliseconds.</p><p>A value of -1 will make the <link xref="Clutter.ClickAction">Clutter.ClickAction</link> use the value of
+the <link xref="Clutter.Settings-long-press-duration">Clutter.Settings:long-press-duration</link> property.</p>
+</page>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BoxLayout.get_expand"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BoxLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_box_layout_get_expand</api:name>
+      <api:arg>
+        <api:type>ClutterBoxLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_expand</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(gboolean)
+def get_expand(actor)
+</code></synopsis>
+<p>Retrieves whether @actor should expand inside @layout</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link> child of @layout</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the <link xref="Clutter.Actor">Clutter.Actor</link> should expand, False otherwise</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.set_use_fog"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_stage_set_use_fog</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>fog</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_use_fog</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_use_fog(fog)
+</code></synopsis>
+<p>Sets whether the depth cueing effect on the stage should be enabled
+or not.</p><p>Depth cueing is a 3D effect that makes actors farther away from the
+viewing point less opaque, by fading them with the stage color.
+The parameters of the GL fog used can be changed using the
+clutter_stage_set_fog() function.</p>
+
+<table>
+<tr>
+<td><p>fog :</p></td>
+<td><p>True for enabling the depth cueing effect</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

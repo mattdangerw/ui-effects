@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Units.copy"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Units" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Units</api:type>
+      </api:returns>
+      <api:name>clutter_units_copy</api:name>
+    </api:function>
+  </info>
+  <title>copy</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Units)
+def copy()
+</code></synopsis>
+<p>Copies @units</p><p><link xref="Clutter.Units">Clutter.Units</link> structure. Use clutter_units_free() to free
+the allocated resources</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the newly created copy of a</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_single_line_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_single_line_mode</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>single_line</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_single_line_mode</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_single_line_mode(single_line)
+</code></synopsis>
+<p>Sets whether a <link xref="Clutter.Text">Clutter.Text</link> actor should be in single line mode
+or not. Only editable <link xref="Clutter.Text">Clutter.Text</link>&lt;!-- --&gt;s can be in single line
+mode.</p><p>A text actor in single line mode will not wrap text and will clip
+the visible area to the predefined size. The contents of the
+text actor will scroll to display the end of the text if its length
+is bigger than the allocated width.</p><p>When setting the single line mode the <link xref="Clutter.Text-activatable">Clutter.Text:activatable</link>
+property is also set as a side effect. Instead of entering a new
+line character, the text actor will emit the <link xref="Clutter.Text-activate">Clutter.Text::activate</link>
+signal.</p>
+
+<table>
+<tr>
+<td><p>single_line :</p></td>
+<td><p>whether to enable single line mode</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

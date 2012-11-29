@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_easing_delay"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_easing_delay</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>msecs</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_easing_delay</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint)
+@returns(none)
+def set_easing_delay(msecs)
+</code></synopsis>
+<p>Sets the delay that should be applied before tweening animatable
+properties.</p>
+
+<table>
+<tr>
+<td><p>msecs :</p></td>
+<td><p>the delay before the start of the tweening, in milliseconds</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

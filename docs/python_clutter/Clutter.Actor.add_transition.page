@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.add_transition"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_add_transition</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Transition</api:type>
+        <api:name>transition</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>add_transition</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, Clutter.Transition)
+@returns(none)
+def add_transition(name, transition)
+</code></synopsis>
+<p>Adds a @transition to the <link xref="Clutter.Actor">Clutter.Actor</link>'s list of animations.</p><p>The @name string is a per-actor unique identifier of the @transition: only
+one <link xref="Clutter.Transition">Clutter.Transition</link> can be associated to the specified @name.</p><p>The @transition will be given the easing duration, mode, and delay
+associated to the actor's current easing state; it is possible to modify
+these values after calling clutter_actor_add_transition().</p><p>The @transition will be started once added.</p><p>This function will take a reference on the @transition.</p><p>This function is usually called implicitly when modifying an animatable
+property.</p>
+
+<table>
+<tr>
+<td><p>name :</p></td>
+<td><p>the name of the transition to add</p></td>
+</tr>
+<tr>
+<td><p>transition :</p></td>
+<td><p>the <link xref="Clutter.Transition">Clutter.Transition</link> to add</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

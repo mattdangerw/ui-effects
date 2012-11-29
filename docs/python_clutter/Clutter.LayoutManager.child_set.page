@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.LayoutManager.child_set"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutManager" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_layout_manager_child_set</api:name>
+      <api:arg>
+        <api:type>ClutterLayoutManager *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Container</api:type>
+        <api:name>container</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>first_property</api:name>
+      </api:arg>
+      <api:varargs/>
+    </api:function>
+  </info>
+  <title>child_set</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Container, Clutter.Actor, utf8, &lt;varargs&gt;)
+@returns(none)
+def child_set(container, actor, first_property, None)
+</code></synopsis>
+<p>Sets a list of properties and their values on the <link xref="Clutter.LayoutMeta">Clutter.LayoutMeta</link>
+associated by @manager to a child of @container</p><p>Languages bindings should use clutter_layout_manager_child_set_property()
+instead</p>
+
+<table>
+<tr>
+<td><p>container :</p></td>
+<td><p>a <link xref="Clutter.Container">Clutter.Container</link> using @manager</p></td>
+</tr>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link> child of @container</p></td>
+</tr>
+<tr>
+<td><p>first_property :</p></td>
+<td><p>the first property name</p></td>
+</tr>
+<tr>
+<td><p>None :</p></td>
+<td></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_line_alignment"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_line_alignment</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Pango.Alignment</api:type>
+        <api:name>alignment</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_line_alignment</title>
+<synopsis><code mime="text/x-python">
+@accepts(Pango.Alignment)
+@returns(none)
+def set_line_alignment(alignment)
+</code></synopsis>
+<p>Sets the way that the lines of a wrapped label are aligned with
+respect to each other. This does not affect the overall alignment
+of the label within its allocated or specified width.</p><p>To align a <link xref="Clutter.Text">Clutter.Text</link> actor you should add it to a container
+that supports alignment, or use the anchor point.</p>
+
+<table>
+<tr>
+<td><p>alignment :</p></td>
+<td><p>A <link xref="PangoAlignment">PangoAlignment</link></p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

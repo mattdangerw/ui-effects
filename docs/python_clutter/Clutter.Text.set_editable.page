@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_editable"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_editable</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>editable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_editable</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_editable(editable)
+</code></synopsis>
+<p>Sets whether the <link xref="Clutter.Text">Clutter.Text</link> actor should be editable.</p><p>An editable <link xref="Clutter.Text">Clutter.Text</link> with key focus set using
+clutter_actor_grab_key_focus() or clutter_stage_set_key_focus()
+will receive key events and will update its contents accordingly.</p>
+
+<table>
+<tr>
+<td><p>editable :</p></td>
+<td><p>whether the <link xref="Clutter.Text">Clutter.Text</link> should be editable</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Clutter.Texture-load-finished"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="signal"/>
+    <title type="link" role="topic">load-finished</title>
+  </info>
+  <title>Clutter.Texture::load-finished</title>
+<synopsis><code mime="text/x-python">
+def callback(texture, error, user_param1, ...)
+</code></synopsis>
+<p>The ::load-finished signal is emitted when a texture load has
+completed. If there was an error during loading, @error will
+be set, otherwise it will be None</p>
+
+<table>
+<tr>
+<td><p>texture :</p></td>
+<td><p>instance of Clutter.Texture that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>error :</p></td>
+<td><p>A set error, or None</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>register_func</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Alpha.html" title="Clutter.Alpha">Clutter.Alpha</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">register_func</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(Clutter.AlphaFunc, gpointer)
+@returns(gulong)
+def register_func(func, data)</pre></div></div></div></div></div>
+<p class="p">Registers a global alpha function and returns its logical id
+to be used by clutter_alpha_set_mode() or by <span class=" link"><a href="Clutter.Animation.html" title="Clutter.Animation">Clutter.Animation</a></span>.</p>
+<p class="p">The logical id is always greater than %CLUTTER_ANIMATION_LAST.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">func :</p></td>
+<td><p class="p">a <span class=" link"><a href="Clutter.AlphaFunc.html" title="Clutter.AlphaFunc">Clutter.AlphaFunc</a></span></p></td>
+</tr>
+<tr>
+<td><p class="p">data :</p></td>
+<td><p class="p">user data to pass to @func, or None</p></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">the logical id of the alpha function</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.0</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Alpha.html" title="Clutter.Alpha">Clutter.Alpha</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

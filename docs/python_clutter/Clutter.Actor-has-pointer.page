@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-has-pointer"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">has-pointer</title>
+  </info>
+  <title>Clutter.Actor:has-pointer</title>
+<synopsis><code mime="text/x-python">
+"has-pointer"             gboolean                : Read
+</code></synopsis>
+<p>Whether the actor contains the pointer of a <link xref="Clutter.InputDevice">Clutter.InputDevice</link>
+or not.</p>
+</page>

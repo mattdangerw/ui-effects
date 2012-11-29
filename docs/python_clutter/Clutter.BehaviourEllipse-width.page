@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.BehaviourEllipse-width"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourEllipse" group="property"/>
+    <title type="link" role="topic">width</title>
+  </info>
+  <title>Clutter.BehaviourEllipse:width</title>
+<synopsis><code mime="text/x-python">
+"width"             gint                : Read / Write
+</code></synopsis>
+<p>Width of the ellipse, in pixels</p>
+</page>

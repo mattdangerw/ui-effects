@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.OffscreenEffect.create_texture"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.OffscreenEffect" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Handle</api:type>
+      </api:returns>
+      <api:name>clutter_offscreen_effect_create_texture</api:name>
+      <api:arg>
+        <api:type>ClutterOffscreenEffect *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>create_texture</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(Cogl.Handle)
+def create_texture(width, height)
+</code></synopsis>
+<p>Calls the create_texture() virtual function of the @effect</p><p>%COGL_INVALID_HANDLE. The returned handle has its reference
+count increased.</p>
+
+<table>
+<tr>
+<td><p>width :</p></td>
+<td><p>the minimum width of the target texture</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>the minimum height of the target texture</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a handle to a Cogl texture, or</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

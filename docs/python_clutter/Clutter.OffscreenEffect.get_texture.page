@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.OffscreenEffect.get_texture"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.OffscreenEffect" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Handle</api:type>
+      </api:returns>
+      <api:name>clutter_offscreen_effect_get_texture</api:name>
+      <api:arg>
+        <api:type>ClutterOffscreenEffect *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_texture</title>
+<synopsis><code mime="text/x-python">
+@returns(Cogl.Handle)
+def get_texture()
+</code></synopsis>
+<p>Retrieves the texture used as a render target for the offscreen
+buffer created by @effect</p><p>You should only use the returned texture when painting. The texture
+may change after ClutterEffect::pre_paint is called so the effect
+implementation should update any references to the texture after
+chaining-up to the parent's pre_paint implementation. This can be
+used instead of clutter_offscreen_effect_get_target() when the
+effect subclass wants to paint using its own material.</p><p>returned texture is owned by Clutter and it should not be
+modified or freed</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="CoglHandle">CoglHandle</link> or %COGL_INVALID_HANDLE. The</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

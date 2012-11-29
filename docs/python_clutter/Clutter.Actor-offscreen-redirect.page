@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-offscreen-redirect"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">offscreen-redirect</title>
+  </info>
+  <title>Clutter.Actor:offscreen-redirect</title>
+<synopsis><code mime="text/x-python">
+"offscreen-redirect"             Clutter.OffscreenRedirect                : Read / Write
+</code></synopsis>
+<p>Determines the conditions in which the actor will be redirected
+to an offscreen framebuffer while being painted. For example this
+can be used to cache an actor in a framebuffer or for improved
+handling of transparent actors. See
+clutter_actor_set_offscreen_redirect() for details.</p>
+</page>

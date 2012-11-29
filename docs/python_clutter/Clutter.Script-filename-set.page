@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Script-filename-set"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Script" group="property"/>
+    <title type="link" role="topic">filename-set</title>
+  </info>
+  <title>Clutter.Script:filename-set</title>
+<synopsis><code mime="text/x-python">
+"filename-set"             gboolean                : Read
+</code></synopsis>
+<p>Whether the <link xref="Clutter.Script-filename">Clutter.Script:filename</link> property is set. If this property
+is True then the currently parsed data comes from a file, and the
+file name is stored inside the <link xref="Clutter.Script-filename">Clutter.Script:filename</link> property.</p>
+</page>

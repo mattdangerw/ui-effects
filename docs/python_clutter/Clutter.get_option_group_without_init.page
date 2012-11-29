@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.get_option_group_without_init"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.OptionGroup</api:type>
+      </api:returns>
+      <api:name>clutter_get_option_group_without_init</api:name>
+    </api:function>
+  </info>
+  <title>get_option_group_without_init</title>
+<synopsis><code mime="text/x-python">
+@returns(GLib.OptionGroup)
+def get_option_group_without_init()
+</code></synopsis>
+<p>Returns a <link xref="GOptionGroup">GOptionGroup</link> for the command line arguments recognized
+by Clutter. You should add this group to your <link xref="GOptionContext">GOptionContext</link> with
+g_option_context_add_group(), if you are using g_option_context_parse()
+to parse your commandline arguments.</p><p>Unlike clutter_get_option_group(), calling g_option_context_parse() with
+the <link xref="GOptionGroup">GOptionGroup</link> returned by this function requires a subsequent explicit
+call to clutter_init(); use this function when needing to set foreign
+display connection with clutter_x11_set_display(), or with
+&lt;function&gt;gtk_clutter_init()&lt;/function&gt;.</p><p>recognized by Clutter</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="GOptionGroup">GOptionGroup</link> for the commandline arguments</p></td>
+</tr>
+</table>
+<p>Since 0.8.2</p>
+</page>

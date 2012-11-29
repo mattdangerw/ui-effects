@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animator.get_keys"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animator" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>&lt;list&gt;</api:type>
+      </api:returns>
+      <api:name>clutter_animator_get_keys</api:name>
+      <api:arg>
+        <api:type>ClutterAnimator *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>object</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>progress</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_keys</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.Object, utf8, gdouble)
+@returns(&lt;list&gt;)
+def get_keys(object, property_name, progress)
+</code></synopsis>
+<p>Returns a list of pointers to opaque structures with accessor functions
+that describe the keys added to an animator.</p><p>list of <link xref="Clutter.AnimatorKey">Clutter.AnimatorKey</link>&lt;!-- --&gt;s; the contents of the list are owned
+by the <link xref="Clutter.Animator">Clutter.Animator</link>, but you should free the returned list when done,
+using g_list_free()</p>
+
+<table>
+<tr>
+<td><p>object :</p></td>
+<td><p>a <link xref="GObject">GObject</link> to search for, or None for all objects</p></td>
+</tr>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>a specific property name to query for, or None for all properties</p></td>
+</tr>
+<tr>
+<td><p>progress :</p></td>
+<td><p>a specific progress to search for, or a negative value for all progresses</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

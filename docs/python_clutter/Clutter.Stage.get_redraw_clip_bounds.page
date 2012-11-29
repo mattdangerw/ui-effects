@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.get_redraw_clip_bounds"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_stage_get_redraw_clip_bounds</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>cairo.RectangleInt</api:type>
+        <api:name>clip</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_redraw_clip_bounds</title>
+<synopsis><code mime="text/x-python">
+@accepts(cairo.RectangleInt)
+@returns(none)
+def get_redraw_clip_bounds(clip)
+</code></synopsis>
+<p>Gets the bounds of the current redraw for @stage in stage pixel
+coordinates. E.g., if only a single actor has queued a redraw then
+Clutter may redraw the stage with a clip so that it doesn't have to
+paint every pixel in the stage. This function would then return the
+bounds of that clip. An application can use this information to
+avoid some extra work if it knows that some regions of the stage
+aren't going to be painted. This should only be called while the
+stage is being painted. If there is no current redraw clip then
+this function will set @clip to the full extents of the stage.</p>
+
+<table>
+<tr>
+<td><p>clip :</p></td>
+<td><p>Return location for the clip bounds</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

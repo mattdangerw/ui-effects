@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Script.load_from_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Script" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint</api:type>
+      </api:returns>
+      <api:name>clutter_script_load_from_data</api:name>
+      <api:arg>
+        <api:type>ClutterScript *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gssize</api:type>
+        <api:name>length</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>load_from_data</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, gssize)
+@returns(guint)
+def load_from_data(data, length)
+</code></synopsis>
+<p>Loads the definitions from @data into @script and merges with
+the currently loaded ones, if any.</p><p>accordingly. On success, the merge id for the UI definitions is
+returned. You can use the merge id with clutter_script_unmerge_objects().</p>
+
+<table>
+<tr>
+<td><p>data :</p></td>
+<td><p>a buffer containing the definitions</p></td>
+</tr>
+<tr>
+<td><p>length :</p></td>
+<td><p>the length of the buffer, or -1 if @data is a NUL-terminated buffer</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>on error, zero is returned and @error is set</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

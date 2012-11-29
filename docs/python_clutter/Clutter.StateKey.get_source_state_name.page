@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.StateKey.get_source_state_name"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.StateKey" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_state_key_get_source_state_name</api:name>
+    </api:function>
+  </info>
+  <title>get_source_state_name</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def get_source_state_name()
+</code></synopsis>
+<p>Retrieves the name of the source state of the @state_key</p><p>if this is the generic state key for the given property when
+transitioning to the target state. The returned string is owned
+by the <link xref="Clutter.StateKey">Clutter.StateKey</link> and should never be modified or freed</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the name of the source state for this key, or None</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

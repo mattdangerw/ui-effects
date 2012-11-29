@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_reactive"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_reactive</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>reactive</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_reactive</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_reactive(reactive)
+</code></synopsis>
+<p>Sets @actor as reactive. Reactive actors will receive events.</p>
+
+<table>
+<tr>
+<td><p>reactive :</p></td>
+<td><p>whether the actor should be reactive to events</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

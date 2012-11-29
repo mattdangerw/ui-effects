@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Units.from_em_for_font"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Units" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_units_from_em_for_font</api:name>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>font_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>em</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>from_em_for_font</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, gfloat)
+@returns(none)
+def from_em_for_font(font_name, em)
+</code></synopsis>
+<p>Stores a value in em inside @units using @font_name</p>
+
+<table>
+<tr>
+<td><p>font_name :</p></td>
+<td><p>the font name and size</p></td>
+</tr>
+<tr>
+<td><p>em :</p></td>
+<td><p>em</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

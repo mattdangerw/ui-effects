@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.add_effect"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_add_effect</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Effect</api:type>
+        <api:name>effect</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>add_effect</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Effect)
+@returns(none)
+def add_effect(effect)
+</code></synopsis>
+<p>Adds @effect to the list of <link xref="Clutter.Effect">Clutter.Effect</link>&lt;!-- --&gt;s applied to @self</p><p>The <link xref="Clutter.Actor">Clutter.Actor</link> will hold a reference on the @effect until either
+clutter_actor_remove_effect() or clutter_actor_clear_effects() is
+called.</p>
+
+<table>
+<tr>
+<td><p>effect :</p></td>
+<td><p>a <link xref="Clutter.Effect">Clutter.Effect</link></p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

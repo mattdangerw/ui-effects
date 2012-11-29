@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Model.set_types"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_model_set_types</api:name>
+      <api:arg>
+        <api:type>ClutterModel *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>n_columns</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>[GType]</api:type>
+        <api:name>types</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_types</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, [GType])
+@returns(none)
+def set_types(n_columns, types)
+</code></synopsis>
+<p>Sets the types of the columns inside a <link xref="Clutter.Model">Clutter.Model</link>.</p><p>This function is meant primarily for <link xref="GObjects">GObjects</link> that inherit from
+<link xref="Clutter.Model">Clutter.Model</link>, and should only be used when contructing a <link xref="Clutter.Model">Clutter.Model</link>.
+It will not work after the initial creation of the <link xref="Clutter.Model">Clutter.Model</link>.</p>
+
+<table>
+<tr>
+<td><p>n_columns :</p></td>
+<td><p>number of columns for the model</p></td>
+</tr>
+<tr>
+<td><p>types :</p></td>
+<td><p>an array of <link xref="GType">GType</link> types</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

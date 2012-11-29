@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Behaviour.get_alpha"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Behaviour" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Alpha</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_get_alpha</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviour *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_alpha</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Alpha)
+def get_alpha()
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.Alpha">Clutter.Alpha</link> object bound to @behave.</p><p>object has been bound to this behaviour.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="Clutter.Alpha">Clutter.Alpha</link> object, or None if no alpha</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PropertyTransition.get_property_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PropertyTransition" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_property_transition_get_property_name</api:name>
+      <api:arg>
+        <api:type>ClutterPropertyTransition *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_property_name</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def get_property_name()
+</code></synopsis>
+<p>Retrieves the value of the <link xref="Clutter.PropertyTransition-property-name">Clutter.PropertyTransition:property-name</link>
+property.</p><p>none is set. The returned string is owned by the @transition and
+it should not be freed.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the name of the property being animated, or None if</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

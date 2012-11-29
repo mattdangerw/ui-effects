@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Clutter.TextBuffer-inserted_text"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TextBuffer" group="vfunc"/>
+    <title type="link" role="topic">inserted_text</title>
+  </info>
+  <title>Clutter.TextBuffer.inserted_text</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, utf8, guint)
+@returns(none)
+def do_inserted_text(self, position, chars, n_chars):
+</code></synopsis>
+
+
+<table>
+<tr>
+<td><p>position :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>chars :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>n_chars :</p></td>
+<td></td>
+</tr>
+</table>
+</page>

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animator.compute_value"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animator" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_animator_compute_value</api:name>
+      <api:arg>
+        <api:type>ClutterAnimator *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>object</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>progress</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>compute_value</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.Object, utf8, gdouble, GObject.Value)
+@returns(gboolean)
+def compute_value(object, property_name, progress, value)
+</code></synopsis>
+<p>Compute the value for a managed property at a given progress.</p><p>If the property is an ease-in property, the current value of the property
+on the object will be used as the starting point for computation.</p><p>an error occurs or the progress is before any of the keys) False is
+returned and the <link xref="GValue">GValue</link> is left untouched</p>
+
+<table>
+<tr>
+<td><p>object :</p></td>
+<td><p>a <link xref="GObject">GObject</link></p></td>
+</tr>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>the name of the property on object to check</p></td>
+</tr>
+<tr>
+<td><p>progress :</p></td>
+<td><p>a value between 0.0 and 1.0</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>an initialized value to store the computed result</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the computation yields has a value, otherwise (when</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

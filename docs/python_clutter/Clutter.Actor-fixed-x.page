@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-fixed-x"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">fixed-x</title>
+  </info>
+  <title>Clutter.Actor:fixed-x</title>
+<synopsis><code mime="text/x-python">
+"fixed-x"             gfloat                : Read / Write
+</code></synopsis>
+<p>The fixed X position of the actor in pixels.</p><p>Writing this property sets <link xref="Clutter.Actor-fixed-position-set">Clutter.Actor:fixed-position-set</link>
+property as well, as a side effect</p>
+</page>

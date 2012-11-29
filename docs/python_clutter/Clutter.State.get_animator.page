@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.State.get_animator"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.State" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Animator</api:type>
+      </api:returns>
+      <api:name>clutter_state_get_animator</api:name>
+      <api:arg>
+        <api:type>ClutterState *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>source_state_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>target_state_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_animator</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, utf8)
+@returns(Clutter.Animator)
+def get_animator(source_state_name, target_state_name)
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.Animator">Clutter.Animator</link> that is being used for transitioning
+between the two states, if any has been set</p>
+
+<table>
+<tr>
+<td><p>source_state_name :</p></td>
+<td><p>the name of a source state</p></td>
+</tr>
+<tr>
+<td><p>target_state_name :</p></td>
+<td><p>the name of a target state</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="Clutter.Animator">Clutter.Animator</link> instance, or None</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

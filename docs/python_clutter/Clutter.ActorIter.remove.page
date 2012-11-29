@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ActorIter.remove"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ActorIter" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_iter_remove</api:name>
+    </api:function>
+  </info>
+  <title>remove</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def remove()
+</code></synopsis>
+<p>Safely removes the <link xref="Clutter.Actor">Clutter.Actor</link> currently pointer to by the iterator
+from its parent.</p><p>This function can only be called after clutter_actor_iter_next() or
+clutter_actor_iter_prev() returned True, and cannot be called more
+than once for the same actor.</p><p>This function will call clutter_actor_remove_child() internally.</p>
+
+<table>
+</table>
+<p>Since 1.10</p>
+</page>

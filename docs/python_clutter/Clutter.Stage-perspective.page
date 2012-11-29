@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Stage-perspective"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="property"/>
+    <title type="link" role="topic">perspective</title>
+  </info>
+  <title>Clutter.Stage:perspective</title>
+<synopsis><code mime="text/x-python">
+"perspective"             Clutter.Perspective                : Read / Write
+</code></synopsis>
+<p>The parameters used for the perspective projection from 3D
+coordinates to 2D</p>
+</page>

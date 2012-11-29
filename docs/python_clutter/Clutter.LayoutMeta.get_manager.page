@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.LayoutMeta.get_manager"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutMeta" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.LayoutManager</api:type>
+      </api:returns>
+      <api:name>clutter_layout_meta_get_manager</api:name>
+      <api:arg>
+        <api:type>ClutterLayoutMeta *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_manager</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.LayoutManager)
+def get_manager()
+</code></synopsis>
+<p>Retrieves the actor wrapped by @data</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="Clutter.LayoutManager">Clutter.LayoutManager</link></p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

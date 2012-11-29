@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.check_version"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_check_version</api:name>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>major</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>minor</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>micro</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>check_version</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, guint, guint)
+@returns(gboolean)
+def check_version(major, minor, micro)
+</code></synopsis>
+<p>Run-time version check, to check the version the Clutter library
+that an application is currently linked against</p><p>This is the run-time equivalent of the compile-time %CLUTTER_CHECK_VERSION
+pre-processor macro</p><p>greater than (@major, @minor, @micro), and False otherwise</p>
+
+<table>
+<tr>
+<td><p>major :</p></td>
+<td><p>major version, like 1 in 1.2.3</p></td>
+</tr>
+<tr>
+<td><p>minor :</p></td>
+<td><p>minor version, like 2 in 1.2.3</p></td>
+</tr>
+<tr>
+<td><p>micro :</p></td>
+<td><p>micro version, like 3 in 1.2.3</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the version of the Clutter library is</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

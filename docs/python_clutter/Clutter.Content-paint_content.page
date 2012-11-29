@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Clutter.Content-paint_content"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Content" group="vfunc"/>
+    <title type="link" role="topic">paint_content</title>
+  </info>
+  <title>Clutter.Content.paint_content</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, Clutter.PaintNode)
+@returns(none)
+def do_paint_content(self, actor, node):
+</code></synopsis>
+
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>node :</p></td>
+<td></td>
+</tr>
+</table>
+</page>

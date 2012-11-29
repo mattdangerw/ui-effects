@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ModelIter.set"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ModelIter" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_model_iter_set</api:name>
+      <api:arg>
+        <api:type>ClutterModelIter *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:varargs/>
+    </api:function>
+  </info>
+  <title>set</title>
+<synopsis><code mime="text/x-python">
+@accepts(&lt;varargs&gt;)
+@returns(none)
+def set(None)
+</code></synopsis>
+<p>Sets the value of one or more cells in the row referenced by @iter. The
+variable argument list should contain integer column numbers, each column
+column number followed by the value to be set. The  list is terminated by a
+-1.</p><p>For example, to set column 0 with type %G_TYPE_STRING, use:
+&lt;informalexample&gt;&lt;programlisting&gt;
+clutter_model_iter_set (iter, 0, "foo", -1);
+&lt;/programlisting&gt;&lt;/informalexample&gt;</p>
+
+<table>
+<tr>
+<td><p>None :</p></td>
+<td></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

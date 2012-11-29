@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>get_paint_volume</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">get_paint_volume</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@returns(Clutter.PaintVolume)
+def get_paint_volume()</pre></div></div></div></div></div>
+<p class="p">Retrieves the paint volume of the passed <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span>, or None
+when a paint volume can't be determined.</p>
+<p class="p">The paint volume is defined as the 3D space occupied by an actor
+when being painted.</p>
+<p class="p">This function will call the &lt;function&gt;get_paint_volume()&lt;/function&gt;
+virtual function of the <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> class. Sub-classes of <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span>
+should not usually care about overriding the default implementation,
+unless they are, for instance: painting outside their allocation, or
+actors with a depth factor (not in terms of <span class=" link"><a href="Clutter.Actor-depth.html" title="Clutter.Actor:depth">Clutter.Actor:depth</a></span> but real
+3D depth).</p>
+<p class="p">&lt;note&gt;2D actors overriding &lt;function&gt;get_paint_volume()&lt;/function&gt;
+ensure their volume has a depth of 0. (This will be true so long as
+you don't call clutter_paint_volume_set_depth().)&lt;/note&gt;</p>
+<p class="p">or None if no volume could be determined. The returned pointer
+is not guaranteed to be valid across multiple frames; if you want
+to keep it, you will need to copy it using clutter_paint_volume_copy().</p>
+<div class="table"><div class="inner"><div class="region"><table class="table"><tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">a pointer to a <span class=" link"><a href="Clutter.PaintVolume.html" title="ClutterPaintVolume">Clutter.PaintVolume</a></span>,</p></td>
+</tr></table></div></div></div>
+<p class="p">Since 1.6</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

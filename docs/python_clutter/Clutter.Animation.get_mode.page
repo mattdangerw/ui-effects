@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animation.get_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animation" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gulong</api:type>
+      </api:returns>
+      <api:name>clutter_animation_get_mode</api:name>
+      <api:arg>
+        <api:type>ClutterAnimation *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_mode</title>
+<synopsis><code mime="text/x-python">
+@returns(gulong)
+def get_mode()
+</code></synopsis>
+<p>Retrieves the animation mode of @animation, as set by
+clutter_animation_set_mode().</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the mode for the animation</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

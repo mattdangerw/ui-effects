@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animation.bind_interval"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animation" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Animation</api:type>
+      </api:returns>
+      <api:name>clutter_animation_bind_interval</api:name>
+      <api:arg>
+        <api:type>ClutterAnimation *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Interval</api:type>
+        <api:name>interval</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>bind_interval</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, Clutter.Interval)
+@returns(Clutter.Animation)
+def bind_interval(property_name, interval)
+</code></synopsis>
+<p>Binds @interval to the @property_name of the <link xref="GObject">GObject</link>
+attached to @animation. The <link xref="Clutter.Animation">Clutter.Animation</link> will take
+ownership of the passed <link xref="Clutter.Interval">Clutter.Interval</link>.  For more information
+about animations, see clutter_actor_animate().</p><p>If you need to update the interval instance use
+clutter_animation_update_interval() instead.</p>
+
+<table>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>the property to control</p></td>
+</tr>
+<tr>
+<td><p>interval :</p></td>
+<td><p>a <link xref="Clutter.Interval">Clutter.Interval</link></p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The animation itself.</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Script-translation-domain"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Script" group="property"/>
+    <title type="link" role="topic">translation-domain</title>
+  </info>
+  <title>Clutter.Script:translation-domain</title>
+<synopsis><code mime="text/x-python">
+"translation-domain"             utf8                : Read / Write
+</code></synopsis>
+<p>The translation domain, used to localize strings marked as translatable
+inside a UI definition.</p><p>If <link xref="Clutter.Script-translation-domain">Clutter.Script:translation-domain</link> is set to None, <link xref="Clutter.Script">Clutter.Script</link>
+will use gettext(), otherwise g_dgettext() will be used.</p>
+</page>

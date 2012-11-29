@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_cursor_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_cursor_size</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>size</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_cursor_size</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint)
+@returns(none)
+def set_cursor_size(size)
+</code></synopsis>
+<p>Sets the size of the cursor of a <link xref="Clutter.Text">Clutter.Text</link>. The cursor
+will only be visible if the <link xref="Clutter.Text-cursor-visible">Clutter.Text:cursor-visible</link> property
+is set to True.</p>
+
+<table>
+<tr>
+<td><p>size :</p></td>
+<td><p>the size of the cursor, in pixels, or -1 to use the default value</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

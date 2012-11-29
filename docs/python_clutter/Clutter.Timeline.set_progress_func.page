@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.set_progress_func"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_set_progress_func</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.TimelineProgressFunc</api:type>
+        <api:name>func</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.DestroyNotify</api:type>
+        <api:name>notify</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_progress_func</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.TimelineProgressFunc, gpointer, GLib.DestroyNotify)
+@returns(none)
+def set_progress_func(func, data, notify)
+</code></synopsis>
+<p>Sets a custom progress function for @timeline. The progress function will
+be called by clutter_timeline_get_progress() and will be used to compute
+the progress value based on the elapsed time and the total duration of the
+timeline.</p><p>If @func is not None, the <link xref="Clutter.Timeline-progress-mode">Clutter.Timeline:progress-mode</link> property will
+be set to %CLUTTER_CUSTOM_MODE.</p><p>If @func is None, any previously set progress function will be unset, and
+the <link xref="Clutter.Timeline-progress-mode">Clutter.Timeline:progress-mode</link> property will be set to %CLUTTER_LINEAR.</p>
+
+<table>
+<tr>
+<td><p>func :</p></td>
+<td><p>a progress function, or None</p></td>
+</tr>
+<tr>
+<td><p>data :</p></td>
+<td><p>data to pass to @func</p></td>
+</tr>
+<tr>
+<td><p>notify :</p></td>
+<td><p>a function to be called when the progress function is removed or the timeline is disposed</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.value_get_shader_matrix"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>[gfloat]</api:type>
+      </api:returns>
+      <api:name>clutter_value_get_shader_matrix</api:name>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>length</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>value_get_shader_matrix</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.Value, gsize)
+@returns([gfloat])
+def value_get_shader_matrix(value, length)
+</code></synopsis>
+<p>Retrieves a matrix of floating point values stored inside
+the passed <link xref="GValue">GValue</link>. @value must have been initialized with
+%CLUTTER_TYPE_SHADER_MATRIX.</p><p>of floating point values. The returned value is owned by the <link xref="GValue">GValue</link> and
+should never be modified or freed.</p>
+
+<table>
+<tr>
+<td><p>value :</p></td>
+<td><p>a <link xref="GValue">GValue</link></p></td>
+</tr>
+<tr>
+<td><p>length :</p></td>
+<td><p>return location for the number of returned floating point values, or None</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the pointer to a matrix</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

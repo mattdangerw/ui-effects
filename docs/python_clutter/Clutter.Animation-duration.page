@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Animation-duration"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animation" group="property"/>
+    <title type="link" role="topic">duration</title>
+  </info>
+  <title>Clutter.Animation:duration</title>
+<synopsis><code mime="text/x-python">
+"duration"             guint                : Read / Write
+</code></synopsis>
+<p>The duration of the animation, expressed in milliseconds.</p>
+</page>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Color.from_pixel"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Color" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_color_from_pixel</api:name>
+      <api:arg>
+        <api:type>guint32</api:type>
+        <api:name>pixel</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>from_pixel</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint32)
+@returns(none)
+def from_pixel(pixel)
+</code></synopsis>
+<p>Converts @pixel from the packed representation of a four 8 bit channel
+color to a <link xref="Clutter.Color">Clutter.Color</link>.</p>
+
+<table>
+<tr>
+<td><p>pixel :</p></td>
+<td><p>a 32 bit packed integer containing a color</p></td>
+</tr>
+</table>
+</page>

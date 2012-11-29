@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Clutter.Model-filter-changed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="signal"/>
+    <title type="link" role="topic">filter-changed</title>
+  </info>
+  <title>Clutter.Model::filter-changed</title>
+<synopsis><code mime="text/x-python">
+def callback(model, user_param1, ...)
+</code></synopsis>
+<p>The ::filter-changed signal is emitted when a new filter has been applied</p>
+
+<table>
+<tr>
+<td><p>model :</p></td>
+<td><p>instance of Clutter.Model that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

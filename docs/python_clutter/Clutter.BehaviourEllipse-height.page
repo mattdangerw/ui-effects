@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.BehaviourEllipse-height"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourEllipse" group="property"/>
+    <title type="link" role="topic">height</title>
+  </info>
+  <title>Clutter.BehaviourEllipse:height</title>
+<synopsis><code mime="text/x-python">
+"height"             gint                : Read / Write
+</code></synopsis>
+<p>Height of the ellipse, in pixels</p>
+</page>

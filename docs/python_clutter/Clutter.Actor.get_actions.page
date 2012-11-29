@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_actions"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>&lt;list&gt;</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_actions</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_actions</title>
+<synopsis><code mime="text/x-python">
+@returns(&lt;list&gt;)
+def get_actions()
+</code></synopsis>
+<p>Retrieves the list of actions applied to @self</p><p>of the list of <link xref="Clutter.Action">Clutter.Action</link>&lt;!-- --&gt;s. The contents of the list are
+owned by the <link xref="Clutter.Actor">Clutter.Actor</link>. Use g_list_free() to free the resources
+allocated by the returned <link xref="GList">GList</link></p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a copy</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BehaviourOpacity.set_bounds"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourOpacity" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_opacity_set_bounds</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviourOpacity *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint8</api:type>
+        <api:name>opacity_start</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint8</api:type>
+        <api:name>opacity_end</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_bounds</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint8, guint8)
+@returns(none)
+def set_bounds(opacity_start, opacity_end)
+</code></synopsis>
+<p>Sets the initial and final levels of the opacity applied by @behaviour
+on each actor it controls.</p>
+
+<table>
+<tr>
+<td><p>opacity_start :</p></td>
+<td><p>minimum level of opacity</p></td>
+</tr>
+<tr>
+<td><p>opacity_end :</p></td>
+<td><p>maximum level of opacity</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Clutter.CairoTexture-create_surface"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.CairoTexture" group="vfunc"/>
+    <title type="link" role="topic">create_surface</title>
+  </info>
+  <title>Clutter.CairoTexture.create_surface</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, guint)
+@returns(cairo.Surface)
+def do_create_surface(self, width, height):
+</code></synopsis>
+
+
+<table>
+<tr>
+<td><p>width :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td></td>
+</tr>
+</table>
+</page>

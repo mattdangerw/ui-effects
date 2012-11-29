@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Clutter.Timeline-completed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="signal"/>
+    <title type="link" role="topic">completed</title>
+  </info>
+  <title>Clutter.Timeline::completed</title>
+<synopsis><code mime="text/x-python">
+def callback(timeline, user_param1, ...)
+</code></synopsis>
+<p>The <link xref="Clutter.Timeline-completed">Clutter.Timeline::completed</link> signal is emitted when the timeline's
+elapsed time reaches the value of the <link xref="Clutter.Timeline-duration">Clutter.Timeline:duration</link>
+property.</p><p>This signal will be emitted even if the <link xref="Clutter.Timeline">Clutter.Timeline</link> is set to be
+repeating.</p>
+
+<table>
+<tr>
+<td><p>timeline :</p></td>
+<td><p>instance of Clutter.Timeline that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+</page>

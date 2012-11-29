@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_preferred_width"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_preferred_width</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>for_height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>min_width_p</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>natural_width_p</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_preferred_width</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat, gfloat)
+@returns(none)
+def get_preferred_width(for_height, min_width_p, natural_width_p)
+</code></synopsis>
+<p>Computes the requested minimum and natural widths for an actor,
+optionally depending on the specified height, or if they are
+already computed, returns the cached values.</p><p>An actor may not get its request - depending on the layout
+manager that's in effect.</p><p>A request should not incorporate the actor's scale or anchor point;
+those transformations do not affect layout, only rendering.</p>
+
+<table>
+<tr>
+<td><p>for_height :</p></td>
+<td><p>available height when computing the preferred width, or a negative value to indicate that no height is defined</p></td>
+</tr>
+<tr>
+<td><p>min_width_p :</p></td>
+<td><p>return location for minimum width, or None</p></td>
+</tr>
+<tr>
+<td><p>natural_width_p :</p></td>
+<td><p>return location for the natural width, or None</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

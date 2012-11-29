@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BehaviourEllipse.get_width"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourEllipse" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gint</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_ellipse_get_width</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviourEllipse *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_width</title>
+<synopsis><code mime="text/x-python">
+@returns(gint)
+def get_width()
+</code></synopsis>
+<p>Gets the width of the elliptical path.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the width of the path</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

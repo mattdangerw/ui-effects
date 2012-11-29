@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Interval-value-type"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Interval" group="property"/>
+    <title type="link" role="topic">value-type</title>
+  </info>
+  <title>Clutter.Interval:value-type</title>
+<synopsis><code mime="text/x-python">
+"value-type"             GType                : Read / Write / Construct Only
+</code></synopsis>
+<p>The type of the values in the interval.</p>
+</page>

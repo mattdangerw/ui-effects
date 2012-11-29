@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_shader_param"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_shader_param</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>param</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_shader_param</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, GObject.Value)
+@returns(none)
+def set_shader_param(param, value)
+</code></synopsis>
+<p>Sets the value for a named parameter of the shader applied
+to @actor.</p>
+
+<table>
+<tr>
+<td><p>param :</p></td>
+<td><p>the name of the parameter</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>the value of the parameter</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

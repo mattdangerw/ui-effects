@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.rewind"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_rewind</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>rewind</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def rewind()
+</code></synopsis>
+<p>Rewinds <link xref="Clutter.Timeline">Clutter.Timeline</link> to the first frame if its direction is
+%CLUTTER_TIMELINE_FORWARD and the last frame if it is
+%CLUTTER_TIMELINE_BACKWARD.</p>
+
+<table>
+</table>
+</page>

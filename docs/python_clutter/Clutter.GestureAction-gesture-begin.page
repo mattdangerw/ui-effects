@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Clutter.GestureAction-gesture-begin"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.GestureAction" group="signal"/>
+    <title type="link" role="topic">gesture-begin</title>
+  </info>
+  <title>Clutter.GestureAction::gesture-begin</title>
+<synopsis><code mime="text/x-python">
+def callback(gesture_action, actor, user_param1, ...)
+</code></synopsis>
+<p>The ::gesture_begin signal is emitted when the <link xref="Clutter.Actor">Clutter.Actor</link> to which
+a <link xref="Clutter.GestureAction">Clutter.GestureAction</link> has been applied starts receiving a gesture.</p><p>the gesture should be ignored.</p>
+
+<table>
+<tr>
+<td><p>gesture_action :</p></td>
+<td><p>instance of Clutter.GestureAction that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>actor :</p></td>
+<td><p>the <link xref="Clutter.Actor">Clutter.Actor</link> attached to the @action</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

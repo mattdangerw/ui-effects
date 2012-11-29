@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Clutter.Score-timeline-started"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Score" group="signal"/>
+    <title type="link" role="topic">timeline-started</title>
+  </info>
+  <title>Clutter.Score::timeline-started</title>
+<synopsis><code mime="text/x-python">
+def callback(score, timeline, user_param1, ...)
+</code></synopsis>
+<p>The ::timeline-started signal is emitted each time a new timeline
+inside a <link xref="Clutter.Score">Clutter.Score</link> starts playing.</p>
+
+<table>
+<tr>
+<td><p>score :</p></td>
+<td><p>instance of Clutter.Score that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>timeline :</p></td>
+<td><p>the current timeline</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

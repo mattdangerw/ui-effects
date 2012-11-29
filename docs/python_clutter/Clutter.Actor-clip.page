@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-clip"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">clip</title>
+  </info>
+  <title>Clutter.Actor:clip</title>
+<synopsis><code mime="text/x-python">
+"clip"             Clutter.Geometry                : Read / Write
+</code></synopsis>
+<p>The clip region for the actor, in actor-relative coordinates</p><p>Every part of the actor outside the clip region will not be
+painted</p>
+</page>

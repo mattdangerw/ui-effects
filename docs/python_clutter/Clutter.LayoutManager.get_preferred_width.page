@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.LayoutManager.get_preferred_width"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutManager" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_layout_manager_get_preferred_width</api:name>
+      <api:arg>
+        <api:type>ClutterLayoutManager *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Container</api:type>
+        <api:name>container</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>for_height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>min_width_p</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>nat_width_p</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_preferred_width</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Container, gfloat, gfloat, gfloat)
+@returns(none)
+def get_preferred_width(container, for_height, min_width_p, nat_width_p)
+</code></synopsis>
+<p>Computes the minimum and natural widths of the @container according
+to @manager.</p><p>See also clutter_actor_get_preferred_width()</p>
+
+<table>
+<tr>
+<td><p>container :</p></td>
+<td><p>the <link xref="Clutter.Container">Clutter.Container</link> using @manager</p></td>
+</tr>
+<tr>
+<td><p>for_height :</p></td>
+<td><p>the height for which the width should be computed, or -1</p></td>
+</tr>
+<tr>
+<td><p>min_width_p :</p></td>
+<td><p>return location for the minimum width of the layout, or None</p></td>
+</tr>
+<tr>
+<td><p>nat_width_p :</p></td>
+<td><p>return location for the natural width of the layout, or None</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

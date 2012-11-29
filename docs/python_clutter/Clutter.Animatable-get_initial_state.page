@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Clutter.Animatable-get_initial_state"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animatable" group="vfunc"/>
+    <title type="link" role="topic">get_initial_state</title>
+  </info>
+  <title>Clutter.Animatable.get_initial_state</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, GObject.Value)
+@returns(none)
+def do_get_initial_state(self, property_name, value):
+</code></synopsis>
+<p>Retrieves the current state of @property_name and sets @value with it</p>
+
+<table>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>the name of the animatable property to retrieve</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>a <link xref="GValue">GValue</link> initialized to the type of the property to retrieve</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

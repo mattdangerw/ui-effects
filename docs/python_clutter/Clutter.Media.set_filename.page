@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Media.set_filename"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Media" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_media_set_filename</api:name>
+      <api:arg>
+        <api:type>ClutterMedia *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>filename</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_filename</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(none)
+def set_filename(filename)
+</code></synopsis>
+<p>Sets the source of @media using a file path.</p>
+
+<table>
+<tr>
+<td><p>filename :</p></td>
+<td><p>A filename</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

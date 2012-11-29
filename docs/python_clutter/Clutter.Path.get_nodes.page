@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Path.get_nodes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Path" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>&lt;list&gt;</api:type>
+      </api:returns>
+      <api:name>clutter_path_get_nodes</api:name>
+      <api:arg>
+        <api:type>ClutterPath *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_nodes</title>
+<synopsis><code mime="text/x-python">
+@returns(&lt;list&gt;)
+def get_nodes()
+</code></synopsis>
+<p>Returns a <link xref="GSList">GSList</link> of <link xref="Clutter.PathNode">Clutter.PathNode</link>&lt;!-- --&gt;s. The list should be
+freed with g_slist_free(). The nodes are owned by the path and
+should not be freed. Altering the path may cause the nodes in the
+list to become invalid so you should copy them if you want to keep
+the list.</p><p>list of nodes in the path.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

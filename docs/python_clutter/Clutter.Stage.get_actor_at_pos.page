@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.get_actor_at_pos"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Actor</api:type>
+      </api:returns>
+      <api:name>clutter_stage_get_actor_at_pos</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.PickMode</api:type>
+        <api:name>pick_mode</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_actor_at_pos</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.PickMode, gint, gint)
+@returns(Clutter.Actor)
+def get_actor_at_pos(pick_mode, x, y)
+</code></synopsis>
+<p>Checks the scene at the coordinates @x and @y and returns a pointer
+to the <link xref="Clutter.Actor">Clutter.Actor</link> at those coordinates.</p><p>By using @pick_mode it is possible to control which actors will be
+painted and thus available.</p><p>if any</p>
+
+<table>
+<tr>
+<td><p>pick_mode :</p></td>
+<td><p>how the scene graph should be painted</p></td>
+</tr>
+<tr>
+<td><p>x :</p></td>
+<td><p>X coordinate to check</p></td>
+</tr>
+<tr>
+<td><p>y :</p></td>
+<td><p>Y coordinate to check</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the actor at the specified coordinates,</p></td>
+</tr>
+</table>
+</page>

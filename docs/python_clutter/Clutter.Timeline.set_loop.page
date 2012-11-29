@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.set_loop"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_set_loop</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>loop</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_loop</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_loop(loop)
+</code></synopsis>
+<p>Sets whether @timeline should loop.</p><p>This function is equivalent to calling clutter_timeline_set_repeat_count()
+with -1 if @loop is True, and with 0 if @loop is False.</p>
+
+<table>
+<tr>
+<td><p>loop :</p></td>
+<td><p>True for enable looping</p></td>
+</tr>
+</table>
+</page>

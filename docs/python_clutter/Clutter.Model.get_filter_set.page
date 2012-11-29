@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Model.get_filter_set"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_model_get_filter_set</api:name>
+      <api:arg>
+        <api:type>ClutterModel *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_filter_set</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def get_filter_set()
+</code></synopsis>
+<p>Returns whether the @model has a filter in place, set
+using clutter_model_set_filter()</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if a filter is set</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

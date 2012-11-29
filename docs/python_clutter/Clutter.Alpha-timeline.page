@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Alpha-timeline"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Alpha" group="property"/>
+    <title type="link" role="topic">timeline</title>
+  </info>
+  <title>Clutter.Alpha:timeline</title>
+<synopsis><code mime="text/x-python">
+"timeline"             Clutter.Timeline                : Read / Write
+</code></synopsis>
+<p>A <link xref="Clutter.Timeline">Clutter.Timeline</link> instance used to drive the alpha function.</p>
+</page>

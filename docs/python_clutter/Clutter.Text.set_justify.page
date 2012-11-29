@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_justify"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_justify</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>justify</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_justify</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_justify(justify)
+</code></synopsis>
+<p>Sets whether the text of the <link xref="Clutter.Text">Clutter.Text</link> actor should be justified
+on both margins. This setting is ignored if Clutter is compiled
+against Pango &amp;lt; 1.18.</p>
+
+<table>
+<tr>
+<td><p>justify :</p></td>
+<td><p>whether the text should be justified</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

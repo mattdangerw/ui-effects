@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.get_throttle_motion_events"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_stage_get_throttle_motion_events</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_throttle_motion_events</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def get_throttle_motion_events()
+</code></synopsis>
+<p>Retrieves the value set with clutter_stage_set_throttle_motion_events()</p><p>and False otherwise</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the motion events are being throttled,</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

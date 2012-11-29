@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="Clutter.Model-get_n_columns"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="vfunc"/>
+    <title type="link" role="topic">get_n_columns</title>
+  </info>
+  <title>Clutter.Model.get_n_columns</title>
+<synopsis><code mime="text/x-python">
+@returns(guint)
+def do_get_n_columns(self, ):
+</code></synopsis>
+<p>Retrieves the number of columns inside @model.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the number of columns</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

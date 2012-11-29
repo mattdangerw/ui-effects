@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Container.class_list_child_properties"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>[GObject.ParamSpec]</api:type>
+      </api:returns>
+      <api:name>clutter_container_class_list_child_properties</api:name>
+      <api:arg>
+        <api:type>GObject.ObjectClass</api:type>
+        <api:name>klass</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>n_properties</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>class_list_child_properties</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.ObjectClass, guint)
+@returns([GObject.ParamSpec])
+def class_list_child_properties(klass, n_properties)
+</code></synopsis>
+<p>Returns an array of <link xref="GParamSpec">GParamSpec</link> for all child properties.</p><p>of <link xref="GParamSpec">GParamSpec</link>&lt;!-- --&gt;s which should be freed after use.</p>
+
+<table>
+<tr>
+<td><p>klass :</p></td>
+<td><p>a <link xref="GObjectClass">GObjectClass</link> implementing the <link xref="Clutter.Container">Clutter.Container</link> interface.</p></td>
+</tr>
+<tr>
+<td><p>n_properties :</p></td>
+<td><p>return location for length of returned array.</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>an array</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

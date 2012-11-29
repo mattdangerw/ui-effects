@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Score-loop"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Score" group="property"/>
+    <title type="link" role="topic">loop</title>
+  </info>
+  <title>Clutter.Score:loop</title>
+<synopsis><code mime="text/x-python">
+"loop"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the <link xref="Clutter.Score">Clutter.Score</link> should restart once finished.</p>
+</page>

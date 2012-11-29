@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.InputDevice.set_enabled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.InputDevice" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_input_device_set_enabled</api:name>
+      <api:arg>
+        <api:type>ClutterInputDevice *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>enabled</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_enabled</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_enabled(enabled)
+</code></synopsis>
+<p>Enables or disables a <link xref="Clutter.InputDevice">Clutter.InputDevice</link>.</p><p>Only devices with a <link xref="Clutter.InputDevice-device-mode">Clutter.InputDevice:device-mode</link> property set
+to %CLUTTER_INPUT_MODE_SLAVE or %CLUTTER_INPUT_MODE_FLOATING can
+be disabled.</p>
+
+<table>
+<tr>
+<td><p>enabled :</p></td>
+<td><p>True to enable the @device</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

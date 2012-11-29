@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Clutter.Container-sort_depth_order"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="vfunc"/>
+    <title type="link" role="topic">sort_depth_order</title>
+  </info>
+  <title>Clutter.Container.sort_depth_order</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def do_sort_depth_order(self, ):
+</code></synopsis>
+<p>Sorts a container's children using their depth. This function should not
+be normally used by applications.</p><p>
+function should not be used any more; the default implementation in
+<link xref="Clutter.Container">Clutter.Container</link> does not do anything.</p>
+
+<table>
+</table>
+<p>Since 0.6</p>
+</page>

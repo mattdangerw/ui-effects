@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_paint_opacity"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint8</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_paint_opacity</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_paint_opacity</title>
+<synopsis><code mime="text/x-python">
+@returns(guint8)
+def get_paint_opacity()
+</code></synopsis>
+<p>Retrieves the absolute opacity of the actor, as it appears on the stage.</p><p>This function traverses the hierarchy chain and composites the opacity of
+the actor with that of its parents.</p><p>This function is intended for subclasses to use in the paint virtual
+function, to paint themselves with the correct opacity.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The actor opacity value.</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

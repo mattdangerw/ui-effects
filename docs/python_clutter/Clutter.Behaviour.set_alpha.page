@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Behaviour.set_alpha"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Behaviour" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_set_alpha</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviour *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Alpha</api:type>
+        <api:name>alpha</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_alpha</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Alpha)
+@returns(none)
+def set_alpha(alpha)
+</code></synopsis>
+<p>Binds @alpha to a <link xref="Clutter.Behaviour">Clutter.Behaviour</link>. The <link xref="Clutter.Alpha">Clutter.Alpha</link> object
+is what makes a behaviour work: for each tick of the timeline
+used by <link xref="Clutter.Alpha">Clutter.Alpha</link> a new value of the alpha parameter is
+computed by the alpha function; the value should be used by
+the <link xref="Clutter.Behaviour">Clutter.Behaviour</link> to update one or more properties of the
+actors to which the behaviour applies.</p><p>If @alpha is not None, the <link xref="Clutter.Behaviour">Clutter.Behaviour</link> will take ownership
+of the <link xref="Clutter.Alpha">Clutter.Alpha</link> instance.</p>
+
+<table>
+<tr>
+<td><p>alpha :</p></td>
+<td><p>a <link xref="Clutter.Alpha">Clutter.Alpha</link> or None to unset a previously set alpha</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

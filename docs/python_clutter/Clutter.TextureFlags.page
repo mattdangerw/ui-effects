@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page id="Clutter.TextureFlags"
+      type="topic"
+      style=""
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+  </info>
+  <title>Clutter.TextureFlags</title>
+<p>Flags for clutter_texture_set_from_rgb_data() and
+clutter_texture_set_from_yuv_data().</p>
+</page>

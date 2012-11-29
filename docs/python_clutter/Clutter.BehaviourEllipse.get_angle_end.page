@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BehaviourEllipse.get_angle_end"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourEllipse" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gdouble</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_ellipse_get_angle_end</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviourEllipse *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_angle_end</title>
+<synopsis><code mime="text/x-python">
+@returns(gdouble)
+def get_angle_end()
+</code></synopsis>
+<p>Gets the at which movements ends.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>angle in degrees</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

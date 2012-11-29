@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Clutter.Behaviour-removed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Behaviour" group="signal"/>
+    <title type="link" role="topic">removed</title>
+  </info>
+  <title>Clutter.Behaviour::removed</title>
+<synopsis><code mime="text/x-python">
+def callback(behaviour, actor, user_param1, ...)
+</code></synopsis>
+<p>The ::removed signal is emitted each time a behaviour is not applied
+to an actor anymore.</p>
+
+<table>
+<tr>
+<td><p>behaviour :</p></td>
+<td><p>instance of Clutter.Behaviour that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>actor :</p></td>
+<td><p>the removed actor</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

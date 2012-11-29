@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page id="Clutter.Geometry"
+      type="guide"
+      style="record"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>ClutterGeometry</title>
+  <p>The rectangle containing an actor's bounding box, measured in pixels.</p>
+</page>

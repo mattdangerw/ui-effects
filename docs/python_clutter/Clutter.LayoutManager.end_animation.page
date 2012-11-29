@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.LayoutManager.end_animation"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutManager" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_layout_manager_end_animation</api:name>
+      <api:arg>
+        <api:type>ClutterLayoutManager *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>end_animation</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def end_animation()
+</code></synopsis>
+<p>Ends an animation started by clutter_layout_manager_begin_animation()</p><p>The result of this call depends on the @manager implementation</p>
+
+<table>
+</table>
+<p>Since 1.2</p>
+</page>

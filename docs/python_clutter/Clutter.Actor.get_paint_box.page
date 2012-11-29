@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_paint_box"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_paint_box</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ActorBox</api:type>
+        <api:name>box</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_paint_box</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.ActorBox)
+@returns(gboolean)
+def get_paint_box(box)
+</code></synopsis>
+<p>Retrieves the paint volume of the passed <link xref="Clutter.Actor">Clutter.Actor</link>, and
+transforms it into a 2D bounding box in stage coordinates.</p><p>This function is useful to determine the on screen area occupied by
+the actor. The box is only an approximation and may often be
+considerably larger due to the optimizations used to calculate the
+box. The box is never smaller though, so it can reliably be used
+for culling.</p><p>There are times when a 2D paint box can't be determined, e.g.
+because the actor isn't yet parented under a stage or because
+the actor is unable to determine a paint volume.</p><p>False.</p>
+
+<table>
+<tr>
+<td><p>box :</p></td>
+<td><p>return location for a <link xref="Clutter.ActorBox">Clutter.ActorBox</link></p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if a 2D paint box could be determined, else</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

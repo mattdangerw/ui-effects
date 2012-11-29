@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ModelIter.get_model"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ModelIter" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Model</api:type>
+      </api:returns>
+      <api:name>clutter_model_iter_get_model</api:name>
+      <api:arg>
+        <api:type>ClutterModelIter *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_model</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Model)
+def get_model()
+</code></synopsis>
+<p>Retrieves a pointer to the <link xref="Clutter.Model">Clutter.Model</link> that this iter is part of.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a pointer to a <link xref="Clutter.Model">Clutter.Model</link>.</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

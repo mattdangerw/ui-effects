@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.get_font_flags"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.FontFlags</api:type>
+      </api:returns>
+      <api:name>clutter_get_font_flags</api:name>
+    </api:function>
+  </info>
+  <title>get_font_flags</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.FontFlags)
+def get_font_flags()
+</code></synopsis>
+<p>Gets the current font flags for rendering text. See
+clutter_set_font_flags().</p><p></p><p><link xref="cairo_font_options_t">cairo_font_options_t</link> API.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The font flags</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

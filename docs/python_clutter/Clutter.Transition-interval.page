@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Transition-interval"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Transition" group="property"/>
+    <title type="link" role="topic">interval</title>
+  </info>
+  <title>Clutter.Transition:interval</title>
+<synopsis><code mime="text/x-python">
+"interval"             Clutter.Interval                : Read / Write
+</code></synopsis>
+<p>The <link xref="Clutter.Interval">Clutter.Interval</link> used to describe the initial and final states
+of the transition.</p>
+</page>

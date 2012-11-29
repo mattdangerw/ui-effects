@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Container.child_get"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_container_child_get</api:name>
+      <api:arg>
+        <api:type>ClutterContainer *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>first_prop</api:name>
+      </api:arg>
+      <api:varargs/>
+    </api:function>
+  </info>
+  <title>child_get</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, utf8, &lt;varargs&gt;)
+@returns(none)
+def child_get(actor, first_prop, None)
+</code></synopsis>
+<p>Gets @container specific properties of an actor.</p><p>In general, a copy is made of the property contents and the caller is
+responsible for freeing the memory in the appropriate manner for the type, for
+instance by calling g_free() or g_object_unref().</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link> that is a child of @container.</p></td>
+</tr>
+<tr>
+<td><p>first_prop :</p></td>
+<td><p>name of the first property to be set.</p></td>
+</tr>
+<tr>
+<td><p>None :</p></td>
+<td></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

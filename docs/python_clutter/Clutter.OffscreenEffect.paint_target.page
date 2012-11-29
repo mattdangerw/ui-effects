@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.OffscreenEffect.paint_target"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.OffscreenEffect" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_offscreen_effect_paint_target</api:name>
+      <api:arg>
+        <api:type>ClutterOffscreenEffect *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>paint_target</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def paint_target()
+</code></synopsis>
+<p>Calls the paint_target() virtual function of the @effect</p>
+
+<table>
+</table>
+<p>Since 1.4</p>
+</page>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.get_font_map"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Pango.FontMap</api:type>
+      </api:returns>
+      <api:name>clutter_get_font_map</api:name>
+    </api:function>
+  </info>
+  <title>get_font_map</title>
+<synopsis><code mime="text/x-python">
+@returns(Pango.FontMap)
+def get_font_map()
+</code></synopsis>
+<p>Retrieves the <link xref="PangoFontMap">PangoFontMap</link> instance used by Clutter.
+You can use the global font map object with the COGL
+Pango API.</p><p>value is owned by Clutter and it should never be unreferenced.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the <link xref="PangoFontMap">PangoFontMap</link> instance. The returned</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

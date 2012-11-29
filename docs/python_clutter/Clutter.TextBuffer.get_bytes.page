@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.TextBuffer.get_bytes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TextBuffer" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gsize</api:type>
+      </api:returns>
+      <api:name>clutter_text_buffer_get_bytes</api:name>
+      <api:arg>
+        <api:type>ClutterTextBuffer *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_bytes</title>
+<synopsis><code mime="text/x-python">
+@returns(gsize)
+def get_bytes()
+</code></synopsis>
+<p>Retrieves the length in bytes of the buffer.
+See clutter_text_buffer_get_length().</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The byte length of the buffer.</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

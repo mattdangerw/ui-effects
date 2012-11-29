@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>create_region</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.CairoTexture.html" title="Clutter.CairoTexture">Clutter.CairoTexture</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">create_region</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(gint, gint, gint, gint)
+@returns(cairo.Context)
+def create_region(x_offset, y_offset, width, height)</pre></div></div></div></div></div>
+<p class="p">Creates a new Cairo context that will updat the region defined
+by @x_offset, @y_offset, @width and @height.</p>
+<p class="p">&lt;warning&gt;&lt;para&gt;Do not call this function within the paint virtual
+function or from a callback to the <span class=" link"><a href="Clutter.Actor-paint.html" title="Clutter.Actor::paint">Clutter.Actor::paint</a></span>
+signal.&lt;/para&gt;&lt;/warning&gt;</p>
+<p class="p">to upload the contents of the context when done drawing</p>
+<p class="p">
+clutter_cairo_texture_invalidate_rectangle() to obtain a
+clipped Cairo context for 2D drawing.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">x_offset :</p></td>
+<td><p class="p">offset of the region on the X axis</p></td>
+</tr>
+<tr>
+<td><p class="p">y_offset :</p></td>
+<td><p class="p">offset of the region on the Y axis</p></td>
+</tr>
+<tr>
+<td><p class="p">width :</p></td>
+<td><p class="p">width of the region, or -1 for the full surface width</p></td>
+</tr>
+<tr>
+<td><p class="p">height :</p></td>
+<td><p class="p">height of the region, or -1 for the full surface height</p></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">a newly created Cairo context. Use cairo_destroy()</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.0</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.CairoTexture.html" title="Clutter.CairoTexture">Clutter.CairoTexture</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

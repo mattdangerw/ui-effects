@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.get_pointer_grab"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Actor</api:type>
+      </api:returns>
+      <api:name>clutter_get_pointer_grab</api:name>
+    </api:function>
+  </info>
+  <title>get_pointer_grab</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Actor)
+def get_pointer_grab()
+</code></synopsis>
+<p>Queries the current pointer grab of clutter.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the actor currently holding the pointer grab, or NULL if there is no grab.</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

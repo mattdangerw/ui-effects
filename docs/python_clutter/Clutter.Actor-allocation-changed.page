@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-allocation-changed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="signal"/>
+    <title type="link" role="topic">allocation-changed</title>
+  </info>
+  <title>Clutter.Actor::allocation-changed</title>
+<synopsis><code mime="text/x-python">
+def callback(actor, box, flags, user_param1, ...)
+</code></synopsis>
+<p>The ::allocation-changed signal is emitted when the
+<link xref="Clutter.Actor-allocation">Clutter.Actor:allocation</link> property changes. Usually, application
+code should just use the notifications for the :allocation property
+but if you want to track the allocation flags as well, for instance
+to know whether the absolute origin of @actor changed, then you might
+want use this signal instead.</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>instance of Clutter.Actor that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>box :</p></td>
+<td><p>a <link xref="Clutter.ActorBox">Clutter.ActorBox</link> with the new allocation</p></td>
+</tr>
+<tr>
+<td><p>flags :</p></td>
+<td><p><link xref="Clutter.AllocationFlags">Clutter.AllocationFlags</link> for the allocation</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

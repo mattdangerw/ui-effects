@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>animate_with_alpha</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">animate_with_alpha</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(Clutter.Alpha, utf8, &lt;varargs&gt;)
+@returns(Clutter.Animation)
+def animate_with_alpha(alpha, first_property_name, None)</pre></div></div></div></div></div>
+<p class="p">Animates the given list of properties of @actor between the current
+value for each property and a new final value. The animation has a
+definite behaviour given by the passed @alpha.</p>
+<p class="p">See clutter_actor_animate() for further details.</p>
+<p class="p">This function is useful if you want to use an existing <span class=" link"><a href="Clutter.Alpha.html" title="Clutter.Alpha">Clutter.Alpha</a></span>
+to animate @actor.</p>
+<p class="p"><span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> and should not be unreferenced with g_object_unref()</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">alpha :</p></td>
+<td><p class="p">a <span class=" link"><a href="Clutter.Alpha.html" title="Clutter.Alpha">Clutter.Alpha</a></span></p></td>
+</tr>
+<tr>
+<td><p class="p">first_property_name :</p></td>
+<td><p class="p">the name of a property</p></td>
+</tr>
+<tr>
+<td><p class="p">None :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">a <span class=" link"><a href="Clutter.Animation.html" title="Clutter.Animation">Clutter.Animation</a></span> object. The object is owned by the</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.0</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

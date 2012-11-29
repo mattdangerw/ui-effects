@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.get_minimum_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_stage_get_minimum_size</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_minimum_size</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, guint)
+@returns(none)
+def get_minimum_size(width, height)
+</code></synopsis>
+<p>Retrieves the minimum size for a stage window as set using
+clutter_stage_set_minimum_size().</p><p>The returned size may not correspond to the actual minimum size and
+it is specific to the <link xref="Clutter.Stage">Clutter.Stage</link> implementation inside the
+Clutter backend</p>
+
+<table>
+<tr>
+<td><p>width :</p></td>
+<td><p>return location for the minimum width, in pixels, or None</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>return location for the minimum height, in pixels, or None</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

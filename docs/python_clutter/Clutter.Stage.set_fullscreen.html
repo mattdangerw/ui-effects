@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>set_fullscreen</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">set_fullscreen</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(gboolean)
+@returns(none)
+def set_fullscreen(fullscreen)</pre></div></div></div></div></div>
+<p class="p">Asks to place the stage window in the fullscreen or unfullscreen
+states.</p>
+<p class="p">afterward, because other entities (e.g. the user or window manager)
+could unfullscreen it again, and not all window managers honor
+requests to fullscreen windows.</p>
+<p class="p">If you want to receive notification of the fullscreen state you
+should either use the <span class=" link"><a href="Clutter.Stage-fullscreen.html" title="Clutter.Stage::fullscreen">Clutter.Stage::fullscreen</a></span> and
+<span class=" link"><a href="Clutter.Stage-unfullscreen.html" title="Clutter.Stage::unfullscreen">Clutter.Stage::unfullscreen</a></span> signals, or use the notify signal
+for the <span class=" link"><a href="Clutter.Stage-fullscreen-set.html" title="Clutter.Stage:fullscreen-set">Clutter.Stage:fullscreen-set</a></span> property</p>
+<div class="table"><div class="inner"><div class="region"><table class="table"><tr>
+<td><p class="p">fullscreen :</p></td>
+<td><p class="p">True to to set the stage fullscreen</p></td>
+</tr></table></div></div></div>
+<p class="p">Since 1.0</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

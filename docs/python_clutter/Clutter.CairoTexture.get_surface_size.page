@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.CairoTexture.get_surface_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.CairoTexture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_cairo_texture_get_surface_size</api:name>
+      <api:arg>
+        <api:type>ClutterCairoTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_surface_size</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, guint)
+@returns(none)
+def get_surface_size(width, height)
+</code></synopsis>
+<p>Retrieves the surface width and height for @self.</p>
+
+<table>
+<tr>
+<td><p>width :</p></td>
+<td><p>return location for the surface width, or None</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>return location for the surface height, or None</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

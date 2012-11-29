@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.transform_stage_point"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_actor_transform_stage_point</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>x_out</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>y_out</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>transform_stage_point</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat, gfloat, gfloat)
+@returns(gboolean)
+def transform_stage_point(x, y, x_out, y_out)
+</code></synopsis>
+<p>This function translates screen coordinates (@x, @y) to
+coordinates relative to the actor. For example, it can be used to translate
+screen events from global screen coordinates into actor-local coordinates.</p><p>The conversion can fail, notably if the transform stack results in the
+actor being projected on the screen as a mere line.</p><p>The conversion should not be expected to be pixel-perfect due to the
+nature of the operation. In general the error grows when the skewing
+of the actor rectangle on screen increases.</p><p>&lt;note&gt;&lt;para&gt;This function can be computationally intensive.&lt;/para&gt;&lt;/note&gt;</p><p>&lt;note&gt;&lt;para&gt;This function only works when the allocation is up-to-date,
+i.e. inside of paint().&lt;/para&gt;&lt;/note&gt;</p>
+
+<table>
+<tr>
+<td><p>x :</p></td>
+<td><p>x screen coordinate of the point to unproject</p></td>
+</tr>
+<tr>
+<td><p>y :</p></td>
+<td><p>y screen coordinate of the point to unproject</p></td>
+</tr>
+<tr>
+<td><p>x_out :</p></td>
+<td><p>return location for the unprojected x coordinance</p></td>
+</tr>
+<tr>
+<td><p>y_out :</p></td>
+<td><p>return location for the unprojected y coordinance</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if conversion was successful.</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

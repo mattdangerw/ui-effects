@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_activatable"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_activatable</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>activatable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_activatable</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_activatable(activatable)
+</code></synopsis>
+<p>Sets whether a <link xref="Clutter.Text">Clutter.Text</link> actor should be activatable.</p><p>An activatable <link xref="Clutter.Text">Clutter.Text</link> actor will emit the <link xref="Clutter.Text-activate">Clutter.Text::activate</link>
+signal whenever the 'Enter' (or 'Return') key is pressed; if it is not
+activatable, a new line will be appended to the current content.</p><p>An activatable <link xref="Clutter.Text">Clutter.Text</link> must also be set as editable using
+clutter_text_set_editable().</p>
+
+<table>
+<tr>
+<td><p>activatable :</p></td>
+<td><p>whether the <link xref="Clutter.Text">Clutter.Text</link> actor should be activatable</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

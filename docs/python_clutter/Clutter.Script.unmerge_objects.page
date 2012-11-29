@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Script.unmerge_objects"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Script" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_script_unmerge_objects</api:name>
+      <api:arg>
+        <api:type>ClutterScript *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>merge_id</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>unmerge_objects</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint)
+@returns(none)
+def unmerge_objects(merge_id)
+</code></synopsis>
+<p>Unmerges the objects identified by @merge_id.</p>
+
+<table>
+<tr>
+<td><p>merge_id :</p></td>
+<td><p>merge id returned when loading a UI definition</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

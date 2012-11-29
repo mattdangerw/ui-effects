@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Model.append"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_model_append</api:name>
+      <api:arg>
+        <api:type>ClutterModel *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:varargs/>
+    </api:function>
+  </info>
+  <title>append</title>
+<synopsis><code mime="text/x-python">
+@accepts(&lt;varargs&gt;)
+@returns(none)
+def append(None)
+</code></synopsis>
+<p>Creates and appends a new row to the <link xref="Clutter.Model">Clutter.Model</link>, setting the
+row values upon creation. For example, to append a new row where
+column 0 is type %G_TYPE_INT and column 1 is of type %G_TYPE_STRING:</p><p>&lt;informalexample&gt;&lt;programlisting&gt;
+ClutterModel *model;
+model = clutter_model_default_new (2,
+G_TYPE_INT,    "Score",
+G_TYPE_STRING, "Team");
+clutter_model_append (model, 0, 42, 1, "Team <link xref=""></link>1", -1);
+&lt;/programlisting&gt;&lt;/informalexample&gt;</p>
+
+<table>
+<tr>
+<td><p>None :</p></td>
+<td></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

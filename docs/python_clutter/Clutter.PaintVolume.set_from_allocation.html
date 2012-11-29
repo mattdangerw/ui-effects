@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>set_from_allocation</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.PaintVolume.html" title="ClutterPaintVolume">ClutterPaintVolume</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">set_from_allocation</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(Clutter.Actor)
+@returns(gboolean)
+def set_from_allocation(actor)</pre></div></div></div></div></div>
+<p class="p">Sets the <span class=" link"><a href="Clutter.PaintVolume.html" title="ClutterPaintVolume">Clutter.PaintVolume</a></span> from the allocation of @actor.</p>
+<p class="p">This function should be used when overriding the
+<span class=" link"><a href="Clutter.ActorClass.html" title="Clutter.ActorClass">Clutter.ActorClass</a></span>.get_paint_volume() by <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> sub-classes
+that do not paint outside their allocation.</p>
+<p class="p">A typical example is:</p>
+<p class="p">|[
+static gboolean
+my_actor_get_paint_volume (ClutterActor       *self,
+ClutterPaintVolume *volume)
+{
+return clutter_paint_volume_set_from_allocation (volume, self);
+}
+]|</p>
+<p class="p">otherwise</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">actor :</p></td>
+<td><p class="p">a <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span></p></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">True if the paint volume was successfully set, and False</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.6</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.PaintVolume.html" title="ClutterPaintVolume">ClutterPaintVolume</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

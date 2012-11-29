@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<page id="Clutter.Settings-font-subpixel-order"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Settings" group="property"/>
+    <title type="link" role="topic">font-subpixel-order</title>
+  </info>
+  <title>Clutter.Settings:font-subpixel-order</title>
+<synopsis><code mime="text/x-python">
+"font-subpixel-order"             utf8                : Read / Write
+</code></synopsis>
+<p>The type of sub-pixel antialiasing used when rendering text. Valid
+values are:
+&lt;itemizedlist&gt;
+&lt;listitem&gt;&lt;simpara&gt;none&lt;/simpara&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;simpara&gt;rgb&lt;/simpara&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;simpara&gt;bgr&lt;/simpara&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;simpara&gt;vrgb&lt;/simpara&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;simpara&gt;vbgr&lt;/simpara&gt;&lt;/listitem&gt;
+&lt;/itemizedlist&gt;</p>
+</page>

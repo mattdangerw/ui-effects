@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_anchor_point"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_anchor_point</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>anchor_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>anchor_y</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_anchor_point</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(none)
+def get_anchor_point(anchor_x, anchor_y)
+</code></synopsis>
+<p>Gets the current anchor point of the @actor in pixels.</p>
+
+<table>
+<tr>
+<td><p>anchor_x :</p></td>
+<td><p>return location for the X coordinate of the anchor point</p></td>
+</tr>
+<tr>
+<td><p>anchor_y :</p></td>
+<td><p>return location for the Y coordinate of the anchor point</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

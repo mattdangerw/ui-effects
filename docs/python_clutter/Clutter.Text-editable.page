@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-editable"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="property"/>
+    <title type="link" role="topic">editable</title>
+  </info>
+  <title>Clutter.Text:editable</title>
+<synopsis><code mime="text/x-python">
+"editable"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether key events delivered to the actor causes editing.</p>
+</page>

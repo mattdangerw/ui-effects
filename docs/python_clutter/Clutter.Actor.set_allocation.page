@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_allocation"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_allocation</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ActorBox</api:type>
+        <api:name>box</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.AllocationFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_allocation</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.ActorBox, Clutter.AllocationFlags)
+@returns(none)
+def set_allocation(box, flags)
+</code></synopsis>
+<p>Stores the allocation of @self as defined by @box.</p><p>This function can only be called from within the implementation of
+the <link xref="Clutter.ActorClass">Clutter.ActorClass</link>.allocate() virtual function.</p><p>The allocation should have been adjusted to take into account constraints,
+alignment, and margin properties. If you are implementing a <link xref="Clutter.Actor">Clutter.Actor</link>
+subclass that provides its own layout management policy for its children
+instead of using a <link xref="Clutter.LayoutManager">Clutter.LayoutManager</link> delegate, you should not call
+this function on the children of @self; instead, you should call
+clutter_actor_allocate(), which will adjust the allocation box for
+you.</p><p>This function should only be used by subclasses of <link xref="Clutter.Actor">Clutter.Actor</link>
+that wish to store their allocation but cannot chain up to the
+parent's implementation; the default implementation of the
+<link xref="Clutter.ActorClass">Clutter.ActorClass</link>.allocate() virtual function will call this
+function.</p><p>It is important to note that, while chaining up was the recommended
+behaviour for <link xref="Clutter.Actor">Clutter.Actor</link> subclasses prior to the introduction of
+this function, it is recommended to call clutter_actor_set_allocation()
+instead.</p><p>If the <link xref="Clutter.Actor">Clutter.Actor</link> is using a <link xref="Clutter.LayoutManager">Clutter.LayoutManager</link> delegate object
+to handle the allocation of its children, this function will call
+the clutter_layout_manager_allocate() function only if the
+%CLUTTER_DELEGATE_LAYOUT flag is set on @flags, otherwise it is
+expected that the subclass will call clutter_layout_manager_allocate()
+by itself. For instance, the following code:</p><p>|[
+static void
+my_actor_allocate (ClutterActor *actor,
+const ClutterActorBox *allocation,
+ClutterAllocationFlags flags)
+{
+ClutterActorBox new_alloc;
+ClutterAllocationFlags new_flags;</p><p>adjust_allocation (allocation, &amp;amp;new_alloc);</p><p>new_flags = flags | CLUTTER_DELEGATE_LAYOUT;</p><p>/&amp;ast; this will use the layout manager set on the actor &amp;ast;/
+clutter_actor_set_allocation (actor, &amp;amp;new_alloc, new_flags);
+}
+]|</p><p>is equivalent to this:</p><p>|[
+static void
+my_actor_allocate (ClutterActor *actor,
+const ClutterActorBox *allocation,
+ClutterAllocationFlags flags)
+{
+ClutterLayoutManager *layout;
+ClutterActorBox new_alloc;</p><p>adjust_allocation (allocation, &amp;amp;new_alloc);</p><p>clutter_actor_set_allocation (actor, &amp;amp;new_alloc, flags);</p><p>layout = clutter_actor_get_layout_manager (actor);
+clutter_layout_manager_allocate (layout,
+CLUTTER_CONTAINER (actor),
+&amp;amp;new_alloc,
+flags);
+}
+]|</p>
+
+<table>
+<tr>
+<td><p>box :</p></td>
+<td><p>a <link xref="Clutter.ActorBox">Clutter.ActorBox</link></p></td>
+</tr>
+<tr>
+<td><p>flags :</p></td>
+<td><p>allocation flags</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

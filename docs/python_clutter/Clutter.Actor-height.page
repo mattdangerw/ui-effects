@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-height"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">height</title>
+  </info>
+  <title>Clutter.Actor:height</title>
+<synopsis><code mime="text/x-python">
+"height"             gfloat                : Read / Write
+</code></synopsis>
+<p>Height of the actor (in pixels).  If written, forces the minimum and
+natural size request of the actor to the given height. If read, returns
+the allocated height if available, otherwise the height request.</p><p>The <link xref="Clutter.Actor-height">Clutter.Actor:height</link> property is animatable.</p>
+</page>

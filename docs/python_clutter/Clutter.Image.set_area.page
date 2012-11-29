@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Image.set_area"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Image" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_image_set_area</api:name>
+      <api:arg>
+        <api:type>ClutterImage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>[guint8]</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.PixelFormat</api:type>
+        <api:name>pixel_format</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>cairo.RectangleInt</api:type>
+        <api:name>rect</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>row_stride</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_area</title>
+<synopsis><code mime="text/x-python">
+@accepts([guint8], Cogl.PixelFormat, cairo.RectangleInt, guint)
+@returns(gboolean)
+def set_area(data, pixel_format, rect, row_stride)
+</code></synopsis>
+<p>Sets the image data to be display by @image, using @rect to indicate
+the position and size of the image data to be set.</p><p>If the @image does not have any image data set when this function is
+called, a new texture will be created with the size of the width and
+height of the rectangle, i.e. calling this function on a newly created
+<link xref="Clutter.Image">Clutter.Image</link> will be the equivalent of calling clutter_image_set_data().</p><p>If the image data was successfully loaded, the @image will be invalidated.</p><p>In case of error, the @error value will be set, and this function will
+return False.</p><p>The image data is copied in texture memory.</p><p>and False otherwise.</p>
+
+<table>
+<tr>
+<td><p>data :</p></td>
+<td><p>the image data, as an array of bytes</p></td>
+</tr>
+<tr>
+<td><p>pixel_format :</p></td>
+<td><p>the Cogl pixel format of the image data</p></td>
+</tr>
+<tr>
+<td><p>rect :</p></td>
+<td><p>a rectangle indicating the area that should be set</p></td>
+</tr>
+<tr>
+<td><p>row_stride :</p></td>
+<td><p>the length of each row inside @data</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the image data was successfully loaded,</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

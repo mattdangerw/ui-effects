@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.animate_with_timelinev"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Animation</api:type>
+      </api:returns>
+      <api:name>clutter_actor_animate_with_timelinev</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gulong</api:type>
+        <api:name>mode</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Timeline</api:type>
+        <api:name>timeline</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>n_properties</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>[utf8]</api:type>
+        <api:name>properties</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>[GObject.Value]</api:type>
+        <api:name>values</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>animate_with_timelinev</title>
+<synopsis><code mime="text/x-python">
+@accepts(gulong, Clutter.Timeline, gint, [utf8], [GObject.Value])
+@returns(Clutter.Animation)
+def animate_with_timelinev(mode, timeline, n_properties, properties, values)
+</code></synopsis>
+<p>Animates the given list of properties of @actor between the current
+value for each property and a new final value. The animation has a
+definite duration given by @timeline and a speed given by the @mode.</p><p>See clutter_actor_animate() for further details.</p><p>This function is useful if you want to use an existing timeline
+to animate @actor.</p><p>This is the vector-based variant of clutter_actor_animate_with_timeline(),
+useful for language bindings.</p><p>&lt;warning&gt;Unlike clutter_actor_animate_with_timeline(), this function
+will not allow you to specify "signal::" names and callbacks.&lt;/warning&gt;</p><p>owned by the <link xref="Clutter.Actor">Clutter.Actor</link> and should not be unreferenced with
+g_object_unref()</p>
+
+<table>
+<tr>
+<td><p>mode :</p></td>
+<td><p>an animation mode logical id</p></td>
+</tr>
+<tr>
+<td><p>timeline :</p></td>
+<td><p>a <link xref="Clutter.Timeline">Clutter.Timeline</link></p></td>
+</tr>
+<tr>
+<td><p>n_properties :</p></td>
+<td><p>number of property names and values</p></td>
+</tr>
+<tr>
+<td><p>properties :</p></td>
+<td><p>a vector containing the property names to set</p></td>
+</tr>
+<tr>
+<td><p>values :</p></td>
+<td><p>a vector containing the property values to set</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="Clutter.Animation">Clutter.Animation</link> object. The object is</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

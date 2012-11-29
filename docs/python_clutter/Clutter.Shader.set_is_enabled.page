@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Shader.set_is_enabled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Shader" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_shader_set_is_enabled</api:name>
+      <api:arg>
+        <api:type>ClutterShader *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>enabled</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_is_enabled</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_is_enabled(enabled)
+</code></synopsis>
+<p>Enables a shader. This function will attempt to compile and link
+the shader, if it isn't already.</p><p>When @enabled is False the default state of the GL pipeline will be
+used instead.</p>
+
+<table>
+<tr>
+<td><p>enabled :</p></td>
+<td><p>The new state of the shader.</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

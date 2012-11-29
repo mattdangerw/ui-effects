@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.insert_text"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_insert_text</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>text</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gssize</api:type>
+        <api:name>position</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>insert_text</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, gssize)
+@returns(none)
+def insert_text(text, position)
+</code></synopsis>
+<p>Inserts @text into a <link xref="Clutter.Actor">Clutter.Actor</link> at the given position.</p><p>If @position is a negative number, the text will be appended
+at the end of the current contents of the <link xref="Clutter.Text">Clutter.Text</link>.</p><p>The position is expressed in characters, not in bytes.</p>
+
+<table>
+<tr>
+<td><p>text :</p></td>
+<td><p>the text to be inserted</p></td>
+</tr>
+<tr>
+<td><p>position :</p></td>
+<td><p>the position of the insertion, or -1</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

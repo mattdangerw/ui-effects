@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.insert_child_below"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_insert_child_below</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>child</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>sibling</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>insert_child_below</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, Clutter.Actor)
+@returns(none)
+def insert_child_below(child, sibling)
+</code></synopsis>
+<p>Inserts @child into the list of children of @self, below another
+child of @self or, if @sibling is None, below all the children
+of @self.</p><p>This function will acquire a reference on @child that will only
+be released when calling clutter_actor_remove_child().</p><p>This function will not take into consideration the <link xref="Clutter.Actor-depth">Clutter.Actor:depth</link>
+of @child.</p><p>This function will emit the <link xref="Clutter.Container-actor-added">Clutter.Container::actor-added</link> signal
+on @self.</p>
+
+<table>
+<tr>
+<td><p>child :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+<tr>
+<td><p>sibling :</p></td>
+<td><p>a child of @self, or None</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

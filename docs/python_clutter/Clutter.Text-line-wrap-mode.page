@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-line-wrap-mode"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="property"/>
+    <title type="link" role="topic">line-wrap-mode</title>
+  </info>
+  <title>Clutter.Text:line-wrap-mode</title>
+<synopsis><code mime="text/x-python">
+"line-wrap-mode"             Pango.WrapMode                : Read / Write
+</code></synopsis>
+<p>If <link xref="Clutter.Text-line-wrap">Clutter.Text:line-wrap</link> is set to True, this property will
+control how the text is wrapped.</p>
+</page>

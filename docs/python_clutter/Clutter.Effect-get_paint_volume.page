@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Clutter.Effect-get_paint_volume"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Effect" group="vfunc"/>
+    <title type="link" role="topic">get_paint_volume</title>
+  </info>
+  <title>Clutter.Effect.get_paint_volume</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.PaintVolume)
+@returns(gboolean)
+def do_get_paint_volume(self, volume):
+</code></synopsis>
+
+
+<table>
+<tr>
+<td><p>volume :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td></td>
+</tr>
+</table>
+</page>

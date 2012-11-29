@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Texture.set_load_data_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_texture_set_load_data_async</api:name>
+      <api:arg>
+        <api:type>ClutterTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>load_async</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_load_data_async</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_load_data_async(load_async)
+</code></synopsis>
+<p>Sets whether @texture should use a worker thread to load the data
+from disk asynchronously. Setting @load_async to True will make
+clutter_texture_set_from_file() block until the <link xref="Clutter.Texture">Clutter.Texture</link> has
+determined the width and height of the image data.</p><p>See the <link xref="Clutter.Texture-load-async">Clutter.Texture:load-async</link> property documentation, and
+clutter_texture_set_load_async().</p>
+
+<table>
+<tr>
+<td><p>load_async :</p></td>
+<td><p>True if the texture should asynchronously load data from a filename</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

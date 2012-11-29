@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Texture.set_sync_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_texture_set_sync_size</api:name>
+      <api:arg>
+        <api:type>ClutterTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>sync_size</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_sync_size</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_sync_size(sync_size)
+</code></synopsis>
+<p>Sets whether @texture should have the same preferred size as the
+underlying image data.</p>
+
+<table>
+<tr>
+<td><p>sync_size :</p></td>
+<td><p>True if the texture should have the same size of the underlying image data</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

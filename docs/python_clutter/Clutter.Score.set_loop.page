@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Score.set_loop"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Score" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_score_set_loop</api:name>
+      <api:arg>
+        <api:type>ClutterScore *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>loop</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_loop</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_loop(loop)
+</code></synopsis>
+<p>Sets whether @score should loop. A looping <link xref="Clutter.Score">Clutter.Score</link> will start
+from its initial state after the ::complete signal has been fired.</p>
+
+<table>
+<tr>
+<td><p>loop :</p></td>
+<td><p>True for enable looping</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

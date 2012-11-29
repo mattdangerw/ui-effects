@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.FlowLayout.get_row_spacing"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.FlowLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gfloat</api:type>
+      </api:returns>
+      <api:name>clutter_flow_layout_get_row_spacing</api:name>
+      <api:arg>
+        <api:type>ClutterFlowLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_row_spacing</title>
+<synopsis><code mime="text/x-python">
+@returns(gfloat)
+def get_row_spacing()
+</code></synopsis>
+<p>Retrieves the spacing between rows</p><p>in pixels</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the spacing between rows of the <link xref="Clutter.FlowLayout">Clutter.FlowLayout</link>,</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

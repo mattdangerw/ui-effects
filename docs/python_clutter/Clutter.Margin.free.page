@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Margin.free"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Margin" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_margin_free</api:name>
+    </api:function>
+  </info>
+  <title>free</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def free()
+</code></synopsis>
+<p>Frees the resources allocated by clutter_margin_new() and
+clutter_margin_copy().</p>
+
+<table>
+</table>
+<p>Since 1.10</p>
+</page>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_x_align"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.ActorAlign</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_x_align</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_x_align</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.ActorAlign)
+def get_x_align()
+</code></synopsis>
+<p>Retrieves the horizontal alignment policy set using
+clutter_actor_set_x_align().</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the horizontal alignment policy.</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

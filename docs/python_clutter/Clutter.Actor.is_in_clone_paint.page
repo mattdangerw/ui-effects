@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.is_in_clone_paint"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_actor_is_in_clone_paint</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>is_in_clone_paint</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def is_in_clone_paint()
+</code></synopsis>
+<p>Checks whether @self is being currently painted by a <link xref="Clutter.Clone">Clutter.Clone</link></p><p>This function is useful only inside the ::paint virtual function
+implementations or within handlers for the <link xref="Clutter.Actor-paint">Clutter.Actor::paint</link>
+signal</p><p>This function should not be used by applications</p><p>by a <link xref="Clutter.Clone">Clutter.Clone</link>, and False otherwise</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the <link xref="Clutter.Actor">Clutter.Actor</link> is currently being painted</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

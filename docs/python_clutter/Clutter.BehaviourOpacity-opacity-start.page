@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.BehaviourOpacity-opacity-start"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourOpacity" group="property"/>
+    <title type="link" role="topic">opacity-start</title>
+  </info>
+  <title>Clutter.BehaviourOpacity:opacity-start</title>
+<synopsis><code mime="text/x-python">
+"opacity-start"             guint                : Read / Write
+</code></synopsis>
+<p>Initial opacity level of the behaviour.</p>
+</page>

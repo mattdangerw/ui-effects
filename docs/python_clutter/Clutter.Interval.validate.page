@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Interval.validate"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Interval" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_interval_validate</api:name>
+      <api:arg>
+        <api:type>ClutterInterval *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.ParamSpec</api:type>
+        <api:name>pspec</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>validate</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.ParamSpec)
+@returns(gboolean)
+def validate(pspec)
+</code></synopsis>
+<p>Validates the initial and final values of @interval against
+a <link xref="GParamSpec">GParamSpec</link>.</p>
+
+<table>
+<tr>
+<td><p>pspec :</p></td>
+<td><p>a <link xref="GParamSpec">GParamSpec</link></p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the <link xref="Clutter.Interval">Clutter.Interval</link> is valid, False otherwise</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.SnapConstraint-source"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.SnapConstraint" group="property"/>
+    <title type="link" role="topic">source</title>
+  </info>
+  <title>Clutter.SnapConstraint:source</title>
+<synopsis><code mime="text/x-python">
+"source"             Clutter.Actor                : Read / Write / Construct
+</code></synopsis>
+<p>The <link xref="Clutter.Actor">Clutter.Actor</link> used as the source for the constraint</p>
+</page>

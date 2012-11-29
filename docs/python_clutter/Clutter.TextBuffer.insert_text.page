@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.TextBuffer.insert_text"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TextBuffer" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint</api:type>
+      </api:returns>
+      <api:name>clutter_text_buffer_insert_text</api:name>
+      <api:arg>
+        <api:type>ClutterTextBuffer *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>position</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>chars</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>n_chars</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>insert_text</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, utf8, gint)
+@returns(guint)
+def insert_text(position, chars, n_chars)
+</code></synopsis>
+<p>Inserts @n_chars characters of @chars into the contents of the
+buffer, at position @position.</p><p>If @n_chars is negative, then characters from chars will be inserted
+until a null-terminator is found. If @position or @n_chars are out of
+bounds, or the maximum buffer text length is exceeded, then they are
+coerced to sane values.</p><p>Note that the position and length are in characters, not in bytes.</p>
+
+<table>
+<tr>
+<td><p>position :</p></td>
+<td><p>the position at which to insert text.</p></td>
+</tr>
+<tr>
+<td><p>chars :</p></td>
+<td><p>the text to insert into the buffer.</p></td>
+</tr>
+<tr>
+<td><p>n_chars :</p></td>
+<td><p>the length of the text in characters, or -1</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The number of characters actually inserted.</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

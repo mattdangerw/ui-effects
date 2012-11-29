@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.get_title"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_stage_get_title</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_title</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def get_title()
+</code></synopsis>
+<p>Gets the stage title.</p><p>returned string is owned by the actor and should not
+be modified or freed.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>pointer to the title string for the stage. The</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

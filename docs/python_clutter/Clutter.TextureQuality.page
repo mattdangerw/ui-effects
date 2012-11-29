@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Clutter.TextureQuality"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.TextureQuality</title>
+  <p>Enumaration controlling the texture quality.</p>
+<table>
+<tr>
+<td><p>TextureQuality.LOW :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>TextureQuality.MEDIUM :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>TextureQuality.HIGH :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

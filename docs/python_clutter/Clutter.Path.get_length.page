@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Path.get_length"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Path" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint</api:type>
+      </api:returns>
+      <api:name>clutter_path_get_length</api:name>
+      <api:arg>
+        <api:type>ClutterPath *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_length</title>
+<synopsis><code mime="text/x-python">
+@returns(guint)
+def get_length()
+</code></synopsis>
+<p>Retrieves an approximation of the total length of the path.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the length of the path.</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

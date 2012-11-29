@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.BoxLayout-homogeneous"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BoxLayout" group="property"/>
+    <title type="link" role="topic">homogeneous</title>
+  </info>
+  <title>Clutter.BoxLayout:homogeneous</title>
+<synopsis><code mime="text/x-python">
+"homogeneous"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the <link xref="Clutter.BoxLayout">Clutter.BoxLayout</link> should arrange its children
+homogeneously, i.e. all childs get the same size</p>
+</page>

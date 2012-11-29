@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>set_single_line_mode</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Text.html" title="Clutter.Text">Clutter.Text</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">set_single_line_mode</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(gboolean)
+@returns(none)
+def set_single_line_mode(single_line)</pre></div></div></div></div></div>
+<p class="p">Sets whether a <span class=" link"><a href="Clutter.Text.html" title="Clutter.Text">Clutter.Text</a></span> actor should be in single line mode
+or not. Only editable <span class=" link"><a href="Clutter.Text.html" title="Clutter.Text">Clutter.Text</a></span>&lt;!-- --&gt;s can be in single line
+mode.</p>
+<p class="p">A text actor in single line mode will not wrap text and will clip
+the visible area to the predefined size. The contents of the
+text actor will scroll to display the end of the text if its length
+is bigger than the allocated width.</p>
+<p class="p">When setting the single line mode the <span class=" link"><a href="Clutter.Text-activatable.html" title="Clutter.Text:activatable">Clutter.Text:activatable</a></span>
+property is also set as a side effect. Instead of entering a new
+line character, the text actor will emit the <span class=" link"><a href="Clutter.Text-activate.html" title="Clutter.Text::activate">Clutter.Text::activate</a></span>
+signal.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table"><tr>
+<td><p class="p">single_line :</p></td>
+<td><p class="p">whether to enable single line mode</p></td>
+</tr></table></div></div></div>
+<p class="p">Since 1.0</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Text.html" title="Clutter.Text">Clutter.Text</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

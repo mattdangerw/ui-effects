@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.InputDevice.update_from_event"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.InputDevice" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_input_device_update_from_event</api:name>
+      <api:arg>
+        <api:type>ClutterInputDevice *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Event</api:type>
+        <api:name>event</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>update_stage</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>update_from_event</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Event, gboolean)
+@returns(none)
+def update_from_event(event, update_stage)
+</code></synopsis>
+<p>Forcibly updates the state of the @device using a <link xref="Clutter.Event">Clutter.Event</link></p><p>This function should never be used by applications: it is meant
+for integration with embedding toolkits, like clutter-gtk</p><p>Embedding toolkits that disable the event collection inside Clutter
+need to use this function to update the state of input devices depending
+on a <link xref="Clutter.Event">Clutter.Event</link> that they are going to submit to the event handling code
+in Clutter though clutter_do_event(). Since the input devices hold the state
+that is going to be used to fill in fields like the <link xref="Clutter.ButtonEvent">Clutter.ButtonEvent</link>
+click count, or to emit synthesized events like %CLUTTER_ENTER and
+%CLUTTER_LEAVE, it is necessary for embedding toolkits to also be
+responsible of updating the input device state.</p><p>For instance, this might be the code to translate an embedding toolkit
+native motion notification into a Clutter <link xref="Clutter.MotionEvent">Clutter.MotionEvent</link> and ask
+Clutter to process it:</p><p>|[
+ClutterEvent c_event;</p><p>translate_native_event_to_clutter (native_event, &amp;amp;c_event);</p><p>clutter_do_event (&amp;amp;c_event);
+]|</p><p>Before letting clutter_do_event() process the event, it is necessary to call
+clutter_input_device_update_from_event():</p><p>|[
+ClutterEvent c_event;
+ClutterDeviceManager *manager;
+ClutterInputDevice *device;</p><p>translate_native_event_to_clutter (native_event, &amp;amp;c_event);</p><p>/&amp;ast; get the device manager &amp;ast;/
+manager = clutter_device_manager_get_default ();</p><p>/&amp;ast; use the default Core Pointer that Clutter
+&amp;ast; backends register by default
+&amp;ast;/
+device = clutter_device_manager_get_core_device (manager, %CLUTTER_POINTER_DEVICE);</p><p>/&amp;ast; update the state of the input device &amp;ast;/
+clutter_input_device_update_from_event (device, &amp;amp;c_event, FALSE);</p><p>clutter_do_event (&amp;amp;c_event);
+]|</p><p>The @update_stage boolean argument should be used when the input device
+enters and leaves a <link xref="Clutter.Stage">Clutter.Stage</link>; it will use the <link xref="Clutter.Stage">Clutter.Stage</link> field
+of the passed @event to update the stage associated to the input device.</p>
+
+<table>
+<tr>
+<td><p>event :</p></td>
+<td><p>a <link xref="Clutter.Event">Clutter.Event</link></p></td>
+</tr>
+<tr>
+<td><p>update_stage :</p></td>
+<td><p>whether to update the <link xref="Clutter.Stage">Clutter.Stage</link> of the @device using the stage of the event</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

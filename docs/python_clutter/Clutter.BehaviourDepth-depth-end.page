@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.BehaviourDepth-depth-end"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourDepth" group="property"/>
+    <title type="link" role="topic">depth-end</title>
+  </info>
+  <title>Clutter.BehaviourDepth:depth-end</title>
+<synopsis><code mime="text/x-python">
+"depth-end"             gint                : Read / Write
+</code></synopsis>
+<p>End depth level to apply to the actors.</p>
+</page>

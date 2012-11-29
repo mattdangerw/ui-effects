@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.BehaviourRotate-direction"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourRotate" group="property"/>
+    <title type="link" role="topic">direction</title>
+  </info>
+  <title>Clutter.BehaviourRotate:direction</title>
+<synopsis><code mime="text/x-python">
+"direction"             Clutter.RotateDirection                : Read / Write
+</code></synopsis>
+<p>The direction of the rotation.</p>
+</page>

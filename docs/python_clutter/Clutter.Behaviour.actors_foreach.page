@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Behaviour.actors_foreach"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Behaviour" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_actors_foreach</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviour *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.BehaviourForeachFunc</api:type>
+        <api:name>func</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>actors_foreach</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.BehaviourForeachFunc, gpointer)
+@returns(none)
+def actors_foreach(func, data)
+</code></synopsis>
+<p>Calls @func for every actor driven by @behave.</p>
+
+<table>
+<tr>
+<td><p>func :</p></td>
+<td><p>a function called for each actor</p></td>
+</tr>
+<tr>
+<td><p>data :</p></td>
+<td><p>optional data to be passed to the function, or None</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animation.set_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animation" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_animation_set_mode</api:name>
+      <api:arg>
+        <api:type>ClutterAnimation *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gulong</api:type>
+        <api:name>mode</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_mode</title>
+<synopsis><code mime="text/x-python">
+@accepts(gulong)
+@returns(none)
+def set_mode(mode)
+</code></synopsis>
+<p>Sets the animation @mode of @animation. The animation @mode is
+a logical id, either coming from the <link xref="Clutter.AnimationMode">Clutter.AnimationMode</link> enumeration
+or the return value of clutter_alpha_register_func().</p><p>This function will also set <link xref="Clutter.Animation-alpha">Clutter.Animation:alpha</link> if needed.</p>
+
+<table>
+<tr>
+<td><p>mode :</p></td>
+<td><p>an animation mode logical id</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

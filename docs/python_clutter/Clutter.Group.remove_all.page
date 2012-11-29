@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Group.remove_all"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Group" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_group_remove_all</api:name>
+      <api:arg>
+        <api:type>ClutterGroup *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>remove_all</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def remove_all()
+</code></synopsis>
+<p>Removes all children actors from the <link xref="Clutter.Group">Clutter.Group</link>.</p>
+
+<table>
+</table>
+</page>

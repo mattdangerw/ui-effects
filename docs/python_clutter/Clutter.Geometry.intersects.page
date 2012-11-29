@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Geometry.intersects"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Geometry" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_geometry_intersects</api:name>
+      <api:arg>
+        <api:type>Clutter.Geometry</api:type>
+        <api:name>geometry1</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>intersects</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Geometry)
+@returns(gboolean)
+def intersects(geometry1)
+</code></synopsis>
+<p>Determines if @geometry0 and geometry1 intersect returning True if
+they do else False.</p><p>False.</p>
+
+<table>
+<tr>
+<td><p>geometry1 :</p></td>
+<td><p>The second geometry to test</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True of @geometry0 and geometry1 intersect else</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

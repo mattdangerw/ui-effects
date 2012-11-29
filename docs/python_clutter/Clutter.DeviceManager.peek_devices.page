@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.DeviceManager.peek_devices"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DeviceManager" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>&lt;list&gt;</api:type>
+      </api:returns>
+      <api:name>clutter_device_manager_peek_devices</api:name>
+      <api:arg>
+        <api:type>ClutterDeviceManager *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>peek_devices</title>
+<synopsis><code mime="text/x-python">
+@returns(&lt;list&gt;)
+def peek_devices()
+</code></synopsis>
+<p>Lists all currently registered input devices</p><p>a pointer to the internal list of <link xref="Clutter.InputDevice">Clutter.InputDevice</link> objects. The
+returned list is owned by the <link xref="Clutter.DeviceManager">Clutter.DeviceManager</link> and should never
+be modified or freed</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

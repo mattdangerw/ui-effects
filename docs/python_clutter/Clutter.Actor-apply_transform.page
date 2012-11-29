@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-apply_transform"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="vfunc"/>
+    <title type="link" role="topic">apply_transform</title>
+  </info>
+  <title>Clutter.Actor.apply_transform</title>
+<synopsis><code mime="text/x-python">
+@accepts(Cogl.Matrix)
+@returns(none)
+def do_apply_transform(self, matrix):
+</code></synopsis>
+
+
+<table>
+<tr>
+<td><p>matrix :</p></td>
+<td></td>
+</tr>
+</table>
+</page>

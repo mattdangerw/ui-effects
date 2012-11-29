@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.AnimatorKey.get_object"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.AnimatorKey" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.Object</api:type>
+      </api:returns>
+      <api:name>clutter_animator_key_get_object</api:name>
+    </api:function>
+  </info>
+  <title>get_object</title>
+<synopsis><code mime="text/x-python">
+@returns(GObject.Object)
+def get_object()
+</code></synopsis>
+<p>Retrieves the object a key applies to.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the object an animator_key exist for.</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Texture.set_pick_with_alpha"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_texture_set_pick_with_alpha</api:name>
+      <api:arg>
+        <api:type>ClutterTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>pick_with_alpha</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_pick_with_alpha</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_pick_with_alpha(pick_with_alpha)
+</code></synopsis>
+<p>Sets whether @texture should have it's shape defined by the alpha
+channel when picking.</p><p>Be aware that this is a bit more costly than the default picking
+due to the texture lookup, extra test against the alpha value and
+the fact that it will also interrupt the batching of geometry done
+internally.</p><p>Also there is currently no control over the threshold used to
+determine what value of alpha is considered pickable, and so only
+fully opaque parts of the texture will react to picking.</p>
+
+<table>
+<tr>
+<td><p>pick_with_alpha :</p></td>
+<td><p>True if the alpha channel should affect the picking shape</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

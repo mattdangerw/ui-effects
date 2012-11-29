@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Clutter.DeviceManager-get_core_device"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DeviceManager" group="vfunc"/>
+    <title type="link" role="topic">get_core_device</title>
+  </info>
+  <title>Clutter.DeviceManager.get_core_device</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.InputDeviceType)
+@returns(Clutter.InputDevice)
+def do_get_core_device(self, device_type):
+</code></synopsis>
+<p>Retrieves the core <link xref="Clutter.InputDevice">Clutter.InputDevice</link> of type @device_type</p><p>Core devices are devices created automatically by the default
+Clutter backend</p><p>returned device is owned by the <link xref="Clutter.DeviceManager">Clutter.DeviceManager</link> and should
+not be modified or freed</p>
+
+<table>
+<tr>
+<td><p>device_type :</p></td>
+<td><p>the type of the core device</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="Clutter.InputDevice">Clutter.InputDevice</link> or None. The</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

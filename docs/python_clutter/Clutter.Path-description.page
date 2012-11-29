@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Path-description"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Path" group="property"/>
+    <title type="link" role="topic">description</title>
+  </info>
+  <title>Clutter.Path:description</title>
+<synopsis><code mime="text/x-python">
+"description"             utf8                : Read / Write
+</code></synopsis>
+
+</page>

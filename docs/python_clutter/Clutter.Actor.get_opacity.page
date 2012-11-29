@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_opacity"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint8</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_opacity</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_opacity</title>
+<synopsis><code mime="text/x-python">
+@returns(guint8)
+def get_opacity()
+</code></synopsis>
+<p>Retrieves the opacity value of an actor, as set by
+clutter_actor_set_opacity().</p><p>For retrieving the absolute opacity of the actor inside a paint
+virtual function, see clutter_actor_get_paint_opacity().</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the opacity of the actor</p></td>
+</tr>
+</table>
+</page>

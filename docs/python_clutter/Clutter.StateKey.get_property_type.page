@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.StateKey.get_property_type"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.StateKey" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>GType</api:type>
+      </api:returns>
+      <api:name>clutter_state_key_get_property_type</api:name>
+    </api:function>
+  </info>
+  <title>get_property_type</title>
+<synopsis><code mime="text/x-python">
+@returns(GType)
+def get_property_type()
+</code></synopsis>
+<p>Retrieves the <link xref="GType">GType</link> of the property a key applies to</p><p>You can use this type to initialize the <link xref="GValue">GValue</link> to pass to
+clutter_state_key_get_value()</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the <link xref="GType">GType</link> of the property</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

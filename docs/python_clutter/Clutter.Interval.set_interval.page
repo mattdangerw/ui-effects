@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Interval.set_interval"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Interval" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_interval_set_interval</api:name>
+      <api:arg>
+        <api:type>ClutterInterval *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:varargs/>
+    </api:function>
+  </info>
+  <title>set_interval</title>
+<synopsis><code mime="text/x-python">
+@accepts(&lt;varargs&gt;)
+@returns(none)
+def set_interval(None)
+</code></synopsis>
+<p>Variable arguments wrapper for clutter_interval_set_initial_value()
+and clutter_interval_set_final_value() that avoids using the
+<link xref="GValue">GValue</link> arguments:</p><p>|[
+clutter_interval_set_interval (interval, 0, 50);
+clutter_interval_set_interval (interval, 1.0, 0.0);
+clutter_interval_set_interval (interval, FALSE, TRUE);
+]|</p><p>This function is meant for the convenience of the C API; bindings
+should reimplement this function using the <link xref="GValue-based">GValue-based</link> API.</p>
+
+<table>
+<tr>
+<td><p>None :</p></td>
+<td></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

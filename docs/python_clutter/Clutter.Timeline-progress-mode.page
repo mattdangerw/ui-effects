@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Timeline-progress-mode"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="property"/>
+    <title type="link" role="topic">progress-mode</title>
+  </info>
+  <title>Clutter.Timeline:progress-mode</title>
+<synopsis><code mime="text/x-python">
+"progress-mode"             Clutter.AnimationMode                : Read / Write
+</code></synopsis>
+<p>Controls the way a <link xref="Clutter.Timeline">Clutter.Timeline</link> computes the normalized progress.</p>
+</page>

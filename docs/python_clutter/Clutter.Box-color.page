@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Box-color"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Box" group="property"/>
+    <title type="link" role="topic">color</title>
+  </info>
+  <title>Clutter.Box:color</title>
+<synopsis><code mime="text/x-python">
+"color"             Clutter.Color                : Read / Write
+</code></synopsis>
+<p>The color to be used to paint the background of the
+<link xref="Clutter.Box">Clutter.Box</link>. Setting this property will set the
+<link xref="Clutter.Box-color-set">Clutter.Box:color-set</link> property as a side effect</p>
+</page>

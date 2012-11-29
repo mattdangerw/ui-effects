@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.value_dup_paint_node"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.PaintNode</api:type>
+      </api:returns>
+      <api:name>clutter_value_dup_paint_node</api:name>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>value_dup_paint_node</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.Value)
+@returns(Clutter.PaintNode)
+def value_dup_paint_node(value)
+</code></synopsis>
+<p>Retrieves a pointer to the <link xref="Clutter.PaintNode">Clutter.PaintNode</link> contained inside
+the passed <link xref="GValue">GValue</link>, and if not None it will increase the
+reference count.</p><p>to the <link xref="Clutter.PaintNode">Clutter.PaintNode</link>, with its reference count increased,
+or None</p>
+
+<table>
+<tr>
+<td><p>value :</p></td>
+<td><p>a <link xref="GValue">GValue</link> initialized with %CLUTTER_TYPE_PAINT_NODE</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a pointer</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

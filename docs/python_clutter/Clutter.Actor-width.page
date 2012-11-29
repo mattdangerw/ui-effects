@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-width"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">width</title>
+  </info>
+  <title>Clutter.Actor:width</title>
+<synopsis><code mime="text/x-python">
+"width"             gfloat                : Read / Write
+</code></synopsis>
+<p>Width of the actor (in pixels). If written, forces the minimum and
+natural size request of the actor to the given width. If read, returns
+the allocated width if available, otherwise the width request.</p><p>The <link xref="Clutter.Actor-width">Clutter.Actor:width</link> property is animatable.</p>
+</page>

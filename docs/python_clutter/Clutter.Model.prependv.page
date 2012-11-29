@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Model.prependv"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_model_prependv</api:name>
+      <api:arg>
+        <api:type>ClutterModel *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>n_columns</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>[guint]</api:type>
+        <api:name>columns</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>[GObject.Value]</api:type>
+        <api:name>values</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>prependv</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, [guint], [GObject.Value])
+@returns(none)
+def prependv(n_columns, columns, values)
+</code></synopsis>
+<p>Creates and prepends a new row to the <link xref="Clutter.Model">Clutter.Model</link>, setting the row
+values for the given @columns upon creation.</p>
+
+<table>
+<tr>
+<td><p>n_columns :</p></td>
+<td><p>the number of columns and values to set</p></td>
+</tr>
+<tr>
+<td><p>columns :</p></td>
+<td><p>a vector containing the columns to set</p></td>
+</tr>
+<tr>
+<td><p>values :</p></td>
+<td><p>a vector containing the values for the cells</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

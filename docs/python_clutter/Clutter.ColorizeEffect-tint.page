@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.ColorizeEffect-tint"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ColorizeEffect" group="property"/>
+    <title type="link" role="topic">tint</title>
+  </info>
+  <title>Clutter.ColorizeEffect:tint</title>
+<synopsis><code mime="text/x-python">
+"tint"             Clutter.Color                : Read / Write
+</code></synopsis>
+<p>The tint to apply to the actor</p>
+</page>

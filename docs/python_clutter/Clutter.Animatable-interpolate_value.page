@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="Clutter.Animatable-interpolate_value"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animatable" group="vfunc"/>
+    <title type="link" role="topic">interpolate_value</title>
+  </info>
+  <title>Clutter.Animatable.interpolate_value</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, Clutter.Interval, gdouble, GObject.Value)
+@returns(gboolean)
+def do_interpolate_value(self, property_name, interval, progress, value):
+</code></synopsis>
+<p>Asks a <link xref="Clutter.Animatable">Clutter.Animatable</link> implementation to interpolate a
+a named property between the initial and final values of
+a <link xref="Clutter.Interval">Clutter.Interval</link>, using @progress as the interpolation
+value, and store the result inside @value.</p><p>This function should be used for every property animation
+involving <link xref="Clutter.Animatable">Clutter.Animatable</link>&lt;!-- --&gt;s.</p><p>This function replaces clutter_animatable_animate_property().</p><p>and False otherwise</p>
+
+<table>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>the name of the property to interpolate</p></td>
+</tr>
+<tr>
+<td><p>interval :</p></td>
+<td><p>a <link xref="Clutter.Interval">Clutter.Interval</link> with the animation range</p></td>
+</tr>
+<tr>
+<td><p>progress :</p></td>
+<td><p>the progress to use to interpolate between the initial and final values of the @interval</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>return location for an initialized <link xref="GValue">GValue</link> using the same type of the @interval</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the interpolation was successful,</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

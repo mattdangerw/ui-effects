@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Texture.set_cogl_texture"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_texture_set_cogl_texture</api:name>
+      <api:arg>
+        <api:type>ClutterTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Handle</api:type>
+        <api:name>cogl_tex</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_cogl_texture</title>
+<synopsis><code mime="text/x-python">
+@accepts(Cogl.Handle)
+@returns(none)
+def set_cogl_texture(cogl_tex)
+</code></synopsis>
+<p>Replaces the underlying COGL texture drawn by this actor with
+@cogl_tex. A reference to the texture is taken so if the handle is
+no longer needed it should be deref'd with cogl_handle_unref.</p>
+
+<table>
+<tr>
+<td><p>cogl_tex :</p></td>
+<td><p>A CoglHandle for a texture</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.TableLayout.get_expand"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TableLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_table_layout_get_expand</api:name>
+      <api:arg>
+        <api:type>ClutterTableLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>x_expand</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>y_expand</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_expand</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, gboolean, gboolean)
+@returns(none)
+def get_expand(actor, x_expand, y_expand)
+</code></synopsis>
+<p>Retrieves the horizontal and vertical expand policies for @actor
+as set using clutter_table_layout_pack() or clutter_table_layout_set_expand()</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link> child of @layout</p></td>
+</tr>
+<tr>
+<td><p>x_expand :</p></td>
+<td><p>return location for the horizontal expand policy</p></td>
+</tr>
+<tr>
+<td><p>y_expand :</p></td>
+<td><p>return location for the vertical expand policy</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

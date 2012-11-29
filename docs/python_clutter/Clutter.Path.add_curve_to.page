@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Path.add_curve_to"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Path" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_path_add_curve_to</api:name>
+      <api:arg>
+        <api:type>ClutterPath *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>x_1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>y_1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>x_2</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>y_2</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>x_3</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>y_3</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>add_curve_to</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint, gint, gint, gint, gint, gint)
+@returns(none)
+def add_curve_to(x_1, y_1, x_2, y_2, x_3, y_3)
+</code></synopsis>
+<p>Adds a %CLUTTER_PATH_CURVE_TO type node to the path. This causes
+the actor to follow a bezier from the last node to (@x_3, @y_3) using
+(@x_1, @y_1) and (@x_2,@y_2) as control points.</p>
+
+<table>
+<tr>
+<td><p>x_1 :</p></td>
+<td><p>the x coordinate of the first control point</p></td>
+</tr>
+<tr>
+<td><p>y_1 :</p></td>
+<td><p>the y coordinate of the first control point</p></td>
+</tr>
+<tr>
+<td><p>x_2 :</p></td>
+<td><p>the x coordinate of the second control point</p></td>
+</tr>
+<tr>
+<td><p>y_2 :</p></td>
+<td><p>the y coordinate of the second control point</p></td>
+</tr>
+<tr>
+<td><p>x_3 :</p></td>
+<td><p>the x coordinate of the third control point</p></td>
+</tr>
+<tr>
+<td><p>y_3 :</p></td>
+<td><p>the y coordinate of the third control point</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

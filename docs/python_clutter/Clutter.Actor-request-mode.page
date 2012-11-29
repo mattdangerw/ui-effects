@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-request-mode"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">request-mode</title>
+  </info>
+  <title>Clutter.Actor:request-mode</title>
+<synopsis><code mime="text/x-python">
+"request-mode"             Clutter.RequestMode                : Read / Write
+</code></synopsis>
+<p>Request mode for the <link xref="Clutter.Actor">Clutter.Actor</link>. The request mode determines the
+type of geometry management used by the actor, either height for width
+(the default) or width for height.</p><p>For actors implementing height for width, the parent container should get
+the preferred width first, and then the preferred height for that width.</p><p>For actors implementing width for height, the parent container should get
+the preferred height first, and then the preferred width for that height.</p><p>For instance:</p><p>|[
+ClutterRequestMode mode;
+gfloat natural_width, min_width;
+gfloat natural_height, min_height;</p><p>mode = clutter_actor_get_request_mode (child);
+if (mode == CLUTTER_REQUEST_HEIGHT_FOR_WIDTH)
+{
+clutter_actor_get_preferred_width (child, -1,
+&amp;amp;min_width,
+&amp;amp;natural_width);
+clutter_actor_get_preferred_height (child, natural_width,
+&amp;amp;min_height,
+&amp;amp;natural_height);
+}
+else
+{
+clutter_actor_get_preferred_height (child, -1,
+&amp;amp;min_height,
+&amp;amp;natural_height);
+clutter_actor_get_preferred_width (child, natural_height,
+&amp;amp;min_width,
+&amp;amp;natural_width);
+}
+]|</p><p>will retrieve the minimum and natural width and height depending on the
+preferred request mode of the <link xref="Clutter.Actor">Clutter.Actor</link> "child".</p><p>The clutter_actor_get_preferred_size() function will implement this
+check for you.</p>
+</page>

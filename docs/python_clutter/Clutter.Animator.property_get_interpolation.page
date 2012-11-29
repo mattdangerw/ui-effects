@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animator.property_get_interpolation"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animator" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Interpolation</api:type>
+      </api:returns>
+      <api:name>clutter_animator_property_get_interpolation</api:name>
+      <api:arg>
+        <api:type>ClutterAnimator *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>object</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>property_get_interpolation</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.Object, utf8)
+@returns(Clutter.Interpolation)
+def property_get_interpolation(object, property_name)
+</code></synopsis>
+<p>Get the interpolation used by animator for a property on a particular
+object.</p>
+
+<table>
+<tr>
+<td><p>object :</p></td>
+<td><p>a <link xref="GObject">GObject</link></p></td>
+</tr>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>the name of a property on object</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a ClutterInterpolation value.</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

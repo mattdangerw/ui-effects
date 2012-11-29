@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Clutter.GestureAction-gesture-cancel"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.GestureAction" group="signal"/>
+    <title type="link" role="topic">gesture-cancel</title>
+  </info>
+  <title>Clutter.GestureAction::gesture-cancel</title>
+<synopsis><code mime="text/x-python">
+def callback(gesture_action, actor, user_param1, ...)
+</code></synopsis>
+<p>The ::gesture-cancel signal is emitted when the ongoing gesture gets
+cancelled from the <link xref="Clutter.GestureAction-gesture-progress">Clutter.GestureAction::gesture-progress</link> signal handler.</p><p>This signal is emitted if and only if the <link xref="Clutter.GestureAction-gesture-begin">Clutter.GestureAction::gesture-begin</link>
+signal has been emitted first.</p>
+
+<table>
+<tr>
+<td><p>gesture_action :</p></td>
+<td><p>instance of Clutter.GestureAction that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>actor :</p></td>
+<td><p>the <link xref="Clutter.Actor">Clutter.Actor</link> attached to the @action</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

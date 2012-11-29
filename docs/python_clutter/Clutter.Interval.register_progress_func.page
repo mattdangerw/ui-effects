@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Interval.register_progress_func"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Interval" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_interval_register_progress_func</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>value_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ProgressFunc</api:type>
+        <api:name>func</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>register_progress_func</title>
+<synopsis><code mime="text/x-python">
+@accepts(GType, Clutter.ProgressFunc)
+@returns(none)
+def register_progress_func(value_type, func)
+</code></synopsis>
+<p>Sets the progress function for a given @value_type, like:</p><p>|[
+clutter_interval_register_progress_func (MY_TYPE_FOO,
+my_foo_progress);
+]|</p><p>Whenever a <link xref="Clutter.Interval">Clutter.Interval</link> instance using the default
+<link xref="Clutter.Interval-compute_value">Clutter.Interval::compute_value</link> implementation is set as an
+interval between two <link xref="GValue">GValue</link> of type @value_type, it will call
+@func to establish the value depending on the given progress,
+for instance:</p><p>|[
+static gboolean
+my_int_progress (const GValue *a,
+const GValue *b,
+gdouble       progress,
+GValue       *retval)
+{
+gint ia = g_value_get_int (a);
+gint ib = g_value_get_int (b);
+gint res = factor * (ib - ia) + ia;</p><p>g_value_set_int (retval, res);</p><p>return TRUE;
+}</p><p>clutter_interval_register_progress_func (G_TYPE_INT, my_int_progress);
+]|</p><p>To unset a previously set progress function of a <link xref="GType">GType</link>, pass None
+for @func.</p>
+
+<table>
+<tr>
+<td><p>value_type :</p></td>
+<td><p>a <link xref="GType">GType</link></p></td>
+</tr>
+<tr>
+<td><p>func :</p></td>
+<td><p>a <link xref="Clutter.ProgressFunc">Clutter.ProgressFunc</link>, or None to unset a previously set progress function</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

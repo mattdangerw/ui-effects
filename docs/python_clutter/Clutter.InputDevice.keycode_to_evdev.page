@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.InputDevice.keycode_to_evdev"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.InputDevice" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_input_device_keycode_to_evdev</api:name>
+      <api:arg>
+        <api:type>ClutterInputDevice *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>hardware_keycode</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>evdev_keycode</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>keycode_to_evdev</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, guint)
+@returns(gboolean)
+def keycode_to_evdev(hardware_keycode, evdev_keycode)
+</code></synopsis>
+<p>Translates a hardware keycode from a <link xref="Clutter.KeyEvent">Clutter.KeyEvent</link> to the
+equivalent evdev keycode. Note that depending on the input backend
+used by Clutter this function can fail if there is no obvious
+mapping between the key codes. The hardware keycode can be taken
+from the <link xref="Clutter.KeyEvent">Clutter.KeyEvent</link>.hardware_keycode member of <link xref="Clutter.KeyEvent">Clutter.KeyEvent</link>.</p>
+
+<table>
+<tr>
+<td><p>hardware_keycode :</p></td>
+<td><p>The hardware keycode from a <link xref="Clutter.KeyEvent">Clutter.KeyEvent</link></p></td>
+</tr>
+<tr>
+<td><p>evdev_keycode :</p></td>
+<td><p>The return location for the evdev keycode</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the conversion succeeded, False otherwise.</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

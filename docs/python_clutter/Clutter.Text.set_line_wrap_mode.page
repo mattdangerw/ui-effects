@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_line_wrap_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_line_wrap_mode</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Pango.WrapMode</api:type>
+        <api:name>wrap_mode</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_line_wrap_mode</title>
+<synopsis><code mime="text/x-python">
+@accepts(Pango.WrapMode)
+@returns(none)
+def set_line_wrap_mode(wrap_mode)
+</code></synopsis>
+<p>If line wrapping is enabled (see clutter_text_set_line_wrap()) this
+function controls how the line wrapping is performed. The default is
+%PANGO_WRAP_WORD which means wrap on word boundaries.</p>
+
+<table>
+<tr>
+<td><p>wrap_mode :</p></td>
+<td><p>the line wrapping mode</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

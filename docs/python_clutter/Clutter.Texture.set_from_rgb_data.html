@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>set_from_rgb_data</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Texture.html" title="Clutter.Texture">Clutter.Texture</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">set_from_rgb_data</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts([guint8], gboolean, gint, gint, gint, gint, Clutter.TextureFlags)
+@returns(gboolean)
+def set_from_rgb_data(data, has_alpha, width, height, rowstride, bpp, flags)</pre></div></div></div></div></div>
+<p class="p">Sets <span class=" link"><a href="Clutter.Texture.html" title="Clutter.Texture">Clutter.Texture</a></span> image data.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">data :</p></td>
+<td><p class="p">image data in RGBA type colorspace.</p></td>
+</tr>
+<tr>
+<td><p class="p">has_alpha :</p></td>
+<td><p class="p">set to True if image data has an alpha channel.</p></td>
+</tr>
+<tr>
+<td><p class="p">width :</p></td>
+<td><p class="p">width in pixels of image data.</p></td>
+</tr>
+<tr>
+<td><p class="p">height :</p></td>
+<td><p class="p">height in pixels of image data</p></td>
+</tr>
+<tr>
+<td><p class="p">rowstride :</p></td>
+<td><p class="p">distance in bytes between row starts.</p></td>
+</tr>
+<tr>
+<td><p class="p">bpp :</p></td>
+<td><p class="p">bytes per pixel (currently only 3 and 4 supported, depending on the value of @has_alpha)</p></td>
+</tr>
+<tr>
+<td><p class="p">flags :</p></td>
+<td><p class="p"><span class=" link"><a href="Clutter.TextureFlags.html" title="Clutter.TextureFlags">Clutter.TextureFlags</a></span></p></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">True on success, False on failure.</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 0.4.</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Texture.html" title="Clutter.Texture">Clutter.Texture</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

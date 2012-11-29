@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.BehaviourEllipse-center"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourEllipse" group="property"/>
+    <title type="link" role="topic">center</title>
+  </info>
+  <title>Clutter.BehaviourEllipse:center</title>
+<synopsis><code mime="text/x-python">
+"center"             Clutter.Knot                : Read / Write
+</code></synopsis>
+<p>The center of the ellipse.</p>
+</page>

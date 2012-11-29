@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Clutter.Container-raise"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="vfunc"/>
+    <title type="link" role="topic">raise</title>
+  </info>
+  <title>Clutter.Container.raise</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, Clutter.Actor)
+@returns(none)
+def do_raise(self, actor, sibling):
+</code></synopsis>
+<p>Raises @actor to @sibling level, in the depth ordering.</p><p>This function calls the <link xref="Clutter.ContainerIface">Clutter.ContainerIface</link>.raise() virtual function,
+which has been deprecated. The default implementation will call
+clutter_actor_set_child_above_sibling().</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>the actor to raise</p></td>
+</tr>
+<tr>
+<td><p>sibling :</p></td>
+<td><p>the sibling to raise to, or None to raise to the top</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

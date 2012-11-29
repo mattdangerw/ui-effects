@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PaintVolume.get_origin"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PaintVolume" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_paint_volume_get_origin</api:name>
+      <api:arg>
+        <api:type>Clutter.Vertex</api:type>
+        <api:name>vertex</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_origin</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Vertex)
+@returns(none)
+def get_origin(vertex)
+</code></synopsis>
+<p>Retrieves the origin of the <link xref="Clutter.PaintVolume">Clutter.PaintVolume</link>.</p>
+
+<table>
+<tr>
+<td><p>vertex :</p></td>
+<td><p>the return location for a <link xref="Clutter.Vertex">Clutter.Vertex</link></p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

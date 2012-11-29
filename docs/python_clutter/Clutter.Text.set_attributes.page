@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_attributes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_attributes</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Pango.AttrList</api:type>
+        <api:name>attrs</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_attributes</title>
+<synopsis><code mime="text/x-python">
+@accepts(Pango.AttrList)
+@returns(none)
+def set_attributes(attrs)
+</code></synopsis>
+<p>Sets the attributes list that are going to be applied to the
+<link xref="Clutter.Text">Clutter.Text</link> contents.</p><p>The <link xref="Clutter.Text">Clutter.Text</link> actor will take a reference on the <link xref="PangoAttrList">PangoAttrList</link>
+passed to this function.</p>
+
+<table>
+<tr>
+<td><p>attrs :</p></td>
+<td><p>a <link xref="PangoAttrList">PangoAttrList</link> or None to unset the attributes</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

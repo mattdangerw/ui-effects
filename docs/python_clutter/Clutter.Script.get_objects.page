@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Script.get_objects"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Script" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gint</api:type>
+      </api:returns>
+      <api:name>clutter_script_get_objects</api:name>
+      <api:arg>
+        <api:type>ClutterScript *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>first_name</api:name>
+      </api:arg>
+      <api:varargs/>
+    </api:function>
+  </info>
+  <title>get_objects</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, &lt;varargs&gt;)
+@returns(gint)
+def get_objects(first_name, None)
+</code></synopsis>
+<p>Retrieves a list of objects for the given names. After @script, object
+names/return location pairs should be listed, with a None pointer
+ending the list, like:</p><p>&lt;informalexample&gt;&lt;programlisting&gt;
+GObject *my_label, *a_button, *main_timeline;</p><p>clutter_script_get_objects (script,
+"my-label", &amp;amp;my_label,
+"a-button", &amp;amp;a_button,
+"main-timeline", &amp;amp;main_timeline,
+NULL);
+&lt;/programlisting&gt;&lt;/informalexample&gt;</p><p>Note: This function does not increment the reference count of the
+returned objects.</p>
+
+<table>
+<tr>
+<td><p>first_name :</p></td>
+<td><p>the name of the first object to retrieve</p></td>
+</tr>
+<tr>
+<td><p>None :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the number of objects returned.</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Clutter.CairoTexture-create-surface"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.CairoTexture" group="signal"/>
+    <title type="link" role="topic">create-surface</title>
+  </info>
+  <title>Clutter.CairoTexture::create-surface</title>
+<synopsis><code mime="text/x-python">
+def callback(cairo_texture, width, height, user_param1, ...)
+</code></synopsis>
+<p>The ::create-surface signal is emitted when a <link xref="Clutter.CairoTexture">Clutter.CairoTexture</link>
+news its surface (re)created, which happens either when the Cairo
+context is created with clutter_cairo_texture_create() or
+clutter_cairo_texture_create_region(), or when the surface is resized
+through clutter_cairo_texture_set_surface_size().</p><p>The first signal handler that returns a non-None, valid surface will
+stop any further signal emission, and the returned surface will be
+the one used.</p>
+
+<table>
+<tr>
+<td><p>cairo_texture :</p></td>
+<td><p>instance of Clutter.CairoTexture that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>width :</p></td>
+<td><p>the width of the surface to create</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>the height of the surface to create</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

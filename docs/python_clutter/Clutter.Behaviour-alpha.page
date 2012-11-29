@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Clutter.Behaviour-alpha"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Behaviour" group="property"/>
+    <title type="link" role="topic">alpha</title>
+  </info>
+  <title>Clutter.Behaviour:alpha</title>
+<synopsis><code mime="text/x-python">
+"alpha"             Clutter.Alpha                : Read / Write
+</code></synopsis>
+<p>The <link xref="Clutter.Alpha">Clutter.Alpha</link> object used to drive this behaviour. A <link xref="Clutter.Alpha">Clutter.Alpha</link>
+object binds a <link xref="Clutter.Timeline">Clutter.Timeline</link> and a function which computes a value
+(the "alpha") depending on the time. Each time the alpha value changes
+the alpha-notify virtual function is called.</p>
+</page>

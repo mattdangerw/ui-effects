@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.set_throttle_motion_events"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_stage_set_throttle_motion_events</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>throttle</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_throttle_motion_events</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_throttle_motion_events(throttle)
+</code></synopsis>
+<p>Sets whether motion events received between redraws should
+be throttled or not. If motion events are throttled, those
+events received by the windowing system between redraws will
+be compressed so that only the last event will be propagated
+to the @stage and its actors.</p><p>This function should only be used if you want to have all
+the motion events delivered to your application code.</p>
+
+<table>
+<tr>
+<td><p>throttle :</p></td>
+<td><p>True to throttle motion events</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

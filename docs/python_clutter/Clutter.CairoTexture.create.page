@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.CairoTexture.create"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.CairoTexture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>cairo.Context</api:type>
+      </api:returns>
+      <api:name>clutter_cairo_texture_create</api:name>
+      <api:arg>
+        <api:type>ClutterCairoTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>create</title>
+<synopsis><code mime="text/x-python">
+@returns(cairo.Context)
+def create()
+</code></synopsis>
+<p>Creates a new Cairo context for the @cairo texture. It is
+similar to using clutter_cairo_texture_create_region() with @x_offset
+and @y_offset of 0, @width equal to the @cairo texture surface width
+and @height equal to the @cairo texture surface height.</p><p>&lt;warning&gt;&lt;para&gt;Do not call this function within the paint virtual
+function or from a callback to the <link xref="Clutter.Actor-paint">Clutter.Actor::paint</link>
+signal.&lt;/para&gt;&lt;/warning&gt;</p><p>to upload the contents of the context when done drawing</p><p>
+the clutter_cairo_texture_invalidate() function to obtain a
+Cairo context for 2D drawing.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a newly created Cairo context. Use cairo_destroy()</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BehaviourRotate.set_center"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourRotate" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_rotate_set_center</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviourRotate *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>z</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_center</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint, gint, gint)
+@returns(none)
+def set_center(x, y, z)
+</code></synopsis>
+<p>Sets the center of rotation. The coordinates are relative to the plane
+normal to the rotation axis set with clutter_behaviour_rotate_set_axis().</p>
+
+<table>
+<tr>
+<td><p>x :</p></td>
+<td><p>X axis center of rotation</p></td>
+</tr>
+<tr>
+<td><p>y :</p></td>
+<td><p>Y axis center of rotation</p></td>
+</tr>
+<tr>
+<td><p>z :</p></td>
+<td><p>Z axis center of rotation</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

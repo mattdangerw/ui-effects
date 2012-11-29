@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_default_paint_volume"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.PaintVolume</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_default_paint_volume</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_default_paint_volume</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.PaintVolume)
+def get_default_paint_volume()
+</code></synopsis>
+<p>Retrieves the default paint volume for @self.</p><p>This function provides the same <link xref="Clutter.PaintVolume">Clutter.PaintVolume</link> that would be
+computed by the default implementation inside <link xref="Clutter.Actor">Clutter.Actor</link> of the
+<link xref="Clutter.ActorClass">Clutter.ActorClass</link>.get_paint_volume() virtual function.</p><p>This function should only be used by <link xref="Clutter.Actor">Clutter.Actor</link> subclasses that
+cannot chain up to the parent implementation when computing their
+paint volume.</p><p><link xref="Clutter.PaintVolume">Clutter.PaintVolume</link>, relative to the <link xref="Clutter.Actor">Clutter.Actor</link>, or None if
+the actor could not compute a valid paint volume. The returned value
+is not guaranteed to be stable across multiple frames, so if you
+want to retain it, you will need to copy it using
+clutter_paint_volume_copy().</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a pointer to the default</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

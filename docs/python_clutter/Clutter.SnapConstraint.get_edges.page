@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.SnapConstraint.get_edges"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.SnapConstraint" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_snap_constraint_get_edges</api:name>
+      <api:arg>
+        <api:type>ClutterSnapConstraint *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.SnapEdge</api:type>
+        <api:name>from_edge</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.SnapEdge</api:type>
+        <api:name>to_edge</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_edges</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.SnapEdge, Clutter.SnapEdge)
+@returns(none)
+def get_edges(from_edge, to_edge)
+</code></synopsis>
+<p>Retrieves the edges used by the @constraint</p>
+
+<table>
+<tr>
+<td><p>from_edge :</p></td>
+<td><p>return location for the actor's edge, or None</p></td>
+</tr>
+<tr>
+<td><p>to_edge :</p></td>
+<td><p>return location for the source's edge, or None</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

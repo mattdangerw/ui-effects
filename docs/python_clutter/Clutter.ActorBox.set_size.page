@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ActorBox.set_size"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ActorBox" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_box_set_size</api:name>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_size</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(none)
+def set_size(width, height)
+</code></synopsis>
+<p>Sets the size of @box, maintaining the origin of the <link xref="Clutter.ActorBox">Clutter.ActorBox</link>.</p>
+
+<table>
+<tr>
+<td><p>width :</p></td>
+<td><p>the new width</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>the new height</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

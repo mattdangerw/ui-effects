@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.queue_redraw"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_queue_redraw</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>queue_redraw</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def queue_redraw()
+</code></synopsis>
+<p>Queues up a redraw of an actor and any children. The redraw occurs
+once the main loop becomes idle (after the current batch of events
+has been processed, roughly).</p><p>Applications rarely need to call this, as redraws are handled
+automatically by modification functions.</p><p>This function will not do anything if @self is not visible, or
+if the actor is inside an invisible part of the scenegraph.</p><p>Also be aware that painting is a NOP for actors with an opacity of
+0</p><p>When you are implementing a custom actor you must queue a redraw
+whenever some private state changes that will affect painting or
+picking of your actor.</p>
+
+<table>
+</table>
+</page>

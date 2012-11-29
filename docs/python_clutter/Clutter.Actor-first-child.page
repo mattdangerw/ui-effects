@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-first-child"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">first-child</title>
+  </info>
+  <title>Clutter.Actor:first-child</title>
+<synopsis><code mime="text/x-python">
+"first-child"             Clutter.Actor                : Read
+</code></synopsis>
+<p>The actor's first child.</p>
+</page>

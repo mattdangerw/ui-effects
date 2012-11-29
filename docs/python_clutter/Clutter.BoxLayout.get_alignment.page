@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BoxLayout.get_alignment"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BoxLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_box_layout_get_alignment</api:name>
+      <api:arg>
+        <api:type>ClutterBoxLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.BoxAlignment</api:type>
+        <api:name>x_align</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.BoxAlignment</api:type>
+        <api:name>y_align</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_alignment</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, Clutter.BoxAlignment, Clutter.BoxAlignment)
+@returns(none)
+def get_alignment(actor, x_align, y_align)
+</code></synopsis>
+<p>Retrieves the horizontal and vertical alignment policies for @actor
+as set using clutter_box_layout_pack() or clutter_box_layout_set_alignment()</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link> child of @layout</p></td>
+</tr>
+<tr>
+<td><p>x_align :</p></td>
+<td><p>return location for the horizontal alignment policy</p></td>
+</tr>
+<tr>
+<td><p>y_align :</p></td>
+<td><p>return location for the vertical alignment policy</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

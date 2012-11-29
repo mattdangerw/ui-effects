@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-mapped"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">mapped</title>
+  </info>
+  <title>Clutter.Actor:mapped</title>
+<synopsis><code mime="text/x-python">
+"mapped"             gboolean                : Read
+</code></synopsis>
+<p>Whether the actor is mapped (will be painted when the stage
+to which it belongs is mapped)</p>
+</page>

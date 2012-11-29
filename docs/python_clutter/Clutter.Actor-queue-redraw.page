@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-queue-redraw"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="signal"/>
+    <title type="link" role="topic">queue-redraw</title>
+  </info>
+  <title>Clutter.Actor::queue-redraw</title>
+<synopsis><code mime="text/x-python">
+def callback(actor, origin, user_param1, ...)
+</code></synopsis>
+<p>The ::queue_redraw signal is emitted when clutter_actor_queue_redraw()
+is called on @origin.</p><p>The default implementation for <link xref="Clutter.Actor">Clutter.Actor</link> chains up to the
+parent actor and queues a redraw on the parent, thus "bubbling"
+the redraw queue up through the actor graph. The default
+implementation for <link xref="Clutter.Stage">Clutter.Stage</link> queues a clutter_stage_ensure_redraw()
+in a main loop idle handler.</p><p>Note that the @origin actor may be the stage, or a container; it
+does not have to be a leaf node in the actor graph.</p><p>Toolkits embedding a <link xref="Clutter.Stage">Clutter.Stage</link> which require a redraw and
+relayout cycle can stop the emission of this signal using the
+GSignal API, redraw the UI and then call clutter_stage_ensure_redraw()
+themselves, like:</p><p>|[
+static void
+on_redraw_complete (gpointer data)
+{
+ClutterStage *stage = data;</p><p>/&amp;ast; execute the Clutter drawing pipeline &amp;ast;/
+clutter_stage_ensure_redraw (stage);
+}</p><p>static void
+on_stage_queue_redraw (ClutterStage *stage)
+{
+/&amp;ast; this prevents the default handler to run &amp;ast;/
+g_signal_stop_emission_by_name (stage, "queue-redraw");</p><p>/&amp;ast; queue a redraw with the host toolkit and call
+&amp;ast; a function when the redraw has been completed
+&amp;ast;/
+queue_a_redraw (G_CALLBACK (on_redraw_complete), stage);
+}
+]|</p><p>&lt;note&gt;&lt;para&gt;This signal is emitted before the Clutter paint
+pipeline is executed. If you want to know when the pipeline has
+been completed you should connect to the ::paint signal on the
+Stage with g_signal_connect_after().&lt;/para&gt;&lt;/note&gt;</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>instance of Clutter.Actor that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>origin :</p></td>
+<td><p>the actor which initiated the redraw request</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

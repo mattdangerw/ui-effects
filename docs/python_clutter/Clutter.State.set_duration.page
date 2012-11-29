@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.State.set_duration"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.State" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_state_set_duration</api:name>
+      <api:arg>
+        <api:type>ClutterState *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>source_state_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>target_state_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>duration</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_duration</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, utf8, guint)
+@returns(none)
+def set_duration(source_state_name, target_state_name, duration)
+</code></synopsis>
+<p>Sets the duration of a transition.</p><p>If both state names are None the default duration for @state is set.</p><p>If only @target_state_name is specified, the passed @duration becomes
+the default duration for transitions to the target state.</p><p>If both states names are specified, the passed @duration only applies
+to the specified transition.</p>
+
+<table>
+<tr>
+<td><p>source_state_name :</p></td>
+<td><p>the name of the source state, or None</p></td>
+</tr>
+<tr>
+<td><p>target_state_name :</p></td>
+<td><p>the name of the target state, or None</p></td>
+</tr>
+<tr>
+<td><p>duration :</p></td>
+<td><p>the duration of the transition, in milliseconds</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

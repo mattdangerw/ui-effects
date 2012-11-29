@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.feature_available"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_feature_available</api:name>
+      <api:arg>
+        <api:type>Clutter.FeatureFlags</api:type>
+        <api:name>feature</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>feature_available</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.FeatureFlags)
+@returns(gboolean)
+def feature_available(feature)
+</code></synopsis>
+<p>Checks whether @feature is available.  @feature can be a logical
+OR of <link xref="Clutter.FeatureFlags">Clutter.FeatureFlags</link>.</p>
+
+<table>
+<tr>
+<td><p>feature :</p></td>
+<td><p>a <link xref="Clutter.FeatureFlags">Clutter.FeatureFlags</link></p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if a feature is available</p></td>
+</tr>
+</table>
+<p>Since 0.1.1</p>
+</page>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ActorBox.from_vertices"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ActorBox" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_box_from_vertices</api:name>
+      <api:arg>
+        <api:type>[Clutter.Vertex]</api:type>
+        <api:name>verts</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>from_vertices</title>
+<synopsis><code mime="text/x-python">
+@accepts([Clutter.Vertex])
+@returns(none)
+def from_vertices(verts)
+</code></synopsis>
+<p>Calculates the bounding box represented by the four vertices; for details
+of the vertex array see clutter_actor_get_abs_allocation_vertices().</p>
+
+<table>
+<tr>
+<td><p>verts :</p></td>
+<td><p>array of four <link xref="Clutter.Vertex">Clutter.Vertex</link></p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

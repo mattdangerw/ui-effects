@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_layout_manager"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.LayoutManager</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_layout_manager</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_layout_manager</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.LayoutManager)
+def get_layout_manager()
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.LayoutManager">Clutter.LayoutManager</link> used by @self.</p><p>or None</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a pointer to the <link xref="Clutter.LayoutManager">Clutter.LayoutManager</link>,</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

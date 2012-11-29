@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Box.pack_after"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Box" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_box_pack_after</api:name>
+      <api:arg>
+        <api:type>ClutterBox *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>sibling</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>first_property</api:name>
+      </api:arg>
+      <api:varargs/>
+    </api:function>
+  </info>
+  <title>pack_after</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, Clutter.Actor, utf8, &lt;varargs&gt;)
+@returns(none)
+def pack_after(actor, sibling, first_property, None)
+</code></synopsis>
+<p>Adds @actor to @box, placing it after @sibling, and sets layout
+properties at the same time, if the <link xref="Clutter.LayoutManager">Clutter.LayoutManager</link> used by
+@box supports them</p><p>If @sibling is None then @actor is placed at the end of the
+list of children, to be allocated and painted after every other child</p><p>This function is a wrapper around clutter_container_add_actor(),
+clutter_container_raise_child() and clutter_layout_manager_child_set()</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+<tr>
+<td><p>sibling :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link> or None</p></td>
+</tr>
+<tr>
+<td><p>first_property :</p></td>
+<td><p>the name of the first property to set, or None</p></td>
+</tr>
+<tr>
+<td><p>None :</p></td>
+<td></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

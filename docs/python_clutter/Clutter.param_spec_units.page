@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.param_spec_units"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.ParamSpec</api:type>
+      </api:returns>
+      <api:name>clutter_param_spec_units</api:name>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>nick</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>blurb</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.UnitType</api:type>
+        <api:name>default_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>minimum</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>maximum</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>default_value</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.ParamFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>param_spec_units</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, utf8, utf8, Clutter.UnitType, gfloat, gfloat, gfloat, GObject.ParamFlags)
+@returns(GObject.ParamSpec)
+def param_spec_units(name, nick, blurb, default_type, minimum, maximum, default_value, flags)
+</code></synopsis>
+<p>Creates a <link xref="GParamSpec">GParamSpec</link> for properties using <link xref="Clutter.Units">Clutter.Units</link>.</p>
+
+<table>
+<tr>
+<td><p>name :</p></td>
+<td><p>name of the property</p></td>
+</tr>
+<tr>
+<td><p>nick :</p></td>
+<td><p>short name</p></td>
+</tr>
+<tr>
+<td><p>blurb :</p></td>
+<td><p>description (can be translatable)</p></td>
+</tr>
+<tr>
+<td><p>default_type :</p></td>
+<td><p>the default type for the <link xref="Clutter.Units">Clutter.Units</link></p></td>
+</tr>
+<tr>
+<td><p>minimum :</p></td>
+<td><p>lower boundary</p></td>
+</tr>
+<tr>
+<td><p>maximum :</p></td>
+<td><p>higher boundary</p></td>
+</tr>
+<tr>
+<td><p>default_value :</p></td>
+<td><p>default value</p></td>
+</tr>
+<tr>
+<td><p>flags :</p></td>
+<td><p>flags for the param spec</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the newly created <link xref="GParamSpec">GParamSpec</link></p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

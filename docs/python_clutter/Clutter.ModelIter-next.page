@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="Clutter.ModelIter-next"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ModelIter" group="vfunc"/>
+    <title type="link" role="topic">next</title>
+  </info>
+  <title>Clutter.ModelIter.next</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.ModelIter)
+def do_next(self, ):
+</code></synopsis>
+<p>Updates the @iter to point at the next position in the model.
+The model implementation should take into account the presence of
+a filter function.</p><p>row in the model.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The passed iterator, updated to point at the next</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

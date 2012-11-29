@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.get_cursor_position"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gint</api:type>
+      </api:returns>
+      <api:name>clutter_text_get_cursor_position</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_cursor_position</title>
+<synopsis><code mime="text/x-python">
+@returns(gint)
+def get_cursor_position()
+</code></synopsis>
+<p>Retrieves the cursor position.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the cursor position, in characters</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

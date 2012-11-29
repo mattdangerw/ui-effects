@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Clutter.LayoutManager-allocate"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutManager" group="vfunc"/>
+    <title type="link" role="topic">allocate</title>
+  </info>
+  <title>Clutter.LayoutManager.allocate</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Container, Clutter.ActorBox, Clutter.AllocationFlags)
+@returns(none)
+def do_allocate(self, container, allocation, flags):
+</code></synopsis>
+<p>Allocates the children of @container given an area</p><p>See also clutter_actor_allocate()</p>
+
+<table>
+<tr>
+<td><p>container :</p></td>
+<td><p>the <link xref="Clutter.Container">Clutter.Container</link> using @manager</p></td>
+</tr>
+<tr>
+<td><p>allocation :</p></td>
+<td><p>the <link xref="Clutter.ActorBox">Clutter.ActorBox</link> containing the allocated area of @container</p></td>
+</tr>
+<tr>
+<td><p>flags :</p></td>
+<td><p>the allocation flags</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

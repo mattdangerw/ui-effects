@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.AnimatorKey.get_progress"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.AnimatorKey" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gdouble</api:type>
+      </api:returns>
+      <api:name>clutter_animator_key_get_progress</api:name>
+    </api:function>
+  </info>
+  <title>get_progress</title>
+<synopsis><code mime="text/x-python">
+@returns(gdouble)
+def get_progress()
+</code></synopsis>
+<p>Retrieves the progress of an clutter_animator_key</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the progress defined for a <link xref="Clutter.Animator">Clutter.Animator</link> key.</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

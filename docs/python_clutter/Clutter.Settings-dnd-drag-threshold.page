@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Settings-dnd-drag-threshold"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Settings" group="property"/>
+    <title type="link" role="topic">dnd-drag-threshold</title>
+  </info>
+  <title>Clutter.Settings:dnd-drag-threshold</title>
+<synopsis><code mime="text/x-python">
+"dnd-drag-threshold"             gint                : Read / Write
+</code></synopsis>
+<p>The default distance that the cursor of a pointer device
+should travel before a drag operation should start.</p>
+</page>

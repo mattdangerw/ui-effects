@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Box-color-set"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Box" group="property"/>
+    <title type="link" role="topic">color-set</title>
+  </info>
+  <title>Clutter.Box:color-set</title>
+<synopsis><code mime="text/x-python">
+"color-set"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the <link xref="Clutter.Box-color">Clutter.Box:color</link> property has been set</p>
+</page>

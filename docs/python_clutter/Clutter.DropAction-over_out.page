@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="Clutter.DropAction-over_out"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DropAction" group="vfunc"/>
+    <title type="link" role="topic">over_out</title>
+  </info>
+  <title>Clutter.DropAction.over_out</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def do_over_out(self, actor):
+</code></synopsis>
+
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td></td>
+</tr>
+</table>
+</page>

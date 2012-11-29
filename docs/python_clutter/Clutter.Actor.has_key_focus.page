@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.has_key_focus"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_actor_has_key_focus</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>has_key_focus</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def has_key_focus()
+</code></synopsis>
+<p>Checks whether @self is the <link xref="Clutter.Actor">Clutter.Actor</link> that has key focus</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the actor has key focus, and False otherwise</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

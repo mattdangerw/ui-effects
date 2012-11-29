@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animator.set_key"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animator" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Animator</api:type>
+      </api:returns>
+      <api:name>clutter_animator_set_key</api:name>
+      <api:arg>
+        <api:type>ClutterAnimator *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>object</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>mode</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>progress</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_key</title>
+<synopsis><code mime="text/x-python">
+@accepts(GObject.Object, utf8, guint, gdouble, GObject.Value)
+@returns(Clutter.Animator)
+def set_key(object, property_name, mode, progress, value)
+</code></synopsis>
+<p>Sets a single key in the <link xref="Clutter.Animator">Clutter.Animator</link> for the @property_name of
+@object at @progress.</p><p>See also: clutter_animator_set()</p>
+
+<table>
+<tr>
+<td><p>object :</p></td>
+<td><p>a <link xref="GObject">GObject</link></p></td>
+</tr>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>the property to specify a key for</p></td>
+</tr>
+<tr>
+<td><p>mode :</p></td>
+<td><p>the id of the alpha function to use</p></td>
+</tr>
+<tr>
+<td><p>progress :</p></td>
+<td><p>the normalized range at which stage of the animation this value applies</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>the value property_name should have at progress.</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The animator instance</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

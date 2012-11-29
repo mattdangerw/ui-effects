@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.move_anchor_point_from_gravity"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_move_anchor_point_from_gravity</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Gravity</api:type>
+        <api:name>gravity</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>move_anchor_point_from_gravity</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Gravity)
+@returns(none)
+def move_anchor_point_from_gravity(gravity)
+</code></synopsis>
+<p>Sets an anchor point on the actor based on the given gravity, adjusting the
+actor postion so that its relative position within its parent remains
+unchanged.</p><p>Since version 1.0 the anchor point will be stored as a gravity so
+that if the actor changes size then the anchor point will move. For
+example, if you set the anchor point to %CLUTTER_GRAVITY_SOUTH_EAST
+and later double the size of the actor, the anchor point will move
+to the bottom right.</p>
+
+<table>
+<tr>
+<td><p>gravity :</p></td>
+<td><p><link xref="Clutter.Gravity">Clutter.Gravity</link>.</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

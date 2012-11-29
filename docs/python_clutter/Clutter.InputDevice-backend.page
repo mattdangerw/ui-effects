@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.InputDevice-backend"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.InputDevice" group="property"/>
+    <title type="link" role="topic">backend</title>
+  </info>
+  <title>Clutter.InputDevice:backend</title>
+<synopsis><code mime="text/x-python">
+"backend"             Clutter.Backend                : Read / Write / Construct Only
+</code></synopsis>
+<p>The <link xref="Clutter.Backend">Clutter.Backend</link> that created the device.</p>
+</page>

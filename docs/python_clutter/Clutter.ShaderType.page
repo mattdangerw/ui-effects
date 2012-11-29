@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="Clutter.ShaderType"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.ShaderType</title>
+  <p>The type of GLSL shader program</p>
+<table>
+<tr>
+<td><p>ShaderType.VERTEX_SHADER :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>ShaderType.FRAGMENT_SHADER :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

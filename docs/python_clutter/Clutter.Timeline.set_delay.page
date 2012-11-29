@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.set_delay"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_set_delay</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>msecs</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_delay</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint)
+@returns(none)
+def set_delay(msecs)
+</code></synopsis>
+<p>Sets the delay, in milliseconds, before @timeline should start.</p>
+
+<table>
+<tr>
+<td><p>msecs :</p></td>
+<td><p>delay in milliseconds</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

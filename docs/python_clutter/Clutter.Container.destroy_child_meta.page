@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Container.destroy_child_meta"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_container_destroy_child_meta</api:name>
+      <api:arg>
+        <api:type>ClutterContainer *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>destroy_child_meta</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def destroy_child_meta(actor)
+</code></synopsis>
+<p>Destroys the <link xref="Clutter.ChildMeta">Clutter.ChildMeta</link> wrapping @actor inside the
+@container, if any.</p><p>This function is only useful when removing a <link xref="Clutter.Actor">Clutter.Actor</link> to
+a <link xref="Clutter.Container">Clutter.Container</link> implementation outside of the
+<link xref="Clutter.Container-add">Clutter.Container::add</link>() virtual function implementation.</p><p>Applications should not call this function.</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

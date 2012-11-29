@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.add_child"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_add_child</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>child</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>add_child</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def add_child(child)
+</code></synopsis>
+<p>Adds @child to the children of @self.</p><p>This function will acquire a reference on @child that will only
+be released when calling clutter_actor_remove_child().</p><p>This function will take into consideration the <link xref="Clutter.Actor-depth">Clutter.Actor:depth</link>
+of @child, and will keep the list of children sorted.</p><p>This function will emit the <link xref="Clutter.Container-actor-added">Clutter.Container::actor-added</link> signal
+on @self.</p>
+
+<table>
+<tr>
+<td><p>child :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>threads_add_repaint_func</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">threads_add_repaint_func</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(GLib.SourceFunc, gpointer, GLib.DestroyNotify)
+@returns(guint)
+def threads_add_repaint_func(func, data, notify)</pre></div></div></div></div></div>
+<p class="p">Adds a function to be called whenever Clutter is processing a new
+frame.</p>
+<p class="p">If the function returns False it is automatically removed from the
+list of repaint functions and will not be called again.</p>
+<p class="p">This function is guaranteed to be called from within the same thread
+that called clutter_main(), and while the Clutter lock is being held;
+the function will be called within the main loop, so it is imperative
+that it does not block, otherwise the frame time budget may be lost.</p>
+<p class="p">A repaint function is useful to ensure that an update of the scenegraph
+is performed before the scenegraph is repainted; for instance, uploading
+a frame from a video into a <span class=" link"><a href="Clutter.Texture.html" title="Clutter.Texture">Clutter.Texture</a></span>. By default, a repaint
+function added using this function will be invoked prior to the frame
+being processed.</p>
+<p class="p">Adding a repaint function does not automatically ensure that a new
+frame will be queued.</p>
+<p class="p">When the repaint function is removed (either because it returned False
+or because clutter_threads_remove_repaint_func() has been called) the
+@notify function will be called, if any is set.</p>
+<p class="p">See also: clutter_threads_add_repaint_func_full()</p>
+<p class="p">can use the returned integer to remove the repaint function by
+calling clutter_threads_remove_repaint_func().</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">func :</p></td>
+<td><p class="p">the function to be called within the paint cycle</p></td>
+</tr>
+<tr>
+<td><p class="p">data :</p></td>
+<td><p class="p">data to be passed to the function, or None</p></td>
+</tr>
+<tr>
+<td><p class="p">notify :</p></td>
+<td><p class="p">function to be called when removing the repaint function, or None</p></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">the ID (greater than 0) of the repaint function. You</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.0</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Clutter Documentation">Clutter Documentation</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

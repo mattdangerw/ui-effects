@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_selection_bound"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_selection_bound</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>selection_bound</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_selection_bound</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint)
+@returns(none)
+def set_selection_bound(selection_bound)
+</code></synopsis>
+<p>Sets the other end of the selection, starting from the current
+cursor position.</p><p>If @selection_bound is -1, the selection unset.</p>
+
+<table>
+<tr>
+<td><p>selection_bound :</p></td>
+<td><p>the position of the end of the selection, in characters</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

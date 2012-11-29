@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.FlowLayout-min-column-width"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.FlowLayout" group="property"/>
+    <title type="link" role="topic">min-column-width</title>
+  </info>
+  <title>Clutter.FlowLayout:min-column-width</title>
+<synopsis><code mime="text/x-python">
+"min-column-width"             gfloat                : Read / Write
+</code></synopsis>
+<p>Minimum width for each column in the layout, in pixels</p>
+</page>

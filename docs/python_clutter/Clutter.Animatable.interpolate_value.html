@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>interpolate_value</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Animatable.html" title="Clutter.Animatable">Clutter.Animatable</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">interpolate_value</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(utf8, Clutter.Interval, gdouble, GObject.Value)
+@returns(gboolean)
+def interpolate_value(property_name, interval, progress, value)</pre></div></div></div></div></div>
+<p class="p">Asks a <span class=" link"><a href="Clutter.Animatable.html" title="Clutter.Animatable">Clutter.Animatable</a></span> implementation to interpolate a
+a named property between the initial and final values of
+a <span class=" link"><a href="Clutter.Interval.html" title="Clutter.Interval">Clutter.Interval</a></span>, using @progress as the interpolation
+value, and store the result inside @value.</p>
+<p class="p">This function should be used for every property animation
+involving <span class=" link"><a href="Clutter.Animatable.html" title="Clutter.Animatable">Clutter.Animatable</a></span>&lt;!-- --&gt;s.</p>
+<p class="p">This function replaces clutter_animatable_animate_property().</p>
+<p class="p">and False otherwise</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">property_name :</p></td>
+<td><p class="p">the name of the property to interpolate</p></td>
+</tr>
+<tr>
+<td><p class="p">interval :</p></td>
+<td><p class="p">a <span class=" link"><a href="Clutter.Interval.html" title="Clutter.Interval">Clutter.Interval</a></span> with the animation range</p></td>
+</tr>
+<tr>
+<td><p class="p">progress :</p></td>
+<td><p class="p">the progress to use to interpolate between the initial and final values of the @interval</p></td>
+</tr>
+<tr>
+<td><p class="p">value :</p></td>
+<td><p class="p">return location for an initialized <span class=" link"><a href="GValue.html" title="GValue">GValue</a></span> using the same type of the @interval</p></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">True if the interpolation was successful,</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.8</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Animatable.html" title="Clutter.Animatable">Clutter.Animatable</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

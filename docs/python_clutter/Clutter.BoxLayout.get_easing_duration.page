@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BoxLayout.get_easing_duration"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BoxLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint</api:type>
+      </api:returns>
+      <api:name>clutter_box_layout_get_easing_duration</api:name>
+      <api:arg>
+        <api:type>ClutterBoxLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_easing_duration</title>
+<synopsis><code mime="text/x-python">
+@returns(guint)
+def get_easing_duration()
+</code></synopsis>
+<p>Retrieves the duration set using clutter_box_layout_set_easing_duration()</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the duration of the animations, in milliseconds</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

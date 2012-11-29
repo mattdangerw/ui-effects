@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.should_pick_paint"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_actor_should_pick_paint</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>should_pick_paint</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def should_pick_paint()
+</code></synopsis>
+<p>Should be called inside the implementation of the
+<link xref="Clutter.Actor-pick">Clutter.Actor::pick</link> virtual function in order to check whether
+the actor should paint itself in pick mode or not.</p><p>This function should never be called directly by applications.</p><p>False otherwise</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the actor should paint its silhouette,</p></td>
+</tr>
+</table>
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Texture.get_load_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_texture_get_load_async</api:name>
+      <api:arg>
+        <api:type>ClutterTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_load_async</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def get_load_async()
+</code></synopsis>
+<p>Retrieves the value set using clutter_texture_set_load_async()</p><p>disk asynchronously</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the <link xref="Clutter.Texture">Clutter.Texture</link> should load the data from</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

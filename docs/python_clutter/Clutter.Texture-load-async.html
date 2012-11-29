@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Clutter.Texture:load-async</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Texture.html" title="Clutter.Texture">Clutter.Texture</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Clutter.Texture:load-async</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">"load-async"             gboolean                : Write</pre></div></div></div></div></div>
+<p class="p">Tries to load a texture from a filename by using a local thread to perform
+the read operations. The initially created texture has dimensions 0x0 when
+the true size becomes available the <span class=" link"><a href="Clutter.Texture-size-change.html" title="Clutter.Texture::size-change">Clutter.Texture::size-change</a></span> signal is
+emitted and when the image has completed loading the
+<span class=" link"><a href="Clutter.Texture-load-finished.html" title="Clutter.Texture::load-finished">Clutter.Texture::load-finished</a></span> signal is emitted.</p>
+<p class="p">Threading is only enabled if g_thread_init() has been called prior to
+clutter_init(), otherwise <span class=" link"><a href="Clutter.Texture.html" title="Clutter.Texture">Clutter.Texture</a></span> will use the main loop to load
+the image.</p>
+<p class="p">The upload of the texture data on the GL pipeline is not asynchronous, as
+it must be performed from within the same thread that called
+clutter_main().</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Texture.html" title="Clutter.Texture">Clutter.Texture</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

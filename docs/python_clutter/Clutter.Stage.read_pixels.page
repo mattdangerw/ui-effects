@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.read_pixels"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>[guint8]</api:type>
+      </api:returns>
+      <api:name>clutter_stage_read_pixels</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>read_pixels</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint, gint, gint, gint)
+@returns([guint8])
+def read_pixels(x, y, width, height)
+</code></synopsis>
+<p>Makes a screenshot of the stage in RGBA 8bit data, returns a
+linear buffer with @width * 4 as rowstride.</p><p>The alpha data contained in the returned buffer is driver-dependent,
+and not guaranteed to hold any sensible value.</p><p>or None if the read failed. Use g_free() on the returned data
+to release the resources it has allocated.</p>
+
+<table>
+<tr>
+<td><p>x :</p></td>
+<td><p>x coordinate of the first pixel that is read from stage</p></td>
+</tr>
+<tr>
+<td><p>y :</p></td>
+<td><p>y coordinate of the first pixel that is read from stage</p></td>
+</tr>
+<tr>
+<td><p>width :</p></td>
+<td><p>Width dimention of pixels to be read, or -1 for the entire stage width</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>Height dimention of pixels to be read, or -1 for the entire stage height</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a pointer to newly allocated memory with the buffer</p></td>
+</tr>
+</table>
+</page>

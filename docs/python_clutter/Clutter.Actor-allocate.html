@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Clutter.Actor.allocate</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Clutter.Actor.allocate</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(Clutter.ActorBox, Clutter.AllocationFlags)
+@returns(none)
+def do_allocate(self, box, flags):</pre></div></div></div></div></div>
+<p class="p">Called by the parent of an actor to assign the actor its size.
+Should never be called by applications (except when implementing
+a container or layout manager).</p>
+<p class="p">Actors can know from their allocation box whether they have moved
+with respect to their parent actor. The @flags parameter describes
+additional information about the allocation, for instance whether
+the parent has moved with respect to the stage, for example because
+a grandparent's origin has moved.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">box :</p></td>
+<td><p class="p">new allocation of the actor, in parent-relative coordinates</p></td>
+</tr>
+<tr>
+<td><p class="p">flags :</p></td>
+<td><p class="p">flags that control the allocation</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 0.8</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

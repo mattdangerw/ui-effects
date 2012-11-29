@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Script.get_states"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Script" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.State</api:type>
+      </api:returns>
+      <api:name>clutter_script_get_states</api:name>
+      <api:arg>
+        <api:type>ClutterScript *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_states</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(Clutter.State)
+def get_states(name)
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.State">Clutter.State</link> for the given @state_name.</p><p>If @name is None, this function will return the default
+<link xref="Clutter.State">Clutter.State</link> instance.</p><p>given name. The <link xref="Clutter.State">Clutter.State</link> is owned by the <link xref="Clutter.Script">Clutter.Script</link> instance
+and it should not be unreferenced</p>
+
+<table>
+<tr>
+<td><p>name :</p></td>
+<td><p>the name of the <link xref="Clutter.State">Clutter.State</link>, or None</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a pointer to the <link xref="Clutter.State">Clutter.State</link> for the</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

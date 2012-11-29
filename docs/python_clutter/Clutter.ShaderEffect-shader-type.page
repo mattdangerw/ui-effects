@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.ShaderEffect-shader-type"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ShaderEffect" group="property"/>
+    <title type="link" role="topic">shader-type</title>
+  </info>
+  <title>Clutter.ShaderEffect:shader-type</title>
+<synopsis><code mime="text/x-python">
+"shader-type"             Clutter.ShaderType                : Write / Construct Only
+</code></synopsis>
+<p>The type of shader that is used by the effect. This property
+should be set by the constructor of <link xref="Clutter.ShaderEffect">Clutter.ShaderEffect</link>
+sub-classes.</p>
+</page>

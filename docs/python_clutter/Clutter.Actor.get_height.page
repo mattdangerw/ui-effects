@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_height"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gfloat</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_height</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_height</title>
+<synopsis><code mime="text/x-python">
+@returns(gfloat)
+def get_height()
+</code></synopsis>
+<p>Retrieves the height of a <link xref="Clutter.Actor">Clutter.Actor</link>.</p><p>If the actor has a valid allocation, this function will return the
+height of the allocated area given to the actor.</p><p>If the actor does not have a valid allocation, this function will
+return the actor's natural height, that is the preferred height of
+the actor.</p><p>If you care whether you get the preferred height or the height that
+has been assigned to the actor, you should probably call a different
+function like clutter_actor_get_allocation_box() to retrieve the
+allocated size or clutter_actor_get_preferred_height() to retrieve the
+preferred height.</p><p>If an actor has a fixed height, for instance a height that has been
+assigned using clutter_actor_set_height(), the height returned will
+be the same value.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the height of the actor, in pixels</p></td>
+</tr>
+</table>
+</page>

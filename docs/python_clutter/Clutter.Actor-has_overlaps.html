@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Clutter.Actor.has_overlaps</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Clutter.Actor.has_overlaps</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@returns(gboolean)
+def do_has_overlaps(self, ):</pre></div></div></div></div></div>
+<p class="p">Asks the actor's implementation whether it may contain overlapping
+primitives.</p>
+<p class="p">For example; Clutter may use this to determine whether the painting
+should be redirected to an offscreen buffer to correctly implement
+the opacity property.</p>
+<p class="p">Custom actors can override the default response by implementing the
+<span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> &lt;function&gt;has_overlaps&lt;/function&gt; virtual function. See
+clutter_actor_set_offscreen_redirect() for more information.</p>
+<p class="p">False otherwise</p>
+<div class="table"><div class="inner"><div class="region"><table class="table"><tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">True if the actor may have overlapping primitives, and</p></td>
+</tr></table></div></div></div>
+<p class="p">Since 1.8</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

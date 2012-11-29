@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="Clutter.TouchEvent"
+      type="guide"
+      style="record"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>ClutterTouchEvent</title>
+  <p>Used for touch events.
+
+The @type field will be one of %CLUTTER_TOUCH_BEGIN, %CLUTTER_TOUCH_END,
+%CLUTTER_TOUCH_UPDATE, or %CLUTTER_TOUCH_CANCEL.
+
+Touch events are grouped into sequences; each touch sequence will begin
+with a %CLUTTER_TOUCH_BEGIN event, progress with %CLUTTER_TOUCH_UPDATE
+events, and end either with a %CLUTTER_TOUCH_END event or with a
+%CLUTTER_TOUCH_CANCEL event.
+
+With multi-touch capable devices there can be multiple event sequence
+running at the same time.</p>
+</page>

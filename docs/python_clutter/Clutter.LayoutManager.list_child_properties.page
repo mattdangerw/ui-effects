@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.LayoutManager.list_child_properties"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutManager" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>[GObject.ParamSpec]</api:type>
+      </api:returns>
+      <api:name>clutter_layout_manager_list_child_properties</api:name>
+      <api:arg>
+        <api:type>ClutterLayoutManager *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>n_pspecs</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>list_child_properties</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint)
+@returns([GObject.ParamSpec])
+def list_child_properties(n_pspecs)
+</code></synopsis>
+<p>Retrieves all the <link xref="GParamSpec">GParamSpec</link>&lt;!-- --&gt;s for the layout properties
+stored inside the <link xref="Clutter.LayoutMeta">Clutter.LayoutMeta</link> sub-class used by @manager</p><p>None-terminated array of <link xref="GParamSpec">GParamSpec</link>&lt;!-- --&gt;s. Use g_free() to free the
+resources allocated for the array</p>
+
+<table>
+<tr>
+<td><p>n_pspecs :</p></td>
+<td><p>return location for the number of returned <link xref="GParamSpec">GParamSpec</link>&lt;!-- --&gt;s</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the newly-allocated,</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-single-line-mode"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="property"/>
+    <title type="link" role="topic">single-line-mode</title>
+  </info>
+  <title>Clutter.Text:single-line-mode</title>
+<synopsis><code mime="text/x-python">
+"single-line-mode"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the <link xref="Clutter.Text">Clutter.Text</link> actor should be in single line mode
+or not. A single line <link xref="Clutter.Text">Clutter.Text</link> actor will only contain a
+single line of text, scrolling it in case its length is bigger
+than the allocated size.</p><p>Setting this property will also set the <link xref="Clutter.Text-activatable">Clutter.Text:activatable</link>
+property as a side-effect.</p><p>The <link xref="Clutter.Text-single-line-mode">Clutter.Text:single-line-mode</link> property is used only if the
+<link xref="Clutter.Text-editable">Clutter.Text:editable</link> property is set to True.</p>
+</page>

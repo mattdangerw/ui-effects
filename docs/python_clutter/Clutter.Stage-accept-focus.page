@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Stage-accept-focus"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="property"/>
+    <title type="link" role="topic">accept-focus</title>
+  </info>
+  <title>Clutter.Stage:accept-focus</title>
+<synopsis><code mime="text/x-python">
+"accept-focus"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the <link xref="Clutter.Stage">Clutter.Stage</link> should accept key focus when shown.</p>
+</page>

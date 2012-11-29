@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Shader.set_uniform"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Shader" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_shader_set_uniform</api:name>
+      <api:arg>
+        <api:type>ClutterShader *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_uniform</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, GObject.Value)
+@returns(none)
+def set_uniform(name, value)
+</code></synopsis>
+<p>Sets a user configurable variable in the GLSL shader programs attached to
+a <link xref="Clutter.Shader">Clutter.Shader</link>.</p>
+
+<table>
+<tr>
+<td><p>name :</p></td>
+<td><p>name of uniform in GLSL shader program to set.</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>a <link xref="Clutter.ShaderFloat">Clutter.ShaderFloat</link>, <link xref="Clutter.ShaderInt">Clutter.ShaderInt</link> or <link xref="Clutter.ShaderMatrix">Clutter.ShaderMatrix</link> <link xref="GValue">GValue</link>.</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

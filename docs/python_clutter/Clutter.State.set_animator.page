@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.State.set_animator"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.State" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_state_set_animator</api:name>
+      <api:arg>
+        <api:type>ClutterState *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>source_state_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>target_state_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Animator</api:type>
+        <api:name>animator</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_animator</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, utf8, Clutter.Animator)
+@returns(none)
+def set_animator(source_state_name, target_state_name, animator)
+</code></synopsis>
+<p>Specifies a <link xref="Clutter.Animator">Clutter.Animator</link> to be used when transitioning between
+the two named states.</p><p>The @animator allows specifying a transition between the state that is
+more elaborate than the basic transitions allowed by the tweening of
+properties defined in the <link xref="Clutter.State">Clutter.State</link> keys.</p><p>If @animator is None it will unset an existing animator.</p><p><link xref="Clutter.State">Clutter.State</link> will take a reference on the passed @animator, if any</p>
+
+<table>
+<tr>
+<td><p>source_state_name :</p></td>
+<td><p>the name of a source state</p></td>
+</tr>
+<tr>
+<td><p>target_state_name :</p></td>
+<td><p>the name of a target state</p></td>
+</tr>
+<tr>
+<td><p>animator :</p></td>
+<td><p>a <link xref="Clutter.Animator">Clutter.Animator</link> instance, or None to unset an existing <link xref="Clutter.Animator">Clutter.Animator</link></p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

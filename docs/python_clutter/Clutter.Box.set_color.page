@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Box.set_color"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Box" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_box_set_color</api:name>
+      <api:arg>
+        <api:type>ClutterBox *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Color</api:type>
+        <api:name>color</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_color</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Color)
+@returns(none)
+def set_color(color)
+</code></synopsis>
+<p>Sets (or unsets) the background color for @box</p>
+
+<table>
+<tr>
+<td><p>color :</p></td>
+<td><p>the background color, or None to unset</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

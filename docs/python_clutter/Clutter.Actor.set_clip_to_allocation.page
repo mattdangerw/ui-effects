@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_clip_to_allocation"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_clip_to_allocation</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>clip_set</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_clip_to_allocation</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_clip_to_allocation(clip_set)
+</code></synopsis>
+<p>Sets whether @self should be clipped to the same size as its
+allocation</p>
+
+<table>
+<tr>
+<td><p>clip_set :</p></td>
+<td><p>True to apply a clip tracking the allocation</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

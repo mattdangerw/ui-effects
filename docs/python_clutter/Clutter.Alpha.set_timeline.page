@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Alpha.set_timeline"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Alpha" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_alpha_set_timeline</api:name>
+      <api:arg>
+        <api:type>ClutterAlpha *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Timeline</api:type>
+        <api:name>timeline</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_timeline</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Timeline)
+@returns(none)
+def set_timeline(timeline)
+</code></synopsis>
+<p>Binds @alpha to @timeline.</p>
+
+<table>
+<tr>
+<td><p>timeline :</p></td>
+<td><p>A <link xref="Clutter.Timeline">Clutter.Timeline</link></p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

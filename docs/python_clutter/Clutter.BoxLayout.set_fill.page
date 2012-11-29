@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BoxLayout.set_fill"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BoxLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_box_layout_set_fill</api:name>
+      <api:arg>
+        <api:type>ClutterBoxLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>x_fill</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>y_fill</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_fill</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, gboolean, gboolean)
+@returns(none)
+def set_fill(actor, x_fill, y_fill)
+</code></synopsis>
+<p>Sets the horizontal and vertical fill policies for @actor
+inside @layout</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link> child of @layout</p></td>
+</tr>
+<tr>
+<td><p>x_fill :</p></td>
+<td><p>whether @actor should fill horizontally the allocated space</p></td>
+</tr>
+<tr>
+<td><p>y_fill :</p></td>
+<td><p>whether @actor should fill vertically the allocated space</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

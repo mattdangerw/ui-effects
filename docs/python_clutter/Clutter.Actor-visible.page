@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-visible"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">visible</title>
+  </info>
+  <title>Clutter.Actor:visible</title>
+<synopsis><code mime="text/x-python">
+"visible"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the actor is set to be visible or not</p><p>See also <link xref="Clutter.Actor-mapped">Clutter.Actor:mapped</link></p>
+</page>

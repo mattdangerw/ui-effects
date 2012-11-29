@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.TextBuffer.set_text"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TextBuffer" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_buffer_set_text</api:name>
+      <api:arg>
+        <api:type>ClutterTextBuffer *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>chars</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>n_chars</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_text</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, gint)
+@returns(none)
+def set_text(chars, n_chars)
+</code></synopsis>
+<p>Sets the text in the buffer.</p><p>This is roughly equivalent to calling clutter_text_buffer_delete_text()
+and clutter_text_buffer_insert_text().</p><p>Note that @n_chars is in characters, not in bytes.</p>
+
+<table>
+<tr>
+<td><p>chars :</p></td>
+<td><p>the new text</p></td>
+</tr>
+<tr>
+<td><p>n_chars :</p></td>
+<td><p>the number of characters in @text, or -1</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

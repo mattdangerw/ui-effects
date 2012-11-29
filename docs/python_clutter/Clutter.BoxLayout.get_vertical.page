@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BoxLayout.get_vertical"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BoxLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_box_layout_get_vertical</api:name>
+      <api:arg>
+        <api:type>ClutterBoxLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_vertical</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def get_vertical()
+</code></synopsis>
+<p>Retrieves the orientation of the @layout as set using the
+clutter_box_layout_set_vertical() function</p><p>vertically, and False otherwise</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the <link xref="Clutter.BoxLayout">Clutter.BoxLayout</link> is arranging its children</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

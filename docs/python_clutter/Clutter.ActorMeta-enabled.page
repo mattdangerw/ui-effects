@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.ActorMeta-enabled"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ActorMeta" group="property"/>
+    <title type="link" role="topic">enabled</title>
+  </info>
+  <title>Clutter.ActorMeta:enabled</title>
+<synopsis><code mime="text/x-python">
+"enabled"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether or not the <link xref="Clutter.ActorMeta">Clutter.ActorMeta</link> is enabled</p>
+</page>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Clutter.BehaviourPath-knot-reached"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourPath" group="signal"/>
+    <title type="link" role="topic">knot-reached</title>
+  </info>
+  <title>Clutter.BehaviourPath::knot-reached</title>
+<synopsis><code mime="text/x-python">
+def callback(behaviour_path, knot_num, user_param1, ...)
+</code></synopsis>
+<p>This signal is emitted each time a node defined inside the path
+is reached.</p>
+
+<table>
+<tr>
+<td><p>behaviour_path :</p></td>
+<td><p>instance of Clutter.BehaviourPath that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>knot_num :</p></td>
+<td><p>the index of the <link xref="Clutter.Knot">Clutter.Knot</link> reached</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

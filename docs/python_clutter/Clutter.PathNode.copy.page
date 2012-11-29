@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PathNode.copy"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PathNode" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.PathNode</api:type>
+      </api:returns>
+      <api:name>clutter_path_node_copy</api:name>
+    </api:function>
+  </info>
+  <title>copy</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.PathNode)
+def copy()
+</code></synopsis>
+<p>Makes an allocated copy of a node.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the copied node.</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

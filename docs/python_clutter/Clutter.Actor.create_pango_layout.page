@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.create_pango_layout"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Pango.Layout</api:type>
+      </api:returns>
+      <api:name>clutter_actor_create_pango_layout</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>text</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>create_pango_layout</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(Pango.Layout)
+def create_pango_layout(text)
+</code></synopsis>
+<p>Creates a new <link xref="PangoLayout">PangoLayout</link> from the same <link xref="PangoContext">PangoContext</link> used
+by the <link xref="Clutter.Actor">Clutter.Actor</link>. The <link xref="PangoLayout">PangoLayout</link> is already configured
+with the font map, resolution and font options, and the
+given @text.</p><p>If you want to keep around a <link xref="PangoLayout">PangoLayout</link> created by this
+function you will have to connect to the <link xref="Clutter.Backend-font-changed">Clutter.Backend::font-changed</link>
+and <link xref="Clutter.Backend-resolution-changed">Clutter.Backend::resolution-changed</link> signals, and call
+pango_layout_context_changed() in response to them.</p><p>Use g_object_unref() when done</p>
+
+<table>
+<tr>
+<td><p>text :</p></td>
+<td><p>(allow-none) the text to set on the <link xref="PangoLayout">PangoLayout</link>, or None</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the newly created <link xref="PangoLayout">PangoLayout</link>.</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

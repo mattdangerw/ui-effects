@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-natural-width"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">natural-width</title>
+  </info>
+  <title>Clutter.Actor:natural-width</title>
+<synopsis><code mime="text/x-python">
+"natural-width"             gfloat                : Read / Write
+</code></synopsis>
+<p>A forced natural width request for the actor, in pixels</p><p>Writing this property sets the <link xref="Clutter.Actor-natural-width-set">Clutter.Actor:natural-width-set</link>
+property as well, as a side effect. This property overrides the
+usual width request of the actor</p>
+</page>

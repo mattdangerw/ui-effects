@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.delete_text"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_delete_text</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gssize</api:type>
+        <api:name>start_pos</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gssize</api:type>
+        <api:name>end_pos</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>delete_text</title>
+<synopsis><code mime="text/x-python">
+@accepts(gssize, gssize)
+@returns(none)
+def delete_text(start_pos, end_pos)
+</code></synopsis>
+<p>Deletes the text inside a <link xref="Clutter.Text">Clutter.Text</link> actor between @start_pos
+and @end_pos.</p><p>The starting and ending positions are expressed in characters,
+not in bytes.</p>
+
+<table>
+<tr>
+<td><p>start_pos :</p></td>
+<td><p>starting position</p></td>
+</tr>
+<tr>
+<td><p>end_pos :</p></td>
+<td><p>ending position</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

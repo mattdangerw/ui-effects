@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-ellipsize"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="property"/>
+    <title type="link" role="topic">ellipsize</title>
+  </info>
+  <title>Clutter.Text:ellipsize</title>
+<synopsis><code mime="text/x-python">
+"ellipsize"             Pango.EllipsizeMode                : Read / Write
+</code></synopsis>
+<p>The preferred place to ellipsize the contents of the <link xref="Clutter.Text">Clutter.Text</link> actor</p>
+</page>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="Clutter.RotateDirection"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.RotateDirection</title>
+  <p>Direction of a rotation.</p>
+<table>
+<tr>
+<td><p>RotateDirection.CW :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>RotateDirection.CCW :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

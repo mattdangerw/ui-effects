@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Transition.get_interval"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Transition" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Interval</api:type>
+      </api:returns>
+      <api:name>clutter_transition_get_interval</api:name>
+      <api:arg>
+        <api:type>ClutterTransition *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_interval</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Interval)
+def get_interval()
+</code></synopsis>
+<p>Retrieves the interval set using clutter_transition_set_interval()</p><p>interval is owned by the <link xref="Clutter.Transition">Clutter.Transition</link> and it should not be freed
+directly</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="Clutter.Interval">Clutter.Interval</link>, or None; the returned</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

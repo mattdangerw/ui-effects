@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Animator-timeline"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animator" group="property"/>
+    <title type="link" role="topic">timeline</title>
+  </info>
+  <title>Clutter.Animator:timeline</title>
+<synopsis><code mime="text/x-python">
+"timeline"             Clutter.Timeline                : Read / Write
+</code></synopsis>
+<p>The <link xref="Clutter.Timeline">Clutter.Timeline</link> used by the <link xref="Clutter.Animator">Clutter.Animator</link> to drive the
+animation</p>
+</page>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Alpha.register_func"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Alpha" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gulong</api:type>
+      </api:returns>
+      <api:name>clutter_alpha_register_func</api:name>
+      <api:arg>
+        <api:type>Clutter.AlphaFunc</api:type>
+        <api:name>func</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>register_func</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.AlphaFunc, gpointer)
+@returns(gulong)
+def register_func(func, data)
+</code></synopsis>
+<p>Registers a global alpha function and returns its logical id
+to be used by clutter_alpha_set_mode() or by <link xref="Clutter.Animation">Clutter.Animation</link>.</p><p>The logical id is always greater than %CLUTTER_ANIMATION_LAST.</p>
+
+<table>
+<tr>
+<td><p>func :</p></td>
+<td><p>a <link xref="Clutter.AlphaFunc">Clutter.AlphaFunc</link></p></td>
+</tr>
+<tr>
+<td><p>data :</p></td>
+<td><p>user data to pass to @func, or None</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the logical id of the alpha function</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

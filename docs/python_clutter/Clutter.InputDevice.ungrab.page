@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.InputDevice.ungrab"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.InputDevice" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_input_device_ungrab</api:name>
+      <api:arg>
+        <api:type>ClutterInputDevice *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>ungrab</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def ungrab()
+</code></synopsis>
+<p>Releases the grab on the @device, if one is in place.</p>
+
+<table>
+</table>
+<p>Since 1.10</p>
+</page>

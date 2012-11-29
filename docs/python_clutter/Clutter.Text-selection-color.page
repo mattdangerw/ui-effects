@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-selection-color"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="property"/>
+    <title type="link" role="topic">selection-color</title>
+  </info>
+  <title>Clutter.Text:selection-color</title>
+<synopsis><code mime="text/x-python">
+"selection-color"             Clutter.Color                : Read / Write
+</code></synopsis>
+<p>The color of the selection.</p>
+</page>

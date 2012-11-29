@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="Clutter.AlignAxis"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.AlignAxis</title>
+  <p>Specifies the axis on which <link xref="Clutter.AlignConstraint">Clutter.AlignConstraint</link> should maintain
+the alignment.</p>
+<table>
+<tr>
+<td><p>AlignAxis.X_AXIS :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AlignAxis.Y_AXIS :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>AlignAxis.BOTH :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

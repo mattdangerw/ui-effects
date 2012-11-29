@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Clutter.ScrollDirection"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.ScrollDirection</title>
+  <p>Direction of a pointer scroll event.</p><p>The %CLUTTER_SCROLL_SMOOTH value implies that the <link xref="Clutter.ScrollEvent">Clutter.ScrollEvent</link>
+has precise scrolling delta information.</p>
+<table>
+<tr>
+<td><p>ScrollDirection.UP :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>ScrollDirection.DOWN :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>ScrollDirection.LEFT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>ScrollDirection.RIGHT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>ScrollDirection.SMOOTH :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Settings-double-click-time"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Settings" group="property"/>
+    <title type="link" role="topic">double-click-time</title>
+  </info>
+  <title>Clutter.Settings:double-click-time</title>
+<synopsis><code mime="text/x-python">
+"double-click-time"             gint                : Read / Write
+</code></synopsis>
+<p>The time, in milliseconds, that should elapse between button-press
+events in order to increase the click count by 1.</p>
+</page>

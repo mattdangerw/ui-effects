@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.has_marker"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_has_marker</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>marker_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>has_marker</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(gboolean)
+def has_marker(marker_name)
+</code></synopsis>
+<p>Checks whether @timeline has a marker set with the given name.</p>
+
+<table>
+<tr>
+<td><p>marker_name :</p></td>
+<td><p>the name of the marker</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the marker was found</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

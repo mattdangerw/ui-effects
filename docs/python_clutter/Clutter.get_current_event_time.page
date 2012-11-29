@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.get_current_event_time"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint32</api:type>
+      </api:returns>
+      <api:name>clutter_get_current_event_time</api:name>
+    </api:function>
+  </info>
+  <title>get_current_event_time</title>
+<synopsis><code mime="text/x-python">
+@returns(guint32)
+def get_current_event_time()
+</code></synopsis>
+<p>Retrieves the timestamp of the last event, if there is an
+event or if the event has a timestamp.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the event timestamp, or %CLUTTER_CURRENT_TIME</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

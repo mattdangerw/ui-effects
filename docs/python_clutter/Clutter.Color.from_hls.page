@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Color.from_hls"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Color" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_color_from_hls</api:name>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>hue</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>luminance</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>saturation</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>from_hls</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat, gfloat)
+@returns(none)
+def from_hls(hue, luminance, saturation)
+</code></synopsis>
+<p>Converts a color expressed in HLS (hue, luminance and saturation)
+values into a <link xref="Clutter.Color">Clutter.Color</link>.</p>
+
+<table>
+<tr>
+<td><p>hue :</p></td>
+<td><p>hue value, in the 0 .. 360 range</p></td>
+</tr>
+<tr>
+<td><p>luminance :</p></td>
+<td><p>luminance value, in the 0 .. 1 range</p></td>
+</tr>
+<tr>
+<td><p>saturation :</p></td>
+<td><p>saturation value, in the 0 .. 1 range</p></td>
+</tr>
+</table>
+</page>

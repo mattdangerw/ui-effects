@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.StateKey.get_pre_delay"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.StateKey" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gdouble</api:type>
+      </api:returns>
+      <api:name>clutter_state_key_get_pre_delay</api:name>
+    </api:function>
+  </info>
+  <title>get_pre_delay</title>
+<synopsis><code mime="text/x-python">
+@returns(gdouble)
+def get_pre_delay()
+</code></synopsis>
+<p>Retrieves the pause before transitioning starts as a fraction of
+the total transition time.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the pre delay used before starting the transition.</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

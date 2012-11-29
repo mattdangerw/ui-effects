@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Path.add_string"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Path" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_path_add_string</api:name>
+      <api:arg>
+        <api:type>ClutterPath *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>str</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>add_string</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(gboolean)
+def add_string(str)
+</code></synopsis>
+<p>Adds new nodes to the end of the path as described in @str. The
+format is a subset of the SVG path format. Each node is represented
+by a letter and is followed by zero, one or three pairs of
+coordinates. The coordinates can be separated by spaces or a
+comma. The types are:</p><p>&lt;variablelist&gt;
+&lt;varlistentry&gt;&lt;term&gt;M&lt;/term&gt;
+&lt;listitem&gt;&lt;para&gt;
+Adds a %CLUTTER_PATH_MOVE_TO node. Takes one pair of coordinates.
+&lt;/para&gt;&lt;/listitem&gt;&lt;/varlistentry&gt;
+&lt;varlistentry&gt;&lt;term&gt;L&lt;/term&gt;
+&lt;listitem&gt;&lt;para&gt;
+Adds a %CLUTTER_PATH_LINE_TO node. Takes one pair of coordinates.
+&lt;/para&gt;&lt;/listitem&gt;&lt;/varlistentry&gt;
+&lt;varlistentry&gt;&lt;term&gt;C&lt;/term&gt;
+&lt;listitem&gt;&lt;para&gt;
+Adds a %CLUTTER_PATH_CURVE_TO node. Takes three pairs of coordinates.
+&lt;/para&gt;&lt;/listitem&gt;&lt;/varlistentry&gt;
+&lt;varlistentry&gt;&lt;term&gt;z&lt;/term&gt;
+&lt;listitem&gt;&lt;para&gt;
+Adds a %CLUTTER_PATH_CLOSE node. No coordinates are needed.
+&lt;/para&gt;&lt;/listitem&gt;&lt;/varlistentry&gt;
+&lt;/variablelist&gt;</p><p>The M, L and C commands can also be specified in lower case which
+means the coordinates are relative to the previous node.</p><p>For example, to move an actor in a 100 by 100 pixel square centered
+on the point 300,300 you could use the following path:</p><p>&lt;informalexample&gt;
+&lt;programlisting&gt;
+M 250,350 l 0 -100 L 350,250 l 0 100 z
+&lt;/programlisting&gt;
+&lt;/informalexample&gt;</p><p>If the path description isn't valid False will be returned and no
+nodes will be added.</p><p>otherwise.</p>
+
+<table>
+<tr>
+<td><p>str :</p></td>
+<td><p>a string describing the new nodes</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True is the path description was valid or False</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

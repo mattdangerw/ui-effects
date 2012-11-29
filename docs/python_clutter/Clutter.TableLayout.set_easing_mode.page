@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.TableLayout.set_easing_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TableLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_table_layout_set_easing_mode</api:name>
+      <api:arg>
+        <api:type>ClutterTableLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gulong</api:type>
+        <api:name>mode</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_easing_mode</title>
+<synopsis><code mime="text/x-python">
+@accepts(gulong)
+@returns(none)
+def set_easing_mode(mode)
+</code></synopsis>
+<p>Sets the easing mode to be used by @layout when animating changes in layout
+properties</p><p>Use clutter_table_layout_set_use_animations() to enable and disable the
+animations</p>
+
+<table>
+<tr>
+<td><p>mode :</p></td>
+<td><p>an easing mode, either from <link xref="Clutter.AnimationMode">Clutter.AnimationMode</link> or a logical id from clutter_alpha_register_func()</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

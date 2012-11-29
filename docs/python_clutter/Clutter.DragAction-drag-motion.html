@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Clutter.DragAction::drag-motion</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.DragAction.html" title="Clutter.DragAction">Clutter.DragAction</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Clutter.DragAction::drag-motion</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">def callback(drag_action, actor, delta_x, delta_y, user_param1, ...)</pre></div></div></div></div></div>
+<p class="p">The ::drag-motion signal is emitted for each motion event after
+the <span class=" link"><a href="Clutter.DragAction-drag-begin.html" title="Clutter.DragAction::drag-begin">Clutter.DragAction::drag-begin</a></span> signal has been emitted.</p>
+<p class="p">The components of the distance between the press event and the
+latest motion event are computed in the actor's coordinate space,
+to take into account eventual transformations. If you want the
+stage coordinates of the latest motion event you can use
+clutter_drag_action_get_motion_coords().</p>
+<p class="p">The default handler of the signal will call clutter_actor_move_by()
+either on @actor or, if set, of <span class=" link"><a href="Clutter.DragAction-drag-handle.html" title="Clutter.DragAction:drag-handle">Clutter.DragAction:drag-handle</a></span> using
+the @delta_x and @delta_y components of the dragging motion. If you
+want to override the default behaviour, you can connect to this
+signal and call g_signal_stop_emission_by_name() from within your
+callback.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">drag_action :</p></td>
+<td><p class="p">instance of Clutter.DragAction that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p class="p">actor :</p></td>
+<td><p class="p">the <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> attached to the action</p></td>
+</tr>
+<tr>
+<td><p class="p">delta_x :</p></td>
+<td><p class="p">the X component of the distance between the press event that began the dragging and the current position of the pointer, as of the latest motion event</p></td>
+</tr>
+<tr>
+<td><p class="p">delta_y :</p></td>
+<td><p class="p">the Y component of the distance between the press event that began the dragging and the current position of the pointer, as of the latest motion event</p></td>
+</tr>
+<tr>
+<td><p class="p">user_param1 :</p></td>
+<td><p class="p">first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p class="p">... :</p></td>
+<td><p class="p">additional user parameters (if any)</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.4</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.DragAction.html" title="Clutter.DragAction">Clutter.DragAction</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

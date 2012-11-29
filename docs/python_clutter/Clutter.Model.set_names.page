@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Model.set_names"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_model_set_names</api:name>
+      <api:arg>
+        <api:type>ClutterModel *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>n_columns</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>[utf8]</api:type>
+        <api:name>names</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_names</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, [utf8])
+@returns(none)
+def set_names(n_columns, names)
+</code></synopsis>
+<p>Assigns a name to the columns of a <link xref="Clutter.Model">Clutter.Model</link>.</p><p>This function is meant primarily for <link xref="GObjects">GObjects</link> that inherit from
+<link xref="Clutter.Model">Clutter.Model</link>, and should only be used when contructing a <link xref="Clutter.Model">Clutter.Model</link>.
+It will not work after the initial creation of the <link xref="Clutter.Model">Clutter.Model</link>.</p>
+
+<table>
+<tr>
+<td><p>n_columns :</p></td>
+<td><p>the number of column names</p></td>
+</tr>
+<tr>
+<td><p>names :</p></td>
+<td><p>an array of strings</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

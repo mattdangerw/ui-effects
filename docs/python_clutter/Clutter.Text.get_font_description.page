@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.get_font_description"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Pango.FontDescription</api:type>
+      </api:returns>
+      <api:name>clutter_text_get_font_description</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_font_description</title>
+<synopsis><code mime="text/x-python">
+@returns(Pango.FontDescription)
+def get_font_description()
+</code></synopsis>
+<p>Retrieves the <link xref="PangoFontDescription">PangoFontDescription</link> used by @self</p><p>by the <link xref="Clutter.Text">Clutter.Text</link> actor and it should not be modified or freed</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="PangoFontDescription">PangoFontDescription</link>. The returned value is owned</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

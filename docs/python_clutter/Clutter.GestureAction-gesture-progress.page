@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Clutter.GestureAction-gesture-progress"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.GestureAction" group="signal"/>
+    <title type="link" role="topic">gesture-progress</title>
+  </info>
+  <title>Clutter.GestureAction::gesture-progress</title>
+<synopsis><code mime="text/x-python">
+def callback(gesture_action, actor, user_param1, ...)
+</code></synopsis>
+<p>The ::gesture-progress signal is emitted for each motion event after
+the <link xref="Clutter.GestureAction-gesture-begin">Clutter.GestureAction::gesture-begin</link> signal has been emitted.</p><p>the gesture should be cancelled.</p>
+
+<table>
+<tr>
+<td><p>gesture_action :</p></td>
+<td><p>instance of Clutter.GestureAction that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>actor :</p></td>
+<td><p>the <link xref="Clutter.Actor">Clutter.Actor</link> attached to the @action</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

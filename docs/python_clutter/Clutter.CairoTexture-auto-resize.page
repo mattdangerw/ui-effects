@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Clutter.CairoTexture-auto-resize"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.CairoTexture" group="property"/>
+    <title type="link" role="topic">auto-resize</title>
+  </info>
+  <title>Clutter.CairoTexture:auto-resize</title>
+<synopsis><code mime="text/x-python">
+"auto-resize"             gboolean                : Read / Write
+</code></synopsis>
+<p>Controls whether the <link xref="Clutter.CairoTexture">Clutter.CairoTexture</link> should automatically
+resize the Cairo surface whenever the actor's allocation changes.
+If :auto-resize is set to True the surface contents will also
+be invalidated automatically.</p>
+</page>

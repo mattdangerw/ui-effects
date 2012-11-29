@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_cursor_visible"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_cursor_visible</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>cursor_visible</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_cursor_visible</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_cursor_visible(cursor_visible)
+</code></synopsis>
+<p>Sets whether the cursor of a <link xref="Clutter.Text">Clutter.Text</link> actor should be
+visible or not.</p><p>The color of the cursor will be the same as the text color
+unless clutter_text_set_cursor_color() has been called.</p><p>The size of the cursor can be set using clutter_text_set_cursor_size().</p><p>The position of the cursor can be changed programmatically using
+clutter_text_set_cursor_position().</p>
+
+<table>
+<tr>
+<td><p>cursor_visible :</p></td>
+<td><p>whether the cursor should be visible</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

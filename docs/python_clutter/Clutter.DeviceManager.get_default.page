@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.DeviceManager.get_default"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DeviceManager" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.DeviceManager</api:type>
+      </api:returns>
+      <api:name>clutter_device_manager_get_default</api:name>
+    </api:function>
+  </info>
+  <title>get_default</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.DeviceManager)
+def get_default()
+</code></synopsis>
+<p>Retrieves the device manager singleton</p><p>The returned instance is owned by Clutter and it should not be
+modified or freed</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the <link xref="Clutter.DeviceManager">Clutter.DeviceManager</link> singleton.</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

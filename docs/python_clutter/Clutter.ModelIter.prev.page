@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ModelIter.prev"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ModelIter" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.ModelIter</api:type>
+      </api:returns>
+      <api:name>clutter_model_iter_prev</api:name>
+      <api:arg>
+        <api:type>ClutterModelIter *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>prev</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.ModelIter)
+def prev()
+</code></synopsis>
+<p>Sets the @iter to point at the previous position in the model.
+The model implementation should take into account the presence of
+a filter function.</p><p>row in the model.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The passed iterator, updated to point at the previous</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

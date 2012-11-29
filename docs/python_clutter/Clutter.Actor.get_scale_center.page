@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_scale_center"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_scale_center</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>center_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>center_y</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_scale_center</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(none)
+def get_scale_center(center_x, center_y)
+</code></synopsis>
+<p>Retrieves the scale center coordinate in pixels relative to the top
+left corner of the actor. If the scale center was specified using a
+<link xref="Clutter.Gravity">Clutter.Gravity</link> this will calculate the pixel offset using the
+current size of the actor.</p>
+
+<table>
+<tr>
+<td><p>center_x :</p></td>
+<td><p>Location to store the X position of the scale center, or None.</p></td>
+</tr>
+<tr>
+<td><p>center_y :</p></td>
+<td><p>Location to store the Y position of the scale center, or None.</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

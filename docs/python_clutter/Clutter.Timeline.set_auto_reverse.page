@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.set_auto_reverse"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_set_auto_reverse</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>reverse</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_auto_reverse</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_auto_reverse(reverse)
+</code></synopsis>
+<p>Sets whether @timeline should reverse the direction after the
+emission of the <link xref="Clutter.Timeline-completed">Clutter.Timeline::completed</link> signal.</p><p>Setting the <link xref="Clutter.Timeline-auto-reverse">Clutter.Timeline:auto-reverse</link> property to True is the
+equivalent of connecting a callback to the <link xref="Clutter.Timeline-completed">Clutter.Timeline::completed</link>
+signal and changing the direction of the timeline from that callback;
+for instance, this code:</p><p>|[
+static void
+reverse_timeline (ClutterTimeline *timeline)
+{
+ClutterTimelineDirection dir = clutter_timeline_get_direction (timeline);</p><p>if (dir == CLUTTER_TIMELINE_FORWARD)
+dir = CLUTTER_TIMELINE_BACKWARD;
+else
+dir = CLUTTER_TIMELINE_FORWARD;</p><p>clutter_timeline_set_direction (timeline, dir);
+}
+...
+timeline = clutter_timeline_new (1000);
+clutter_timeline_set_repeat_count (timeline, -1);
+g_signal_connect (timeline, "completed",
+G_CALLBACK (reverse_timeline),
+NULL);
+]|</p><p>can be effectively replaced by:</p><p>|[
+timeline = clutter_timeline_new (1000);
+clutter_timeline_set_repeat_count (timeline, -1);
+clutter_timeline_set_auto_reverse (timeline);
+]|</p>
+
+<table>
+<tr>
+<td><p>reverse :</p></td>
+<td><p>True if the @timeline should reverse the direction</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

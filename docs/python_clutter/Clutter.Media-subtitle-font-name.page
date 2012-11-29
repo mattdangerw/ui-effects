@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Media-subtitle-font-name"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Media" group="property"/>
+    <title type="link" role="topic">subtitle-font-name</title>
+  </info>
+  <title>Clutter.Media:subtitle-font-name</title>
+<synopsis><code mime="text/x-python">
+"subtitle-font-name"             utf8                : Read / Write
+</code></synopsis>
+<p>The font used to display subtitles. The font description has to
+follow the same grammar as the one recognized by
+pango_font_description_from_string().</p>
+</page>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.DeformEffect.get_n_tiles"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DeformEffect" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_deform_effect_get_n_tiles</api:name>
+      <api:arg>
+        <api:type>ClutterDeformEffect *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>x_tiles</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>y_tiles</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_n_tiles</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, guint)
+@returns(none)
+def get_n_tiles(x_tiles, y_tiles)
+</code></synopsis>
+<p>Retrieves the number of horizontal and vertical tiles used to sub-divide
+the actor's geometry during the effect</p>
+
+<table>
+<tr>
+<td><p>x_tiles :</p></td>
+<td><p>return location for the number of horizontal tiles, or None</p></td>
+</tr>
+<tr>
+<td><p>y_tiles :</p></td>
+<td><p>return location for the number of vertical tiles, or None</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

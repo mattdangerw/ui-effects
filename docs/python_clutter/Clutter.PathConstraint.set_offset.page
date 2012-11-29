@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PathConstraint.set_offset"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PathConstraint" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_path_constraint_set_offset</api:name>
+      <api:arg>
+        <api:type>ClutterPathConstraint *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>offset</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_offset</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat)
+@returns(none)
+def set_offset(offset)
+</code></synopsis>
+<p>Sets the offset along the <link xref="Clutter.Path">Clutter.Path</link> used by @constraint.</p>
+
+<table>
+<tr>
+<td><p>offset :</p></td>
+<td><p>the offset along the path</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

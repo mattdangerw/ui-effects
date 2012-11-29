@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Clutter.State-state"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.State" group="property"/>
+    <title type="link" role="topic">state</title>
+  </info>
+  <title>Clutter.State:state</title>
+<synopsis><code mime="text/x-python">
+"state"             utf8                : Read / Write
+</code></synopsis>
+<p>The currently set target state, setting it causes the
+state machine to transition to the new state, use
+clutter_state_warp_to_state() to change state without
+a transition.</p>
+</page>

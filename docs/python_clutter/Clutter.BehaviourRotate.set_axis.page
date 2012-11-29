@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BehaviourRotate.set_axis"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourRotate" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_rotate_set_axis</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviourRotate *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.RotateAxis</api:type>
+        <api:name>axis</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_axis</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.RotateAxis)
+@returns(none)
+def set_axis(axis)
+</code></synopsis>
+<p>Sets the axis used by the rotate behaviour.</p>
+
+<table>
+<tr>
+<td><p>axis :</p></td>
+<td><p>a <link xref="Clutter.RotateAxis">Clutter.RotateAxis</link></p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

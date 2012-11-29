@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_position"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_position</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_position</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(none)
+def set_position(x, y)
+</code></synopsis>
+<p>Sets the actor's fixed position in pixels relative to any parent
+actor.</p><p>If a layout manager is in use, this position will override the
+layout manager and force a fixed position.</p>
+
+<table>
+<tr>
+<td><p>x :</p></td>
+<td><p>New left position of actor in pixels.</p></td>
+</tr>
+<tr>
+<td><p>y :</p></td>
+<td><p>New top position of actor in pixels.</p></td>
+</tr>
+</table>
+</page>

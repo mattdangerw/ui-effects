@@ -1,0 +1,176 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>animate</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">animate</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(gulong, guint, utf8, &lt;varargs&gt;)
+@returns(Clutter.Animation)
+def animate(mode, duration, first_property_name, None)</pre></div></div></div></div></div>
+<p class="p">Animates the given list of properties of @actor between the current
+value for each property and a new final value. The animation has a
+definite duration and a speed given by the @mode.</p>
+<p class="p">For example, this:</p>
+<p class="p">|[
+clutter_actor_animate (rectangle, CLUTTER_LINEAR, 250,
+"width", 100.0,
+"height", 100.0,
+NULL);
+]|</p>
+<p class="p">will make width and height properties of the <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> "rectangle"
+grow linearly between the current value and 100 pixels, in 250 milliseconds.</p>
+<p class="p">The animation @mode is a logical id, either from the <span class=" link"><a href="Clutter.AnimationMode.html" title="Clutter.AnimationMode">Clutter.AnimationMode</a></span>
+enumeration of from clutter_alpha_register_func().</p>
+<p class="p">All the properties specified will be animated between the current value
+and the final value. If a property should be set at the beginning of
+the animation but not updated during the animation, it should be prefixed
+by the "fixed::" string, for instance:</p>
+<p class="p">|[
+clutter_actor_animate (actor, CLUTTER_EASE_IN_SINE, 100,
+"rotation-angle-z", 360.0,
+"fixed::rotation-center-z", &amp;amp;center,
+NULL);
+]|</p>
+<p class="p">Will animate the "rotation-angle-z" property between the current value
+and 360 degrees, and set the "rotation-center-z" property to the fixed
+value of the <span class=" link"><a href="Clutter.Vertex.html" title="ClutterVertex">Clutter.Vertex</a></span> "center".</p>
+<p class="p">This function will implicitly create a <span class=" link"><a href="Clutter.Animation.html" title="Clutter.Animation">Clutter.Animation</a></span> object which
+will be assigned to the @actor and will be returned to the developer
+to control the animation or to know when the animation has been
+completed.</p>
+<p class="p">If a name argument starts with "signal::", "signal-after::",
+"signal-swapped::" or "signal-swapped-after::" the two following arguments
+are used as callback function and data for a signal handler installed on
+the <span class=" link"><a href="Clutter.Animation.html" title="Clutter.Animation">Clutter.Animation</a></span> object for the specified signal name, for instance:</p>
+<p class="p">|[</p>
+<p class="p">static void
+on_animation_completed (ClutterAnimation *animation,
+ClutterActor     *actor)
+{
+clutter_actor_hide (actor);
+}</p>
+<p class="p">clutter_actor_animate (actor, CLUTTER_EASE_IN_CUBIC, 100,
+"opacity", 0,
+"signal::completed", on_animation_completed, actor,
+NULL);
+]|</p>
+<p class="p">or, to automatically destroy an actor at the end of the animation:</p>
+<p class="p">|[
+clutter_actor_animate (actor, CLUTTER_EASE_IN_CUBIC, 100,
+"opacity", 0,
+"signal-swapped-after::completed",
+clutter_actor_destroy,
+actor,
+NULL);
+]|</p>
+<p class="p">The "signal::" modifier is the equivalent of using g_signal_connect();
+the "signal-after::" modifier is the equivalent of using
+g_signal_connect_after() or g_signal_connect_data() with the
+%G_CONNECT_AFTER; the "signal-swapped::" modifier is the equivalent
+of using g_signal_connect_swapped() or g_signal_connect_data() with the
+%G_CONNECT_SWAPPED flah; finally, the "signal-swapped-after::" modifier
+is the equivalent of using g_signal_connect_data() with both the
+%G_CONNECT_AFTER and %G_CONNECT_SWAPPED flags. The clutter_actor_animate()
+function will not keep track of multiple connections to the same signal,
+so it is your responsability to avoid them when calling
+clutter_actor_animate() multiple times on the same actor.</p>
+<p class="p">Calling this function on an actor that is already being animated
+will cause the current animation to change with the new final values,
+the new easing mode and the new duration - that is, this code:</p>
+<p class="p">|[
+clutter_actor_animate (actor, CLUTTER_LINEAR, 250,
+"width", 100.0,
+"height", 100.0,
+NULL);
+clutter_actor_animate (actor, CLUTTER_EASE_IN_CUBIC, 500,
+"x", 100.0,
+"y", 100.0,
+"width", 200.0,
+NULL);
+]|</p>
+<p class="p">is the equivalent of:</p>
+<p class="p">|[
+clutter_actor_animate (actor, CLUTTER_EASE_IN_CUBIC, 500,
+"x", 100.0,
+"y", 100.0,
+"width", 200.0,
+"height", 100.0,
+NULL);
+]|</p>
+<p class="p">&lt;note&gt;Unless the animation is looping, the <span class=" link"><a href="Clutter.Animation.html" title="Clutter.Animation">Clutter.Animation</a></span> created by
+clutter_actor_animate() will become invalid as soon as it is
+complete.&lt;/note&gt;</p>
+<p class="p">Since the created <span class=" link"><a href="Clutter.Animation.html" title="Clutter.Animation">Clutter.Animation</a></span> instance attached to @actor
+is guaranteed to be valid throughout the <span class=" link"><a href="Clutter.Animation-completed.html" title="Clutter.Animation::completed">Clutter.Animation::completed</a></span>
+signal emission chain, you will not be able to create a new animation
+using clutter_actor_animate() on the same @actor from within the
+<span class=" link"><a href="Clutter.Animation-completed.html" title="Clutter.Animation::completed">Clutter.Animation::completed</a></span> signal handler unless you use
+g_signal_connect_after() to connect the callback function, for instance:</p>
+<p class="p">|[
+static void
+on_animation_completed (ClutterAnimation *animation,
+ClutterActor     *actor)
+{
+clutter_actor_animate (actor, CLUTTER_EASE_OUT_CUBIC, 250,
+"x", 500.0,
+"y", 500.0,
+NULL);
+}</p>
+<p class="p">...
+animation = clutter_actor_animate (actor, CLUTTER_EASE_IN_CUBIC, 250,
+"x", 100.0,
+"y", 100.0,
+NULL);
+g_signal_connect (animation, "completed",
+G_CALLBACK (on_animation_completed),
+actor);
+...
+]|</p>
+<p class="p">owned by the <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> and should not be unreferenced with
+g_object_unref()</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">mode :</p></td>
+<td><p class="p">an animation mode logical id</p></td>
+</tr>
+<tr>
+<td><p class="p">duration :</p></td>
+<td><p class="p">duration of the animation, in milliseconds</p></td>
+</tr>
+<tr>
+<td><p class="p">first_property_name :</p></td>
+<td><p class="p">the name of a property</p></td>
+</tr>
+<tr>
+<td><p class="p">None :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">a <span class=" link"><a href="Clutter.Animation.html" title="Clutter.Animation">Clutter.Animation</a></span> object. The object is</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.0</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<page id="Clutter.Content-invalidate"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Content" group="vfunc"/>
+    <title type="link" role="topic">invalidate</title>
+  </info>
+  <title>Clutter.Content.invalidate</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def do_invalidate(self, ):
+</code></synopsis>
+<p>Invalidates a <link xref="Clutter.Content">Clutter.Content</link>.</p><p>This function should be called by <link xref="Clutter.Content">Clutter.Content</link> implementations when
+they change the way a the content should be painted regardless of the
+actor state.</p>
+
+<table>
+</table>
+<p>Since 1.10</p>
+</page>

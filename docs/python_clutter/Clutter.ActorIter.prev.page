@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ActorIter.prev"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ActorIter" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_actor_iter_prev</api:name>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>child</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>prev</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(gboolean)
+def prev(child)
+</code></synopsis>
+<p>Advances the @iter and retrieves the previous child of the root
+<link xref="Clutter.Actor">Clutter.Actor</link> that was used to initialize the <link xref="ClutterActorIterator">ClutterActorIterator</link>.</p><p>If the iterator can advance, this function returns True and sets the
+@child argument.</p><p>If the iterator cannot advance, this function returns False, and
+the contents of @child are undefined.</p>
+
+<table>
+<tr>
+<td><p>child :</p></td>
+<td><p>return location for a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the iterator could advance, and False otherwise.</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

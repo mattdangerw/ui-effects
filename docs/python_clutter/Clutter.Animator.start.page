@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animator.start"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animator" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Timeline</api:type>
+      </api:returns>
+      <api:name>clutter_animator_start</api:name>
+      <api:arg>
+        <api:type>ClutterAnimator *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>start</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Timeline)
+def start()
+</code></synopsis>
+<p>Start the ClutterAnimator, this is a thin wrapper that rewinds
+and starts the animators current timeline.</p><p>the animator. The returned timeline is owned by the <link xref="Clutter.Animator">Clutter.Animator</link>
+and it should not be unreferenced</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the <link xref="Clutter.Timeline">Clutter.Timeline</link> that drives</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

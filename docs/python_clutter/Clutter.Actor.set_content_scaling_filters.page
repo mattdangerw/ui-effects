@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_content_scaling_filters"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_content_scaling_filters</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ScalingFilter</api:type>
+        <api:name>min_filter</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ScalingFilter</api:type>
+        <api:name>mag_filter</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_content_scaling_filters</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.ScalingFilter, Clutter.ScalingFilter)
+@returns(none)
+def set_content_scaling_filters(min_filter, mag_filter)
+</code></synopsis>
+<p>Sets the minification and magnification filter to be applied when
+scaling the <link xref="Clutter.Actor-content">Clutter.Actor:content</link> of a <link xref="Clutter.Actor">Clutter.Actor</link>.</p><p>The <link xref="Clutter.Actor-minification-filter">Clutter.Actor:minification-filter</link> will be used when reducing
+the size of the content; the <link xref="Clutter.Actor-magnification-filter">Clutter.Actor:magnification-filter</link>
+will be used when increasing the size of the content.</p>
+
+<table>
+<tr>
+<td><p>min_filter :</p></td>
+<td><p>the minification filter for the content</p></td>
+</tr>
+<tr>
+<td><p>mag_filter :</p></td>
+<td><p>the magnification filter for the content</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Transition.set_interval"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Transition" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_transition_set_interval</api:name>
+      <api:arg>
+        <api:type>ClutterTransition *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Interval</api:type>
+        <api:name>interval</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_interval</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Interval)
+@returns(none)
+def set_interval(interval)
+</code></synopsis>
+<p>Sets the <link xref="Clutter.Transition-interval">Clutter.Transition:interval</link> property using @interval.</p><p>The @transition will acquire a reference on the @interval, sinking
+the floating flag on it if necessary.</p>
+
+<table>
+<tr>
+<td><p>interval :</p></td>
+<td><p>a <link xref="Clutter.Interval">Clutter.Interval</link>, or None</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

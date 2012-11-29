@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animation.set_loop"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animation" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_animation_set_loop</api:name>
+      <api:arg>
+        <api:type>ClutterAnimation *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>loop</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_loop</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_loop(loop)
+</code></synopsis>
+<p>Sets whether @animation should loop over itself once finished.</p><p>A looping <link xref="Clutter.Animation">Clutter.Animation</link> will not emit the <link xref="Clutter.Animation-completed">Clutter.Animation::completed</link>
+signal when finished.</p><p>This function will set <link xref="Clutter.Animation-alpha">Clutter.Animation:alpha</link> and
+<link xref="Clutter.Animation-timeline">Clutter.Animation:timeline</link> if needed.</p>
+
+<table>
+<tr>
+<td><p>loop :</p></td>
+<td><p>True if the animation should loop</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

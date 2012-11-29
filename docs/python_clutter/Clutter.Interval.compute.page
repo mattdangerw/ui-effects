@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Interval.compute"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Interval" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.Value</api:type>
+      </api:returns>
+      <api:name>clutter_interval_compute</api:name>
+      <api:arg>
+        <api:type>ClutterInterval *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>factor</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>compute</title>
+<synopsis><code mime="text/x-python">
+@accepts(gdouble)
+@returns(GObject.Value)
+def compute(factor)
+</code></synopsis>
+<p>Computes the value between the @interval boundaries given the
+progress @factor</p><p>Unlike clutter_interval_compute_value(), this function will
+return a const pointer to the computed value</p><p>You should use this function if you immediately pass the computed
+value to another function that makes a copy of it, like
+g_object_set_property()</p><p>or None if the computation was not successfull</p>
+
+<table>
+<tr>
+<td><p>factor :</p></td>
+<td><p>the progress factor, between 0 and 1</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a pointer to the computed value,</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

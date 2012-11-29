@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.get_delta"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_get_delta</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_delta</title>
+<synopsis><code mime="text/x-python">
+@returns(guint)
+def get_delta()
+</code></synopsis>
+<p>Retrieves the amount of time elapsed since the last
+ClutterTimeline::new-frame signal.</p><p>This function is only useful inside handlers for the ::new-frame
+signal, and its behaviour is undefined if the timeline is not
+playing.</p><p>last frame</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the amount of time in milliseconds elapsed since the</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

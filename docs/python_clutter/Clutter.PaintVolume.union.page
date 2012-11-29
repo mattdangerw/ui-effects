@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PaintVolume.union"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PaintVolume" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_paint_volume_union</api:name>
+      <api:arg>
+        <api:type>Clutter.PaintVolume</api:type>
+        <api:name>another_pv</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>union</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.PaintVolume)
+@returns(none)
+def union(another_pv)
+</code></synopsis>
+<p>Updates the geometry of @pv to encompass @pv and @another_pv.</p><p>&lt;note&gt;There are no guarantees about how precisely the two volumes
+will be encompassed.&lt;/note&gt;</p>
+
+<table>
+<tr>
+<td><p>another_pv :</p></td>
+<td><p>A second <link xref="Clutter.PaintVolume">Clutter.PaintVolume</link> to union with @pv</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-hide_all"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="vfunc"/>
+    <title type="link" role="topic">hide_all</title>
+  </info>
+  <title>Clutter.Actor.hide_all</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def do_hide_all(self, ):
+</code></synopsis>
+<p>Calls clutter_actor_hide() on all child actors (if any).</p><p>
+prevent its children from being painted as well.</p>
+
+<table>
+</table>
+<p>Since 0.2</p>
+</page>

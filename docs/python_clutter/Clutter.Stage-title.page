@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Stage-title"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="property"/>
+    <title type="link" role="topic">title</title>
+  </info>
+  <title>Clutter.Stage:title</title>
+<synopsis><code mime="text/x-python">
+"title"             utf8                : Read / Write
+</code></synopsis>
+<p>The stage's title - usually displayed in stage windows title decorations.</p>
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Animation-mode"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animation" group="property"/>
+    <title type="link" role="topic">mode</title>
+  </info>
+  <title>Clutter.Animation:mode</title>
+<synopsis><code mime="text/x-python">
+"mode"             gulong                : Read / Write
+</code></synopsis>
+<p>The animation mode, either a value from <link xref="Clutter.AnimationMode">Clutter.AnimationMode</link>
+or a value returned by clutter_alpha_register_func(). The
+default value is %CLUTTER_LINEAR.</p>
+</page>

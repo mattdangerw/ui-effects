@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.PropertyTransition-property-name"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PropertyTransition" group="property"/>
+    <title type="link" role="topic">property-name</title>
+  </info>
+  <title>Clutter.PropertyTransition:property-name</title>
+<synopsis><code mime="text/x-python">
+"property-name"             utf8                : Read / Write
+</code></synopsis>
+<p>The name of the property of a <link xref="Clutter.Animatable">Clutter.Animatable</link> to animate.</p>
+</page>

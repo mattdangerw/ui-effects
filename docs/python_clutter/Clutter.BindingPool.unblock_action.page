@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BindingPool.unblock_action"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BindingPool" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_binding_pool_unblock_action</api:name>
+      <api:arg>
+        <api:type>ClutterBindingPool *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>action_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>unblock_action</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(none)
+def unblock_action(action_name)
+</code></synopsis>
+<p>Unblockes all the actions with name @action_name inside @pool.</p><p>Unblocking an action does not cause the callback bound to it to
+be invoked in case clutter_binding_pool_activate() was called on
+an action previously blocked with clutter_binding_pool_block_action().</p>
+
+<table>
+<tr>
+<td><p>action_name :</p></td>
+<td><p>an action name</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

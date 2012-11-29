@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_effects"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>&lt;list&gt;</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_effects</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_effects</title>
+<synopsis><code mime="text/x-python">
+@returns(&lt;list&gt;)
+def get_effects()
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.Effect">Clutter.Effect</link>&lt;!-- --&gt;s applied on @self, if any</p><p>of <link xref="Clutter.Effect">Clutter.Effect</link>&lt;!-- --&gt;s, or None. The elements of the returned
+list are owned by Clutter and they should not be freed. You should
+free the returned list using g_list_free() when done</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a list</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

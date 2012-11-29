@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.clear_effects"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_clear_effects</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>clear_effects</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def clear_effects()
+</code></synopsis>
+<p>Clears the list of effects applied to @self</p>
+
+<table>
+</table>
+<p>Since 1.4</p>
+</page>

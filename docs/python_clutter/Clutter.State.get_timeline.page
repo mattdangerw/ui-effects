@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.State.get_timeline"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.State" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Timeline</api:type>
+      </api:returns>
+      <api:name>clutter_state_get_timeline</api:name>
+      <api:arg>
+        <api:type>ClutterState *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_timeline</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Timeline)
+def get_timeline()
+</code></synopsis>
+<p>Gets the timeline driving the <link xref="Clutter.State">Clutter.State</link></p><p>the state change animations. The returned timeline is owned
+by the <link xref="Clutter.State">Clutter.State</link> and it should not be unreferenced directly</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the <link xref="Clutter.Timeline">Clutter.Timeline</link> that drives</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

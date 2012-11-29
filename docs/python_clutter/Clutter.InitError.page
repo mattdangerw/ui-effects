@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Clutter.InitError"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.InitError</title>
+  <p>Error conditions returned by clutter_init() and clutter_init_with_args().</p>
+<table>
+<tr>
+<td><p>InitError.SUCCESS :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InitError.ERROR_UNKNOWN :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InitError.ERROR_THREADS :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InitError.ERROR_BACKEND :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>InitError.ERROR_INTERNAL :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

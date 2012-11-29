@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.do_event"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_do_event</api:name>
+      <api:arg>
+        <api:type>Clutter.Event</api:type>
+        <api:name>event</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>do_event</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Event)
+@returns(none)
+def do_event(event)
+</code></synopsis>
+<p>Processes an event.</p><p>The @event must be a valid <link xref="Clutter.Event">Clutter.Event</link> and have a <link xref="Clutter.Stage">Clutter.Stage</link>
+associated to it.</p><p>This function is only useful when embedding Clutter inside another
+toolkit, and it should never be called by applications.</p>
+
+<table>
+<tr>
+<td><p>event :</p></td>
+<td><p>a <link xref="Clutter.Event">Clutter.Event</link>.</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

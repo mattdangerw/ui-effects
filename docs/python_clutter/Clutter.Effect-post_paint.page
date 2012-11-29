@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="Clutter.Effect-post_paint"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Effect" group="vfunc"/>
+    <title type="link" role="topic">post_paint</title>
+  </info>
+  <title>Clutter.Effect.post_paint</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def do_post_paint(self, ):
+</code></synopsis>
+
+
+<table>
+</table>
+</page>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.BehaviourScale-x-scale-start"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourScale" group="property"/>
+    <title type="link" role="topic">x-scale-start</title>
+  </info>
+  <title>Clutter.BehaviourScale:x-scale-start</title>
+<synopsis><code mime="text/x-python">
+"x-scale-start"             gdouble                : Read / Write
+</code></synopsis>
+<p>The initial scaling factor on the X axis for the actors.</p>
+</page>

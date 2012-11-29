@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Clutter.Model-get_column_name"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="vfunc"/>
+    <title type="link" role="topic">get_column_name</title>
+  </info>
+  <title>Clutter.Model.get_column_name</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint)
+@returns(utf8)
+def do_get_column_name(self, column):
+</code></synopsis>
+<p>Retrieves the name of the @column</p><p>string, and it should not be modified or freed</p>
+
+<table>
+<tr>
+<td><p>column :</p></td>
+<td><p>the column number</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the name of the column. The model holds the returned</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

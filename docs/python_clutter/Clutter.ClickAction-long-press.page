@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Clutter.ClickAction-long-press"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ClickAction" group="signal"/>
+    <title type="link" role="topic">long-press</title>
+  </info>
+  <title>Clutter.ClickAction::long-press</title>
+<synopsis><code mime="text/x-python">
+def callback(click_action, actor, state, user_param1, ...)
+</code></synopsis>
+<p>The ::long-press signal is emitted during the long press gesture
+handling.</p><p>This signal can be emitted multiple times with different states.</p><p>The %CLUTTER_LONG_PRESS_QUERY state will be emitted on button presses,
+and its return value will determine whether the long press handling
+should be initiated. If the signal handlers will return True, the
+%CLUTTER_LONG_PRESS_QUERY state will be followed either by a signal
+emission with the %CLUTTER_LONG_PRESS_ACTIVATE state if the long press
+constraints were respected, or by a signal emission with the
+%CLUTTER_LONG_PRESS_CANCEL state if the long press was cancelled.</p><p>It is possible to forcibly cancel a long press detection using
+clutter_click_action_release().</p><p>returned value of the handler; other states will ignore it</p>
+
+<table>
+<tr>
+<td><p>click_action :</p></td>
+<td><p>instance of Clutter.ClickAction that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>actor :</p></td>
+<td><p>the <link xref="Clutter.Actor">Clutter.Actor</link> attached to the @action</p></td>
+</tr>
+<tr>
+<td><p>state :</p></td>
+<td><p>the long press state</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

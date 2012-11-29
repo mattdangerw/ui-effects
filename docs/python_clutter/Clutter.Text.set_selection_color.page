@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_selection_color"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_selection_color</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Color</api:type>
+        <api:name>color</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_selection_color</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Color)
+@returns(none)
+def set_selection_color(color)
+</code></synopsis>
+<p>Sets the color of the selection of a <link xref="Clutter.Text">Clutter.Text</link> actor.</p><p>If @color is None, the selection color will be the same as the
+cursor color, or if no cursor color is set either then it will be
+the same as the text color.</p>
+
+<table>
+<tr>
+<td><p>color :</p></td>
+<td><p>the color of the selection, or None to unset it</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

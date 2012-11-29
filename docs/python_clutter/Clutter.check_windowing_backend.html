@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>check_windowing_backend</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">check_windowing_backend</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(utf8)
+@returns(gboolean)
+def check_windowing_backend(backend_type)</pre></div></div></div></div></div>
+<p class="p">Checks the run-time name of the Clutter windowing system backend, using
+the symbolic macros like %CLUTTER_WINDOWING_WIN32 or
+%CLUTTER_WINDOWING_X11.</p>
+<p class="p">This function should be used in conjuction with the compile-time macros
+inside applications and libraries that are using the platform-specific
+windowing system API, to ensure that they are running on the correct
+windowing system; for instance:</p>
+<p class="p">|[
+&amp;num;ifdef CLUTTER_WINDOWING_X11
+if (clutter_check_windowing_backend (CLUTTER_WINDOWING_X11))
+{
+/&amp;ast; it is safe to use the clutter_x11_* API &amp;ast;/
+}
+else
+&amp;num;endif
+&amp;num;ifdef CLUTTER_WINDOWING_WIN32
+if (clutter_check_windowing_backend (CLUTTER_WINDOWING_WIN32))
+{
+/&amp;ast; it is safe to use the clutter_win32_* API &amp;ast;/
+}
+else
+&amp;num;endif
+g_error ("Unknown Clutter backend.");
+]|</p>
+<p class="p">the one checked, and False otherwise</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">backend_type :</p></td>
+<td><p class="p">the name of the backend to check</p></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">True if the current Clutter windowing system backend is</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.10</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Clutter Documentation">Clutter Documentation</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

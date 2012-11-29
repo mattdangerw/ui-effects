@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Container.get_children"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>&lt;list&gt;</api:type>
+      </api:returns>
+      <api:name>clutter_container_get_children</api:name>
+      <api:arg>
+        <api:type>ClutterContainer *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_children</title>
+<synopsis><code mime="text/x-python">
+@returns(&lt;list&gt;)
+def get_children()
+</code></synopsis>
+<p>Retrieves all the children of @container.</p><p>of <link xref="Clutter.Actor">Clutter.Actor</link>&lt;!-- --&gt;s. Use g_list_free() on the returned
+list when done.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a list</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

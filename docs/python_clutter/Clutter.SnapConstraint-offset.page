@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.SnapConstraint-offset"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.SnapConstraint" group="property"/>
+    <title type="link" role="topic">offset</title>
+  </info>
+  <title>Clutter.SnapConstraint:offset</title>
+<synopsis><code mime="text/x-python">
+"offset"             gfloat                : Read / Write / Construct
+</code></synopsis>
+<p>The offset, in pixels, between <link xref="Clutter.SnapConstraint-from-edge">Clutter.SnapConstraint:from-edge</link>
+and <link xref="Clutter.SnapConstraint-to-edge">Clutter.SnapConstraint:to-edge</link></p>
+</page>

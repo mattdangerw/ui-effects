@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Stage-use-fog"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="property"/>
+    <title type="link" role="topic">use-fog</title>
+  </info>
+  <title>Clutter.Stage:use-fog</title>
+<synopsis><code mime="text/x-python">
+"use-fog"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the stage should use a linear GL "fog" in creating the
+depth-cueing effect, to enhance the perception of depth by fading
+actors farther from the viewpoint.</p>
+</page>

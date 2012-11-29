@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.is_default"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_stage_is_default</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>is_default</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def is_default()
+</code></synopsis>
+<p>Checks if @stage is the default stage, or an instance created using
+clutter_stage_new() but internally using the same implementation.</p><p></p><p>code, or use clutter_actor_get_stage() to retrieve the stage for
+a given actor.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the passed stage is the default one</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

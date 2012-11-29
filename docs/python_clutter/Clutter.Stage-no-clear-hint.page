@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Stage-no-clear-hint"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="property"/>
+    <title type="link" role="topic">no-clear-hint</title>
+  </info>
+  <title>Clutter.Stage:no-clear-hint</title>
+<synopsis><code mime="text/x-python">
+"no-clear-hint"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether or not the <link xref="Clutter.Stage">Clutter.Stage</link> should clear its contents
+before each paint cycle.</p><p>See clutter_stage_set_no_clear_hint() for further information.</p>
+</page>

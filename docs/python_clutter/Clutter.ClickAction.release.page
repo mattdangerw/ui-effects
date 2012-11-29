@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ClickAction.release"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ClickAction" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_click_action_release</api:name>
+      <api:arg>
+        <api:type>ClutterClickAction *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>release</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def release()
+</code></synopsis>
+<p>Emulates a release of the pointer button, which ungrabs the pointer
+and unsets the <link xref="Clutter.ClickAction-pressed">Clutter.ClickAction:pressed</link> state.</p><p>This function will also cancel the long press gesture if one was
+initiated.</p><p>This function is useful to break a grab, for instance after a certain
+amount of time has passed.</p>
+
+<table>
+</table>
+<p>Since 1.4</p>
+</page>

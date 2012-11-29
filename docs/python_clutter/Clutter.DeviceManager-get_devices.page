@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Clutter.DeviceManager-get_devices"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DeviceManager" group="vfunc"/>
+    <title type="link" role="topic">get_devices</title>
+  </info>
+  <title>Clutter.DeviceManager.get_devices</title>
+<synopsis><code mime="text/x-python">
+@returns(&lt;list&gt;)
+def do_get_devices(self, ):
+</code></synopsis>
+
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td></td>
+</tr>
+</table>
+</page>

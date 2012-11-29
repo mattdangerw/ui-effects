@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.BehaviourRotate-angle-end"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourRotate" group="property"/>
+    <title type="link" role="topic">angle-end</title>
+  </info>
+  <title>Clutter.BehaviourRotate:angle-end</title>
+<synopsis><code mime="text/x-python">
+"angle-end"             gdouble                : Read / Write
+</code></synopsis>
+<p>The final angle to where the rotation should end.</p>
+</page>

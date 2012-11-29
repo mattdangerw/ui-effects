@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Path.foreach"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Path" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_path_foreach</api:name>
+      <api:arg>
+        <api:type>ClutterPath *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.PathCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>user_data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>foreach</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.PathCallback, gpointer)
+@returns(none)
+def foreach(callback, user_data)
+</code></synopsis>
+<p>Calls a function for each node of the path.</p>
+
+<table>
+<tr>
+<td><p>callback :</p></td>
+<td><p>the function to call with each node</p></td>
+</tr>
+<tr>
+<td><p>user_data :</p></td>
+<td><p>user data to pass to the function</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

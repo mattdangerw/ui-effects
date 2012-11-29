@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Clutter.Model-get_n_rows"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="vfunc"/>
+    <title type="link" role="topic">get_n_rows</title>
+  </info>
+  <title>Clutter.Model.get_n_rows</title>
+<synopsis><code mime="text/x-python">
+@returns(guint)
+def do_get_n_rows(self, ):
+</code></synopsis>
+<p>Retrieves the number of rows inside @model, eventually taking
+into account any filtering function set using clutter_model_set_filter().</p><p>the length of the filtered @model is returned.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The length of the @model. If there is a filter set, then</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

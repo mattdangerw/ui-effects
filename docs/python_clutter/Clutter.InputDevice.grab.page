@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.InputDevice.grab"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.InputDevice" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_input_device_grab</api:name>
+      <api:arg>
+        <api:type>ClutterInputDevice *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>grab</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def grab(actor)
+</code></synopsis>
+<p>Acquires a grab on @actor for the given @device.</p><p>Any event coming from @device will be delivered to @actor, bypassing
+the usual event delivery mechanism, until the grab is released by
+calling clutter_input_device_ungrab().</p><p>The grab is client-side: even if the windowing system used by the Clutter
+backend has the concept of "device grabs", Clutter will not use them.</p><p>Only <link xref="Clutter.InputDevice">Clutter.InputDevice</link> of types %CLUTTER_POINTER_DEVICE and
+%CLUTTER_KEYBOARD_DEVICE can hold a grab.</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PaintNode.add_child"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PaintNode" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_paint_node_add_child</api:name>
+      <api:arg>
+        <api:type>ClutterPaintNode *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.PaintNode</api:type>
+        <api:name>child</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>add_child</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.PaintNode)
+@returns(none)
+def add_child(child)
+</code></synopsis>
+<p>Adds @child to the list of children of @node.</p><p>This function will acquire a reference on @child.</p>
+
+<table>
+<tr>
+<td><p>child :</p></td>
+<td><p>the child <link xref="Clutter.PaintNode">Clutter.PaintNode</link> to add</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

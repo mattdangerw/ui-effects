@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>allocate_preferred_size</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">allocate_preferred_size</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(Clutter.AllocationFlags)
+@returns(none)
+def allocate_preferred_size(flags)</pre></div></div></div></div></div>
+<p class="p">Allocates the natural size of @self.</p>
+<p class="p">This function is a utility call for <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> implementations
+that allocates the actor's preferred natural size. It can be used
+by fixed layout managers (like <span class=" link"><a href="Clutter.Group.html" title="Clutter.Group">Clutter.Group</a></span> or so called
+'composite actors') inside the ClutterActor::allocate
+implementation to give each child exactly how much space it
+requires.</p>
+<p class="p">This function is not meant to be used by applications. It is also
+not meant to be used outside the implementation of the
+ClutterActor::allocate virtual function.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table"><tr>
+<td><p class="p">flags :</p></td>
+<td><p class="p">flags controlling the allocation</p></td>
+</tr></table></div></div></div>
+<p class="p">Since 0.8</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.raise"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_raise</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>below</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>raise</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def raise(below)
+</code></synopsis>
+<p>Puts @self above @below.</p><p>Both actors must have the same parent, and the parent must implement
+the <link xref="Clutter.Container">Clutter.Container</link> interface</p><p>This function calls clutter_container_raise_child() internally.</p>
+
+<table>
+<tr>
+<td><p>below :</p></td>
+<td><p>A <link xref="Clutter.Actor">Clutter.Actor</link> to raise above.</p></td>
+</tr>
+</table>
+</page>

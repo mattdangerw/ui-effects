@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.get_default_backend"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Backend</api:type>
+      </api:returns>
+      <api:name>clutter_get_default_backend</api:name>
+    </api:function>
+  </info>
+  <title>get_default_backend</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Backend)
+def get_default_backend()
+</code></synopsis>
+<p>Retrieves the default <link xref="Clutter.Backend">Clutter.Backend</link> used by Clutter. The
+<link xref="Clutter.Backend">Clutter.Backend</link> holds backend-specific configuration options.</p><p>not ref or unref the returned object. Applications should rarely
+need to use this.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the default backend. You should</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

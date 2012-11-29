@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ClickAction.get_coords"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ClickAction" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_click_action_get_coords</api:name>
+      <api:arg>
+        <api:type>ClutterClickAction *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>press_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>press_y</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_coords</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(none)
+def get_coords(press_x, press_y)
+</code></synopsis>
+<p>Retrieves the screen coordinates of the button press.</p>
+
+<table>
+<tr>
+<td><p>press_x :</p></td>
+<td><p>return location for the X coordinate, or None</p></td>
+</tr>
+<tr>
+<td><p>press_y :</p></td>
+<td><p>return location for the Y coordinate, or None</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

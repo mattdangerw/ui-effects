@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Units.from_string"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Units" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_units_from_string</api:name>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>str</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>from_string</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(gboolean)
+def from_string(str)
+</code></synopsis>
+<p>Parses a value and updates @units with it</p><p>A <link xref="Clutter.Units">Clutter.Units</link> expressed in string should match:</p><p>|[
+units: wsp* unit-value wsp* unit-name? wsp*
+unit-value: number
+unit-name: 'px' | 'pt' | 'mm' | 'em' | 'cm'
+number: digit+
+| digit* sep digit+
+sep: '.' | ','
+digit: '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
+wsp: (<link xref=""></link>0x20 | <link xref=""></link>0x9 | <link xref=""></link>0xA | <link xref=""></link>0xB | <link xref=""></link>0xC | <link xref=""></link>0xD)+
+]|</p><p>For instance, these are valid strings:</p><p>|[
+10 px
+5.1 em
+24 pt
+12.6 mm
+.3 cm
+]|</p><p>While these are not:</p><p>|[
+42 cats
+omg!1!ponies
+]|</p><p>&lt;note&gt;&lt;para&gt;If no unit is specified, pixels are assumed.&lt;/para&gt;&lt;/note&gt;</p><p>and False otherwise</p>
+
+<table>
+<tr>
+<td><p>str :</p></td>
+<td><p>the string to convert</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the string was successfully parsed,</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

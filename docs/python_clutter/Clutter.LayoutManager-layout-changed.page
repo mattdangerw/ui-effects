@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Clutter.LayoutManager-layout-changed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutManager" group="signal"/>
+    <title type="link" role="topic">layout-changed</title>
+  </info>
+  <title>Clutter.LayoutManager::layout-changed</title>
+<synopsis><code mime="text/x-python">
+def callback(layout_manager, user_param1, ...)
+</code></synopsis>
+<p>The ::layout-changed signal is emitted each time a layout manager
+has been changed. Every <link xref="Clutter.Actor">Clutter.Actor</link> using the @manager instance
+as a layout manager should connect a handler to the ::layout-changed
+signal and queue a relayout on themselves:</p><p>|[
+static void layout_changed (ClutterLayoutManager *manager,
+ClutterActor         *self)
+{
+clutter_actor_queue_relayout (self);
+}
+...
+self-&gt;manager = g_object_ref_sink (manager);
+g_signal_connect (self-&gt;manager, "layout-changed",
+G_CALLBACK (layout_changed),
+self);
+]|</p><p>Sub-classes of <link xref="Clutter.LayoutManager">Clutter.LayoutManager</link> that implement a layout that
+can be controlled or changed using parameters should emit the
+::layout-changed signal whenever one of the parameters changes,
+by using clutter_layout_manager_layout_changed().</p>
+
+<table>
+<tr>
+<td><p>layout_manager :</p></td>
+<td><p>instance of Clutter.LayoutManager that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

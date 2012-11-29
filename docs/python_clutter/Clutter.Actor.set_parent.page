@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_parent"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_parent</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>parent</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_parent</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def set_parent(parent)
+</code></synopsis>
+<p>Sets the parent of @self to @parent.</p><p>This function will result in @parent acquiring a reference on @self,
+eventually by sinking its floating reference first. The reference
+will be released by clutter_actor_unparent().</p><p>This function should only be called by legacy <link xref="Clutter.Actor">Clutter.Actor</link>&lt;!-- --&gt;s
+implementing the <link xref="Clutter.Container">Clutter.Container</link> interface.</p>
+
+<table>
+<tr>
+<td><p>parent :</p></td>
+<td><p>A new <link xref="Clutter.Actor">Clutter.Actor</link> parent</p></td>
+</tr>
+</table>
+</page>

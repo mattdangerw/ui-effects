@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Clutter.LayoutManager-get_preferred_width"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutManager" group="vfunc"/>
+    <title type="link" role="topic">get_preferred_width</title>
+  </info>
+  <title>Clutter.LayoutManager.get_preferred_width</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Container, gfloat, gfloat, gfloat)
+@returns(none)
+def do_get_preferred_width(self, container, for_height, min_width_p, nat_width_p):
+</code></synopsis>
+<p>Computes the minimum and natural widths of the @container according
+to @manager.</p><p>See also clutter_actor_get_preferred_width()</p>
+
+<table>
+<tr>
+<td><p>container :</p></td>
+<td><p>the <link xref="Clutter.Container">Clutter.Container</link> using @manager</p></td>
+</tr>
+<tr>
+<td><p>for_height :</p></td>
+<td><p>the height for which the width should be computed, or -1</p></td>
+</tr>
+<tr>
+<td><p>min_width_p :</p></td>
+<td><p>return location for the minimum width of the layout, or None</p></td>
+</tr>
+<tr>
+<td><p>nat_width_p :</p></td>
+<td><p>return location for the natural width of the layout, or None</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

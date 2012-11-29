@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Texture-cogl-material"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="property"/>
+    <title type="link" role="topic">cogl-material</title>
+  </info>
+  <title>Clutter.Texture:cogl-material</title>
+<synopsis><code mime="text/x-python">
+"cogl-material"             None                : Read / Write
+</code></synopsis>
+
+</page>

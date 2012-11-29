@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="Clutter.Container-actor_removed"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="vfunc"/>
+    <title type="link" role="topic">actor_removed</title>
+  </info>
+  <title>Clutter.Container.actor_removed</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def do_actor_removed(self, actor):
+</code></synopsis>
+
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td></td>
+</tr>
+</table>
+</page>

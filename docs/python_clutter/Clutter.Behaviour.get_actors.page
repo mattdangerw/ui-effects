@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Behaviour.get_actors"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Behaviour" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>&lt;list&gt;</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_get_actors</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviour *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_actors</title>
+<synopsis><code mime="text/x-python">
+@returns(&lt;list&gt;)
+def get_actors()
+</code></synopsis>
+<p>Retrieves all the actors to which @behave applies. It is not recommended
+for derived classes to use this in there alpha notify method but use 
+<link xref="clutter_behaviour_actors_foreach">clutter_behaviour_actors_foreach</link> as it avoids alot of needless allocations.</p><p>actors. You should free the returned list with g_slist_free() when
+finished using it.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a list of</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

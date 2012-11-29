@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.check_windowing_backend"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_check_windowing_backend</api:name>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>backend_type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>check_windowing_backend</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(gboolean)
+def check_windowing_backend(backend_type)
+</code></synopsis>
+<p>Checks the run-time name of the Clutter windowing system backend, using
+the symbolic macros like %CLUTTER_WINDOWING_WIN32 or
+%CLUTTER_WINDOWING_X11.</p><p>This function should be used in conjuction with the compile-time macros
+inside applications and libraries that are using the platform-specific
+windowing system API, to ensure that they are running on the correct
+windowing system; for instance:</p><p>|[
+&amp;num;ifdef CLUTTER_WINDOWING_X11
+if (clutter_check_windowing_backend (CLUTTER_WINDOWING_X11))
+{
+/&amp;ast; it is safe to use the clutter_x11_* API &amp;ast;/
+}
+else
+&amp;num;endif
+&amp;num;ifdef CLUTTER_WINDOWING_WIN32
+if (clutter_check_windowing_backend (CLUTTER_WINDOWING_WIN32))
+{
+/&amp;ast; it is safe to use the clutter_win32_* API &amp;ast;/
+}
+else
+&amp;num;endif
+g_error ("Unknown Clutter backend.");
+]|</p><p>the one checked, and False otherwise</p>
+
+<table>
+<tr>
+<td><p>backend_type :</p></td>
+<td><p>the name of the backend to check</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the current Clutter windowing system backend is</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

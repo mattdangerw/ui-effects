@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Stage-offscreen"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="property"/>
+    <title type="link" role="topic">offscreen</title>
+  </info>
+  <title>Clutter.Stage:offscreen</title>
+<synopsis><code mime="text/x-python">
+"offscreen"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the stage should be rendered in an offscreen buffer.</p>
+</page>

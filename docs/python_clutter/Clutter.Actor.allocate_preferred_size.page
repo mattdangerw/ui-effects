@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.allocate_preferred_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_allocate_preferred_size</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.AllocationFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>allocate_preferred_size</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.AllocationFlags)
+@returns(none)
+def allocate_preferred_size(flags)
+</code></synopsis>
+<p>Allocates the natural size of @self.</p><p>This function is a utility call for <link xref="Clutter.Actor">Clutter.Actor</link> implementations
+that allocates the actor's preferred natural size. It can be used
+by fixed layout managers (like <link xref="Clutter.Group">Clutter.Group</link> or so called
+'composite actors') inside the ClutterActor::allocate
+implementation to give each child exactly how much space it
+requires.</p><p>This function is not meant to be used by applications. It is also
+not meant to be used outside the implementation of the
+ClutterActor::allocate virtual function.</p>
+
+<table>
+<tr>
+<td><p>flags :</p></td>
+<td><p>flags controlling the allocation</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

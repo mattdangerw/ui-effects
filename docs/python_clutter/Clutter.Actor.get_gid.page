@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_gid"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint32</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_gid</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_gid</title>
+<synopsis><code mime="text/x-python">
+@returns(guint32)
+def get_gid()
+</code></synopsis>
+<p>Retrieves the unique id for @self.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>Globally unique value for this object instance.</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_transformed_position"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_transformed_position</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_transformed_position</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(none)
+def get_transformed_position(x, y)
+</code></synopsis>
+<p>Gets the absolute position of an actor, in pixels relative to the stage.</p>
+
+<table>
+<tr>
+<td><p>x :</p></td>
+<td><p>return location for the X coordinate, or None</p></td>
+</tr>
+<tr>
+<td><p>y :</p></td>
+<td><p>return location for the Y coordinate, or None</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

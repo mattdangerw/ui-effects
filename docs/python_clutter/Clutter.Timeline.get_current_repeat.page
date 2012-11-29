@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.get_current_repeat"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gint</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_get_current_repeat</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_current_repeat</title>
+<synopsis><code mime="text/x-python">
+@returns(gint)
+def get_current_repeat()
+</code></synopsis>
+<p>Retrieves the current repeat for a timeline.</p><p>Repeats start at 0.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the current repeat</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.unparent"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_unparent</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>unparent</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def unparent()
+</code></synopsis>
+<p>Removes the parent of @self.</p><p>This will cause the parent of @self to release the reference
+acquired when calling clutter_actor_set_parent(), so if you
+want to keep @self you will have to acquire a reference of
+your own, through g_object_ref().</p><p>This function should only be called by legacy <link xref="Clutter.Actor">Clutter.Actor</link>&lt;!-- --&gt;s
+implementing the <link xref="Clutter.Container">Clutter.Container</link> interface.</p>
+
+<table>
+</table>
+<p>Since 0.1.1</p>
+</page>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-min-height-set"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">min-height-set</title>
+  </info>
+  <title>Clutter.Actor:min-height-set</title>
+<synopsis><code mime="text/x-python">
+"min-height-set"             gboolean                : Read / Write
+</code></synopsis>
+<p>This flag controls whether the <link xref="Clutter.Actor-min-height">Clutter.Actor:min-height</link> property
+is used</p>
+</page>

@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>set_fog</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">set_fog</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(Clutter.Fog)
+@returns(none)
+def set_fog(fog)</pre></div></div></div></div></div>
+<p class="p">Sets the fog (also known as "depth cueing") settings for the @stage.</p>
+<p class="p">A <span class=" link"><a href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a></span> will only use a linear fog progression, which
+depends solely on the distance from the viewer. The cogl_set_fog()
+function in COGL exposes more of the underlying implementation,
+and allows changing the for progression function. It can be directly
+used by disabling the <span class=" link"><a href="Clutter.Stage-use-fog.html" title="Clutter.Stage:use-fog">Clutter.Stage:use-fog</a></span> property and connecting
+a signal handler to the <span class=" link"><a href="Clutter.Actor-paint.html" title="Clutter.Actor::paint">Clutter.Actor::paint</a></span> signal on the @stage,
+like:</p>
+<p class="p">|[
+clutter_stage_set_use_fog (stage, FALSE);
+g_signal_connect (stage, "paint", G_CALLBACK (on_stage_paint), NULL);
+]|</p>
+<p class="p">The paint signal handler will call cogl_set_fog() with the
+desired settings:</p>
+<p class="p">|[
+static void
+on_stage_paint (ClutterActor *actor)
+{
+ClutterColor stage_color = { 0, };
+CoglColor fog_color = { 0, };</p>
+<p class="p">/&amp;ast; set the fog color to the stage background color &amp;ast;/
+clutter_stage_get_color (CLUTTER_STAGE (actor), &amp;amp;stage_color);
+cogl_color_init_from_4ub (&amp;amp;fog_color,
+stage_color.red,
+stage_color.green,
+stage_color.blue,
+stage_color.alpha);</p>
+<p class="p">/&amp;ast; enable fog &amp;ast;/
+cogl_set_fog (&amp;amp;fog_color,
+COGL_FOG_MODE_EXPONENTIAL, /&amp;ast; mode &amp;ast;/
+0.5,                       /&amp;ast; density &amp;ast;/
+5.0, 30.0);                /&amp;ast; z_near and z_far &amp;ast;/
+}
+]|</p>
+<p class="p">&lt;note&gt;The fogging functions only work correctly when the visible actors use
+unmultiplied alpha colors. By default Cogl will premultiply textures and
+cogl_set_source_color() will premultiply colors, so unless you explicitly
+load your textures requesting an unmultiplied internal format and use
+cogl_material_set_color() you can only use fogging with fully opaque actors.
+Support for premultiplied colors will improve in the future when we can
+depend on fragment shaders.&lt;/note&gt;</p>
+<div class="table"><div class="inner"><div class="region"><table class="table"><tr>
+<td><p class="p">fog :</p></td>
+<td><p class="p">a <span class=" link"><a href="Clutter.Fog.html" title="ClutterFog">Clutter.Fog</a></span> structure</p></td>
+</tr></table></div></div></div>
+<p class="p">Since 0.6</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.TextBuffer.emit_deleted_text"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TextBuffer" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_buffer_emit_deleted_text</api:name>
+      <api:arg>
+        <api:type>ClutterTextBuffer *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>position</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>n_chars</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>emit_deleted_text</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, guint)
+@returns(none)
+def emit_deleted_text(position, n_chars)
+</code></synopsis>
+<p>Emits the <link xref="Clutter.TextBuffer-deleted-text">Clutter.TextBuffer::deleted-text</link> signal on @buffer.</p><p>Used when subclassing <link xref="Clutter.TextBuffer">Clutter.TextBuffer</link></p>
+
+<table>
+<tr>
+<td><p>position :</p></td>
+<td><p>position at which text was deleted</p></td>
+</tr>
+<tr>
+<td><p>n_chars :</p></td>
+<td><p>number of characters deleted</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

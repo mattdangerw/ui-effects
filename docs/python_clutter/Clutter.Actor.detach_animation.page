@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.detach_animation"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_detach_animation</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>detach_animation</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def detach_animation()
+</code></synopsis>
+<p>Detaches the <link xref="Clutter.Animation">Clutter.Animation</link> used by @actor, if clutter_actor_animate()
+has been called on @actor.</p><p>Once the animation has been detached, it loses a reference. If it was
+the only reference then the <link xref="Clutter.Animation">Clutter.Animation</link> becomes invalid.</p><p>The <link xref="Clutter.Animation-completed">Clutter.Animation::completed</link> signal will not be emitted.</p>
+
+<table>
+</table>
+<p>Since 1.4</p>
+</page>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.LayoutManager.get_child_meta"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutManager" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.LayoutMeta</api:type>
+      </api:returns>
+      <api:name>clutter_layout_manager_get_child_meta</api:name>
+      <api:arg>
+        <api:type>ClutterLayoutManager *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Container</api:type>
+        <api:name>container</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_child_meta</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Container, Clutter.Actor)
+@returns(Clutter.LayoutMeta)
+def get_child_meta(container, actor)
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.LayoutMeta">Clutter.LayoutMeta</link> that the layout @manager associated
+to the @actor child of @container, eventually by creating one if the
+<link xref="Clutter.LayoutManager">Clutter.LayoutManager</link> supports layout properties</p><p><link xref="Clutter.LayoutManager">Clutter.LayoutManager</link> does not have layout properties. The returned
+layout meta instance is owned by the <link xref="Clutter.LayoutManager">Clutter.LayoutManager</link> and it
+should not be unreferenced</p>
+
+<table>
+<tr>
+<td><p>container :</p></td>
+<td><p>a <link xref="Clutter.Container">Clutter.Container</link> using @manager</p></td>
+</tr>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link> child of @container</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="Clutter.LayoutMeta">Clutter.LayoutMeta</link>, or None if the</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

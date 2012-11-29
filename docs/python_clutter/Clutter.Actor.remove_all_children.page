@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.remove_all_children"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_remove_all_children</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>remove_all_children</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def remove_all_children()
+</code></synopsis>
+<p>Removes all children of @self.</p><p>This function releases the reference added by inserting a child actor
+in the list of children of @self.</p><p>If the reference count of a child drops to zero, the child will be
+destroyed. If you want to ensure the destruction of all the children
+of @self, use clutter_actor_destroy_all_children().</p>
+
+<table>
+</table>
+<p>Since 1.10</p>
+</page>

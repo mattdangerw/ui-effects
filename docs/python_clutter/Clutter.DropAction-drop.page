@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Clutter.DropAction-drop"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DropAction" group="signal"/>
+    <title type="link" role="topic">drop</title>
+  </info>
+  <title>Clutter.DropAction::drop</title>
+<synopsis><code mime="text/x-python">
+def callback(drop_action, actor, event_x, event_y, user_param1, ...)
+</code></synopsis>
+<p>The ::drop signal is emitted when the dragged actor is dropped
+on @actor. This signal is only emitted if at least an handler of
+<link xref="Clutter.DropAction-can-drop">Clutter.DropAction::can-drop</link> returns True.</p>
+
+<table>
+<tr>
+<td><p>drop_action :</p></td>
+<td><p>instance of Clutter.DropAction that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>actor :</p></td>
+<td><p>the <link xref="Clutter.Actor">Clutter.Actor</link> attached to the @action</p></td>
+</tr>
+<tr>
+<td><p>event_x :</p></td>
+<td><p>the X coordinate (in stage space) of the drop event</p></td>
+</tr>
+<tr>
+<td><p>event_y :</p></td>
+<td><p>the Y coordinate (in stage space) of the drop event</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.DragAction.get_drag_threshold"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DragAction" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_drag_action_get_drag_threshold</api:name>
+      <api:arg>
+        <api:type>ClutterDragAction *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>x_threshold</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>y_threshold</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_drag_threshold</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, guint)
+@returns(none)
+def get_drag_threshold(x_threshold, y_threshold)
+</code></synopsis>
+<p>Retrieves the values set by clutter_drag_action_set_drag_threshold().</p><p>If the <link xref="Clutter.DragAction-x-drag-threshold">Clutter.DragAction:x-drag-threshold</link> property or the
+<link xref="Clutter.DragAction-y-drag-threshold">Clutter.DragAction:y-drag-threshold</link> property have been set to -1 then
+this function will return the default drag threshold value as stored
+by the <link xref="Clutter.Settings-dnd-drag-threshold">Clutter.Settings:dnd-drag-threshold</link> property of <link xref="Clutter.Settings">Clutter.Settings</link>.</p>
+
+<table>
+<tr>
+<td><p>x_threshold :</p></td>
+<td><p>return location for the horizontal drag threshold value, in pixels</p></td>
+</tr>
+<tr>
+<td><p>y_threshold :</p></td>
+<td><p>return location for the vertical drag threshold value, in pixels</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

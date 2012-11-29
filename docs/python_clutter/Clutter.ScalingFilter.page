@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="Clutter.ScalingFilter"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.ScalingFilter</title>
+  <p>The scaling filters to be used with the <link xref="Clutter.Actor-minification-filter">Clutter.Actor:minification-filter</link>
+and <link xref="Clutter.Actor-magnification-filter">Clutter.Actor:magnification-filter</link> properties.</p>
+<table>
+<tr>
+<td><p>ScalingFilter.LINEAR :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>ScalingFilter.NEAREST :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>ScalingFilter.TRILINEAR :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-effect"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">effect</title>
+  </info>
+  <title>Clutter.Actor:effect</title>
+<synopsis><code mime="text/x-python">
+"effect"             Clutter.Effect                : Write
+</code></synopsis>
+<p>Adds <link xref="Clutter.Effect">Clutter.Effect</link> to the list of effects be applied on a <link xref="Clutter.Actor">Clutter.Actor</link></p>
+</page>

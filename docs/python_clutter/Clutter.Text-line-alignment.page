@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-line-alignment"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="property"/>
+    <title type="link" role="topic">line-alignment</title>
+  </info>
+  <title>Clutter.Text:line-alignment</title>
+<synopsis><code mime="text/x-python">
+"line-alignment"             Pango.Alignment                : Read / Write
+</code></synopsis>
+<p>The preferred alignment for the text. This property controls
+the alignment of multi-line paragraphs.</p>
+</page>

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.CairoTexture.create_region"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.CairoTexture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>cairo.Context</api:type>
+      </api:returns>
+      <api:name>clutter_cairo_texture_create_region</api:name>
+      <api:arg>
+        <api:type>ClutterCairoTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>x_offset</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>y_offset</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>create_region</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint, gint, gint, gint)
+@returns(cairo.Context)
+def create_region(x_offset, y_offset, width, height)
+</code></synopsis>
+<p>Creates a new Cairo context that will updat the region defined
+by @x_offset, @y_offset, @width and @height.</p><p>&lt;warning&gt;&lt;para&gt;Do not call this function within the paint virtual
+function or from a callback to the <link xref="Clutter.Actor-paint">Clutter.Actor::paint</link>
+signal.&lt;/para&gt;&lt;/warning&gt;</p><p>to upload the contents of the context when done drawing</p><p>
+clutter_cairo_texture_invalidate_rectangle() to obtain a
+clipped Cairo context for 2D drawing.</p>
+
+<table>
+<tr>
+<td><p>x_offset :</p></td>
+<td><p>offset of the region on the X axis</p></td>
+</tr>
+<tr>
+<td><p>y_offset :</p></td>
+<td><p>offset of the region on the Y axis</p></td>
+</tr>
+<tr>
+<td><p>width :</p></td>
+<td><p>width of the region, or -1 for the full surface width</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>height of the region, or -1 for the full surface height</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a newly created Cairo context. Use cairo_destroy()</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

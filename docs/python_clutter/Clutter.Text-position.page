@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-position"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="property"/>
+    <title type="link" role="topic">position</title>
+  </info>
+  <title>Clutter.Text:position</title>
+<synopsis><code mime="text/x-python">
+"position"             gint                : Read / Write
+</code></synopsis>
+<p>The current input cursor position. -1 is taken to be the end of the text</p>
+</page>

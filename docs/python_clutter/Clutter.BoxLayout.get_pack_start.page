@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BoxLayout.get_pack_start"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BoxLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_box_layout_get_pack_start</api:name>
+      <api:arg>
+        <api:type>ClutterBoxLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_pack_start</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def get_pack_start()
+</code></synopsis>
+<p>Retrieves the value set using clutter_box_layout_set_pack_start()</p><p>at the beginning of the layout, and False otherwise</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the <link xref="Clutter.BoxLayout">Clutter.BoxLayout</link> should pack children</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

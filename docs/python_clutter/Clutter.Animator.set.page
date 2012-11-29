@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animator.set"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animator" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_animator_set</api:name>
+      <api:arg>
+        <api:type>ClutterAnimator *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>first_object</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>first_property_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>first_mode</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>first_progress</api:name>
+      </api:arg>
+      <api:varargs/>
+    </api:function>
+  </info>
+  <title>set</title>
+<synopsis><code mime="text/x-python">
+@accepts(gpointer, utf8, guint, gdouble, &lt;varargs&gt;)
+@returns(none)
+def set(first_object, first_property_name, first_mode, first_progress, None)
+</code></synopsis>
+<p>Adds multiple keys to a <link xref="Clutter.Animator">Clutter.Animator</link>, specifying the value a given
+property should have at a given progress of the animation. The mode
+specified is the mode used when going to this key from the previous key of
+the @property_name</p><p>If a given (object, property, progress) tuple already exist the mode and
+value will be replaced with the new values.</p>
+
+<table>
+<tr>
+<td><p>first_object :</p></td>
+<td><p>a <link xref="GObject">GObject</link></p></td>
+</tr>
+<tr>
+<td><p>first_property_name :</p></td>
+<td><p>the property to specify a key for</p></td>
+</tr>
+<tr>
+<td><p>first_mode :</p></td>
+<td><p>the id of the alpha function to use</p></td>
+</tr>
+<tr>
+<td><p>first_progress :</p></td>
+<td><p>at which stage of the animation this value applies; the range is a normalized floating point value between 0 and 1</p></td>
+</tr>
+<tr>
+<td><p>None :</p></td>
+<td></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

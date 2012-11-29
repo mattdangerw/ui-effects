@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.set_color"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_stage_set_color</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Color</api:type>
+        <api:name>color</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_color</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Color)
+@returns(none)
+def set_color(color)
+</code></synopsis>
+<p>Sets the stage color.</p>
+
+<table>
+<tr>
+<td><p>color :</p></td>
+<td><p>A <link xref="Clutter.Color">Clutter.Color</link></p></td>
+</tr>
+</table>
+</page>

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.LayoutManager.begin_animation"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.LayoutManager" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Alpha</api:type>
+      </api:returns>
+      <api:name>clutter_layout_manager_begin_animation</api:name>
+      <api:arg>
+        <api:type>ClutterLayoutManager *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>duration</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gulong</api:type>
+        <api:name>mode</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>begin_animation</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, gulong)
+@returns(Clutter.Alpha)
+def begin_animation(duration, mode)
+</code></synopsis>
+<p>Begins an animation of @duration milliseconds, using the provided
+easing @mode</p><p>The easing mode can be specified either as a <link xref="Clutter.AnimationMode">Clutter.AnimationMode</link>
+or as a logical id returned by clutter_alpha_register_func()</p><p>The result of this function depends on the @manager implementation</p><p>layout manager; the returned instance is owned by the layout
+manager and should not be unreferenced</p>
+
+<table>
+<tr>
+<td><p>duration :</p></td>
+<td><p>the duration of the animation, in milliseconds</p></td>
+</tr>
+<tr>
+<td><p>mode :</p></td>
+<td><p>the easing mode of the animation</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The <link xref="Clutter.Alpha">Clutter.Alpha</link> created by the</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

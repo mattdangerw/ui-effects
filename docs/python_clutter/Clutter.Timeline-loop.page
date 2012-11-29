@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Clutter.Timeline-loop"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="property"/>
+    <title type="link" role="topic">loop</title>
+  </info>
+  <title>Clutter.Timeline:loop</title>
+<synopsis><code mime="text/x-python">
+"loop"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the timeline should automatically rewind and restart.</p><p>As a side effect, setting this property to True will set the
+<link xref="Clutter.Timeline-repeat-count">Clutter.Timeline:repeat-count</link> property to -1, while setting this
+property to False will set the <link xref="Clutter.Timeline-repeat-count">Clutter.Timeline:repeat-count</link>
+property to 0.</p>
+</page>

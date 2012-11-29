@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animation.completed"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animation" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_animation_completed</api:name>
+      <api:arg>
+        <api:type>ClutterAnimation *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>completed</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def completed()
+</code></synopsis>
+<p>Emits the ::completed signal on @animation</p><p>When using this function with a <link xref="Clutter.Animation">Clutter.Animation</link> created
+by the clutter_actor_animate() family of functions, @animation
+will be unreferenced and it will not be valid anymore,
+unless g_object_ref() was called before calling this function
+or unless a reference was taken inside a handler for the
+<link xref="Clutter.Animation-completed">Clutter.Animation::completed</link> signal</p>
+
+<table>
+</table>
+<p>Since 1.0</p>
+</page>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Clutter.X11FilterReturn"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.X11FilterReturn</title>
+  
+<table>
+<tr>
+<td><p>X11FilterReturn.CONTINUE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>X11FilterReturn.TRANSLATE :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>X11FilterReturn.REMOVE :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

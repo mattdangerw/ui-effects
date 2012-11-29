@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Clutter.Content-get_preferred_size"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Content" group="vfunc"/>
+    <title type="link" role="topic">get_preferred_size</title>
+  </info>
+  <title>Clutter.Content.get_preferred_size</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(gboolean)
+def do_get_preferred_size(self, width, height):
+</code></synopsis>
+<p>Retrieves the natural size of the @content, if any.</p><p>The natural size of a <link xref="Clutter.Content">Clutter.Content</link> is defined as the size the content
+would have regardless of the allocation of the actor that is painting it,
+for instance the size of an image data.</p><p>otherwise</p>
+
+<table>
+<tr>
+<td><p>width :</p></td>
+<td><p>return location for the natural width of the content</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>return location for the natural height of the content</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the content has a preferred size, and False</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

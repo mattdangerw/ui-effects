@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.DeviceManager.list_devices"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DeviceManager" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>&lt;list&gt;</api:type>
+      </api:returns>
+      <api:name>clutter_device_manager_list_devices</api:name>
+      <api:arg>
+        <api:type>ClutterDeviceManager *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>list_devices</title>
+<synopsis><code mime="text/x-python">
+@returns(&lt;list&gt;)
+def list_devices()
+</code></synopsis>
+<p>Lists all currently registered input devices</p><p>a newly allocated list of <link xref="Clutter.InputDevice">Clutter.InputDevice</link> objects. Use
+g_slist_free() to deallocate it when done</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_preferred_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_preferred_size</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>min_width_p</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>min_height_p</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>natural_width_p</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>natural_height_p</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_preferred_size</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat, gfloat, gfloat)
+@returns(none)
+def get_preferred_size(min_width_p, min_height_p, natural_width_p, natural_height_p)
+</code></synopsis>
+<p>Computes the preferred minimum and natural size of an actor, taking into
+account the actor's geometry management (either height-for-width
+or width-for-height).</p><p>The width and height used to compute the preferred height and preferred
+width are the actor's natural ones.</p><p>If you need to control the height for the preferred width, or the width for
+the preferred height, you should use clutter_actor_get_preferred_width()
+and clutter_actor_get_preferred_height(), and check the actor's preferred
+geometry management using the <link xref="Clutter.Actor-request-mode">Clutter.Actor:request-mode</link> property.</p>
+
+<table>
+<tr>
+<td><p>min_width_p :</p></td>
+<td><p>return location for the minimum width, or None</p></td>
+</tr>
+<tr>
+<td><p>min_height_p :</p></td>
+<td><p>return location for the minimum height, or None</p></td>
+</tr>
+<tr>
+<td><p>natural_width_p :</p></td>
+<td><p>return location for the natural width, or None</p></td>
+</tr>
+<tr>
+<td><p>natural_height_p :</p></td>
+<td><p>return location for the natural height, or None</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

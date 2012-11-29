@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.paint"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_paint</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>paint</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def paint()
+</code></synopsis>
+<p>Renders the actor to display.</p><p>This function should not be called directly by applications.
+Call clutter_actor_queue_redraw() to queue paints, instead.</p><p>This function is context-aware, and will either cause a
+regular paint or a pick paint.</p><p>This function will emit the <link xref="Clutter.Actor-paint">Clutter.Actor::paint</link> signal or
+the <link xref="Clutter.Actor-pick">Clutter.Actor::pick</link> signal, depending on the context.</p><p>This function does not paint the actor if the actor is set to 0,
+unless it is performing a pick paint.</p>
+
+<table>
+</table>
+</page>

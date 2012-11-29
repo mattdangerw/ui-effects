@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.DragAction.set_drag_threshold"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DragAction" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_drag_action_set_drag_threshold</api:name>
+      <api:arg>
+        <api:type>ClutterDragAction *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>x_threshold</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>y_threshold</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_drag_threshold</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint, gint)
+@returns(none)
+def set_drag_threshold(x_threshold, y_threshold)
+</code></synopsis>
+<p>Sets the horizontal and vertical drag thresholds that must be
+cleared by the pointer before @action can begin the dragging.</p><p>If @x_threshold or @y_threshold are set to -1 then the default
+drag threshold stored in the <link xref="Clutter.Settings-dnd-drag-threshold">Clutter.Settings:dnd-drag-threshold</link>
+property of <link xref="Clutter.Settings">Clutter.Settings</link> will be used.</p>
+
+<table>
+<tr>
+<td><p>x_threshold :</p></td>
+<td><p>a distance on the horizontal axis, in pixels, or -1 to use the default drag threshold from <link xref="Clutter.Settings">Clutter.Settings</link></p></td>
+</tr>
+<tr>
+<td><p>y_threshold :</p></td>
+<td><p>a distance on the vertical axis, in pixels, or -1 to use the default drag threshold from <link xref="Clutter.Settings">Clutter.Settings</link></p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Stage.show_cursor"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_stage_show_cursor</api:name>
+      <api:arg>
+        <api:type>ClutterStage *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>show_cursor</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def show_cursor()
+</code></synopsis>
+<p>Shows the cursor on the stage window</p>
+
+<table>
+</table>
+</page>

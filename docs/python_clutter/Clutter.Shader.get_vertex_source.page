@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Shader.get_vertex_source"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Shader" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_shader_get_vertex_source</api:name>
+      <api:arg>
+        <api:type>ClutterShader *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_vertex_source</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def get_vertex_source()
+</code></synopsis>
+<p>Query the current GLSL vertex source set on @shader.</p><p>ClutterShader object or None. The returned string is owned by the
+shader object and should never be modified or freed</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the source of the vertex shader for this</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

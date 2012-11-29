@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Clutter.DeviceManager-device-added"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DeviceManager" group="signal"/>
+    <title type="link" role="topic">device-added</title>
+  </info>
+  <title>Clutter.DeviceManager::device-added</title>
+<synopsis><code mime="text/x-python">
+def callback(device_manager, device, user_param1, ...)
+</code></synopsis>
+<p>The ::device-added signal is emitted each time a device has been
+added to the <link xref="Clutter.DeviceManager">Clutter.DeviceManager</link></p>
+
+<table>
+<tr>
+<td><p>device_manager :</p></td>
+<td><p>instance of Clutter.DeviceManager that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>device :</p></td>
+<td><p>the newly added <link xref="Clutter.InputDevice">Clutter.InputDevice</link></p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

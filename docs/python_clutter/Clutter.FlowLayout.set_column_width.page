@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.FlowLayout.set_column_width"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.FlowLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_flow_layout_set_column_width</api:name>
+      <api:arg>
+        <api:type>ClutterFlowLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>min_width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>max_width</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_column_width</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(none)
+def set_column_width(min_width, max_width)
+</code></synopsis>
+<p>Sets the minimum and maximum widths that a column can have</p>
+
+<table>
+<tr>
+<td><p>min_width :</p></td>
+<td><p>minimum width of a column</p></td>
+</tr>
+<tr>
+<td><p>max_width :</p></td>
+<td><p>maximum width of a column</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

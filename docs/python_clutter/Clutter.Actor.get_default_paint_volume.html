@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>get_default_paint_volume</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">get_default_paint_volume</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@returns(Clutter.PaintVolume)
+def get_default_paint_volume()</pre></div></div></div></div></div>
+<p class="p">Retrieves the default paint volume for @self.</p>
+<p class="p">This function provides the same <span class=" link"><a href="Clutter.PaintVolume.html" title="ClutterPaintVolume">Clutter.PaintVolume</a></span> that would be
+computed by the default implementation inside <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> of the
+<span class=" link"><a href="Clutter.ActorClass.html" title="Clutter.ActorClass">Clutter.ActorClass</a></span>.get_paint_volume() virtual function.</p>
+<p class="p">This function should only be used by <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span> subclasses that
+cannot chain up to the parent implementation when computing their
+paint volume.</p>
+<p class="p"><span class=" link"><a href="Clutter.PaintVolume.html" title="ClutterPaintVolume">Clutter.PaintVolume</a></span>, relative to the <span class=" link"><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></span>, or None if
+the actor could not compute a valid paint volume. The returned value
+is not guaranteed to be stable across multiple frames, so if you
+want to retain it, you will need to copy it using
+clutter_paint_volume_copy().</p>
+<div class="table"><div class="inner"><div class="region"><table class="table"><tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">a pointer to the default</p></td>
+</tr></table></div></div></div>
+<p class="p">Since 1.10</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

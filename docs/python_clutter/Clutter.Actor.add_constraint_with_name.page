@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.add_constraint_with_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_add_constraint_with_name</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Constraint</api:type>
+        <api:name>constraint</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>add_constraint_with_name</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, Clutter.Constraint)
+@returns(none)
+def add_constraint_with_name(name, constraint)
+</code></synopsis>
+<p>A convenience function for setting the name of a <link xref="Clutter.Constraint">Clutter.Constraint</link>
+while adding it to the list of constraints applied to @self</p><p>This function is the logical equivalent of:</p><p>|[
+clutter_actor_meta_set_name (CLUTTER_ACTOR_META (constraint), name);
+clutter_actor_add_constraint (self, constraint);
+]|</p>
+
+<table>
+<tr>
+<td><p>name :</p></td>
+<td><p>the name to set on the constraint</p></td>
+</tr>
+<tr>
+<td><p>constraint :</p></td>
+<td><p>a <link xref="Clutter.Constraint">Clutter.Constraint</link></p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

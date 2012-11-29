@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_geometry"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_geometry</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Geometry</api:type>
+        <api:name>geometry</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_geometry</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Geometry)
+@returns(none)
+def get_geometry(geometry)
+</code></synopsis>
+<p>Gets the size and position of an actor relative to its parent
+actor. This is the same as calling clutter_actor_get_position() and
+clutter_actor_get_size(). It tries to "do what you mean" and get the
+requested size and position if the actor's allocation is invalid.</p><p>clutter_actor_get_size(), or clutter_actor_get_allocation_geometry()
+instead.</p>
+
+<table>
+<tr>
+<td><p>geometry :</p></td>
+<td><p>A location to store actors <link xref="Clutter.Geometry">Clutter.Geometry</link></p></td>
+</tr>
+</table>
+</page>

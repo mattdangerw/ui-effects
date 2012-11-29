@@ -1,0 +1,411 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Clutter.Actor</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Clutter.Actor</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">Base class for actors.</p>
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">from gi.repository import Clutter
+
+actor = Clutter.Actor(<span class=" link"><a href="Clutter.Actor-actions.html" title="Clutter.Actor:actions">actions</a></span>=value, <span class=" link"><a href="Clutter.Actor-anchor-gravity.html" title="Clutter.Actor:anchor-gravity">anchor_gravity</a></span>=value, <span class=" link"><a href="Clutter.Actor-anchor-x.html" title="Clutter.Actor:anchor-x">anchor_x</a></span>=value, <span class=" link"><a href="Clutter.Actor-anchor-y.html" title="Clutter.Actor:anchor-y">anchor_y</a></span>=value, <span class=" link"><a href="Clutter.Actor-background-color.html" title="Clutter.Actor:background-color">background_color</a></span>=value, <span class=" link"><a href="Clutter.Actor-clip.html" title="Clutter.Actor:clip">clip</a></span>=value, <span class=" link"><a href="Clutter.Actor-clip-to-allocation.html" title="Clutter.Actor:clip-to-allocation">clip_to_allocation</a></span>=value, <span class=" link"><a href="Clutter.Actor-constraints.html" title="Clutter.Actor:constraints">constraints</a></span>=value, <span class=" link"><a href="Clutter.Actor-content.html" title="Clutter.Actor:content">content</a></span>=value, <span class=" link"><a href="Clutter.Actor-content-gravity.html" title="Clutter.Actor:content-gravity">content_gravity</a></span>=value, <span class=" link"><a href="Clutter.Actor-depth.html" title="Clutter.Actor:depth">depth</a></span>=value, <span class=" link"><a href="Clutter.Actor-effect.html" title="Clutter.Actor:effect">effect</a></span>=value, <span class=" link"><a href="Clutter.Actor-fixed-position-set.html" title="Clutter.Actor:fixed-position-set">fixed_position_set</a></span>=value, <span class=" link"><a href="Clutter.Actor-fixed-x.html" title="Clutter.Actor:fixed-x">fixed_x</a></span>=value, <span class=" link"><a href="Clutter.Actor-fixed-y.html" title="Clutter.Actor:fixed-y">fixed_y</a></span>=value, <span class=" link"><a href="Clutter.Actor-height.html" title="Clutter.Actor:height">height</a></span>=value, <span class=" link"><a href="Clutter.Actor-layout-manager.html" title="Clutter.Actor:layout-manager">layout_manager</a></span>=value, <span class=" link"><a href="Clutter.Actor-magnification-filter.html" title="Clutter.Actor:magnification-filter">magnification_filter</a></span>=value, <span class=" link"><a href="Clutter.Actor-margin-bottom.html" title="Clutter.Actor:margin-bottom">margin_bottom</a></span>=value, <span class=" link"><a href="Clutter.Actor-margin-left.html" title="Clutter.Actor:margin-left">margin_left</a></span>=value, <span class=" link"><a href="Clutter.Actor-margin-right.html" title="Clutter.Actor:margin-right">margin_right</a></span>=value, <span class=" link"><a href="Clutter.Actor-margin-top.html" title="Clutter.Actor:margin-top">margin_top</a></span>=value, <span class=" link"><a href="Clutter.Actor-min-height.html" title="Clutter.Actor:min-height">min_height</a></span>=value, <span class=" link"><a href="Clutter.Actor-min-height-set.html" title="Clutter.Actor:min-height-set">min_height_set</a></span>=value, <span class=" link"><a href="Clutter.Actor-min-width.html" title="Clutter.Actor:min-width">min_width</a></span>=value, <span class=" link"><a href="Clutter.Actor-min-width-set.html" title="Clutter.Actor:min-width-set">min_width_set</a></span>=value, <span class=" link"><a href="Clutter.Actor-minification-filter.html" title="Clutter.Actor:minification-filter">minification_filter</a></span>=value, <span class=" link"><a href="Clutter.Actor-name.html" title="Clutter.Actor:name">name</a></span>=value, <span class=" link"><a href="Clutter.Actor-natural-height.html" title="Clutter.Actor:natural-height">natural_height</a></span>=value, <span class=" link"><a href="Clutter.Actor-natural-height-set.html" title="Clutter.Actor:natural-height-set">natural_height_set</a></span>=value, <span class=" link"><a href="Clutter.Actor-natural-width.html" title="Clutter.Actor:natural-width">natural_width</a></span>=value, <span class=" link"><a href="Clutter.Actor-natural-width-set.html" title="Clutter.Actor:natural-width-set">natural_width_set</a></span>=value, <span class=" link"><a href="Clutter.Actor-offscreen-redirect.html" title="Clutter.Actor:offscreen-redirect">offscreen_redirect</a></span>=value, <span class=" link"><a href="Clutter.Actor-opacity.html" title="Clutter.Actor:opacity">opacity</a></span>=value, <span class=" link"><a href="Clutter.Actor-reactive.html" title="Clutter.Actor:reactive">reactive</a></span>=value, <span class=" link"><a href="Clutter.Actor-request-mode.html" title="Clutter.Actor:request-mode">request_mode</a></span>=value, <span class=" link"><a href="Clutter.Actor-rotation-angle-x.html" title="Clutter.Actor:rotation-angle-x">rotation_angle_x</a></span>=value, <span class=" link"><a href="Clutter.Actor-rotation-angle-y.html" title="Clutter.Actor:rotation-angle-y">rotation_angle_y</a></span>=value, <span class=" link"><a href="Clutter.Actor-rotation-angle-z.html" title="Clutter.Actor:rotation-angle-z">rotation_angle_z</a></span>=value, <span class=" link"><a href="Clutter.Actor-rotation-center-x.html" title="Clutter.Actor:rotation-center-x">rotation_center_x</a></span>=value, <span class=" link"><a href="Clutter.Actor-rotation-center-y.html" title="Clutter.Actor:rotation-center-y">rotation_center_y</a></span>=value, <span class=" link"><a href="Clutter.Actor-rotation-center-z.html" title="Clutter.Actor:rotation-center-z">rotation_center_z</a></span>=value, <span class=" link"><a href="Clutter.Actor-rotation-center-z-gravity.html" title="Clutter.Actor:rotation-center-z-gravity">rotation_center_z_gravity</a></span>=value, <span class=" link"><a href="Clutter.Actor-scale-center-x.html" title="Clutter.Actor:scale-center-x">scale_center_x</a></span>=value, <span class=" link"><a href="Clutter.Actor-scale-center-y.html" title="Clutter.Actor:scale-center-y">scale_center_y</a></span>=value, <span class=" link"><a href="Clutter.Actor-scale-gravity.html" title="Clutter.Actor:scale-gravity">scale_gravity</a></span>=value, <span class=" link"><a href="Clutter.Actor-scale-x.html" title="Clutter.Actor:scale-x">scale_x</a></span>=value, <span class=" link"><a href="Clutter.Actor-scale-y.html" title="Clutter.Actor:scale-y">scale_y</a></span>=value, <span class=" link"><a href="Clutter.Actor-show-on-set-parent.html" title="Clutter.Actor:show-on-set-parent">show_on_set_parent</a></span>=value, <span class=" link"><a href="Clutter.Actor-text-direction.html" title="Clutter.Actor:text-direction">text_direction</a></span>=value, <span class=" link"><a href="Clutter.Actor-visible.html" title="Clutter.Actor:visible">visible</a></span>=value, <span class=" link"><a href="Clutter.Actor-width.html" title="Clutter.Actor:width">width</a></span>=value, <span class=" link"><a href="Clutter.Actor-x.html" title="Clutter.Actor:x">x</a></span>=value, <span class=" link"><a href="Clutter.Actor-x-align.html" title="Clutter.Actor:x-align">x_align</a></span>=value, <span class=" link"><a href="Clutter.Actor-y.html" title="Clutter.Actor:y">y</a></span>=value, <span class=" link"><a href="Clutter.Actor-y-align.html" title="Clutter.Actor:y-align">y_align</a></span>=value)  </pre></div></div></div></div></div>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class=" code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree">
+<div>
+        <span class=" code">GObject.InitiallyUnowned</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class=" code">Clutter.Actor</span>
+      </div></li></ul>
+</li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks ui-expander">
+<div class="yelp-data yelp-data-ui-expander" dir="ltr" data-yelp-expanded="yes"></div>
+<div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Clutter.Actor.add_action.html" title="add_action">add_action</a></li>
+<li class="links "><a href="Clutter.Actor.add_action_with_name.html" title="add_action_with_name">add_action_with_name</a></li>
+<li class="links "><a href="Clutter.Actor.add_child.html" title="add_child">add_child</a></li>
+<li class="links "><a href="Clutter.Actor.add_constraint.html" title="add_constraint">add_constraint</a></li>
+<li class="links "><a href="Clutter.Actor.add_constraint_with_name.html" title="add_constraint_with_name">add_constraint_with_name</a></li>
+<li class="links "><a href="Clutter.Actor.add_effect.html" title="add_effect">add_effect</a></li>
+<li class="links "><a href="Clutter.Actor.add_effect_with_name.html" title="add_effect_with_name">add_effect_with_name</a></li>
+<li class="links "><a href="Clutter.Actor.add_transition.html" title="add_transition">add_transition</a></li>
+<li class="links "><a href="Clutter.Actor.allocate.html" title="allocate">allocate</a></li>
+<li class="links "><a href="Clutter.Actor.allocate_align_fill.html" title="allocate_align_fill">allocate_align_fill</a></li>
+<li class="links "><a href="Clutter.Actor.allocate_available_size.html" title="allocate_available_size">allocate_available_size</a></li>
+<li class="links "><a href="Clutter.Actor.allocate_preferred_size.html" title="allocate_preferred_size">allocate_preferred_size</a></li>
+<li class="links "><a href="Clutter.Actor.animate.html" title="animate">animate</a></li>
+<li class="links "><a href="Clutter.Actor.animate_with_alpha.html" title="animate_with_alpha">animate_with_alpha</a></li>
+<li class="links "><a href="Clutter.Actor.animate_with_alphav.html" title="animate_with_alphav">animate_with_alphav</a></li>
+<li class="links "><a href="Clutter.Actor.animate_with_timeline.html" title="animate_with_timeline">animate_with_timeline</a></li>
+<li class="links "><a href="Clutter.Actor.animate_with_timelinev.html" title="animate_with_timelinev">animate_with_timelinev</a></li>
+<li class="links "><a href="Clutter.Actor.animatev.html" title="animatev">animatev</a></li>
+<li class="links "><a href="Clutter.Actor.apply_relative_transform_to_point.html" title="apply_relative_transform_to_point">apply_relative_transform_to_point</a></li>
+<li class="links "><a href="Clutter.Actor.apply_transform_to_point.html" title="apply_transform_to_point">apply_transform_to_point</a></li>
+<li class="links "><a href="Clutter.Actor.clear_actions.html" title="clear_actions">clear_actions</a></li>
+<li class="links "><a href="Clutter.Actor.clear_constraints.html" title="clear_constraints">clear_constraints</a></li>
+<li class="links "><a href="Clutter.Actor.clear_effects.html" title="clear_effects">clear_effects</a></li>
+<li class="links "><a href="Clutter.Actor.contains.html" title="contains">contains</a></li>
+<li class="links "><a href="Clutter.Actor.continue_paint.html" title="continue_paint">continue_paint</a></li>
+<li class="links "><a href="Clutter.Actor.create_pango_context.html" title="create_pango_context">create_pango_context</a></li>
+<li class="links "><a href="Clutter.Actor.create_pango_layout.html" title="create_pango_layout">create_pango_layout</a></li>
+<li class="links "><a href="Clutter.Actor.destroy.html" title="destroy">destroy</a></li>
+<li class="links "><a href="Clutter.Actor.destroy_all_children.html" title="destroy_all_children">destroy_all_children</a></li>
+<li class="links "><a href="Clutter.Actor.detach_animation.html" title="detach_animation">detach_animation</a></li>
+<li class="links "><a href="Clutter.Actor.event.html" title="event">event</a></li>
+<li class="links "><a href="Clutter.Actor.get_abs_allocation_vertices.html" title="get_abs_allocation_vertices">get_abs_allocation_vertices</a></li>
+<li class="links "><a href="Clutter.Actor.get_accessible.html" title="get_accessible">get_accessible</a></li>
+<li class="links "><a href="Clutter.Actor.get_action.html" title="get_action">get_action</a></li>
+<li class="links "><a href="Clutter.Actor.get_actions.html" title="get_actions">get_actions</a></li>
+<li class="links "><a href="Clutter.Actor.get_allocation_box.html" title="get_allocation_box">get_allocation_box</a></li>
+<li class="links "><a href="Clutter.Actor.get_allocation_geometry.html" title="get_allocation_geometry">get_allocation_geometry</a></li>
+<li class="links "><a href="Clutter.Actor.get_allocation_vertices.html" title="get_allocation_vertices">get_allocation_vertices</a></li>
+<li class="links "><a href="Clutter.Actor.get_anchor_point.html" title="get_anchor_point">get_anchor_point</a></li>
+<li class="links "><a href="Clutter.Actor.get_anchor_point_gravity.html" title="get_anchor_point_gravity">get_anchor_point_gravity</a></li>
+<li class="links "><a href="Clutter.Actor.get_animation.html" title="get_animation">get_animation</a></li>
+<li class="links "><a href="Clutter.Actor.get_background_color.html" title="get_background_color">get_background_color</a></li>
+<li class="links "><a href="Clutter.Actor.get_child_at_index.html" title="get_child_at_index">get_child_at_index</a></li>
+<li class="links "><a href="Clutter.Actor.get_children.html" title="get_children">get_children</a></li>
+<li class="links "><a href="Clutter.Actor.get_clip.html" title="get_clip">get_clip</a></li>
+<li class="links "><a href="Clutter.Actor.get_clip_to_allocation.html" title="get_clip_to_allocation">get_clip_to_allocation</a></li>
+<li class="links "><a href="Clutter.Actor.get_constraint.html" title="get_constraint">get_constraint</a></li>
+<li class="links "><a href="Clutter.Actor.get_constraints.html" title="get_constraints">get_constraints</a></li>
+<li class="links "><a href="Clutter.Actor.get_content.html" title="get_content">get_content</a></li>
+<li class="links "><a href="Clutter.Actor.get_content_box.html" title="get_content_box">get_content_box</a></li>
+<li class="links "><a href="Clutter.Actor.get_content_gravity.html" title="get_content_gravity">get_content_gravity</a></li>
+<li class="links "><a href="Clutter.Actor.get_content_scaling_filters.html" title="get_content_scaling_filters">get_content_scaling_filters</a></li>
+<li class="links "><a href="Clutter.Actor.get_default_paint_volume.html" title="get_default_paint_volume">get_default_paint_volume</a></li>
+<li class="links "><a href="Clutter.Actor.get_depth.html" title="get_depth">get_depth</a></li>
+<li class="links "><a href="Clutter.Actor.get_easing_delay.html" title="get_easing_delay">get_easing_delay</a></li>
+<li class="links "><a href="Clutter.Actor.get_easing_duration.html" title="get_easing_duration">get_easing_duration</a></li>
+<li class="links "><a href="Clutter.Actor.get_easing_mode.html" title="get_easing_mode">get_easing_mode</a></li>
+<li class="links "><a href="Clutter.Actor.get_effect.html" title="get_effect">get_effect</a></li>
+<li class="links "><a href="Clutter.Actor.get_effects.html" title="get_effects">get_effects</a></li>
+<li class="links "><a href="Clutter.Actor.get_first_child.html" title="get_first_child">get_first_child</a></li>
+<li class="links "><a href="Clutter.Actor.get_fixed_position_set.html" title="get_fixed_position_set">get_fixed_position_set</a></li>
+<li class="links "><a href="Clutter.Actor.get_flags.html" title="get_flags">get_flags</a></li>
+<li class="links "><a href="Clutter.Actor.get_geometry.html" title="get_geometry">get_geometry</a></li>
+<li class="links "><a href="Clutter.Actor.get_gid.html" title="get_gid">get_gid</a></li>
+<li class="links "><a href="Clutter.Actor.get_height.html" title="get_height">get_height</a></li>
+<li class="links "><a href="Clutter.Actor.get_last_child.html" title="get_last_child">get_last_child</a></li>
+<li class="links "><a href="Clutter.Actor.get_layout_manager.html" title="get_layout_manager">get_layout_manager</a></li>
+<li class="links "><a href="Clutter.Actor.get_margin.html" title="get_margin">get_margin</a></li>
+<li class="links "><a href="Clutter.Actor.get_margin_bottom.html" title="get_margin_bottom">get_margin_bottom</a></li>
+<li class="links "><a href="Clutter.Actor.get_margin_left.html" title="get_margin_left">get_margin_left</a></li>
+<li class="links "><a href="Clutter.Actor.get_margin_right.html" title="get_margin_right">get_margin_right</a></li>
+<li class="links "><a href="Clutter.Actor.get_margin_top.html" title="get_margin_top">get_margin_top</a></li>
+<li class="links "><a href="Clutter.Actor.get_n_children.html" title="get_n_children">get_n_children</a></li>
+<li class="links "><a href="Clutter.Actor.get_name.html" title="get_name">get_name</a></li>
+<li class="links "><a href="Clutter.Actor.get_next_sibling.html" title="get_next_sibling">get_next_sibling</a></li>
+<li class="links "><a href="Clutter.Actor.get_offscreen_redirect.html" title="get_offscreen_redirect">get_offscreen_redirect</a></li>
+<li class="links "><a href="Clutter.Actor.get_opacity.html" title="get_opacity">get_opacity</a></li>
+<li class="links "><a href="Clutter.Actor.get_paint_box.html" title="get_paint_box">get_paint_box</a></li>
+<li class="links "><a href="Clutter.Actor.get_paint_opacity.html" title="get_paint_opacity">get_paint_opacity</a></li>
+<li class="links "><a href="Clutter.Actor.get_paint_visibility.html" title="get_paint_visibility">get_paint_visibility</a></li>
+<li class="links "><a href="Clutter.Actor.get_paint_volume.html" title="get_paint_volume">get_paint_volume</a></li>
+<li class="links "><a href="Clutter.Actor.get_pango_context.html" title="get_pango_context">get_pango_context</a></li>
+<li class="links "><a href="Clutter.Actor.get_parent.html" title="get_parent">get_parent</a></li>
+<li class="links "><a href="Clutter.Actor.get_position.html" title="get_position">get_position</a></li>
+<li class="links "><a href="Clutter.Actor.get_preferred_height.html" title="get_preferred_height">get_preferred_height</a></li>
+<li class="links "><a href="Clutter.Actor.get_preferred_size.html" title="get_preferred_size">get_preferred_size</a></li>
+<li class="links "><a href="Clutter.Actor.get_preferred_width.html" title="get_preferred_width">get_preferred_width</a></li>
+<li class="links "><a href="Clutter.Actor.get_previous_sibling.html" title="get_previous_sibling">get_previous_sibling</a></li>
+<li class="links "><a href="Clutter.Actor.get_reactive.html" title="get_reactive">get_reactive</a></li>
+<li class="links "><a href="Clutter.Actor.get_request_mode.html" title="get_request_mode">get_request_mode</a></li>
+<li class="links "><a href="Clutter.Actor.get_rotation.html" title="get_rotation">get_rotation</a></li>
+<li class="links "><a href="Clutter.Actor.get_scale.html" title="get_scale">get_scale</a></li>
+<li class="links "><a href="Clutter.Actor.get_scale_center.html" title="get_scale_center">get_scale_center</a></li>
+<li class="links "><a href="Clutter.Actor.get_scale_gravity.html" title="get_scale_gravity">get_scale_gravity</a></li>
+<li class="links "><a href="Clutter.Actor.get_shader.html" title="get_shader">get_shader</a></li>
+<li class="links "><a href="Clutter.Actor.get_size.html" title="get_size">get_size</a></li>
+<li class="links "><a href="Clutter.Actor.get_stage.html" title="get_stage">get_stage</a></li>
+<li class="links "><a href="Clutter.Actor.get_text_direction.html" title="get_text_direction">get_text_direction</a></li>
+<li class="links "><a href="Clutter.Actor.get_transformation_matrix.html" title="get_transformation_matrix">get_transformation_matrix</a></li>
+<li class="links "><a href="Clutter.Actor.get_transformed_paint_volume.html" title="get_transformed_paint_volume">get_transformed_paint_volume</a></li>
+<li class="links "><a href="Clutter.Actor.get_transformed_position.html" title="get_transformed_position">get_transformed_position</a></li>
+<li class="links "><a href="Clutter.Actor.get_transformed_size.html" title="get_transformed_size">get_transformed_size</a></li>
+<li class="links "><a href="Clutter.Actor.get_transition.html" title="get_transition">get_transition</a></li>
+<li class="links "><a href="Clutter.Actor.get_width.html" title="get_width">get_width</a></li>
+<li class="links "><a href="Clutter.Actor.get_x.html" title="get_x">get_x</a></li>
+<li class="links "><a href="Clutter.Actor.get_x_align.html" title="get_x_align">get_x_align</a></li>
+<li class="links "><a href="Clutter.Actor.get_y.html" title="get_y">get_y</a></li>
+<li class="links "><a href="Clutter.Actor.get_y_align.html" title="get_y_align">get_y_align</a></li>
+<li class="links "><a href="Clutter.Actor.get_z_rotation_gravity.html" title="get_z_rotation_gravity">get_z_rotation_gravity</a></li>
+<li class="links "><a href="Clutter.Actor.grab_key_focus.html" title="grab_key_focus">grab_key_focus</a></li>
+<li class="links "><a href="Clutter.Actor.has_actions.html" title="has_actions">has_actions</a></li>
+<li class="links "><a href="Clutter.Actor.has_allocation.html" title="has_allocation">has_allocation</a></li>
+<li class="links "><a href="Clutter.Actor.has_clip.html" title="has_clip">has_clip</a></li>
+<li class="links "><a href="Clutter.Actor.has_constraints.html" title="has_constraints">has_constraints</a></li>
+<li class="links "><a href="Clutter.Actor.has_effects.html" title="has_effects">has_effects</a></li>
+<li class="links "><a href="Clutter.Actor.has_key_focus.html" title="has_key_focus">has_key_focus</a></li>
+<li class="links "><a href="Clutter.Actor.has_overlaps.html" title="has_overlaps">has_overlaps</a></li>
+<li class="links "><a href="Clutter.Actor.has_pointer.html" title="has_pointer">has_pointer</a></li>
+<li class="links "><a href="Clutter.Actor.hide.html" title="hide">hide</a></li>
+<li class="links "><a href="Clutter.Actor.hide_all.html" title="hide_all">hide_all</a></li>
+<li class="links "><a href="Clutter.Actor.insert_child_above.html" title="insert_child_above">insert_child_above</a></li>
+<li class="links "><a href="Clutter.Actor.insert_child_at_index.html" title="insert_child_at_index">insert_child_at_index</a></li>
+<li class="links "><a href="Clutter.Actor.insert_child_below.html" title="insert_child_below">insert_child_below</a></li>
+<li class="links "><a href="Clutter.Actor.is_in_clone_paint.html" title="is_in_clone_paint">is_in_clone_paint</a></li>
+<li class="links "><a href="Clutter.Actor.is_rotated.html" title="is_rotated">is_rotated</a></li>
+<li class="links "><a href="Clutter.Actor.is_scaled.html" title="is_scaled">is_scaled</a></li>
+<li class="links "><a href="Clutter.Actor.lower.html" title="lower">lower</a></li>
+<li class="links "><a href="Clutter.Actor.lower_bottom.html" title="lower_bottom">lower_bottom</a></li>
+<li class="links "><a href="Clutter.Actor.map.html" title="map">map</a></li>
+<li class="links "><a href="Clutter.Actor.move_anchor_point.html" title="move_anchor_point">move_anchor_point</a></li>
+<li class="links "><a href="Clutter.Actor.move_anchor_point_from_gravity.html" title="move_anchor_point_from_gravity">move_anchor_point_from_gravity</a></li>
+<li class="links "><a href="Clutter.Actor.move_by.html" title="move_by">move_by</a></li>
+<li class="links "><a href="Clutter.Actor.paint.html" title="paint">paint</a></li>
+<li class="links "><a href="Clutter.Actor.pop_internal.html" title="pop_internal">pop_internal</a></li>
+<li class="links "><a href="Clutter.Actor.push_internal.html" title="push_internal">push_internal</a></li>
+<li class="links "><a href="Clutter.Actor.queue_redraw.html" title="queue_redraw">queue_redraw</a></li>
+<li class="links "><a href="Clutter.Actor.queue_redraw_with_clip.html" title="queue_redraw_with_clip">queue_redraw_with_clip</a></li>
+<li class="links "><a href="Clutter.Actor.queue_relayout.html" title="queue_relayout">queue_relayout</a></li>
+<li class="links "><a href="Clutter.Actor.raise.html" title="raise">raise</a></li>
+<li class="links "><a href="Clutter.Actor.raise_top.html" title="raise_top">raise_top</a></li>
+<li class="links "><a href="Clutter.Actor.realize.html" title="realize">realize</a></li>
+<li class="links "><a href="Clutter.Actor.remove_action.html" title="remove_action">remove_action</a></li>
+<li class="links "><a href="Clutter.Actor.remove_action_by_name.html" title="remove_action_by_name">remove_action_by_name</a></li>
+<li class="links "><a href="Clutter.Actor.remove_all_children.html" title="remove_all_children">remove_all_children</a></li>
+<li class="links "><a href="Clutter.Actor.remove_all_transitions.html" title="remove_all_transitions">remove_all_transitions</a></li>
+<li class="links "><a href="Clutter.Actor.remove_child.html" title="remove_child">remove_child</a></li>
+<li class="links "><a href="Clutter.Actor.remove_clip.html" title="remove_clip">remove_clip</a></li>
+<li class="links "><a href="Clutter.Actor.remove_constraint.html" title="remove_constraint">remove_constraint</a></li>
+<li class="links "><a href="Clutter.Actor.remove_constraint_by_name.html" title="remove_constraint_by_name">remove_constraint_by_name</a></li>
+<li class="links "><a href="Clutter.Actor.remove_effect.html" title="remove_effect">remove_effect</a></li>
+<li class="links "><a href="Clutter.Actor.remove_effect_by_name.html" title="remove_effect_by_name">remove_effect_by_name</a></li>
+<li class="links "><a href="Clutter.Actor.remove_transition.html" title="remove_transition">remove_transition</a></li>
+<li class="links "><a href="Clutter.Actor.reparent.html" title="reparent">reparent</a></li>
+<li class="links "><a href="Clutter.Actor.replace_child.html" title="replace_child">replace_child</a></li>
+<li class="links "><a href="Clutter.Actor.restore_easing_state.html" title="restore_easing_state">restore_easing_state</a></li>
+<li class="links "><a href="Clutter.Actor.save_easing_state.html" title="save_easing_state">save_easing_state</a></li>
+<li class="links "><a href="Clutter.Actor.set_allocation.html" title="set_allocation">set_allocation</a></li>
+<li class="links "><a href="Clutter.Actor.set_anchor_point.html" title="set_anchor_point">set_anchor_point</a></li>
+<li class="links "><a href="Clutter.Actor.set_anchor_point_from_gravity.html" title="set_anchor_point_from_gravity">set_anchor_point_from_gravity</a></li>
+<li class="links "><a href="Clutter.Actor.set_background_color.html" title="set_background_color">set_background_color</a></li>
+<li class="links "><a href="Clutter.Actor.set_child_above_sibling.html" title="set_child_above_sibling">set_child_above_sibling</a></li>
+<li class="links "><a href="Clutter.Actor.set_child_at_index.html" title="set_child_at_index">set_child_at_index</a></li>
+<li class="links "><a href="Clutter.Actor.set_child_below_sibling.html" title="set_child_below_sibling">set_child_below_sibling</a></li>
+<li class="links "><a href="Clutter.Actor.set_clip.html" title="set_clip">set_clip</a></li>
+<li class="links "><a href="Clutter.Actor.set_clip_to_allocation.html" title="set_clip_to_allocation">set_clip_to_allocation</a></li>
+<li class="links "><a href="Clutter.Actor.set_content.html" title="set_content">set_content</a></li>
+<li class="links "><a href="Clutter.Actor.set_content_gravity.html" title="set_content_gravity">set_content_gravity</a></li>
+<li class="links "><a href="Clutter.Actor.set_content_scaling_filters.html" title="set_content_scaling_filters">set_content_scaling_filters</a></li>
+<li class="links "><a href="Clutter.Actor.set_depth.html" title="set_depth">set_depth</a></li>
+<li class="links "><a href="Clutter.Actor.set_easing_delay.html" title="set_easing_delay">set_easing_delay</a></li>
+<li class="links "><a href="Clutter.Actor.set_easing_duration.html" title="set_easing_duration">set_easing_duration</a></li>
+<li class="links "><a href="Clutter.Actor.set_easing_mode.html" title="set_easing_mode">set_easing_mode</a></li>
+<li class="links "><a href="Clutter.Actor.set_fixed_position_set.html" title="set_fixed_position_set">set_fixed_position_set</a></li>
+<li class="links "><a href="Clutter.Actor.set_flags.html" title="set_flags">set_flags</a></li>
+<li class="links "><a href="Clutter.Actor.set_geometry.html" title="set_geometry">set_geometry</a></li>
+<li class="links "><a href="Clutter.Actor.set_height.html" title="set_height">set_height</a></li>
+<li class="links "><a href="Clutter.Actor.set_layout_manager.html" title="set_layout_manager">set_layout_manager</a></li>
+<li class="links "><a href="Clutter.Actor.set_margin.html" title="set_margin">set_margin</a></li>
+<li class="links "><a href="Clutter.Actor.set_margin_bottom.html" title="set_margin_bottom">set_margin_bottom</a></li>
+<li class="links "><a href="Clutter.Actor.set_margin_left.html" title="set_margin_left">set_margin_left</a></li>
+<li class="links "><a href="Clutter.Actor.set_margin_right.html" title="set_margin_right">set_margin_right</a></li>
+<li class="links "><a href="Clutter.Actor.set_margin_top.html" title="set_margin_top">set_margin_top</a></li>
+<li class="links "><a href="Clutter.Actor.set_name.html" title="set_name">set_name</a></li>
+<li class="links "><a href="Clutter.Actor.set_offscreen_redirect.html" title="set_offscreen_redirect">set_offscreen_redirect</a></li>
+<li class="links "><a href="Clutter.Actor.set_opacity.html" title="set_opacity">set_opacity</a></li>
+<li class="links "><a href="Clutter.Actor.set_parent.html" title="set_parent">set_parent</a></li>
+<li class="links "><a href="Clutter.Actor.set_position.html" title="set_position">set_position</a></li>
+<li class="links "><a href="Clutter.Actor.set_reactive.html" title="set_reactive">set_reactive</a></li>
+<li class="links "><a href="Clutter.Actor.set_request_mode.html" title="set_request_mode">set_request_mode</a></li>
+<li class="links "><a href="Clutter.Actor.set_rotation.html" title="set_rotation">set_rotation</a></li>
+<li class="links "><a href="Clutter.Actor.set_scale.html" title="set_scale">set_scale</a></li>
+<li class="links "><a href="Clutter.Actor.set_scale_full.html" title="set_scale_full">set_scale_full</a></li>
+<li class="links "><a href="Clutter.Actor.set_scale_with_gravity.html" title="set_scale_with_gravity">set_scale_with_gravity</a></li>
+<li class="links "><a href="Clutter.Actor.set_shader.html" title="set_shader">set_shader</a></li>
+<li class="links "><a href="Clutter.Actor.set_shader_param.html" title="set_shader_param">set_shader_param</a></li>
+<li class="links "><a href="Clutter.Actor.set_shader_param_float.html" title="set_shader_param_float">set_shader_param_float</a></li>
+<li class="links "><a href="Clutter.Actor.set_shader_param_int.html" title="set_shader_param_int">set_shader_param_int</a></li>
+<li class="links "><a href="Clutter.Actor.set_size.html" title="set_size">set_size</a></li>
+<li class="links "><a href="Clutter.Actor.set_text_direction.html" title="set_text_direction">set_text_direction</a></li>
+<li class="links "><a href="Clutter.Actor.set_width.html" title="set_width">set_width</a></li>
+<li class="links "><a href="Clutter.Actor.set_x.html" title="set_x">set_x</a></li>
+<li class="links "><a href="Clutter.Actor.set_x_align.html" title="set_x_align">set_x_align</a></li>
+<li class="links "><a href="Clutter.Actor.set_y.html" title="set_y">set_y</a></li>
+<li class="links "><a href="Clutter.Actor.set_y_align.html" title="set_y_align">set_y_align</a></li>
+<li class="links "><a href="Clutter.Actor.set_z_rotation_from_gravity.html" title="set_z_rotation_from_gravity">set_z_rotation_from_gravity</a></li>
+<li class="links "><a href="Clutter.Actor.should_pick_paint.html" title="should_pick_paint">should_pick_paint</a></li>
+<li class="links "><a href="Clutter.Actor.show.html" title="show">show</a></li>
+<li class="links "><a href="Clutter.Actor.show_all.html" title="show_all">show_all</a></li>
+<li class="links "><a href="Clutter.Actor.transform_stage_point.html" title="transform_stage_point">transform_stage_point</a></li>
+<li class="links "><a href="Clutter.Actor.unmap.html" title="unmap">unmap</a></li>
+<li class="links "><a href="Clutter.Actor.unparent.html" title="unparent">unparent</a></li>
+<li class="links "><a href="Clutter.Actor.unrealize.html" title="unrealize">unrealize</a></li>
+<li class="links "><a href="Clutter.Actor.unset_flags.html" title="unset_flags">unset_flags</a></li>
+</ul></div>
+</div>
+</div>
+<div class="links topiclinks ui-expander">
+<div class="yelp-data yelp-data-ui-expander" dir="ltr" data-yelp-expanded="yes"></div>
+<div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Clutter.Actor-actions.html" title="Clutter.Actor:actions">actions</a></li>
+<li class="links "><a href="Clutter.Actor-allocation.html" title="Clutter.Actor:allocation">allocation</a></li>
+<li class="links "><a href="Clutter.Actor-anchor-gravity.html" title="Clutter.Actor:anchor-gravity">anchor-gravity</a></li>
+<li class="links "><a href="Clutter.Actor-anchor-x.html" title="Clutter.Actor:anchor-x">anchor-x</a></li>
+<li class="links "><a href="Clutter.Actor-anchor-y.html" title="Clutter.Actor:anchor-y">anchor-y</a></li>
+<li class="links "><a href="Clutter.Actor-background-color.html" title="Clutter.Actor:background-color">background-color</a></li>
+<li class="links "><a href="Clutter.Actor-background-color-set.html" title="Clutter.Actor:background-color-set">background-color-set</a></li>
+<li class="links "><a href="Clutter.Actor-clip.html" title="Clutter.Actor:clip">clip</a></li>
+<li class="links "><a href="Clutter.Actor-clip-to-allocation.html" title="Clutter.Actor:clip-to-allocation">clip-to-allocation</a></li>
+<li class="links "><a href="Clutter.Actor-constraints.html" title="Clutter.Actor:constraints">constraints</a></li>
+<li class="links "><a href="Clutter.Actor-content.html" title="Clutter.Actor:content">content</a></li>
+<li class="links "><a href="Clutter.Actor-content-box.html" title="Clutter.Actor:content-box">content-box</a></li>
+<li class="links "><a href="Clutter.Actor-content-gravity.html" title="Clutter.Actor:content-gravity">content-gravity</a></li>
+<li class="links "><a href="Clutter.Actor-depth.html" title="Clutter.Actor:depth">depth</a></li>
+<li class="links "><a href="Clutter.Actor-effect.html" title="Clutter.Actor:effect">effect</a></li>
+<li class="links "><a href="Clutter.Actor-first-child.html" title="Clutter.Actor:first-child">first-child</a></li>
+<li class="links "><a href="Clutter.Actor-fixed-position-set.html" title="Clutter.Actor:fixed-position-set">fixed-position-set</a></li>
+<li class="links "><a href="Clutter.Actor-fixed-x.html" title="Clutter.Actor:fixed-x">fixed-x</a></li>
+<li class="links "><a href="Clutter.Actor-fixed-y.html" title="Clutter.Actor:fixed-y">fixed-y</a></li>
+<li class="links "><a href="Clutter.Actor-has-clip.html" title="Clutter.Actor:has-clip">has-clip</a></li>
+<li class="links "><a href="Clutter.Actor-has-pointer.html" title="Clutter.Actor:has-pointer">has-pointer</a></li>
+<li class="links "><a href="Clutter.Actor-height.html" title="Clutter.Actor:height">height</a></li>
+<li class="links "><a href="Clutter.Actor-last-child.html" title="Clutter.Actor:last-child">last-child</a></li>
+<li class="links "><a href="Clutter.Actor-layout-manager.html" title="Clutter.Actor:layout-manager">layout-manager</a></li>
+<li class="links "><a href="Clutter.Actor-magnification-filter.html" title="Clutter.Actor:magnification-filter">magnification-filter</a></li>
+<li class="links "><a href="Clutter.Actor-mapped.html" title="Clutter.Actor:mapped">mapped</a></li>
+<li class="links "><a href="Clutter.Actor-margin-bottom.html" title="Clutter.Actor:margin-bottom">margin-bottom</a></li>
+<li class="links "><a href="Clutter.Actor-margin-left.html" title="Clutter.Actor:margin-left">margin-left</a></li>
+<li class="links "><a href="Clutter.Actor-margin-right.html" title="Clutter.Actor:margin-right">margin-right</a></li>
+<li class="links "><a href="Clutter.Actor-margin-top.html" title="Clutter.Actor:margin-top">margin-top</a></li>
+<li class="links "><a href="Clutter.Actor-min-height.html" title="Clutter.Actor:min-height">min-height</a></li>
+<li class="links "><a href="Clutter.Actor-min-height-set.html" title="Clutter.Actor:min-height-set">min-height-set</a></li>
+<li class="links "><a href="Clutter.Actor-min-width.html" title="Clutter.Actor:min-width">min-width</a></li>
+<li class="links "><a href="Clutter.Actor-min-width-set.html" title="Clutter.Actor:min-width-set">min-width-set</a></li>
+<li class="links "><a href="Clutter.Actor-minification-filter.html" title="Clutter.Actor:minification-filter">minification-filter</a></li>
+<li class="links "><a href="Clutter.Actor-name.html" title="Clutter.Actor:name">name</a></li>
+<li class="links "><a href="Clutter.Actor-natural-height.html" title="Clutter.Actor:natural-height">natural-height</a></li>
+<li class="links "><a href="Clutter.Actor-natural-height-set.html" title="Clutter.Actor:natural-height-set">natural-height-set</a></li>
+<li class="links "><a href="Clutter.Actor-natural-width.html" title="Clutter.Actor:natural-width">natural-width</a></li>
+<li class="links "><a href="Clutter.Actor-natural-width-set.html" title="Clutter.Actor:natural-width-set">natural-width-set</a></li>
+<li class="links "><a href="Clutter.Actor-offscreen-redirect.html" title="Clutter.Actor:offscreen-redirect">offscreen-redirect</a></li>
+<li class="links "><a href="Clutter.Actor-opacity.html" title="Clutter.Actor:opacity">opacity</a></li>
+<li class="links "><a href="Clutter.Actor-reactive.html" title="Clutter.Actor:reactive">reactive</a></li>
+<li class="links "><a href="Clutter.Actor-realized.html" title="Clutter.Actor:realized">realized</a></li>
+<li class="links "><a href="Clutter.Actor-request-mode.html" title="Clutter.Actor:request-mode">request-mode</a></li>
+<li class="links "><a href="Clutter.Actor-rotation-angle-x.html" title="Clutter.Actor:rotation-angle-x">rotation-angle-x</a></li>
+<li class="links "><a href="Clutter.Actor-rotation-angle-y.html" title="Clutter.Actor:rotation-angle-y">rotation-angle-y</a></li>
+<li class="links "><a href="Clutter.Actor-rotation-angle-z.html" title="Clutter.Actor:rotation-angle-z">rotation-angle-z</a></li>
+<li class="links "><a href="Clutter.Actor-rotation-center-x.html" title="Clutter.Actor:rotation-center-x">rotation-center-x</a></li>
+<li class="links "><a href="Clutter.Actor-rotation-center-y.html" title="Clutter.Actor:rotation-center-y">rotation-center-y</a></li>
+<li class="links "><a href="Clutter.Actor-rotation-center-z.html" title="Clutter.Actor:rotation-center-z">rotation-center-z</a></li>
+<li class="links "><a href="Clutter.Actor-rotation-center-z-gravity.html" title="Clutter.Actor:rotation-center-z-gravity">rotation-center-z-gravity</a></li>
+<li class="links "><a href="Clutter.Actor-scale-center-x.html" title="Clutter.Actor:scale-center-x">scale-center-x</a></li>
+<li class="links "><a href="Clutter.Actor-scale-center-y.html" title="Clutter.Actor:scale-center-y">scale-center-y</a></li>
+<li class="links "><a href="Clutter.Actor-scale-gravity.html" title="Clutter.Actor:scale-gravity">scale-gravity</a></li>
+<li class="links "><a href="Clutter.Actor-scale-x.html" title="Clutter.Actor:scale-x">scale-x</a></li>
+<li class="links "><a href="Clutter.Actor-scale-y.html" title="Clutter.Actor:scale-y">scale-y</a></li>
+<li class="links "><a href="Clutter.Actor-show-on-set-parent.html" title="Clutter.Actor:show-on-set-parent">show-on-set-parent</a></li>
+<li class="links "><a href="Clutter.Actor-text-direction.html" title="Clutter.Actor:text-direction">text-direction</a></li>
+<li class="links "><a href="Clutter.Actor-visible.html" title="Clutter.Actor:visible">visible</a></li>
+<li class="links "><a href="Clutter.Actor-width.html" title="Clutter.Actor:width">width</a></li>
+<li class="links "><a href="Clutter.Actor-x.html" title="Clutter.Actor:x">x</a></li>
+<li class="links "><a href="Clutter.Actor-x-align.html" title="Clutter.Actor:x-align">x-align</a></li>
+<li class="links "><a href="Clutter.Actor-y.html" title="Clutter.Actor:y">y</a></li>
+<li class="links "><a href="Clutter.Actor-y-align.html" title="Clutter.Actor:y-align">y-align</a></li>
+</ul></div>
+</div>
+</div>
+<div class="links topiclinks ui-expander">
+<div class="yelp-data yelp-data-ui-expander" dir="ltr" data-yelp-expanded="yes"></div>
+<div class="inner">
+<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Clutter.Actor-allocation-changed.html" title="Clutter.Actor::allocation-changed">allocation-changed</a></li>
+<li class="links "><a href="Clutter.Actor-button-press-event.html" title="Clutter.Actor::button-press-event">button-press-event</a></li>
+<li class="links "><a href="Clutter.Actor-button-release-event.html" title="Clutter.Actor::button-release-event">button-release-event</a></li>
+<li class="links "><a href="Clutter.Actor-captured-event.html" title="Clutter.Actor::captured-event">captured-event</a></li>
+<li class="links "><a href="Clutter.Actor-destroy.html" title="Clutter.Actor::destroy">destroy</a></li>
+<li class="links "><a href="Clutter.Actor-enter-event.html" title="Clutter.Actor::enter-event">enter-event</a></li>
+<li class="links "><a href="Clutter.Actor-event.html" title="Clutter.Actor::event">event</a></li>
+<li class="links "><a href="Clutter.Actor-hide.html" title="Clutter.Actor::hide">hide</a></li>
+<li class="links "><a href="Clutter.Actor-key-focus-in.html" title="Clutter.Actor::key-focus-in">key-focus-in</a></li>
+<li class="links "><a href="Clutter.Actor-key-focus-out.html" title="Clutter.Actor::key-focus-out">key-focus-out</a></li>
+<li class="links "><a href="Clutter.Actor-key-press-event.html" title="Clutter.Actor::key-press-event">key-press-event</a></li>
+<li class="links "><a href="Clutter.Actor-key-release-event.html" title="Clutter.Actor::key-release-event">key-release-event</a></li>
+<li class="links "><a href="Clutter.Actor-leave-event.html" title="Clutter.Actor::leave-event">leave-event</a></li>
+<li class="links "><a href="Clutter.Actor-motion-event.html" title="Clutter.Actor::motion-event">motion-event</a></li>
+<li class="links "><a href="Clutter.Actor-paint.html" title="Clutter.Actor::paint">paint</a></li>
+<li class="links "><a href="Clutter.Actor-parent-set.html" title="Clutter.Actor::parent-set">parent-set</a></li>
+<li class="links "><a href="Clutter.Actor-pick.html" title="Clutter.Actor::pick">pick</a></li>
+<li class="links "><a href="Clutter.Actor-queue-redraw.html" title="Clutter.Actor::queue-redraw">queue-redraw</a></li>
+<li class="links "><a href="Clutter.Actor-queue-relayout.html" title="Clutter.Actor::queue-relayout">queue-relayout</a></li>
+<li class="links "><a href="Clutter.Actor-realize.html" title="Clutter.Actor::realize">realize</a></li>
+<li class="links "><a href="Clutter.Actor-scroll-event.html" title="Clutter.Actor::scroll-event">scroll-event</a></li>
+<li class="links "><a href="Clutter.Actor-show.html" title="Clutter.Actor::show">show</a></li>
+<li class="links "><a href="Clutter.Actor-transitions-completed.html" title="Clutter.Actor::transitions-completed">transitions-completed</a></li>
+<li class="links "><a href="Clutter.Actor-unrealize.html" title="Clutter.Actor::unrealize">unrealize</a></li>
+</ul></div>
+</div>
+</div>
+<div class="links topiclinks ui-expander">
+<div class="yelp-data yelp-data-ui-expander" dir="ltr" data-yelp-expanded="yes"></div>
+<div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Clutter.Actor-allocate.html" title="Clutter.Actor.allocate">allocate</a></li>
+<li class="links "><a href="Clutter.Actor-apply_transform.html" title="Clutter.Actor.apply_transform">apply_transform</a></li>
+<li class="links "><a href="Clutter.Actor-button_press_event.html" title="Clutter.Actor.button_press_event">button_press_event</a></li>
+<li class="links "><a href="Clutter.Actor-button_release_event.html" title="Clutter.Actor.button_release_event">button_release_event</a></li>
+<li class="links "><a href="Clutter.Actor-captured_event.html" title="Clutter.Actor.captured_event">captured_event</a></li>
+<li class="links "><a href="Clutter.Actor-enter_event.html" title="Clutter.Actor.enter_event">enter_event</a></li>
+<li class="links "><a href="Clutter.Actor-get_accessible.html" title="Clutter.Actor.get_accessible">get_accessible</a></li>
+<li class="links "><a href="Clutter.Actor-get_paint_volume.html" title="Clutter.Actor.get_paint_volume">get_paint_volume</a></li>
+<li class="links "><a href="Clutter.Actor-get_preferred_height.html" title="Clutter.Actor.get_preferred_height">get_preferred_height</a></li>
+<li class="links "><a href="Clutter.Actor-get_preferred_width.html" title="Clutter.Actor.get_preferred_width">get_preferred_width</a></li>
+<li class="links "><a href="Clutter.Actor-has_overlaps.html" title="Clutter.Actor.has_overlaps">has_overlaps</a></li>
+<li class="links "><a href="Clutter.Actor-hide_all.html" title="Clutter.Actor.hide_all">hide_all</a></li>
+<li class="links "><a href="Clutter.Actor-key_focus_in.html" title="Clutter.Actor.key_focus_in">key_focus_in</a></li>
+<li class="links "><a href="Clutter.Actor-key_focus_out.html" title="Clutter.Actor.key_focus_out">key_focus_out</a></li>
+<li class="links "><a href="Clutter.Actor-key_press_event.html" title="Clutter.Actor.key_press_event">key_press_event</a></li>
+<li class="links "><a href="Clutter.Actor-key_release_event.html" title="Clutter.Actor.key_release_event">key_release_event</a></li>
+<li class="links "><a href="Clutter.Actor-leave_event.html" title="Clutter.Actor.leave_event">leave_event</a></li>
+<li class="links "><a href="Clutter.Actor-map.html" title="Clutter.Actor.map">map</a></li>
+<li class="links "><a href="Clutter.Actor-motion_event.html" title="Clutter.Actor.motion_event">motion_event</a></li>
+<li class="links "><a href="Clutter.Actor-paint_node.html" title="Clutter.Actor.paint_node">paint_node</a></li>
+<li class="links "><a href="Clutter.Actor-parent_set.html" title="Clutter.Actor.parent_set">parent_set</a></li>
+<li class="links "><a href="Clutter.Actor-queue_redraw.html" title="Clutter.Actor.queue_redraw">queue_redraw</a></li>
+<li class="links "><a href="Clutter.Actor-queue_relayout.html" title="Clutter.Actor.queue_relayout">queue_relayout</a></li>
+<li class="links "><a href="Clutter.Actor-scroll_event.html" title="Clutter.Actor.scroll_event">scroll_event</a></li>
+<li class="links "><a href="Clutter.Actor-show_all.html" title="Clutter.Actor.show_all">show_all</a></li>
+<li class="links "><a href="Clutter.Actor-unmap.html" title="Clutter.Actor.unmap">unmap</a></li>
+</ul></div>
+</div>
+</div>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Clutter Documentation">Clutter Documentation</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

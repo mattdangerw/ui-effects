@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="Clutter.DragAction-drag-motion"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DragAction" group="signal"/>
+    <title type="link" role="topic">drag-motion</title>
+  </info>
+  <title>Clutter.DragAction::drag-motion</title>
+<synopsis><code mime="text/x-python">
+def callback(drag_action, actor, delta_x, delta_y, user_param1, ...)
+</code></synopsis>
+<p>The ::drag-motion signal is emitted for each motion event after
+the <link xref="Clutter.DragAction-drag-begin">Clutter.DragAction::drag-begin</link> signal has been emitted.</p><p>The components of the distance between the press event and the
+latest motion event are computed in the actor's coordinate space,
+to take into account eventual transformations. If you want the
+stage coordinates of the latest motion event you can use
+clutter_drag_action_get_motion_coords().</p><p>The default handler of the signal will call clutter_actor_move_by()
+either on @actor or, if set, of <link xref="Clutter.DragAction-drag-handle">Clutter.DragAction:drag-handle</link> using
+the @delta_x and @delta_y components of the dragging motion. If you
+want to override the default behaviour, you can connect to this
+signal and call g_signal_stop_emission_by_name() from within your
+callback.</p>
+
+<table>
+<tr>
+<td><p>drag_action :</p></td>
+<td><p>instance of Clutter.DragAction that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>actor :</p></td>
+<td><p>the <link xref="Clutter.Actor">Clutter.Actor</link> attached to the action</p></td>
+</tr>
+<tr>
+<td><p>delta_x :</p></td>
+<td><p>the X component of the distance between the press event that began the dragging and the current position of the pointer, as of the latest motion event</p></td>
+</tr>
+<tr>
+<td><p>delta_y :</p></td>
+<td><p>the Y component of the distance between the press event that began the dragging and the current position of the pointer, as of the latest motion event</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

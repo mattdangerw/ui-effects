@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PaintVolume.set_height"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PaintVolume" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_paint_volume_set_height</api:name>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_height</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat)
+@returns(none)
+def set_height(height)
+</code></synopsis>
+<p>Sets the height of the paint volume. The height is measured along
+the y axis in the actor coordinates that @pv is associated with.</p>
+
+<table>
+<tr>
+<td><p>height :</p></td>
+<td><p>the height of the paint volume, in pixels</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

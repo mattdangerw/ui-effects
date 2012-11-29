@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.reparent"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_reparent</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>new_parent</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>reparent</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def reparent(new_parent)
+</code></synopsis>
+<p>Resets the parent actor of @self.</p><p>This function is logically equivalent to calling clutter_actor_unparent()
+and clutter_actor_set_parent(), but more efficiently implemented, as it
+ensures the child is not finalized when unparented, and emits the
+<link xref="Clutter.Actor-parent-set">Clutter.Actor::parent-set</link> signal only once.</p><p>In reality, calling this function is less useful than it sounds, as some
+application code may rely on changes in the intermediate state between
+removal and addition of the actor from its old parent to the @new_parent.
+Thus, it is strongly encouraged to avoid using this function in application
+code.</p><p>
+clutter_actor_add_child() instead; remember to take a reference on
+the actor being removed before calling clutter_actor_remove_child()
+to avoid the reference count dropping to zero and the actor being
+destroyed.</p>
+
+<table>
+<tr>
+<td><p>new_parent :</p></td>
+<td><p>the new <link xref="Clutter.Actor">Clutter.Actor</link> parent</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

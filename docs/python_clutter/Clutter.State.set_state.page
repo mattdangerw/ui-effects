@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.State.set_state"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.State" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Timeline</api:type>
+      </api:returns>
+      <api:name>clutter_state_set_state</api:name>
+      <api:arg>
+        <api:type>ClutterState *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>target_state_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_state</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(Clutter.Timeline)
+def set_state(target_state_name)
+</code></synopsis>
+<p>Change the current state of <link xref="Clutter.State">Clutter.State</link> to @target_state_name.</p><p>The state will animate during its transition, see
+<link xref="clutter_state_warp_to_state">clutter_state_warp_to_state</link> for animation-free state switching.</p><p>Setting a None state will stop the current animation and unset
+the current state, but keys will be left intact.</p><p>state transition. The returned timeline is owned by the <link xref="Clutter.State">Clutter.State</link>
+and it should not be unreferenced</p>
+
+<table>
+<tr>
+<td><p>target_state_name :</p></td>
+<td><p>the state to transition to</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the <link xref="Clutter.Timeline">Clutter.Timeline</link> that drives the</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

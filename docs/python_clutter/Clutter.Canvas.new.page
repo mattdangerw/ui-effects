@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Canvas.new"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Canvas" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Content</api:type>
+      </api:returns>
+      <api:name>clutter_canvas_new</api:name>
+    </api:function>
+  </info>
+  <title>new</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Content)
+def new()
+</code></synopsis>
+<p>Creates a new instance of <link xref="Clutter.Canvas">Clutter.Canvas</link>.</p><p>You should call clutter_canvas_set_size() to set the size of the canvas.</p><p>You should call clutter_content_invalidate() every time you wish to
+draw the contents of the canvas.</p><p><link xref="Clutter.Canvas">Clutter.Canvas</link>. Use g_object_unref() when done.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The newly allocated instance of</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

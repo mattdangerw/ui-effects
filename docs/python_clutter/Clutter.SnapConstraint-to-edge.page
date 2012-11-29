@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.SnapConstraint-to-edge"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.SnapConstraint" group="property"/>
+    <title type="link" role="topic">to-edge</title>
+  </info>
+  <title>Clutter.SnapConstraint:to-edge</title>
+<synopsis><code mime="text/x-python">
+"to-edge"             Clutter.SnapEdge                : Read / Write / Construct
+</code></synopsis>
+<p>The edge of the <link xref="Clutter.SnapConstraint-source">Clutter.SnapConstraint:source</link> that should be snapped</p>
+</page>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Geometry.union"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Geometry" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_geometry_union</api:name>
+      <api:arg>
+        <api:type>Clutter.Geometry</api:type>
+        <api:name>geometry_b</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Geometry</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>union</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Geometry, Clutter.Geometry)
+@returns(none)
+def union(geometry_b, result)
+</code></synopsis>
+<p>Find the union of two rectangles represented as <link xref="Clutter.Geometry">Clutter.Geometry</link>.</p>
+
+<table>
+<tr>
+<td><p>geometry_b :</p></td>
+<td><p>another <link xref="Clutter.Geometry">Clutter.Geometry</link></p></td>
+</tr>
+<tr>
+<td><p>result :</p></td>
+<td><p>location to store the result</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.advance_to_marker"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_advance_to_marker</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>marker_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>advance_to_marker</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(none)
+def advance_to_marker(marker_name)
+</code></synopsis>
+<p>Advances @timeline to the time of the given @marker_name.</p><p>&lt;note&gt;&lt;para&gt;Like clutter_timeline_advance(), this function will not
+emit the <link xref="Clutter.Timeline-new-frame">Clutter.Timeline::new-frame</link> for the time where @marker_name
+is set, nor it will emit <link xref="Clutter.Timeline-marker-reached">Clutter.Timeline::marker-reached</link> for
+@marker_name.&lt;/para&gt;&lt;/note&gt;</p>
+
+<table>
+<tr>
+<td><p>marker_name :</p></td>
+<td><p>the name of the marker</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

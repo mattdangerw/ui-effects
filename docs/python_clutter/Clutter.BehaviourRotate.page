@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="Clutter.BehaviourRotate"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="class"/>
+  </info>
+  <title>Clutter.BehaviourRotate</title>
+<p>The <link xref="Clutter.BehaviourRotate">Clutter.BehaviourRotate</link> struct contains only private data and
+should be accessed using the provided API</p>
+
+  <synopsis><code>
+from gi.repository import Clutter
+
+behaviour_rotate = Clutter.BehaviourRotate(<link xref='Clutter.BehaviourRotate-angle-end'>angle_end</link>=value, <link xref='Clutter.BehaviourRotate-angle-start'>angle_start</link>=value, <link xref='Clutter.BehaviourRotate-axis'>axis</link>=value, <link xref='Clutter.BehaviourRotate-center-x'>center_x</link>=value, <link xref='Clutter.BehaviourRotate-center-y'>center_y</link>=value, <link xref='Clutter.BehaviourRotate-center-z'>center_z</link>=value, <link xref='Clutter.BehaviourRotate-direction'>direction</link>=value)  </code></synopsis>
+
+<p>Since 0.4</p>
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Clutter.Behaviour</code>
+      <item>
+        <code>Clutter.BehaviourRotate</code>
+      </item>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="yes"
+         api:type="function" api:mime="text/x-python"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="yes"
+         api:type="function" api:mime="text/x-python"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

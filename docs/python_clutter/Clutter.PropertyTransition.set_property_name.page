@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PropertyTransition.set_property_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PropertyTransition" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_property_transition_set_property_name</api:name>
+      <api:arg>
+        <api:type>ClutterPropertyTransition *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_property_name</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(none)
+def set_property_name(property_name)
+</code></synopsis>
+<p>Sets the <link xref="Clutter.PropertyTransition-property-name">Clutter.PropertyTransition:property-name</link> property of @transition.</p>
+
+<table>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>a property name</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

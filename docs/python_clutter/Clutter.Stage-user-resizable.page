@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Stage-user-resizable"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="property"/>
+    <title type="link" role="topic">user-resizable</title>
+  </info>
+  <title>Clutter.Stage:user-resizable</title>
+<synopsis><code mime="text/x-python">
+"user-resizable"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the stage is resizable via user interaction.</p>
+</page>

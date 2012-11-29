@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PaintVolume.set_from_allocation"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PaintVolume" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_paint_volume_set_from_allocation</api:name>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_from_allocation</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(gboolean)
+def set_from_allocation(actor)
+</code></synopsis>
+<p>Sets the <link xref="Clutter.PaintVolume">Clutter.PaintVolume</link> from the allocation of @actor.</p><p>This function should be used when overriding the
+<link xref="Clutter.ActorClass">Clutter.ActorClass</link>.get_paint_volume() by <link xref="Clutter.Actor">Clutter.Actor</link> sub-classes
+that do not paint outside their allocation.</p><p>A typical example is:</p><p>|[
+static gboolean
+my_actor_get_paint_volume (ClutterActor       *self,
+ClutterPaintVolume *volume)
+{
+return clutter_paint_volume_set_from_allocation (volume, self);
+}
+]|</p><p>otherwise</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the paint volume was successfully set, and False</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

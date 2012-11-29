@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.get_timestamp"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gulong</api:type>
+      </api:returns>
+      <api:name>clutter_get_timestamp</api:name>
+    </api:function>
+  </info>
+  <title>get_timestamp</title>
+<synopsis><code mime="text/x-python">
+@returns(gulong)
+def get_timestamp()
+</code></synopsis>
+<p>Returns the approximate number of microseconds passed since Clutter was
+intialised.</p><p>This function shdould not be used by application code.</p><p>The output of this function depends on whether Clutter was configured to
+enable its debugging code paths, so it's less useful than intended.</p><p>Since Clutter 1.10, this function is an alias to g_get_monotonic_time()
+if Clutter was configured to enable the debugging code paths.</p><p>zero if Clutter was not configured with debugging code paths.</p><p>timing source</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>Number of microseconds since clutter_init() was called, or</p></td>
+</tr>
+</table>
+</page>

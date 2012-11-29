@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Score.remove"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Score" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_score_remove</api:name>
+      <api:arg>
+        <api:type>ClutterScore *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gulong</api:type>
+        <api:name>id_</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>remove</title>
+<synopsis><code mime="text/x-python">
+@accepts(gulong)
+@returns(none)
+def remove(id_)
+</code></synopsis>
+<p>Removes the <link xref="Clutter.Timeline">Clutter.Timeline</link> with the given id inside @score. If
+the timeline has other timelines attached to it, those are removed
+as well.</p>
+
+<table>
+<tr>
+<td><p>id_ :</p></td>
+<td><p>the id of the timeline to remove</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

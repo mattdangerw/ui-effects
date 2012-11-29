@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="class"/>
+  </info>
+  <title>Clutter.Actor</title>
+<p>Base class for actors.</p>
+
+  <synopsis><code>
+from gi.repository import Clutter
+
+actor = Clutter.Actor(<link xref='Clutter.Actor-actions'>actions</link>=value, <link xref='Clutter.Actor-anchor-gravity'>anchor_gravity</link>=value, <link xref='Clutter.Actor-anchor-x'>anchor_x</link>=value, <link xref='Clutter.Actor-anchor-y'>anchor_y</link>=value, <link xref='Clutter.Actor-background-color'>background_color</link>=value, <link xref='Clutter.Actor-clip'>clip</link>=value, <link xref='Clutter.Actor-clip-to-allocation'>clip_to_allocation</link>=value, <link xref='Clutter.Actor-constraints'>constraints</link>=value, <link xref='Clutter.Actor-content'>content</link>=value, <link xref='Clutter.Actor-content-gravity'>content_gravity</link>=value, <link xref='Clutter.Actor-depth'>depth</link>=value, <link xref='Clutter.Actor-effect'>effect</link>=value, <link xref='Clutter.Actor-fixed-position-set'>fixed_position_set</link>=value, <link xref='Clutter.Actor-fixed-x'>fixed_x</link>=value, <link xref='Clutter.Actor-fixed-y'>fixed_y</link>=value, <link xref='Clutter.Actor-height'>height</link>=value, <link xref='Clutter.Actor-layout-manager'>layout_manager</link>=value, <link xref='Clutter.Actor-magnification-filter'>magnification_filter</link>=value, <link xref='Clutter.Actor-margin-bottom'>margin_bottom</link>=value, <link xref='Clutter.Actor-margin-left'>margin_left</link>=value, <link xref='Clutter.Actor-margin-right'>margin_right</link>=value, <link xref='Clutter.Actor-margin-top'>margin_top</link>=value, <link xref='Clutter.Actor-min-height'>min_height</link>=value, <link xref='Clutter.Actor-min-height-set'>min_height_set</link>=value, <link xref='Clutter.Actor-min-width'>min_width</link>=value, <link xref='Clutter.Actor-min-width-set'>min_width_set</link>=value, <link xref='Clutter.Actor-minification-filter'>minification_filter</link>=value, <link xref='Clutter.Actor-name'>name</link>=value, <link xref='Clutter.Actor-natural-height'>natural_height</link>=value, <link xref='Clutter.Actor-natural-height-set'>natural_height_set</link>=value, <link xref='Clutter.Actor-natural-width'>natural_width</link>=value, <link xref='Clutter.Actor-natural-width-set'>natural_width_set</link>=value, <link xref='Clutter.Actor-offscreen-redirect'>offscreen_redirect</link>=value, <link xref='Clutter.Actor-opacity'>opacity</link>=value, <link xref='Clutter.Actor-reactive'>reactive</link>=value, <link xref='Clutter.Actor-request-mode'>request_mode</link>=value, <link xref='Clutter.Actor-rotation-angle-x'>rotation_angle_x</link>=value, <link xref='Clutter.Actor-rotation-angle-y'>rotation_angle_y</link>=value, <link xref='Clutter.Actor-rotation-angle-z'>rotation_angle_z</link>=value, <link xref='Clutter.Actor-rotation-center-x'>rotation_center_x</link>=value, <link xref='Clutter.Actor-rotation-center-y'>rotation_center_y</link>=value, <link xref='Clutter.Actor-rotation-center-z'>rotation_center_z</link>=value, <link xref='Clutter.Actor-rotation-center-z-gravity'>rotation_center_z_gravity</link>=value, <link xref='Clutter.Actor-scale-center-x'>scale_center_x</link>=value, <link xref='Clutter.Actor-scale-center-y'>scale_center_y</link>=value, <link xref='Clutter.Actor-scale-gravity'>scale_gravity</link>=value, <link xref='Clutter.Actor-scale-x'>scale_x</link>=value, <link xref='Clutter.Actor-scale-y'>scale_y</link>=value, <link xref='Clutter.Actor-show-on-set-parent'>show_on_set_parent</link>=value, <link xref='Clutter.Actor-text-direction'>text_direction</link>=value, <link xref='Clutter.Actor-visible'>visible</link>=value, <link xref='Clutter.Actor-width'>width</link>=value, <link xref='Clutter.Actor-x'>x</link>=value, <link xref='Clutter.Actor-x-align'>x_align</link>=value, <link xref='Clutter.Actor-y'>y</link>=value, <link xref='Clutter.Actor-y-align'>y_align</link>=value)  </code></synopsis>
+
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>GObject.InitiallyUnowned</code>
+      <item>
+        <code>Clutter.Actor</code>
+      </item>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="yes"
+         api:type="function" api:mime="text/x-python"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="yes"
+         api:type="function" api:mime="text/x-python"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="yes" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

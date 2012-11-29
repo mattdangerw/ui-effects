@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_shader"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_shader</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Shader</api:type>
+        <api:name>shader</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_shader</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Shader)
+@returns(gboolean)
+def set_shader(shader)
+</code></synopsis>
+<p>Sets the <link xref="Clutter.Shader">Clutter.Shader</link> to be used when rendering @self.</p><p>If @shader is None this function will unset any currently set shader
+for the actor.</p><p>&lt;note&gt;Any <link xref="Clutter.Effect">Clutter.Effect</link> applied to @self will take the precedence
+over the <link xref="Clutter.Shader">Clutter.Shader</link> set using this function.&lt;/note&gt;</p><p>or removed</p><p>
+clutter_actor_add_effect() instead.</p>
+
+<table>
+<tr>
+<td><p>shader :</p></td>
+<td><p>a <link xref="Clutter.Shader">Clutter.Shader</link> or None to unset the shader.</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the shader was successfully applied</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

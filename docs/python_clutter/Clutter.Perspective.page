@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page id="Clutter.Perspective"
+      type="guide"
+      style="record"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>ClutterPerspective</title>
+  <p>Stage perspective definition. #ClutterPerspective is only used by
+the fixed point version of clutter_stage_set_perspective().</p>
+</page>

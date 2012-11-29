@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Shader.compile"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Shader" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_shader_compile</api:name>
+      <api:arg>
+        <api:type>ClutterShader *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>compile</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def compile()
+</code></synopsis>
+<p>Compiles and links GLSL sources set for vertex and fragment shaders for
+a <link xref="Clutter.Shader">Clutter.Shader</link>. If the compilation fails and a <link xref="GError">GError</link> return location is
+provided the error will contain the errors from the compiler, if any.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>returns TRUE if the shader was succesfully compiled.</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

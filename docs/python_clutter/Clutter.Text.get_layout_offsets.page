@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.get_layout_offsets"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_get_layout_offsets</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_layout_offsets</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint, gint)
+@returns(none)
+def get_layout_offsets(x, y)
+</code></synopsis>
+<p>Obtains the coordinates where the <link xref="Clutter.Text">Clutter.Text</link> will draw the <link xref="PangoLayout">PangoLayout</link>
+representing the text.</p>
+
+<table>
+<tr>
+<td><p>x :</p></td>
+<td><p>location to store X offset of layout, or None</p></td>
+</tr>
+<tr>
+<td><p>y :</p></td>
+<td><p>location to store Y offset of layout, or None</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

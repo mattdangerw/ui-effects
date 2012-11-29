@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Clutter.Scriptable-parse_custom_node"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Scriptable" group="vfunc"/>
+    <title type="link" role="topic">parse_custom_node</title>
+  </info>
+  <title>Clutter.Scriptable.parse_custom_node</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Script, GObject.Value, utf8, Json.Node)
+@returns(gboolean)
+def do_parse_custom_node(self, script, value, name, node):
+</code></synopsis>
+<p>Parses the passed JSON node. The implementation must set the type
+of the passed <link xref="GValue">GValue</link> pointer using g_value_init().</p>
+
+<table>
+<tr>
+<td><p>script :</p></td>
+<td><p>the <link xref="Clutter.Script">Clutter.Script</link> creating the scriptable instance</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>the generic value to be set</p></td>
+</tr>
+<tr>
+<td><p>name :</p></td>
+<td><p>the name of the node</p></td>
+</tr>
+<tr>
+<td><p>node :</p></td>
+<td><p>the JSON node to be parsed</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the node was successfully parsed, False otherwise.</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

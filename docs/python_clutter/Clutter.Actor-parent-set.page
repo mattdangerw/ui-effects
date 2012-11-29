@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-parent-set"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="signal"/>
+    <title type="link" role="topic">parent-set</title>
+  </info>
+  <title>Clutter.Actor::parent-set</title>
+<synopsis><code mime="text/x-python">
+def callback(actor, old_parent, user_param1, ...)
+</code></synopsis>
+<p>This signal is emitted when the parent of the actor changes.</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>instance of Clutter.Actor that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>old_parent :</p></td>
+<td><p>the previous parent of the actor, or None</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

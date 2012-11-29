@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_depth"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_depth</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>depth</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_depth</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat)
+@returns(none)
+def set_depth(depth)
+</code></synopsis>
+<p>Sets the Z coordinate of @self to @depth.</p><p>The unit used by @depth is dependant on the perspective setup. See
+also clutter_stage_set_perspective().</p>
+
+<table>
+<tr>
+<td><p>depth :</p></td>
+<td><p>Z co-ord</p></td>
+</tr>
+</table>
+</page>

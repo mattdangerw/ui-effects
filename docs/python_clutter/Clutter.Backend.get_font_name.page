@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Backend.get_font_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Backend" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_backend_get_font_name</api:name>
+      <api:arg>
+        <api:type>ClutterBackend *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_font_name</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def get_font_name()
+</code></synopsis>
+<p>Retrieves the default font name as set by
+clutter_backend_set_font_name().</p><p>owned by the <link xref="Clutter.Backend">Clutter.Backend</link> and should never be modified or freed</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the font name for the backend. The returned string is</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

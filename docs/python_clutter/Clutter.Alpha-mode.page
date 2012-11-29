@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="Clutter.Alpha-mode"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Alpha" group="property"/>
+    <title type="link" role="topic">mode</title>
+  </info>
+  <title>Clutter.Alpha:mode</title>
+<synopsis><code mime="text/x-python">
+"mode"             gulong                : Read / Write / Construct
+</code></synopsis>
+<p>The progress function logical id - either a value from the
+<link xref="Clutter.AnimationMode">Clutter.AnimationMode</link> enumeration or a value returned by
+clutter_alpha_register_func().</p><p>If %CLUTTER_CUSTOM_MODE is used then the function set using
+clutter_alpha_set_closure() or clutter_alpha_set_func()
+will be used.</p>
+</page>

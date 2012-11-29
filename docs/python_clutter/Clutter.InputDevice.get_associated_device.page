@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.InputDevice.get_associated_device"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.InputDevice" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.InputDevice</api:type>
+      </api:returns>
+      <api:name>clutter_input_device_get_associated_device</api:name>
+      <api:arg>
+        <api:type>ClutterInputDevice *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_associated_device</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.InputDevice)
+def get_associated_device()
+</code></synopsis>
+<p>Retrieves a pointer to the <link xref="Clutter.InputDevice">Clutter.InputDevice</link> that has been
+associated to @device.</p><p>If the <link xref="Clutter.InputDevice-device-mode">Clutter.InputDevice:device-mode</link> property of @device is
+set to %CLUTTER_INPUT_MODE_MASTER, this function will return
+None.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="Clutter.InputDevice">Clutter.InputDevice</link>, or None</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

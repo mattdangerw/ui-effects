@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.TableLayout-easing-duration"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TableLayout" group="property"/>
+    <title type="link" role="topic">easing-duration</title>
+  </info>
+  <title>Clutter.TableLayout:easing-duration</title>
+<synopsis><code mime="text/x-python">
+"easing-duration"             guint                : Read / Write
+</code></synopsis>
+<p>The duration of the animations, in case <link xref="Clutter.TableLayout-use-animations">Clutter.TableLayout:use-animations</link>
+is set to True</p><p>The duration is expressed in milliseconds</p>
+</page>

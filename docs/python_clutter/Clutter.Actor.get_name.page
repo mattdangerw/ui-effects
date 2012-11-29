@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_name</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_name</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def get_name()
+</code></synopsis>
+<p>Retrieves the name of @self.</p><p>owned by the actor and should not be modified or freed.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the name of the actor, or None. The returned string is</p></td>
+</tr>
+</table>
+</page>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Path.set_description"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Path" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_path_set_description</api:name>
+      <api:arg>
+        <api:type>ClutterPath *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>str</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_description</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(gboolean)
+def set_description(str)
+</code></synopsis>
+<p>Replaces all of the nodes in the path with nodes described by
+@str. See clutter_path_add_string() for details of the format.</p><p>If the string is invalid then False is returned and the path is
+unaltered.</p>
+
+<table>
+<tr>
+<td><p>str :</p></td>
+<td><p>a string describing the path</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True is the path was valid, False otherwise.</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BrightnessContrastEffect.set_contrast"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BrightnessContrastEffect" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_brightness_contrast_effect_set_contrast</api:name>
+      <api:arg>
+        <api:type>ClutterBrightnessContrastEffect *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>contrast</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_contrast</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat)
+@returns(none)
+def set_contrast(contrast)
+</code></synopsis>
+<p>The range for @contrast is [-1.0, 1.0], where 0.0 designates no change;
+a value below 0.0 indicates a decrease in contrast; and a value above
+0.0 indicates an increase.</p>
+
+<table>
+<tr>
+<td><p>contrast :</p></td>
+<td><p>contrast change for all three channels</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

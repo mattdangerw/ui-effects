@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Clutter.TextDirection"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.TextDirection</title>
+  <p>The text direction to be used by <link xref="Clutter.Actor">Clutter.Actor</link>&lt;!-- --&gt;s</p>
+<table>
+<tr>
+<td><p>TextDirection.DEFAULT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>TextDirection.LTR :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>TextDirection.RTL :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

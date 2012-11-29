@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_layout_manager"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_layout_manager</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.LayoutManager</api:type>
+        <api:name>manager</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_layout_manager</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.LayoutManager)
+@returns(none)
+def set_layout_manager(manager)
+</code></synopsis>
+<p>Sets the <link xref="Clutter.LayoutManager">Clutter.LayoutManager</link> delegate object that will be used to
+lay out the children of @self.</p><p>The <link xref="Clutter.Actor">Clutter.Actor</link> will take a reference on the passed @manager which
+will be released either when the layout manager is removed, or when
+the actor is destroyed.</p>
+
+<table>
+<tr>
+<td><p>manager :</p></td>
+<td><p>a <link xref="Clutter.LayoutManager">Clutter.LayoutManager</link>, or None to unset it</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

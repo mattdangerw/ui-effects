@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.BindConstraint-offset"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BindConstraint" group="property"/>
+    <title type="link" role="topic">offset</title>
+  </info>
+  <title>Clutter.BindConstraint:offset</title>
+<synopsis><code mime="text/x-python">
+"offset"             gfloat                : Read / Write / Construct
+</code></synopsis>
+<p>The offset, in pixels, to be applied to the binding</p>
+</page>

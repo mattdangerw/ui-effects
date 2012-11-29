@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Texture.set_keep_aspect_ratio"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_texture_set_keep_aspect_ratio</api:name>
+      <api:arg>
+        <api:type>ClutterTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>keep_aspect</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_keep_aspect_ratio</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_keep_aspect_ratio(keep_aspect)
+</code></synopsis>
+<p>Sets whether @texture should have a preferred size maintaining
+the aspect ratio of the underlying image</p>
+
+<table>
+<tr>
+<td><p>keep_aspect :</p></td>
+<td><p>True to maintain aspect ratio</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

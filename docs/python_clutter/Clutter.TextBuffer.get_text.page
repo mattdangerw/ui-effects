@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.TextBuffer.get_text"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TextBuffer" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_text_buffer_get_text</api:name>
+      <api:arg>
+        <api:type>ClutterTextBuffer *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_text</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def get_text()
+</code></synopsis>
+<p>Retrieves the contents of the buffer.</p><p>The memory pointer returned by this call will not change
+unless this object emits a signal, or is finalized.</p><p>string. This string points to internally allocated
+storage in the buffer and must not be freed, modified or
+stored.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a pointer to the contents of the widget as a</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.ModelIter-model"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ModelIter" group="property"/>
+    <title type="link" role="topic">model</title>
+  </info>
+  <title>Clutter.ModelIter:model</title>
+<synopsis><code mime="text/x-python">
+"model"             Clutter.Model                : Read / Write
+</code></synopsis>
+<p>A reference to the <link xref="Clutter.Model">Clutter.Model</link> that this iter belongs to.</p>
+</page>

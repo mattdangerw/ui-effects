@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="Clutter.Scriptable-get_id"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Scriptable" group="vfunc"/>
+    <title type="link" role="topic">get_id</title>
+  </info>
+  <title>Clutter.Scriptable.get_id</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def do_get_id(self, ):
+</code></synopsis>
+<p>Retrieves the id of @scriptable set using clutter_scriptable_set_id().</p><p>the scriptable object and should never be modified of freed</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the id of the object. The returned string is owned by</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Clutter.DropAction-can_drop"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DropAction" group="vfunc"/>
+    <title type="link" role="topic">can_drop</title>
+  </info>
+  <title>Clutter.DropAction.can_drop</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, gfloat, gfloat)
+@returns(gboolean)
+def do_can_drop(self, actor, event_x, event_y):
+</code></synopsis>
+
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>event_x :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>event_y :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td></td>
+</tr>
+</table>
+</page>

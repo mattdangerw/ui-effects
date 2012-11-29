@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Clutter.Stage-delete-event"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Stage" group="signal"/>
+    <title type="link" role="topic">delete-event</title>
+  </info>
+  <title>Clutter.Stage::delete-event</title>
+<synopsis><code mime="text/x-python">
+def callback(stage, event, user_param1, ...)
+</code></synopsis>
+<p>The ::delete-event signal is emitted when the user closes a
+<link xref="Clutter.Stage">Clutter.Stage</link> window using the window controls.</p><p>Clutter by default will call clutter_main_quit() if @stage is
+the default stage, and clutter_actor_destroy() for any other
+stage.</p><p>It is possible to override the default behaviour by connecting
+a new handler and returning True there.</p><p>&lt;note&gt;This signal is emitted only on Clutter backends that
+embed <link xref="Clutter.Stage">Clutter.Stage</link> in native windows. It is not emitted for
+backends that use a static frame buffer.&lt;/note&gt;</p>
+
+<table>
+<tr>
+<td><p>stage :</p></td>
+<td><p>instance of Clutter.Stage that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>event :</p></td>
+<td><p>a <link xref="Clutter.Event">Clutter.Event</link> of type %CLUTTER_DELETE</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

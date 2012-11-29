@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.BehaviourRotate.get_axis"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BehaviourRotate" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.RotateAxis</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_rotate_get_axis</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviourRotate *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_axis</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.RotateAxis)
+def get_axis()
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.RotateAxis">Clutter.RotateAxis</link> used by the rotate behaviour.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the rotation axis</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

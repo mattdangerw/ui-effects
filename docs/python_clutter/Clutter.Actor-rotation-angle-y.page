@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-rotation-angle-y"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">rotation-angle-y</title>
+  </info>
+  <title>Clutter.Actor:rotation-angle-y</title>
+<synopsis><code mime="text/x-python">
+"rotation-angle-y"             gdouble                : Read / Write
+</code></synopsis>
+<p>The rotation angle on the Y axis</p><p>The <link xref="Clutter.Actor-rotation-angle-y">Clutter.Actor:rotation-angle-y</link> property is animatable.</p>
+</page>

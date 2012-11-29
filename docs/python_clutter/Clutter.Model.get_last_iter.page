@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Model.get_last_iter"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.ModelIter</api:type>
+      </api:returns>
+      <api:name>clutter_model_get_last_iter</api:name>
+      <api:arg>
+        <api:type>ClutterModel *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_last_iter</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.ModelIter)
+def get_last_iter()
+</code></synopsis>
+<p>Retrieves a <link xref="Clutter.ModelIter">Clutter.ModelIter</link> representing the last non-filtered
+row in @model.</p><p>Call g_object_unref() when done using it</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>A new <link xref="Clutter.ModelIter">Clutter.ModelIter</link>.</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

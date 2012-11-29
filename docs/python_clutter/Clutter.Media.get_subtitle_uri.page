@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Media.get_subtitle_uri"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Media" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_media_get_subtitle_uri</api:name>
+      <api:arg>
+        <api:type>ClutterMedia *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_subtitle_uri</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def get_subtitle_uri()
+</code></synopsis>
+<p>Retrieves the URI of the subtitle file in use.</p><p>to free the returned string</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the URI of the subtitle file. Use g_free()</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

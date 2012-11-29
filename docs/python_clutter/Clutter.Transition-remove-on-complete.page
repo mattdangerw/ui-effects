@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="Clutter.Transition-remove-on-complete"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Transition" group="property"/>
+    <title type="link" role="topic">remove-on-complete</title>
+  </info>
+  <title>Clutter.Transition:remove-on-complete</title>
+<synopsis><code mime="text/x-python">
+"remove-on-complete"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the <link xref="Clutter.Transition">Clutter.Transition</link> should be automatically detached
+from the <link xref="Clutter.Transition-animatable">Clutter.Transition:animatable</link> instance whenever the
+<link xref="Clutter.Timeline-completed">Clutter.Timeline::completed</link> signal is emitted.</p><p>The <link xref="Clutter.Transition-remove-on-complete">Clutter.Transition:remove-on-complete</link> property takes into
+account the value of the <link xref="Clutter.Timeline-repeat-count">Clutter.Timeline:repeat-count</link> property,
+and it only detaches the transition if the transition is not
+repeating.</p>
+</page>

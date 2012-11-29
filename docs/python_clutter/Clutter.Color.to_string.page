@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Color.to_string"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Color" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_color_to_string</api:name>
+    </api:function>
+  </info>
+  <title>to_string</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def to_string()
+</code></synopsis>
+<p>Returns a textual specification of @color in the hexadecimal form
+&lt;literal&gt;&amp;num;rrggbbaa&lt;/literal&gt;, where &lt;literal&gt;r&lt;/literal&gt;,
+&lt;literal&gt;g&lt;/literal&gt;, &lt;literal&gt;b&lt;/literal&gt; and &lt;literal&gt;a&lt;/literal&gt; are
+hexadecimal digits representing the red, green, blue and alpha components
+respectively.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a newly-allocated text string</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

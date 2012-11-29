@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.threads_add_frame_source_full"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint</api:type>
+      </api:returns>
+      <api:name>clutter_threads_add_frame_source_full</api:name>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>priority</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>fps</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.SourceFunc</api:type>
+        <api:name>func</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.DestroyNotify</api:type>
+        <api:name>notify</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>threads_add_frame_source_full</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint, guint, GLib.SourceFunc, gpointer, GLib.DestroyNotify)
+@returns(guint)
+def threads_add_frame_source_full(priority, fps, func, data, notify)
+</code></synopsis>
+<p>Sets a function to be called at regular intervals holding the Clutter
+threads lock, with the given priority. The function is called repeatedly
+until it returns False, at which point the timeout is automatically
+removed and the function will not be called again. The @notify function
+is called when the timeout is removed.</p><p>This function is similar to clutter_threads_add_timeout_full()
+except that it will try to compensate for delays. For example, if
+@func takes half the interval time to execute then the function
+will be called again half the interval time after it finished. In
+contrast clutter_threads_add_timeout_full() would not fire until a
+full interval after the function completes so the delay between
+calls would be @interval * 1.5. This function does not however try
+to invoke the function multiple times to catch up missing frames if
+@func takes more than @interval ms to execute.</p><p>See also clutter_threads_add_idle_full().</p>
+
+<table>
+<tr>
+<td><p>priority :</p></td>
+<td><p>the priority of the frame source. Typically this will be in the range between %G_PRIORITY_DEFAULT and %G_PRIORITY_HIGH.</p></td>
+</tr>
+<tr>
+<td><p>fps :</p></td>
+<td><p>the number of times per second to call the function</p></td>
+</tr>
+<tr>
+<td><p>func :</p></td>
+<td><p>function to call</p></td>
+</tr>
+<tr>
+<td><p>data :</p></td>
+<td><p>data to pass to the function</p></td>
+</tr>
+<tr>
+<td><p>notify :</p></td>
+<td><p>function to call when the timeout source is removed</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the ID (greater than 0) of the event source.</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-show_all"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="vfunc"/>
+    <title type="link" role="topic">show_all</title>
+  </info>
+  <title>Clutter.Actor.show_all</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def do_show_all(self, ):
+</code></synopsis>
+<p>Calls clutter_actor_show() on all children of an actor (if any).</p>
+
+<table>
+</table>
+<p>Since 0.2</p>
+</page>

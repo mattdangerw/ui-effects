@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Box.pack_at"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Box" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_box_pack_at</api:name>
+      <api:arg>
+        <api:type>ClutterBox *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>position</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>first_property</api:name>
+      </api:arg>
+      <api:varargs/>
+    </api:function>
+  </info>
+  <title>pack_at</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, gint, utf8, &lt;varargs&gt;)
+@returns(none)
+def pack_at(actor, position, first_property, None)
+</code></synopsis>
+<p>Adds @actor to @box, placing it at @position, and sets layout
+properties at the same time, if the <link xref="Clutter.LayoutManager">Clutter.LayoutManager</link> used by
+@box supports them</p><p>If @position is a negative number, or is larger than the number of
+children of @box, the new child is added at the end of the list of
+children</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+<tr>
+<td><p>position :</p></td>
+<td><p>the position to insert the @actor at</p></td>
+</tr>
+<tr>
+<td><p>first_property :</p></td>
+<td><p>the name of the first property to set, or None</p></td>
+</tr>
+<tr>
+<td><p>None :</p></td>
+<td></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

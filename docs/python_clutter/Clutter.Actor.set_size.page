@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_size</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_size</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(none)
+def set_size(width, height)
+</code></synopsis>
+<p>Sets the actor's size request in pixels. This overrides any
+"normal" size request the actor would have. For example
+a text actor might normally request the size of the text;
+this function would force a specific size instead.</p><p>If @width and/or @height are -1 the actor will use its
+"normal" size request instead of overriding it, i.e.
+you can "unset" the size with -1.</p><p>This function sets or unsets both the minimum and natural size.</p>
+
+<table>
+<tr>
+<td><p>width :</p></td>
+<td><p>New width of actor in pixels, or -1</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>New height of actor in pixels, or -1</p></td>
+</tr>
+</table>
+</page>

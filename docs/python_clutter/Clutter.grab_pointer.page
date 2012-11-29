@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.grab_pointer"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_grab_pointer</api:name>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>actor</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>grab_pointer</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def grab_pointer(actor)
+</code></synopsis>
+<p>Grabs pointer events, after the grab is done all pointer related events
+(press, motion, release, enter, leave and scroll) are delivered to this
+actor directly without passing through both capture and bubble phases of
+the event delivery chain. The source set in the event will be the actor
+that would have received the event if the pointer grab was not in effect.</p><p>&lt;note&gt;&lt;para&gt;Grabs completely override the entire event delivery chain
+done by Clutter. Pointer grabs should only be used as a last resource;
+using the <link xref="Clutter.Actor-captured-event">Clutter.Actor::captured-event</link> signal should always be the
+preferred way to intercept event delivery to reactive actors.&lt;/para&gt;&lt;/note&gt;</p><p>This function should rarely be used.</p><p>If a grab is required, you are strongly encouraged to use a specific
+input device by calling clutter_input_device_grab().</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link></p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

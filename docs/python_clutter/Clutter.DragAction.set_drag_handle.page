@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.DragAction.set_drag_handle"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DragAction" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_drag_action_set_drag_handle</api:name>
+      <api:arg>
+        <api:type>ClutterDragAction *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Actor</api:type>
+        <api:name>handle</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_drag_handle</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor)
+@returns(none)
+def set_drag_handle(handle)
+</code></synopsis>
+<p>Sets the actor to be used as the drag handle.</p>
+
+<table>
+<tr>
+<td><p>handle :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link>, or None to unset</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

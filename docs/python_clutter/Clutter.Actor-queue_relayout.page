@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-queue_relayout"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="vfunc"/>
+    <title type="link" role="topic">queue_relayout</title>
+  </info>
+  <title>Clutter.Actor.queue_relayout</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def do_queue_relayout(self, ):
+</code></synopsis>
+<p>Indicates that the actor's size request or other layout-affecting
+properties may have changed. This function is used inside <link xref="Clutter.Actor">Clutter.Actor</link>
+subclass implementations, not by applications directly.</p><p>Queueing a new layout automatically queues a redraw as well.</p>
+
+<table>
+</table>
+<p>Since 0.8</p>
+</page>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-fixed-y"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">fixed-y</title>
+  </info>
+  <title>Clutter.Actor:fixed-y</title>
+<synopsis><code mime="text/x-python">
+"fixed-y"             gfloat                : Read / Write
+</code></synopsis>
+<p>The fixed Y position of the actor in pixels.</p><p>Writing this property sets the <link xref="Clutter.Actor-fixed-position-set">Clutter.Actor:fixed-position-set</link>
+property as well, as a side effect</p>
+</page>

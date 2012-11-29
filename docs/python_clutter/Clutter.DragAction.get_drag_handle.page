@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.DragAction.get_drag_handle"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DragAction" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Actor</api:type>
+      </api:returns>
+      <api:name>clutter_drag_action_get_drag_handle</api:name>
+      <api:arg>
+        <api:type>ClutterDragAction *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_drag_handle</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.Actor)
+def get_drag_handle()
+</code></synopsis>
+<p>Retrieves the drag handle set by clutter_drag_action_set_drag_handle()</p><p>handle, or None if none was set</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="Clutter.Actor">Clutter.Actor</link>, used as the drag</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

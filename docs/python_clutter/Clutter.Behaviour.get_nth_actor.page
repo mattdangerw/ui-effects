@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Behaviour.get_nth_actor"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Behaviour" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Actor</api:type>
+      </api:returns>
+      <api:name>clutter_behaviour_get_nth_actor</api:name>
+      <api:arg>
+        <api:type>ClutterBehaviour *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>index_</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_nth_actor</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint)
+@returns(Clutter.Actor)
+def get_nth_actor(index_)
+</code></synopsis>
+<p>Gets an actor the behaviour was applied to referenced by index num.</p>
+
+<table>
+<tr>
+<td><p>index_ :</p></td>
+<td><p>the index of an actor this behaviour is applied too.</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>A Clutter actor or NULL if @index_ is invalid.</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

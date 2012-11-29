@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.ungrab_pointer_for_device"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_ungrab_pointer_for_device</api:name>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>id_</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>ungrab_pointer_for_device</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint)
+@returns(none)
+def ungrab_pointer_for_device(id_)
+</code></synopsis>
+<p>Removes an existing grab of the pointer events for device @id_.</p>
+
+<table>
+<tr>
+<td><p>id_ :</p></td>
+<td><p>a device id</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

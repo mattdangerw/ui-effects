@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-attributes"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="property"/>
+    <title type="link" role="topic">attributes</title>
+  </info>
+  <title>Clutter.Text:attributes</title>
+<synopsis><code mime="text/x-python">
+"attributes"             Pango.AttrList                : Read / Write
+</code></synopsis>
+<p>A list of <link xref="PangoStyleAttribute">PangoStyleAttribute</link>&lt;!-- --&gt;s to be applied to the
+contents of the <link xref="Clutter.Text">Clutter.Text</link> actor.</p>
+</page>

@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>unrealize</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">unrealize</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@returns(none)
+def unrealize()</pre></div></div></div></div></div>
+<p class="p">Unrealization informs the actor that it may be being destroyed or
+moved to another stage. The actor may want to destroy any
+underlying graphics resources at this point. However it is
+perfectly acceptable for it to retain the resources until the actor
+is destroyed because Clutter only ever uses a single rendering
+context and all of the graphics resources are valid on any stage.</p>
+<p class="p">Because mapped actors must be realized, actors may not be
+unrealized if they are mapped. This function hides the actor to be
+sure it isn't mapped, an application-visible side effect that you
+may not be expecting.</p>
+<p class="p">This function should not be called by application code.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table"></table></div></div></div>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

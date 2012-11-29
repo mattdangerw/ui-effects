@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>get_preferred_size</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">get_preferred_size</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(gfloat, gfloat, gfloat, gfloat)
+@returns(none)
+def get_preferred_size(min_width_p, min_height_p, natural_width_p, natural_height_p)</pre></div></div></div></div></div>
+<p class="p">Computes the preferred minimum and natural size of an actor, taking into
+account the actor's geometry management (either height-for-width
+or width-for-height).</p>
+<p class="p">The width and height used to compute the preferred height and preferred
+width are the actor's natural ones.</p>
+<p class="p">If you need to control the height for the preferred width, or the width for
+the preferred height, you should use clutter_actor_get_preferred_width()
+and clutter_actor_get_preferred_height(), and check the actor's preferred
+geometry management using the <span class=" link"><a href="Clutter.Actor-request-mode.html" title="Clutter.Actor:request-mode">Clutter.Actor:request-mode</a></span> property.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">min_width_p :</p></td>
+<td><p class="p">return location for the minimum width, or None</p></td>
+</tr>
+<tr>
+<td><p class="p">min_height_p :</p></td>
+<td><p class="p">return location for the minimum height, or None</p></td>
+</tr>
+<tr>
+<td><p class="p">natural_width_p :</p></td>
+<td><p class="p">return location for the natural width, or None</p></td>
+</tr>
+<tr>
+<td><p class="p">natural_height_p :</p></td>
+<td><p class="p">return location for the natural height, or None</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 0.8</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

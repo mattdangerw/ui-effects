@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page id="Clutter.ScriptConnectFunc"
+      type="topic"
+      style=""
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+  </info>
+  <title>Clutter.ScriptConnectFunc</title>
+<p>This is the signature of a function used to connect signals.  It is used
+by the clutter_script_connect_signals_full() function.  It is mainly
+intended for interpreted language bindings, but could be useful where the
+programmer wants more control over the signal connection process.</p>
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Clutter.SwipeAction-swept"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.SwipeAction" group="signal"/>
+    <title type="link" role="topic">swept</title>
+  </info>
+  <title>Clutter.SwipeAction::swept</title>
+<synopsis><code mime="text/x-python">
+def callback(swipe_action, actor, direction, user_param1, ...)
+</code></synopsis>
+<p>The ::swept signal is emitted when a swipe gesture is recognized on the
+attached actor.</p>
+
+<table>
+<tr>
+<td><p>swipe_action :</p></td>
+<td><p>instance of Clutter.SwipeAction that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>actor :</p></td>
+<td><p>the <link xref="Clutter.Actor">Clutter.Actor</link> attached to the @action</p></td>
+</tr>
+<tr>
+<td><p>direction :</p></td>
+<td><p>the main direction of the swipe gesture</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

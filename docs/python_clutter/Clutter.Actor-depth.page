@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-depth"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">depth</title>
+  </info>
+  <title>Clutter.Actor:depth</title>
+<synopsis><code mime="text/x-python">
+"depth"             gfloat                : Read / Write
+</code></synopsis>
+<p>The position of the actor on the Z axis.</p><p>The <link xref="Clutter.Actor-depth">Clutter.Actor:depth</link> property is relative to the parent's
+modelview matrix.</p><p>The <link xref="Clutter.Actor-depth">Clutter.Actor:depth</link> property is animatable.</p>
+</page>

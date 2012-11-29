@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.has_overlaps"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_actor_has_overlaps</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>has_overlaps</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def has_overlaps()
+</code></synopsis>
+<p>Asks the actor's implementation whether it may contain overlapping
+primitives.</p><p>For example; Clutter may use this to determine whether the painting
+should be redirected to an offscreen buffer to correctly implement
+the opacity property.</p><p>Custom actors can override the default response by implementing the
+<link xref="Clutter.Actor">Clutter.Actor</link> &lt;function&gt;has_overlaps&lt;/function&gt; virtual function. See
+clutter_actor_set_offscreen_redirect() for more information.</p><p>False otherwise</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the actor may have overlapping primitives, and</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

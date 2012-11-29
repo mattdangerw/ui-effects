@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Transition.set_remove_on_complete"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Transition" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_transition_set_remove_on_complete</api:name>
+      <api:arg>
+        <api:type>ClutterTransition *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>remove_complete</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_remove_on_complete</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_remove_on_complete(remove_complete)
+</code></synopsis>
+<p>Sets whether @transition should be detached from the <link xref="Clutter.Animatable">Clutter.Animatable</link>
+set using clutter_transition_set_animatable() when the
+<link xref="Clutter.Timeline-completed">Clutter.Timeline::completed</link> signal is emitted.</p>
+
+<table>
+<tr>
+<td><p>remove_complete :</p></td>
+<td><p>whether to detach @transition when complete</p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

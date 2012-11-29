@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_size</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_size</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat, gfloat)
+@returns(none)
+def get_size(width, height)
+</code></synopsis>
+<p>This function tries to "do what you mean" and return
+the size an actor will have. If the actor has a valid
+allocation, the allocation will be returned; otherwise,
+the actors natural size request will be returned.</p><p>If you care whether you get the request vs. the allocation, you
+should probably call a different function like
+clutter_actor_get_allocation_box() or
+clutter_actor_get_preferred_width().</p>
+
+<table>
+<tr>
+<td><p>width :</p></td>
+<td><p>return location for the width, or None.</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>return location for the height, or None.</p></td>
+</tr>
+</table>
+<p>Since 0.2</p>
+</page>

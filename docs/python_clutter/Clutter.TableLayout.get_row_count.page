@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.TableLayout.get_row_count"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TableLayout" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gint</api:type>
+      </api:returns>
+      <api:name>clutter_table_layout_get_row_count</api:name>
+      <api:arg>
+        <api:type>ClutterTableLayout *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_row_count</title>
+<synopsis><code mime="text/x-python">
+@returns(gint)
+def get_row_count()
+</code></synopsis>
+<p>Retrieve the current number rows in the @layout</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the number of rows</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

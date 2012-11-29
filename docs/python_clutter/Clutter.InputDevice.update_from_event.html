@@ -1,0 +1,82 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>update_from_event</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.InputDevice.html" title="Clutter.InputDevice">Clutter.InputDevice</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">update_from_event</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(Clutter.Event, gboolean)
+@returns(none)
+def update_from_event(event, update_stage)</pre></div></div></div></div></div>
+<p class="p">Forcibly updates the state of the @device using a <span class=" link"><a href="Clutter.Event.html" title="Clutter.Event">Clutter.Event</a></span></p>
+<p class="p">This function should never be used by applications: it is meant
+for integration with embedding toolkits, like clutter-gtk</p>
+<p class="p">Embedding toolkits that disable the event collection inside Clutter
+need to use this function to update the state of input devices depending
+on a <span class=" link"><a href="Clutter.Event.html" title="Clutter.Event">Clutter.Event</a></span> that they are going to submit to the event handling code
+in Clutter though clutter_do_event(). Since the input devices hold the state
+that is going to be used to fill in fields like the <span class=" link"><a href="Clutter.ButtonEvent.html" title="ClutterButtonEvent">Clutter.ButtonEvent</a></span>
+click count, or to emit synthesized events like %CLUTTER_ENTER and
+%CLUTTER_LEAVE, it is necessary for embedding toolkits to also be
+responsible of updating the input device state.</p>
+<p class="p">For instance, this might be the code to translate an embedding toolkit
+native motion notification into a Clutter <span class=" link"><a href="Clutter.MotionEvent.html" title="ClutterMotionEvent">Clutter.MotionEvent</a></span> and ask
+Clutter to process it:</p>
+<p class="p">|[
+ClutterEvent c_event;</p>
+<p class="p">translate_native_event_to_clutter (native_event, &amp;amp;c_event);</p>
+<p class="p">clutter_do_event (&amp;amp;c_event);
+]|</p>
+<p class="p">Before letting clutter_do_event() process the event, it is necessary to call
+clutter_input_device_update_from_event():</p>
+<p class="p">|[
+ClutterEvent c_event;
+ClutterDeviceManager *manager;
+ClutterInputDevice *device;</p>
+<p class="p">translate_native_event_to_clutter (native_event, &amp;amp;c_event);</p>
+<p class="p">/&amp;ast; get the device manager &amp;ast;/
+manager = clutter_device_manager_get_default ();</p>
+<p class="p">/&amp;ast; use the default Core Pointer that Clutter
+&amp;ast; backends register by default
+&amp;ast;/
+device = clutter_device_manager_get_core_device (manager, %CLUTTER_POINTER_DEVICE);</p>
+<p class="p">/&amp;ast; update the state of the input device &amp;ast;/
+clutter_input_device_update_from_event (device, &amp;amp;c_event, FALSE);</p>
+<p class="p">clutter_do_event (&amp;amp;c_event);
+]|</p>
+<p class="p">The @update_stage boolean argument should be used when the input device
+enters and leaves a <span class=" link"><a href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a></span>; it will use the <span class=" link"><a href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a></span> field
+of the passed @event to update the stage associated to the input device.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">event :</p></td>
+<td><p class="p">a <span class=" link"><a href="Clutter.Event.html" title="Clutter.Event">Clutter.Event</a></span></p></td>
+</tr>
+<tr>
+<td><p class="p">update_stage :</p></td>
+<td><p class="p">whether to update the <span class=" link"><a href="Clutter.Stage.html" title="Clutter.Stage">Clutter.Stage</a></span> of the @device using the stage of the event</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.2</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.InputDevice.html" title="Clutter.InputDevice">Clutter.InputDevice</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

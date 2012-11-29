@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.ActorMeta-actor"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ActorMeta" group="property"/>
+    <title type="link" role="topic">actor</title>
+  </info>
+  <title>Clutter.ActorMeta:actor</title>
+<synopsis><code mime="text/x-python">
+"actor"             Clutter.Actor                : Read
+</code></synopsis>
+<p>The <link xref="Clutter.Actor">Clutter.Actor</link> attached to the <link xref="Clutter.ActorMeta">Clutter.ActorMeta</link> instance</p>
+</page>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_paint_visibility"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_paint_visibility</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_paint_visibility</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def get_paint_visibility()
+</code></synopsis>
+<p>Retrieves the 'paint' visibility of an actor recursively checking for non
+visible parents.</p><p>This is by definition the same as %CLUTTER_ACTOR_IS_MAPPED.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the actor is visibile and will be painted.</p></td>
+</tr>
+</table>
+<p>Since 0.8.4</p>
+</page>

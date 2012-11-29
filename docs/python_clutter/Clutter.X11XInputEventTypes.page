@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Clutter.X11XInputEventTypes"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.X11XInputEventTypes</title>
+  
+<table>
+<tr>
+<td><p>X11XInputEventTypes.KEY_PRESS_EVENT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>X11XInputEventTypes.KEY_RELEASE_EVENT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>X11XInputEventTypes.BUTTON_PRESS_EVENT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>X11XInputEventTypes.BUTTON_RELEASE_EVENT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>X11XInputEventTypes.MOTION_NOTIFY_EVENT :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>X11XInputEventTypes.LAST_EVENT :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

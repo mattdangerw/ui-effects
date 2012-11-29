@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.State.get_keys"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.State" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>&lt;list&gt;</api:type>
+      </api:returns>
+      <api:name>clutter_state_get_keys</api:name>
+      <api:arg>
+        <api:type>ClutterState *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>source_state_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>target_state_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>object</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_keys</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, utf8, GObject.Object, utf8)
+@returns(&lt;list&gt;)
+def get_keys(source_state_name, target_state_name, object, property_name)
+</code></synopsis>
+<p>Returns a list of pointers to opaque structures with accessor functions
+that describe the keys added to an animator.</p><p>newly allocated <link xref="GList">GList</link> of <link xref="Clutter.StateKey">Clutter.StateKey</link>&lt;!-- --&gt;s. The contents of
+the returned list are owned by the <link xref="Clutter.State">Clutter.State</link> and should not be
+modified or freed. Use g_list_free() to free the resources allocated
+by the returned list when done using it</p>
+
+<table>
+<tr>
+<td><p>source_state_name :</p></td>
+<td><p>the source transition name to query, or None for all source states</p></td>
+</tr>
+<tr>
+<td><p>target_state_name :</p></td>
+<td><p>the target transition name to query, or None for all target states</p></td>
+</tr>
+<tr>
+<td><p>object :</p></td>
+<td><p>the specific object instance to list keys for, or None for all managed objects</p></td>
+</tr>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>the property name to search for, or None for all properties.</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

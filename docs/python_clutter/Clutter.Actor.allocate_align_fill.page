@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.allocate_align_fill"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_allocate_align_fill</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ActorBox</api:type>
+        <api:name>box</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>x_align</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>y_align</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>x_fill</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>y_fill</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.AllocationFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>allocate_align_fill</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.ActorBox, gdouble, gdouble, gboolean, gboolean, Clutter.AllocationFlags)
+@returns(none)
+def allocate_align_fill(box, x_align, y_align, x_fill, y_fill, flags)
+</code></synopsis>
+<p>Allocates @self by taking into consideration the available allocation
+area; an alignment factor on either axis; and whether the actor should
+fill the allocation on either axis.</p><p>The @box should contain the available allocation width and height;
+if the x1 and y1 members of <link xref="Clutter.ActorBox">Clutter.ActorBox</link> are not set to 0, the
+allocation will be offset by their value.</p><p>This function takes into consideration the geometry request specified by
+the <link xref="Clutter.Actor-request-mode">Clutter.Actor:request-mode</link> property, and the text direction.</p><p>This function is useful for fluid layout managers, like <link xref="Clutter.BinLayout">Clutter.BinLayout</link>
+or <link xref="Clutter.TableLayout">Clutter.TableLayout</link></p>
+
+<table>
+<tr>
+<td><p>box :</p></td>
+<td><p>a <link xref="Clutter.ActorBox">Clutter.ActorBox</link>, containing the available width and height</p></td>
+</tr>
+<tr>
+<td><p>x_align :</p></td>
+<td><p>the horizontal alignment, between 0 and 1</p></td>
+</tr>
+<tr>
+<td><p>y_align :</p></td>
+<td><p>the vertical alignment, between 0 and 1</p></td>
+</tr>
+<tr>
+<td><p>x_fill :</p></td>
+<td><p>whether the actor should fill horizontally</p></td>
+</tr>
+<tr>
+<td><p>y_fill :</p></td>
+<td><p>whether the actor should fill vertically</p></td>
+</tr>
+<tr>
+<td><p>flags :</p></td>
+<td><p>allocation flags to be passed to clutter_actor_allocate()</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

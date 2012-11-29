@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Backend.get_font_options"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Backend" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>cairo.FontOptions</api:type>
+      </api:returns>
+      <api:name>clutter_backend_get_font_options</api:name>
+      <api:arg>
+        <api:type>ClutterBackend *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_font_options</title>
+<synopsis><code mime="text/x-python">
+@returns(cairo.FontOptions)
+def get_font_options()
+</code></synopsis>
+<p>Retrieves the font options for @backend.</p><p>The returned <link xref="cairo_font_options_t">cairo_font_options_t</link> is owned by the backend and should
+not be modified or freed</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the font options of the <link xref="Clutter.Backend">Clutter.Backend</link>.</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

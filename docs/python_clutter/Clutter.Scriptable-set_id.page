@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Clutter.Scriptable-set_id"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Scriptable" group="vfunc"/>
+    <title type="link" role="topic">set_id</title>
+  </info>
+  <title>Clutter.Scriptable.set_id</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(none)
+def do_set_id(self, id_):
+</code></synopsis>
+<p>Sets @id_ as the unique Clutter script it for this instance of
+<link xref="Clutter.ScriptableIface">Clutter.ScriptableIface</link>.</p><p>This name can be used by user interface designer applications to
+define a unique name for an object constructable using the UI
+definition language parsed by <link xref="Clutter.Script">Clutter.Script</link>.</p>
+
+<table>
+<tr>
+<td><p>id_ :</p></td>
+<td><p>the <link xref="Clutter.Script">Clutter.Script</link> id of the object</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

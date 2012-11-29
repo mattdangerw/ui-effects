@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.BoxLayout-pack-start"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.BoxLayout" group="property"/>
+    <title type="link" role="topic">pack-start</title>
+  </info>
+  <title>Clutter.BoxLayout:pack-start</title>
+<synopsis><code mime="text/x-python">
+"pack-start"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the <link xref="Clutter.BoxLayout">Clutter.BoxLayout</link> should pack items at the start
+or append them at the end</p>
+</page>

@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>transform_stage_point</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">transform_stage_point</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts(gfloat, gfloat, gfloat, gfloat)
+@returns(gboolean)
+def transform_stage_point(x, y, x_out, y_out)</pre></div></div></div></div></div>
+<p class="p">This function translates screen coordinates (@x, @y) to
+coordinates relative to the actor. For example, it can be used to translate
+screen events from global screen coordinates into actor-local coordinates.</p>
+<p class="p">The conversion can fail, notably if the transform stack results in the
+actor being projected on the screen as a mere line.</p>
+<p class="p">The conversion should not be expected to be pixel-perfect due to the
+nature of the operation. In general the error grows when the skewing
+of the actor rectangle on screen increases.</p>
+<p class="p">&lt;note&gt;&lt;para&gt;This function can be computationally intensive.&lt;/para&gt;&lt;/note&gt;</p>
+<p class="p">&lt;note&gt;&lt;para&gt;This function only works when the allocation is up-to-date,
+i.e. inside of paint().&lt;/para&gt;&lt;/note&gt;</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">x :</p></td>
+<td><p class="p">x screen coordinate of the point to unproject</p></td>
+</tr>
+<tr>
+<td><p class="p">y :</p></td>
+<td><p class="p">y screen coordinate of the point to unproject</p></td>
+</tr>
+<tr>
+<td><p class="p">x_out :</p></td>
+<td><p class="p">return location for the unprojected x coordinance</p></td>
+</tr>
+<tr>
+<td><p class="p">y_out :</p></td>
+<td><p class="p">return location for the unprojected y coordinance</p></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">True if conversion was successful.</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 0.6</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Actor.html" title="Clutter.Actor">Clutter.Actor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

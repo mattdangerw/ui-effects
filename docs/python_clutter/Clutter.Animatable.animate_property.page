@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animatable.animate_property"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animatable" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_animatable_animate_property</api:name>
+      <api:arg>
+        <api:type>ClutterAnimatable *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Animation</api:type>
+        <api:name>animation</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>initial_value</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>final_value</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gdouble</api:type>
+        <api:name>progress</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>animate_property</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Animation, utf8, GObject.Value, GObject.Value, gdouble, GObject.Value)
+@returns(gboolean)
+def animate_property(animation, property_name, initial_value, final_value, progress, value)
+</code></synopsis>
+<p>Calls the animate_property() virtual function for @animatable.</p><p>The @initial_value and @final_value <link xref="GValue">GValue</link>&lt;!-- --&gt;s must contain
+the same type; @value must have been initialized to the same
+type of @initial_value and @final_value.</p><p>All implementation of the <link xref="Clutter.Animatable">Clutter.Animatable</link> interface must
+implement this function.</p><p>be applied to the <link xref="Clutter.Animatable">Clutter.Animatable</link>, and False otherwise</p><p>
+instead</p>
+
+<table>
+<tr>
+<td><p>animation :</p></td>
+<td><p>a <link xref="Clutter.Animation">Clutter.Animation</link></p></td>
+</tr>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>the name of the animated property</p></td>
+</tr>
+<tr>
+<td><p>initial_value :</p></td>
+<td><p>the initial value of the animation interval</p></td>
+</tr>
+<tr>
+<td><p>final_value :</p></td>
+<td><p>the final value of the animation interval</p></td>
+</tr>
+<tr>
+<td><p>progress :</p></td>
+<td><p>the progress factor</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>return location for the animation value</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the value has been validated and can</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

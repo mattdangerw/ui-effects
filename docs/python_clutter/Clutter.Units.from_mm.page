@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Units.from_mm"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Units" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_units_from_mm</api:name>
+      <api:arg>
+        <api:type>gfloat</api:type>
+        <api:name>mm</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>from_mm</title>
+<synopsis><code mime="text/x-python">
+@accepts(gfloat)
+@returns(none)
+def from_mm(mm)
+</code></synopsis>
+<p>Stores a value in millimiters inside @units</p>
+
+<table>
+<tr>
+<td><p>mm :</p></td>
+<td><p>millimeters</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

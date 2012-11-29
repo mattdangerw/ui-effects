@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Clutter.DeviceManager-get_device"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DeviceManager" group="vfunc"/>
+    <title type="link" role="topic">get_device</title>
+  </info>
+  <title>Clutter.DeviceManager.get_device</title>
+<synopsis><code mime="text/x-python">
+@accepts(gint)
+@returns(Clutter.InputDevice)
+def do_get_device(self, device_id):
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.InputDevice">Clutter.InputDevice</link> with the given @device_id</p><p>returned device is owned by the <link xref="Clutter.DeviceManager">Clutter.DeviceManager</link> and should
+never be modified or freed</p>
+
+<table>
+<tr>
+<td><p>device_id :</p></td>
+<td><p>the integer id of a device</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="Clutter.InputDevice">Clutter.InputDevice</link> or None. The</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

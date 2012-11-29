@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PageTurnEffect.get_radius"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PageTurnEffect" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gfloat</api:type>
+      </api:returns>
+      <api:name>clutter_page_turn_effect_get_radius</api:name>
+      <api:arg>
+        <api:type>ClutterPageTurnEffect *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_radius</title>
+<synopsis><code mime="text/x-python">
+@returns(gfloat)
+def get_radius()
+</code></synopsis>
+<p>Retrieves the value set using clutter_page_turn_effect_set_radius()</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the radius of the page curling</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

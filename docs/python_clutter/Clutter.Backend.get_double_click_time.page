@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Backend.get_double_click_time"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Backend" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint</api:type>
+      </api:returns>
+      <api:name>clutter_backend_get_double_click_time</api:name>
+      <api:arg>
+        <api:type>ClutterBackend *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_double_click_time</title>
+<synopsis><code mime="text/x-python">
+@returns(guint)
+def get_double_click_time()
+</code></synopsis>
+<p>Gets the maximum time between two button press events, as set
+by clutter_backend_set_double_click_time().</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a time in milliseconds</p></td>
+</tr>
+</table>
+<p>Since 0.4</p>
+</page>

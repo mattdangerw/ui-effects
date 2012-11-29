@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Container.foreach_with_internals"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_container_foreach_with_internals</api:name>
+      <api:arg>
+        <api:type>ClutterContainer *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Callback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>user_data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>foreach_with_internals</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Callback, gpointer)
+@returns(none)
+def foreach_with_internals(callback, user_data)
+</code></synopsis>
+<p>Calls @callback for each child of @container, including "internal"
+children built in to the container itself that were never added
+by the application.</p><p>This function calls the <link xref="Clutter.ContainerIface">Clutter.ContainerIface</link>.foreach_with_internals()
+virtual function, which has been deprecated.</p>
+
+<table>
+<tr>
+<td><p>callback :</p></td>
+<td><p>a function to be called for each child</p></td>
+</tr>
+<tr>
+<td><p>user_data :</p></td>
+<td><p>data to be passed to the function, or None</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

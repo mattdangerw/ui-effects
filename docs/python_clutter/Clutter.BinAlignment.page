@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Clutter.BinAlignment"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.BinAlignment</title>
+  <p>The alignment policies available on each axis for <link xref="Clutter.BinLayout">Clutter.BinLayout</link></p>
+<table>
+<tr>
+<td><p>BinAlignment.FIXED :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>BinAlignment.FILL :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>BinAlignment.START :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>BinAlignment.END :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>BinAlignment.CENTER :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

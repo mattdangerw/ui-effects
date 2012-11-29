@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.get_direction"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.TimelineDirection</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_get_direction</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_direction</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.TimelineDirection)
+def get_direction()
+</code></synopsis>
+<p>Retrieves the direction of the timeline set with
+clutter_timeline_set_direction().</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the direction of the timeline</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

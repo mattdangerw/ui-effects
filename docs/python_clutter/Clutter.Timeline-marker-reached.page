@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="Clutter.Timeline-marker-reached"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="signal"/>
+    <title type="link" role="topic">marker-reached</title>
+  </info>
+  <title>Clutter.Timeline::marker-reached</title>
+<synopsis><code mime="text/x-python">
+def callback(timeline, marker_name, msecs, user_param1, ...)
+</code></synopsis>
+<p>The ::marker-reached signal is emitted each time a timeline
+reaches a marker set with
+clutter_timeline_add_marker_at_time(). This signal is detailed
+with the name of the marker as well, so it is possible to connect
+a callback to the ::marker-reached signal for a specific marker
+with:</p><p>&lt;informalexample&gt;&lt;programlisting&gt;
+clutter_timeline_add_marker_at_time (timeline, "foo", 500);
+clutter_timeline_add_marker_at_time (timeline, "bar", 750);</p><p>g_signal_connect (timeline, "marker-reached",
+G_CALLBACK (each_marker_reached), NULL);
+g_signal_connect (timeline, "marker-reached::foo",
+G_CALLBACK (foo_marker_reached), NULL);
+g_signal_connect (timeline, "marker-reached::bar",
+G_CALLBACK (bar_marker_reached), NULL);
+&lt;/programlisting&gt;&lt;/informalexample&gt;</p><p>In the example, the first callback will be invoked for both
+the "foo" and "bar" marker, while the second and third callbacks
+will be invoked for the "foo" or "bar" markers, respectively.</p>
+
+<table>
+<tr>
+<td><p>timeline :</p></td>
+<td><p>instance of Clutter.Timeline that is emitting the signal</p></td>
+</tr>
+<tr>
+<td><p>marker_name :</p></td>
+<td><p>the name of the marker reached</p></td>
+</tr>
+<tr>
+<td><p>msecs :</p></td>
+<td><p>the elapsed time</p></td>
+</tr>
+<tr>
+<td><p>user_param1 :</p></td>
+<td><p>first user parameter (if any) specified with the connect() method</p></td>
+</tr>
+<tr>
+<td><p>... :</p></td>
+<td><p>additional user parameters (if any)</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

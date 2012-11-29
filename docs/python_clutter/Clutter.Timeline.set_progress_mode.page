@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.set_progress_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_set_progress_mode</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.AnimationMode</api:type>
+        <api:name>mode</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_progress_mode</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.AnimationMode)
+@returns(none)
+def set_progress_mode(mode)
+</code></synopsis>
+<p>Sets the progress function using a value from the <link xref="Clutter.AnimationMode">Clutter.AnimationMode</link>
+enumeration. The @mode cannot be %CLUTTER_CUSTOM_MODE or bigger than
+%CLUTTER_ANIMATION_LAST.</p>
+
+<table>
+<tr>
+<td><p>mode :</p></td>
+<td><p>the progress mode, as a <link xref="Clutter.AnimationMode">Clutter.AnimationMode</link></p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

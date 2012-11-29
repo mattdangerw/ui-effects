@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.threads_add_repaint_func"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint</api:type>
+      </api:returns>
+      <api:name>clutter_threads_add_repaint_func</api:name>
+      <api:arg>
+        <api:type>GLib.SourceFunc</api:type>
+        <api:name>func</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.DestroyNotify</api:type>
+        <api:name>notify</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>threads_add_repaint_func</title>
+<synopsis><code mime="text/x-python">
+@accepts(GLib.SourceFunc, gpointer, GLib.DestroyNotify)
+@returns(guint)
+def threads_add_repaint_func(func, data, notify)
+</code></synopsis>
+<p>Adds a function to be called whenever Clutter is processing a new
+frame.</p><p>If the function returns False it is automatically removed from the
+list of repaint functions and will not be called again.</p><p>This function is guaranteed to be called from within the same thread
+that called clutter_main(), and while the Clutter lock is being held;
+the function will be called within the main loop, so it is imperative
+that it does not block, otherwise the frame time budget may be lost.</p><p>A repaint function is useful to ensure that an update of the scenegraph
+is performed before the scenegraph is repainted; for instance, uploading
+a frame from a video into a <link xref="Clutter.Texture">Clutter.Texture</link>. By default, a repaint
+function added using this function will be invoked prior to the frame
+being processed.</p><p>Adding a repaint function does not automatically ensure that a new
+frame will be queued.</p><p>When the repaint function is removed (either because it returned False
+or because clutter_threads_remove_repaint_func() has been called) the
+@notify function will be called, if any is set.</p><p>See also: clutter_threads_add_repaint_func_full()</p><p>can use the returned integer to remove the repaint function by
+calling clutter_threads_remove_repaint_func().</p>
+
+<table>
+<tr>
+<td><p>func :</p></td>
+<td><p>the function to be called within the paint cycle</p></td>
+</tr>
+<tr>
+<td><p>data :</p></td>
+<td><p>data to be passed to the function, or None</p></td>
+</tr>
+<tr>
+<td><p>notify :</p></td>
+<td><p>function to be called when removing the repaint function, or None</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the ID (greater than 0) of the repaint function. You</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

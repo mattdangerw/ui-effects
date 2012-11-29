@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.InputDevice.get_device_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.InputDevice" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.InputMode</api:type>
+      </api:returns>
+      <api:name>clutter_input_device_get_device_mode</api:name>
+      <api:arg>
+        <api:type>ClutterInputDevice *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_device_mode</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.InputMode)
+def get_device_mode()
+</code></synopsis>
+<p>Retrieves the <link xref="Clutter.InputMode">Clutter.InputMode</link> of @device.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the device mode</p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

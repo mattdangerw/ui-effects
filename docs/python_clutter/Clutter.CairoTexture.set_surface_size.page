@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.CairoTexture.set_surface_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.CairoTexture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_cairo_texture_set_surface_size</api:name>
+      <api:arg>
+        <api:type>ClutterCairoTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_surface_size</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, guint)
+@returns(none)
+def set_surface_size(width, height)
+</code></synopsis>
+<p>Resizes the Cairo surface used by @self to @width and @height.</p><p>This function will not invalidate the contents of the Cairo
+texture: you will have to explicitly call either
+clutter_cairo_texture_invalidate_rectangle() or
+clutter_cairo_texture_invalidate().</p>
+
+<table>
+<tr>
+<td><p>width :</p></td>
+<td><p>the new width of the surface</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>the new height of the surface</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

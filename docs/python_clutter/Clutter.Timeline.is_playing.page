@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Timeline.is_playing"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Timeline" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_timeline_is_playing</api:name>
+      <api:arg>
+        <api:type>ClutterTimeline *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>is_playing</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def is_playing()
+</code></synopsis>
+<p>Queries state of a <link xref="Clutter.Timeline">Clutter.Timeline</link>.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if timeline is currently playing</p></td>
+</tr>
+</table>
+</page>

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.animate_with_alpha"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Animation</api:type>
+      </api:returns>
+      <api:name>clutter_actor_animate_with_alpha</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Alpha</api:type>
+        <api:name>alpha</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>first_property_name</api:name>
+      </api:arg>
+      <api:varargs/>
+    </api:function>
+  </info>
+  <title>animate_with_alpha</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Alpha, utf8, &lt;varargs&gt;)
+@returns(Clutter.Animation)
+def animate_with_alpha(alpha, first_property_name, None)
+</code></synopsis>
+<p>Animates the given list of properties of @actor between the current
+value for each property and a new final value. The animation has a
+definite behaviour given by the passed @alpha.</p><p>See clutter_actor_animate() for further details.</p><p>This function is useful if you want to use an existing <link xref="Clutter.Alpha">Clutter.Alpha</link>
+to animate @actor.</p><p><link xref="Clutter.Actor">Clutter.Actor</link> and should not be unreferenced with g_object_unref()</p>
+
+<table>
+<tr>
+<td><p>alpha :</p></td>
+<td><p>a <link xref="Clutter.Alpha">Clutter.Alpha</link></p></td>
+</tr>
+<tr>
+<td><p>first_property_name :</p></td>
+<td><p>the name of a property</p></td>
+</tr>
+<tr>
+<td><p>None :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a <link xref="Clutter.Animation">Clutter.Animation</link> object. The object is owned by the</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

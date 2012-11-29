@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.set_default_frame_rate"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_set_default_frame_rate</api:name>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>frames_per_sec</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_default_frame_rate</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint)
+@returns(none)
+def set_default_frame_rate(frames_per_sec)
+</code></synopsis>
+<p>Sets the default frame rate. This frame rate will be used to limit
+the number of frames drawn if Clutter is not able to synchronize
+with the vertical refresh rate of the display. When synchronization
+is possible, this value is ignored.</p>
+
+<table>
+<tr>
+<td><p>frames_per_sec :</p></td>
+<td><p>the new default frame rate</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

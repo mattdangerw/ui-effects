@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Model.insert_value"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Model" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_model_insert_value</api:name>
+      <api:arg>
+        <api:type>ClutterModel *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>row</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>column</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>insert_value</title>
+<synopsis><code mime="text/x-python">
+@accepts(guint, guint, GObject.Value)
+@returns(none)
+def insert_value(row, column, value)
+</code></synopsis>
+<p>Sets the data in the cell specified by @iter and @column. The type of 
+@value must be convertable to the type of the column. If the row does
+not exist then it is created.</p>
+
+<table>
+<tr>
+<td><p>row :</p></td>
+<td><p>position of the row to modify</p></td>
+</tr>
+<tr>
+<td><p>column :</p></td>
+<td><p>column to modify</p></td>
+</tr>
+<tr>
+<td><p>value :</p></td>
+<td><p>new value for the cell</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

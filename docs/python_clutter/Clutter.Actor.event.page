@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.event"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_actor_event</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Event</api:type>
+        <api:name>event</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>capture</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>event</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Event, gboolean)
+@returns(gboolean)
+def event(event, capture)
+</code></synopsis>
+<p>This function is used to emit an event on the main stage.
+You should rarely need to use this function, except for
+synthetising events.</p><p>if the actor handled the event, or False if the event was
+not handled</p>
+
+<table>
+<tr>
+<td><p>event :</p></td>
+<td><p>a <link xref="Clutter.Event">Clutter.Event</link></p></td>
+</tr>
+<tr>
+<td><p>capture :</p></td>
+<td><p>TRUE if event in in capture phase, FALSE otherwise.</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the return value from the signal emission: True</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

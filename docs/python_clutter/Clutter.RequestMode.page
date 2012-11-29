@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="Clutter.RequestMode"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Clutter.RequestMode</title>
+  <p>Specifies the type of requests for a <link xref="Clutter.Actor">Clutter.Actor</link>.</p>
+<table>
+<tr>
+<td><p>RequestMode.HEIGHT_FOR_WIDTH :</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>RequestMode.WIDTH_FOR_HEIGHT :</p></td>
+<td></td>
+</tr>
+</table>
+
+</page>

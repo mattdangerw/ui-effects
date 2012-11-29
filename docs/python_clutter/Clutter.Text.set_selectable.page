@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_selectable"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_selectable</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>selectable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_selectable</title>
+<synopsis><code mime="text/x-python">
+@accepts(gboolean)
+@returns(none)
+def set_selectable(selectable)
+</code></synopsis>
+<p>Sets whether a <link xref="Clutter.Text">Clutter.Text</link> actor should be selectable.</p><p>A selectable <link xref="Clutter.Text">Clutter.Text</link> will allow selecting its contents using
+the pointer or the keyboard.</p>
+
+<table>
+<tr>
+<td><p>selectable :</p></td>
+<td><p>whether the <link xref="Clutter.Text">Clutter.Text</link> actor should be selectable</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

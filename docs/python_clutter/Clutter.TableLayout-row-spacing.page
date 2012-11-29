@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.TableLayout-row-spacing"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.TableLayout" group="property"/>
+    <title type="link" role="topic">row-spacing</title>
+  </info>
+  <title>Clutter.TableLayout:row-spacing</title>
+<synopsis><code mime="text/x-python">
+"row-spacing"             guint                : Read / Write
+</code></synopsis>
+<p>The spacing between rows of the <link xref="Clutter.TableLayout">Clutter.TableLayout</link>, in pixels</p>
+</page>

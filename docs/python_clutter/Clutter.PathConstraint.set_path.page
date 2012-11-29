@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PathConstraint.set_path"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PathConstraint" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_path_constraint_set_path</api:name>
+      <api:arg>
+        <api:type>ClutterPathConstraint *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.Path</api:type>
+        <api:name>path</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_path</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Path)
+@returns(none)
+def set_path(path)
+</code></synopsis>
+<p>Sets the @path to be followed by the <link xref="Clutter.PathConstraint">Clutter.PathConstraint</link>.</p><p>The @constraint will take ownership of the <link xref="Clutter.Path">Clutter.Path</link> passed to this
+function.</p>
+
+<table>
+<tr>
+<td><p>path :</p></td>
+<td><p>a <link xref="Clutter.Path">Clutter.Path</link></p></td>
+</tr>
+</table>
+<p>Since 1.6</p>
+</page>

@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Clutter.ChildMeta</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Clutter.ChildMeta</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">Base interface for container specific state for child actors. A child
+data is meant to be used when you need to keep track of information
+about each individual child added to a container.</p>
+<p class="p">In order to use it you should create your own subclass of
+<span class=" link"><a href="Clutter.ChildMeta.html" title="Clutter.ChildMeta">Clutter.ChildMeta</a></span> and set the <span class=" link"><a href="Clutter.ContainerIface.html" title="Clutter.ContainerIface">Clutter.ContainerIface</a></span> child_meta_type
+interface member to your subclass type, like:</p>
+<p class="p">|[
+static void
+my_container_iface_init (ClutterContainerIface *iface)
+{
+/&amp;ast; set the rest of the <span class=" link"><a href="Clutter.Container.html" title="Clutter.Container">Clutter.Container</a></span> vtable &amp;ast;/</p>
+<p class="p">container_iface-&gt;child_meta_type  = MY_TYPE_CHILD_META;
+}
+]|</p>
+<p class="p">This will automatically create a <span class=" link"><a href="Clutter.ChildMeta.html" title="Clutter.ChildMeta">Clutter.ChildMeta</a></span> of type
+MY_TYPE_CHILD_META for every actor that is added to the container.</p>
+<p class="p">The child data for an actor can be retrieved using the
+clutter_container_get_child_meta() function.</p>
+<p class="p">The properties of the data and your subclass can be manipulated with
+clutter_container_child_set() and clutter_container_child_get() which
+act like g_object_set() and g_object_get().</p>
+<p class="p">You can provide hooks for your own storage as well as control the
+instantiation by overriding the <span class=" link"><a href="Clutter.ContainerIface.html" title="Clutter.ContainerIface">Clutter.ContainerIface</a></span> virtual functions
+&lt;function&gt;create_child_meta&lt;/function&gt;,
+&lt;function&gt;destroy_child_meta&lt;/function&gt;,
+and &lt;function&gt;get_child_meta&lt;/function&gt;.</p>
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">from gi.repository import Clutter
+
+child_meta = Clutter.ChildMeta(<span class=" link"><a href="Clutter.ChildMeta-actor.html" title="Clutter.ChildMeta:actor">actor</a></span>=value, <span class=" link"><a href="Clutter.ChildMeta-container.html" title="Clutter.ChildMeta:container">container</a></span>=value)  </pre></div></div></div></div></div>
+<p class="p">Since 0.8</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class=" code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class=" code">Clutter.ChildMeta</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks ui-expander">
+<div class="yelp-data yelp-data-ui-expander" dir="ltr" data-yelp-expanded="yes"></div>
+<div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Clutter.ChildMeta.get_actor.html" title="get_actor">get_actor</a></li>
+<li class="links "><a href="Clutter.ChildMeta.get_container.html" title="get_container">get_container</a></li>
+</ul></div>
+</div>
+</div>
+<div class="links topiclinks ui-expander">
+<div class="yelp-data yelp-data-ui-expander" dir="ltr" data-yelp-expanded="yes"></div>
+<div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Clutter.ChildMeta-actor.html" title="Clutter.ChildMeta:actor">actor</a></li>
+<li class="links "><a href="Clutter.ChildMeta-container.html" title="Clutter.ChildMeta:container">container</a></li>
+</ul></div>
+</div>
+</div>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Clutter Documentation">Clutter Documentation</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

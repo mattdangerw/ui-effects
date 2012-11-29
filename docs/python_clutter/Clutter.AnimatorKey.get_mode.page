@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.AnimatorKey.get_mode"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.AnimatorKey" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gulong</api:type>
+      </api:returns>
+      <api:name>clutter_animator_key_get_mode</api:name>
+    </api:function>
+  </info>
+  <title>get_mode</title>
+<synopsis><code mime="text/x-python">
+@returns(gulong)
+def get_mode()
+</code></synopsis>
+<p>Retrieves the mode of a <link xref="Clutter.Animator">Clutter.Animator</link> key, for the first key of a
+property for an object this represents the whether the animation is
+open ended and or curved for the remainding keys for the property it
+represents the easing mode.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the mode of a <link xref="Clutter.AnimatorKey">Clutter.AnimatorKey</link></p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

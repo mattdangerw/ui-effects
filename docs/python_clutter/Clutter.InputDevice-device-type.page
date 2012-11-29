@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.InputDevice-device-type"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.InputDevice" group="property"/>
+    <title type="link" role="topic">device-type</title>
+  </info>
+  <title>Clutter.InputDevice:device-type</title>
+<synopsis><code mime="text/x-python">
+"device-type"             Clutter.InputDeviceType                : Read / Write / Construct Only
+</code></synopsis>
+<p>The type of the device</p>
+</page>

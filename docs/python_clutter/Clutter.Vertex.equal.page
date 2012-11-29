@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Vertex.equal"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Vertex" group="function"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_vertex_equal</api:name>
+      <api:arg>
+        <api:type>Clutter.Vertex</api:type>
+        <api:name>vertex_b</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>equal</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Vertex)
+@returns(gboolean)
+def equal(vertex_b)
+</code></synopsis>
+<p>Compares @vertex_a and @vertex_b for equality</p>
+
+<table>
+<tr>
+<td><p>vertex_b :</p></td>
+<td><p>a <link xref="Clutter.Vertex">Clutter.Vertex</link></p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the passed <link xref="Clutter.Vertex">Clutter.Vertex</link> are equal</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

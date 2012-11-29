@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.ActorMeta-name"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.ActorMeta" group="property"/>
+    <title type="link" role="topic">name</title>
+  </info>
+  <title>Clutter.ActorMeta:name</title>
+<synopsis><code mime="text/x-python">
+"name"             utf8                : Read / Write
+</code></synopsis>
+<p>The unique name to access the <link xref="Clutter.ActorMeta">Clutter.ActorMeta</link></p>
+</page>

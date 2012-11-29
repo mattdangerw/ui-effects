@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Container.find_child_by_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Actor</api:type>
+      </api:returns>
+      <api:name>clutter_container_find_child_by_name</api:name>
+      <api:arg>
+        <api:type>ClutterContainer *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>child_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>find_child_by_name</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8)
+@returns(Clutter.Actor)
+def find_child_by_name(child_name)
+</code></synopsis>
+<p>Finds a child actor of a container by its name. Search recurses
+into any child container.</p><p>or None if no actor with that name was found.</p>
+
+<table>
+<tr>
+<td><p>child_name :</p></td>
+<td><p>the name of the requested child.</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The child actor with the requested name,</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

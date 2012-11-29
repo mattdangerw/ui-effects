@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Clutter.Actor-opacity"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="property"/>
+    <title type="link" role="topic">opacity</title>
+  </info>
+  <title>Clutter.Actor:opacity</title>
+<synopsis><code mime="text/x-python">
+"opacity"             guint                : Read / Write
+</code></synopsis>
+<p>Opacity of an actor, between 0 (fully transparent) and
+255 (fully opaque)</p><p>The <link xref="Clutter.Actor-opacity">Clutter.Actor:opacity</link> property is animatable.</p>
+</page>

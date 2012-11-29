@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Clutter.Container-lower"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Container" group="vfunc"/>
+    <title type="link" role="topic">lower</title>
+  </info>
+  <title>Clutter.Container.lower</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.Actor, Clutter.Actor)
+@returns(none)
+def do_lower(self, actor, sibling):
+</code></synopsis>
+<p>Lowers @actor to @sibling level, in the depth ordering.</p><p>This function calls the <link xref="Clutter.ContainerIface">Clutter.ContainerIface</link>.lower() virtual function,
+which has been deprecated. The default implementation will call
+clutter_actor_set_child_below_sibling().</p>
+
+<table>
+<tr>
+<td><p>actor :</p></td>
+<td><p>the actor to raise</p></td>
+</tr>
+<tr>
+<td><p>sibling :</p></td>
+<td><p>the sibling to lower to, or None to lower to the bottom</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

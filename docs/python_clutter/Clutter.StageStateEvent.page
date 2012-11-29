@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page id="Clutter.StageStateEvent"
+      type="guide"
+      style="record"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>ClutterStageStateEvent</title>
+  <p>Event signalling a change in the #ClutterStage state.</p>
+</page>

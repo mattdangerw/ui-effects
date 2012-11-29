@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.has_allocation"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_actor_has_allocation</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>has_allocation</title>
+<synopsis><code mime="text/x-python">
+@returns(gboolean)
+def has_allocation()
+</code></synopsis>
+<p>Checks if the actor has an up-to-date allocation assigned to
+it. This means that the actor should have an allocation: it's
+visible and has a parent. It also means that there is no
+outstanding relayout request in progress for the actor or its
+children (There might be other outstanding layout requests in
+progress that will cause the actor to get a new allocation
+when the stage is laid out, however).</p><p>If this function returns False, then the actor will normally
+be allocated before it is next drawn on the screen.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True if the actor has an up-to-date allocation</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

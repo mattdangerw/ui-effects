@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="Clutter.DragAction-x-drag-threshold"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.DragAction" group="property"/>
+    <title type="link" role="topic">x-drag-threshold</title>
+  </info>
+  <title>Clutter.DragAction:x-drag-threshold</title>
+<synopsis><code mime="text/x-python">
+"x-drag-threshold"             gint                : Read / Write
+</code></synopsis>
+<p>The horizontal threshold, in pixels, that the cursor must travel
+in order to begin a drag action.</p><p>When set to a positive value, <link xref="Clutter.DragAction">Clutter.DragAction</link> will only emit
+<link xref="Clutter.DragAction-drag-begin">Clutter.DragAction::drag-begin</link> if the pointer has moved
+horizontally at least of the given amount of pixels since
+the button press event.</p><p>When set to -1, <link xref="Clutter.DragAction">Clutter.DragAction</link> will use the default threshold
+stored in the <link xref="Clutter.Settings-dnd-drag-threshold">Clutter.Settings:dnd-drag-threshold</link> property of
+<link xref="Clutter.Settings">Clutter.Settings</link>.</p><p>When read, this property will always return a valid drag
+threshold, either as set or the default one.</p>
+</page>

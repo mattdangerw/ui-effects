@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.set_offscreen_redirect"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_set_offscreen_redirect</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.OffscreenRedirect</api:type>
+        <api:name>redirect</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_offscreen_redirect</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.OffscreenRedirect)
+@returns(none)
+def set_offscreen_redirect(redirect)
+</code></synopsis>
+<p>Defines the circumstances where the actor should be redirected into
+an offscreen image. The offscreen image is used to flatten the
+actor into a single image while painting for two main reasons.
+Firstly, when the actor is painted a second time without any of its
+contents changing it can simply repaint the cached image without
+descending further down the actor hierarchy. Secondly, it will make
+the opacity look correct even if there are overlapping primitives
+in the actor.</p><p>Caching the actor could in some cases be a performance win and in
+some cases be a performance lose so it is important to determine
+which value is right for an actor before modifying this value. For
+example, there is never any reason to flatten an actor that is just
+a single texture (such as a <link xref="Clutter.Texture">Clutter.Texture</link>) because it is
+effectively already cached in an image so the offscreen would be
+redundant. Also if the actor contains primitives that are far apart
+with a large transparent area in the middle (such as a large
+CluterGroup with a small actor in the top left and a small actor in
+the bottom right) then the cached image will contain the entire
+image of the large area and the paint will waste time blending all
+of the transparent pixels in the middle.</p><p>The default method of implementing opacity on a container simply
+forwards on the opacity to all of the children. If the children are
+overlapping then it will appear as if they are two separate glassy
+objects and there will be a break in the color where they
+overlap. By redirecting to an offscreen buffer it will be as if the
+two opaque objects are combined into one and then made transparent
+which is usually what is expected.</p><p>The image below demonstrates the difference between redirecting and
+not. The image shows two Clutter groups, each containing a red and
+a green rectangle which overlap. The opacity on the group is set to
+128 (which is 50%). When the offscreen redirect is not used, the
+red rectangle can be seen through the blue rectangle as if the two
+rectangles were separately transparent. When the redirect is used
+the group as a whole is transparent instead so the red rectangle is
+not visible where they overlap.</p><p>&lt;figure id="offscreen-redirect"&gt;
+&lt;title&gt;Sample of using an offscreen redirect for transparency&lt;/title&gt;
+&lt;graphic fileref="offscreen-redirect.png" format="PNG"/&gt;
+&lt;/figure&gt;</p><p>The default value for this property is 0, so we effectively will
+never redirect an actor offscreen by default. This means that there
+are times that transparent actors may look glassy as described
+above. The reason this is the default is because there is a
+performance trade off between quality and performance here. In many
+cases the default form of glassy opacity looks good enough, but if
+it's not you will need to set the
+%CLUTTER_OFFSCREEN_REDIRECT_AUTOMATIC_FOR_OPACITY flag to enable
+redirection for opacity.</p><p>Custom actors that don't contain any overlapping primitives are
+recommended to override the has_overlaps() virtual to return False
+for maximum efficiency.</p>
+
+<table>
+<tr>
+<td><p>redirect :</p></td>
+<td><p>New offscreen redirect flags for the actor.</p></td>
+</tr>
+</table>
+<p>Since 1.8</p>
+</page>

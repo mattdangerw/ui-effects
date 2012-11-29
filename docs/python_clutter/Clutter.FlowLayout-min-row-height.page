@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Clutter.FlowLayout-min-row-height"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.FlowLayout" group="property"/>
+    <title type="link" role="topic">min-row-height</title>
+  </info>
+  <title>Clutter.FlowLayout:min-row-height</title>
+<synopsis><code mime="text/x-python">
+"min-row-height"             gfloat                : Read / Write
+</code></synopsis>
+<p>Minimum height for each row in the layout, in pixels</p>
+</page>

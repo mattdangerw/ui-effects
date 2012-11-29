@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>set_area</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Clutter Documentation">Clutter Documentation</a> » <a class="trail" href="Clutter.Image.html" title="Clutter.Image">Clutter.Image</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">set_area</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents syntax brush-python">@accepts([guint8], Cogl.PixelFormat, cairo.RectangleInt, guint)
+@returns(gboolean)
+def set_area(data, pixel_format, rect, row_stride)</pre></div></div></div></div></div>
+<p class="p">Sets the image data to be display by @image, using @rect to indicate
+the position and size of the image data to be set.</p>
+<p class="p">If the @image does not have any image data set when this function is
+called, a new texture will be created with the size of the width and
+height of the rectangle, i.e. calling this function on a newly created
+<span class=" link"><a href="Clutter.Image.html" title="Clutter.Image">Clutter.Image</a></span> will be the equivalent of calling clutter_image_set_data().</p>
+<p class="p">If the image data was successfully loaded, the @image will be invalidated.</p>
+<p class="p">In case of error, the @error value will be set, and this function will
+return False.</p>
+<p class="p">The image data is copied in texture memory.</p>
+<p class="p">and False otherwise.</p>
+<div class="table"><div class="inner"><div class="region"><table class="table">
+<tr>
+<td><p class="p">data :</p></td>
+<td><p class="p">the image data, as an array of bytes</p></td>
+</tr>
+<tr>
+<td><p class="p">pixel_format :</p></td>
+<td><p class="p">the Cogl pixel format of the image data</p></td>
+</tr>
+<tr>
+<td><p class="p">rect :</p></td>
+<td><p class="p">a rectangle indicating the area that should be set</p></td>
+</tr>
+<tr>
+<td><p class="p">row_stride :</p></td>
+<td><p class="p">the length of each row inside @data</p></td>
+</tr>
+<tr>
+<td><p class="p">Returns :</p></td>
+<td><p class="p">True if the image data was successfully loaded,</p></td>
+</tr>
+</table></div></div></div>
+<p class="p">Since 1.10</p>
+</div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Clutter.Image.html" title="Clutter.Image">Clutter.Image</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

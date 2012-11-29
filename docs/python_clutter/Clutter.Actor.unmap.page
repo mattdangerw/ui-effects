@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.unmap"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_unmap</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>unmap</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def unmap()
+</code></synopsis>
+<p>Unsets the %CLUTTER_ACTOR_MAPPED flag on the actor and possibly
+unmaps its children if they were mapped.</p><p>Calling this function is not encouraged: the default <link xref="Clutter.Actor">Clutter.Actor</link>
+implementation of <link xref="Clutter.ActorClass">Clutter.ActorClass</link>.unmap() will also unmap any
+eventual children by default when their parent is unmapped.</p><p>When overriding <link xref="Clutter.ActorClass">Clutter.ActorClass</link>.unmap(), it is mandatory to
+chain up to the parent implementation.</p><p>&lt;note&gt;It is important to note that the implementation of the
+<link xref="Clutter.ActorClass">Clutter.ActorClass</link>.unmap() virtual function may be called after
+the <link xref="Clutter.ActorClass">Clutter.ActorClass</link>.destroy() or the <link xref="GObjectClass">GObjectClass</link>.dispose()
+implementation, but it is guaranteed to be called before the
+<link xref="GObjectClass">GObjectClass</link>.finalize() implementation.&lt;/note&gt;</p>
+
+<table>
+</table>
+<p>Since 1.0</p>
+</page>

@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Texture.set_area_from_rgb_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Texture" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>gboolean</api:type>
+      </api:returns>
+      <api:name>clutter_texture_set_area_from_rgb_data</api:name>
+      <api:arg>
+        <api:type>ClutterTexture *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>[guint8]</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gboolean</api:type>
+        <api:name>has_alpha</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>rowstride</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gint</api:type>
+        <api:name>bpp</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.TextureFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_area_from_rgb_data</title>
+<synopsis><code mime="text/x-python">
+@accepts([guint8], gboolean, gint, gint, gint, gint, gint, gint, Clutter.TextureFlags)
+@returns(gboolean)
+def set_area_from_rgb_data(data, has_alpha, x, y, width, height, rowstride, bpp, flags)
+</code></synopsis>
+<p>Updates a sub-region of the pixel data in a <link xref="Clutter.Texture">Clutter.Texture</link>.</p>
+
+<table>
+<tr>
+<td><p>data :</p></td>
+<td><p>Image data in RGB type colorspace.</p></td>
+</tr>
+<tr>
+<td><p>has_alpha :</p></td>
+<td><p>Set to TRUE if image data has an alpha channel.</p></td>
+</tr>
+<tr>
+<td><p>x :</p></td>
+<td><p>X coordinate of upper left corner of region to update.</p></td>
+</tr>
+<tr>
+<td><p>y :</p></td>
+<td><p>Y coordinate of upper left corner of region to update.</p></td>
+</tr>
+<tr>
+<td><p>width :</p></td>
+<td><p>Width in pixels of region to update.</p></td>
+</tr>
+<tr>
+<td><p>height :</p></td>
+<td><p>Height in pixels of region to update.</p></td>
+</tr>
+<tr>
+<td><p>rowstride :</p></td>
+<td><p>Distance in bytes between row starts on source buffer.</p></td>
+</tr>
+<tr>
+<td><p>bpp :</p></td>
+<td><p>bytes per pixel (Currently only 3 and 4 supported, depending on @has_alpha)</p></td>
+</tr>
+<tr>
+<td><p>flags :</p></td>
+<td><p><link xref="Clutter.TextureFlags">Clutter.TextureFlags</link></p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>True on success, False on failure.</p></td>
+</tr>
+</table>
+<p>Since 0.6</p>
+</page>

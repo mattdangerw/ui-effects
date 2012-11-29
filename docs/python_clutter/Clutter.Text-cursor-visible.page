@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Clutter.Text-cursor-visible"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="property"/>
+    <title type="link" role="topic">cursor-visible</title>
+  </info>
+  <title>Clutter.Text:cursor-visible</title>
+<synopsis><code mime="text/x-python">
+"cursor-visible"             gboolean                : Read / Write
+</code></synopsis>
+<p>Whether the input cursor is visible or not, it will only be visible
+if both <link xref="Clutter.Text-cursor-visible">Clutter.Text:cursor-visible</link> and <link xref="Clutter.Text-editable">Clutter.Text:editable</link> are
+set to True.</p>
+</page>

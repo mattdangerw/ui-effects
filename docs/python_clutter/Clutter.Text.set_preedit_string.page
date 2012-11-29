@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.set_preedit_string"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_text_set_preedit_string</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>preedit_str</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Pango.AttrList</api:type>
+        <api:name>preedit_attrs</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>guint</api:type>
+        <api:name>cursor_pos</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_preedit_string</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, Pango.AttrList, guint)
+@returns(none)
+def set_preedit_string(preedit_str, preedit_attrs, cursor_pos)
+</code></synopsis>
+<p>Sets, or unsets, the pre-edit string. This function is useful
+for input methods to display a string (with eventual specific
+Pango attributes) before it is entered inside the <link xref="Clutter.Text">Clutter.Text</link>
+buffer.</p><p>The preedit string and attributes are ignored if the <link xref="Clutter.Text">Clutter.Text</link>
+actor is not editable.</p><p>This function should not be used by applications</p>
+
+<table>
+<tr>
+<td><p>preedit_str :</p></td>
+<td><p>the pre-edit string, or None to unset it</p></td>
+</tr>
+<tr>
+<td><p>preedit_attrs :</p></td>
+<td><p>the pre-edit string attributes</p></td>
+</tr>
+<tr>
+<td><p>cursor_pos :</p></td>
+<td><p>the cursor position for the pre-edit string</p></td>
+</tr>
+</table>
+<p>Since 1.2</p>
+</page>

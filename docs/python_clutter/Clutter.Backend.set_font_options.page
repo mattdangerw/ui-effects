@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Backend.set_font_options"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Backend" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_backend_set_font_options</api:name>
+      <api:arg>
+        <api:type>ClutterBackend *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>cairo.FontOptions</api:type>
+        <api:name>options</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>set_font_options</title>
+<synopsis><code mime="text/x-python">
+@accepts(cairo.FontOptions)
+@returns(none)
+def set_font_options(options)
+</code></synopsis>
+<p>Sets the new font options for @backend. The <link xref="Clutter.Backend">Clutter.Backend</link> will
+copy the <link xref="cairo_font_options_t">cairo_font_options_t</link>.</p><p>If @options is None, the first following call to
+clutter_backend_get_font_options() will return the default font
+options for @backend.</p><p>This function is intended for actors creating a Pango layout
+using the PangoCairo API.</p>
+
+<table>
+<tr>
+<td><p>options :</p></td>
+<td><p>Cairo font options for the backend, or None</p></td>
+</tr>
+</table>
+<p>Since 0.8</p>
+</page>

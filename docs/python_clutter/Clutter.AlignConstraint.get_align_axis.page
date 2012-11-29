@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.AlignConstraint.get_align_axis"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.AlignConstraint" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.AlignAxis</api:type>
+      </api:returns>
+      <api:name>clutter_align_constraint_get_align_axis</api:name>
+      <api:arg>
+        <api:type>ClutterAlignConstraint *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_align_axis</title>
+<synopsis><code mime="text/x-python">
+@returns(Clutter.AlignAxis)
+def get_align_axis()
+</code></synopsis>
+<p>Retrieves the value set using clutter_align_constraint_set_align_axis()</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>the alignment axis</p></td>
+</tr>
+</table>
+<p>Since 1.4</p>
+</page>

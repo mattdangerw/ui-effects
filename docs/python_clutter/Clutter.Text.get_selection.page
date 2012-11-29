@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Text.get_selection"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Text" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>utf8</api:type>
+      </api:returns>
+      <api:name>clutter_text_get_selection</api:name>
+      <api:arg>
+        <api:type>ClutterText *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_selection</title>
+<synopsis><code mime="text/x-python">
+@returns(utf8)
+def get_selection()
+</code></synopsis>
+<p>Retrieves the currently selected text.</p><p>selected text, or None. Use g_free() to free the returned
+string.</p>
+
+<table>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>a newly allocated string containing the currently</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.PaintNode.add_rectangle"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.PaintNode" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_paint_node_add_rectangle</api:name>
+      <api:arg>
+        <api:type>ClutterPaintNode *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ActorBox</api:type>
+        <api:name>rect</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>add_rectangle</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.ActorBox)
+@returns(none)
+def add_rectangle(rect)
+</code></synopsis>
+<p>Adds a rectangle region to the @node, as described by the
+passed @rect.</p>
+
+<table>
+<tr>
+<td><p>rect :</p></td>
+<td><p>a <link xref="Clutter.ActorBox">Clutter.ActorBox</link></p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

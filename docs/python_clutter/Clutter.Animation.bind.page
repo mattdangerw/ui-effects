@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Animation.bind"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Animation" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Animation</api:type>
+      </api:returns>
+      <api:name>clutter_animation_bind</api:name>
+      <api:arg>
+        <api:type>ClutterAnimation *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>utf8</api:type>
+        <api:name>property_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>final</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>bind</title>
+<synopsis><code mime="text/x-python">
+@accepts(utf8, GObject.Value)
+@returns(Clutter.Animation)
+def bind(property_name, final)
+</code></synopsis>
+<p>Adds a single property with name @property_name to the
+animation @animation.  For more information about animations,
+see clutter_actor_animate().</p><p>This method returns the animation primarily to make chained
+calls convenient in language bindings.</p>
+
+<table>
+<tr>
+<td><p>property_name :</p></td>
+<td><p>the property to control</p></td>
+</tr>
+<tr>
+<td><p>final :</p></td>
+<td><p>The final value of the property</p></td>
+</tr>
+<tr>
+<td><p>Returns :</p></td>
+<td><p>The animation itself.</p></td>
+</tr>
+</table>
+<p>Since 1.0</p>
+</page>

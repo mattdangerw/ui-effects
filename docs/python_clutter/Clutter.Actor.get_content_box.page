@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.get_content_box"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_get_content_box</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Clutter.ActorBox</api:type>
+        <api:name>box</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>get_content_box</title>
+<synopsis><code mime="text/x-python">
+@accepts(Clutter.ActorBox)
+@returns(none)
+def get_content_box(box)
+</code></synopsis>
+<p>Retrieves the bounding box for the <link xref="Clutter.Content">Clutter.Content</link> of @self.</p><p>The bounding box is relative to the actor's allocation.</p><p>If no <link xref="Clutter.Content">Clutter.Content</link> is set for @self, or if @self has not been
+allocated yet, then the result is undefined.</p><p>The content box is guaranteed to be, at most, as big as the allocation
+of the <link xref="Clutter.Actor">Clutter.Actor</link>.</p><p>If the <link xref="Clutter.Content">Clutter.Content</link> used by the actor has a preferred size, then
+it is possible to modify the content box by using the
+<link xref="Clutter.Actor-content-gravity">Clutter.Actor:content-gravity</link> property.</p>
+
+<table>
+<tr>
+<td><p>box :</p></td>
+<td><p>the return location for the bounding box for the <link xref="Clutter.Content">Clutter.Content</link></p></td>
+</tr>
+</table>
+<p>Since 1.10</p>
+</page>

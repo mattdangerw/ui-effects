@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page id="Clutter.Actor.destroy_all_children"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/experimental/ui/">
+  <info>
+    <link type="guide" xref="Clutter.Actor" group="method"/>
+    <api:function>
+      <api:returns>
+        <api:type>none</api:type>
+      </api:returns>
+      <api:name>clutter_actor_destroy_all_children</api:name>
+      <api:arg>
+        <api:type>ClutterActor *</api:type>
+        <api:name>self</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>destroy_all_children</title>
+<synopsis><code mime="text/x-python">
+@returns(none)
+def destroy_all_children()
+</code></synopsis>
+<p>Destroys all children of @self.</p><p>This function releases the reference added by inserting a child
+actor in the list of children of @self, and ensures that the
+<link xref="Clutter.Actor-destroy">Clutter.Actor::destroy</link> signal is emitted on each child of the
+actor.</p><p>By default, <link xref="Clutter.Actor">Clutter.Actor</link> will emit the <link xref="Clutter.Actor-destroy">Clutter.Actor::destroy</link> signal
+when its reference count drops to 0; the default handler of the
+<link xref="Clutter.Actor-destroy">Clutter.Actor::destroy</link> signal will destroy all the children of an
+actor. This function ensures that all children are destroyed, instead
+of just removed from @self, unlike clutter_actor_remove_all_children()
+which will merely release the reference and remove each child.</p><p>Unless you acquired an additional reference on each child of @self
+prior to calling clutter_actor_remove_all_children() and want to reuse
+the actors, you should use clutter_actor_destroy_all_children() in
+order to make sure that children are destroyed and signal handlers
+are disconnected even in cases where circular references prevent this
+from automatically happening through reference counting alone.</p>
+
+<table>
+</table>
+<p>Since 1.10</p>
+</page>
